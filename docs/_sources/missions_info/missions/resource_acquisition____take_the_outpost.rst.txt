@@ -1,0 +1,50 @@
+.. _mission_resource_acquisition____take_the_outpost:
+
+
+Resource Acquisition / Take The Outpost
+================================================
+
+Category
+    :ref:`mission_category_conquest`
+
+.. topic:: Description
+
+   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+
+   🚨 PLACEHOLDER 🚨
+
+   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+
+
+
+.. topic:: Outcome
+
+   .. list-table:: Outcome
+      :header-rows: 1
+
+      * - Result
+        - :ref:`concept_money`
+        - :ref:`concept_hr`
+        - :ref:`concept_town_support`
+        - Next Enemy
+        - Enemy
+        - Player
+        - Commander
+
+      * - **Success**
+        - 200/400 €
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+
+      * - **Failure**
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``
+        - ``-``

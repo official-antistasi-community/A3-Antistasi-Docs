@@ -16,15 +16,11 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 
-
 # -- Project information -----------------------------------------------------
 
 project = 'Antistasi Guide'
-copyright = '2022, DeathTouchWilly'
-author = 'DeathTouchWilly'
-
-
-
+copyright = '2022, Official Antistasi Community'
+author = 'Official Antistasi Community'
 
 
 # -- General configuration ---------------------------------------------------
@@ -32,7 +28,7 @@ author = 'DeathTouchWilly'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images',"sphinxcontrib.fulltoc"]
+extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc"]
 pdf_documents = [('index', 'rst2pdf', 'Sample rst2pdf doc', 'Your Name'), ]
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
