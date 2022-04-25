@@ -12,6 +12,7 @@
 
 import os
 import sys
+import time
 
 sys.path.insert(0, os.path.abspath('.'))
 
@@ -19,7 +20,7 @@ sys.path.insert(0, os.path.abspath('.'))
 # -- Project information -----------------------------------------------------
 
 project = 'Antistasi Guide'
-copyright = '2022, Official Antistasi Community'
+copyright = f'{time.strftime("Y")!s}, Official Antistasi Community'
 author = 'Official Antistasi Community'
 
 
