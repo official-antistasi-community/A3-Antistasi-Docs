@@ -1,0 +1,42 @@
+[
+    {
+        "name": "assassination",
+        "display_name": "Assassination",
+        "description": null
+    },
+    {
+        "name": "conquest",
+        "display_name": "Conquest",
+        "description": null
+    },
+    {
+        "name": "convoy",
+        "display_name": "Convoy",
+        "description": null
+    },
+    {
+        "name": "destroy",
+        "display_name": "Destroy",
+        "description": null
+    },
+    {
+        "name": "logistics",
+        "display_name": "Logistics",
+        "description": null
+    },
+    {
+        "name": "rescue",
+        "display_name": "Rescue",
+        "description": null
+    },
+    {
+        "name": "spawned_dynamically",
+        "display_name": "Spawned Dynamically",
+        "description": null
+    },
+    {
+        "name": "support",
+        "display_name": "Support",
+        "description": null
+    }
+]

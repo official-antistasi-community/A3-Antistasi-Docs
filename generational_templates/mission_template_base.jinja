@@ -1,0 +1,21 @@
+.. _{{mission.ref_name}}:
+
+{{mission.section_name}}
+
+Category
+    :ref:`mission_category_{{special_normalize(category_name)}}`
+
+.. topic:: Description
+   {% if mission.description %}
+   {{mission.description|indent(3, False)}}
+   {% else %}
+   {{placeholder|indent(3, False)}}
+   {% endif %}
+
+
+
+.. topic:: Outcome
+
+{{mission.outcome_table}}
+
+

@@ -1,0 +1,758 @@
+[
+    {
+        "name": "destroy_radio_tower",
+        "display_name": "Destroy Radio Tower",
+        "category": "destroy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "downed_heli",
+        "display_name": "Downed Heli",
+        "category": "destroy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "steal_or_destroy_armor",
+        "display_name": "Steal or Destroy Armor",
+        "category": "destroy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": "-100/-200 \u20ac"
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "steal_or_destroy_ammo_truck",
+        "display_name": "Steal or Destroy Ammo Truck",
+        "category": "logistics",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "bank_mission",
+        "display_name": "Bank Mission",
+        "category": "logistics",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "5000/10000 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "salvage_supplies",
+        "display_name": "Salvage Supplies",
+        "category": "logistics",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "resource_acquisition_or_take_the_outpost",
+        "display_name": "Resource Acquisition / Take the Outpost",
+        "category": "conquest",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "200/400 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "kill_the_officer",
+        "display_name": "Kill the Officer",
+        "category": "assassination",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "kill_the_traitor",
+        "display_name": "Kill the Traitor",
+        "category": "assassination",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": "-30%"
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "specops",
+        "display_name": "SpecOps",
+        "category": "assassination",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "200/400 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "refugees_evac",
+        "display_name": "Refugees Evac",
+        "category": "rescue",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "refugee",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "pow_rescue",
+        "display_name": "POW Rescue",
+        "category": "rescue",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "prisoner",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "city_supplies",
+        "display_name": "City Supplies",
+        "category": "support",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "ammo_convoy",
+        "display_name": "Ammo Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/600 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "armored_convoy",
+        "display_name": "Armored Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "prisoner_convoy",
+        "display_name": "Prisoner Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "prisoner",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "reinforcements_convoy",
+        "display_name": "Reinforcements Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "money_convoy",
+        "display_name": "Money Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "5000/10000 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "supplies_convoy",
+        "display_name": "Supplies Convoy",
+        "category": "convoy",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "defend_petros",
+        "display_name": "Defend Petros",
+        "category": "spawned_dynamically",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": "300/300 \u20ac",
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    },
+    {
+        "name": "tower_rebuild_disrupt",
+        "display_name": "Tower Rebuild Disrupt",
+        "category": "spawned_dynamically",
+        "description": null,
+        "outcome": {
+            "money": {
+                "success": null,
+                "failure": null
+            },
+            "hr": {
+                "success": null,
+                "failure": null
+            },
+            "town_support": {
+                "success": null,
+                "failure": null
+            },
+            "next_enemy": {
+                "success": null,
+                "failure": null
+            },
+            "enemy": {
+                "success": null,
+                "failure": null
+            },
+            "player": {
+                "success": null,
+                "failure": null
+            },
+            "commander": {
+                "success": null,
+                "failure": null
+            }
+        }
+    }
+]

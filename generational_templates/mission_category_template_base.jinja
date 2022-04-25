@@ -1,0 +1,19 @@
+.. _{{category.ref_name}}:
+
+{{category.section_name}}
+
+
+.. topic:: Description
+   {% if category.description %}
+   {{category.description|indent(3, False)}}
+   {% else %}
+   {{placeholder|indent(3, False)}}
+   {% endif %}
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Missions:
+
+   {% for mission in category.missions %}
+   /missions_info/missions/{{mission.name}}
+   {% endfor %}
