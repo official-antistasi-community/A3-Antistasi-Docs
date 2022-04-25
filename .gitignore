@@ -226,4 +226,5 @@ $RECYCLE.BIN/
 
 ./generate_config.ini
 generate_config.ini
-/created
+/created/*
+!/created/html
