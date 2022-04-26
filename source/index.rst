@@ -19,8 +19,8 @@ Player Guide
    :maxdepth: 2
    :name: Player Guide
 
-   /missions_info/missions_overview
-   /concepts_info/concepts_overview
+   /player_guide/missions_info/missions_overview
+   /player_guide/concepts_info/concepts_overview
 
 
 
@@ -31,7 +31,9 @@ Dev Guide
 .. toctree::
    :maxdepth: 2
    :name: Dev Guide
+   :glob:
 
+   /dev_guide/*
 
 
 
