@@ -1,4 +1,4 @@
-
+===========================================
 Welcome to the Antistasi Guide!
 ===========================================
 
@@ -12,16 +12,38 @@ Welcome to the Antistasi Guide!
 
    .. include:: ../data/short_description.txt
 
+Player Guide
+=================
+
 .. toctree::
    :maxdepth: 2
+   :name: Player Guide
 
    /missions_info/missions_overview
    /concepts_info/concepts_overview
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+Dev Guide
+==============
+
+.. toctree::
+   :maxdepth: 2
+   :name: Dev Guide
+
+
+
+
+Extras
+-----------
+
+.. toctree::
+   :maxdepth: 2
+   :name: Extras
+   :glob:
+
+   /extras/*
+
+
+
