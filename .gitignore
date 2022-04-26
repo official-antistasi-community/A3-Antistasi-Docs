@@ -229,3 +229,4 @@ generate_config.ini
 /created/*
 !/created/html
 /docs/doctrees
+/docs/html

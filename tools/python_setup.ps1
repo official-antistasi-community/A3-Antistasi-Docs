@@ -52,3 +52,4 @@ if (-Not $python10Installed){
 & "pipx" inject sphinx myst-parser==0.17.2
 & "pipx" inject sphinx groundwork-sphinx-theme==1.1.1
 & "pipx" inject sphinx sphinx-copybutton==0.5.0
+& "pipx" inject sphinx sphinxcontrib-fulltoc==1.2.0

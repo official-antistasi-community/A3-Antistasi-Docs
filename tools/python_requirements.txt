@@ -3,3 +3,6 @@ sphinxcontrib-mermaid==0.7.1
 sphinxcontrib-images==0.9.4
 sphinx-bootstrap-theme==0.8.1
 myst-parser==0.17.2
+sphinxcontrib-fulltoc==1.2.0
+sphinx-copybutton==0.5.0
+groundwork-sphinx-theme==1.1.1

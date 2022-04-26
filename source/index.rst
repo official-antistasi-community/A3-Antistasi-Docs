@@ -12,6 +12,35 @@ Welcome to the Antistasi Guide!
 
    .. include:: ../data/short_description.txt
 
+
+.. list-table:: Ranks
+   :header-rows: 1
+
+   * - Rank
+     - Points Needed
+
+   * - Private
+     - 50
+
+   * - Corporal
+     - 100
+
+   * - Sergeant
+     - 150
+
+   * - Lieutenant
+     - 200
+
+   * - Captain
+     - 250
+
+   * - Major
+     - 300
+
+   * - Colonel
+     - 350
+
+
 Player Guide
 =================
 
