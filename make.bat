@@ -27,9 +27,6 @@ if "%1" == "" goto help
 
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 ECHO Copying %~dp0%BUILDDIR%\%1 to %~dp0%BUILDDIR%
-robocopy %~dp0%BUILDDIR%\%1 %~dp0%BUILDDIR% /COPYALL /E > nul
-RD /S /Q "%~dp0%BUILDDIR%/%1"
-RD /S /Q "%~dp0%BUILDDIR%/doctrees"
 
 goto end
 

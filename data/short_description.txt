@@ -1,9 +1,1 @@
-
-
-
-⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-🚨 PLACEHOLDER 🚨
-
-⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+This wiki is a repository for official documentation for Antistasi - Community Edition. It contains a beginners guide with tips and tricks for those just starting out,detailed reference information about the game rules, and a development guide for modders and contributors. 

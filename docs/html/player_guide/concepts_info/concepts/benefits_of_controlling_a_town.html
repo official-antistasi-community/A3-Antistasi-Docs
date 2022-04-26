@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Benefits of Controlling a Town &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
+    <script src="../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Counter Battery Fire" href="counter_battery_fire.html" />
+    <link rel="prev" title="Army Training" href="army_training.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="counter_battery_fire.html" title="Counter Battery Fire"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="army_training.html" title="Army Training"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../concepts_overview.html" accesskey="U">Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Benefits of Controlling a Town</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="benefits-of-controlling-a-town">
+<span id="concept-benefitsofcontrollingatown"></span><h1>Benefits of Controlling a Town<a class="headerlink" href="#benefits-of-controlling-a-town" title="Permalink to this headline">¶</a></h1>
+<section id="benefits">
+<h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline">¶</a></h2>
+<p>Controlling a town brings with it a number of benefits:</p>
+<ol class="arabic simple">
+<li><p>Having the support of more than 50% of the population is a win condition</p></li>
+<li><p>It will increase the amount of HR you get from the population of the town. The amount of HR you get is relative to the population of the town and whether you control the town (among other factors). Controlling a town effectively doubles the HR you will receive from it.</p></li>
+<li><p>You get a (small) amount of money as well from the population that supports you</p></li>
+<li><p>If you control a town, it definitely won’t spawn enemy patrols</p></li>
+<li><p>The support hit you receive when stealing a car from the town is lower</p></li>
+<li><p>Perhaps the most important benefit is that the Occupiers will obsessively attack rebel towns to no real effect. This flaw in the enemy’s strategy is basically what gives the player the ability to expand elsewhere on the map and keep their important holdings (like resources) safe</p></li>
+</ol>
+</section>
+<section id="specific-calculation-for-a-towns-contribution-to-hr">
+<h2>Specific Calculation for a Town’s Contribution to HR<a class="headerlink" href="#specific-calculation-for-a-towns-contribution-to-hr" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>[Population] * ([Amount of Support] / 10000)</p></li>
+<li><p>If the town is not controlled by the player’s faction, divide the number by 2</p></li>
+<li><p>If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
+<li><p>Always round the number up</p></li>
+</ol>
+<p>You may notice here that if you have any amount of support in the town it will always at least give you 1 HR. No matter how small the fraction of an HR is calculated to be, you always round up.</p>
+<p>An example:</p>
+<ol class="arabic simple">
+<li><p>Given a town with 290 population and 35 support for the player’s faction. The town is NOT controlled by the player and the player does not control the nearby radio tower</p></li>
+<li><p>290 * (35 / 10000) = 1.015</p></li>
+<li><p>We do not control the city so divide by 2 = .5075</p></li>
+<li><p>We do not control the closest radio tower so divide by 2 = .25375</p></li>
+<li><p>Always round up the result = 1 HR</p></li>
+</ol>
+</section>
+<section id="specific-calculation-for-a-towns-money-contribution">
+<h2>Specific Calculation for a Town’s Money Contribution<a class="headerlink" href="#specific-calculation-for-a-towns-money-contribution" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>[Population] * ([Amount of Support] / 100) / 3</p></li>
+<li><p>If the town is not controlled by the player’s faction, divide the number by 2</p></li>
+<li><p>If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
+<li><p>Always round the number up</p></li>
+</ol>
+<p>An example:</p>
+<ol class="arabic simple">
+<li><p>Given the same situation as the example above</p></li>
+<li><p>290 * (35 / 100) / 3 = 33.8333333333</p></li>
+<li><p>We do not control the city so divide by 2 = 16.9166666667</p></li>
+<li><p>We do not control the closest radio tower so divide by 2 = 8.45833333333</p></li>
+<li><p>Always round up the result = $9</p></li>
+</ol>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../index.html">Table of Contents</a></h3>
+    <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../missions_info/missions_overview.html">Mission Info</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../concepts_overview.html">Basic Concepts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="army_training.html">Army Training</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Benefits of Controlling a Town</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#benefits">Benefits</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specific-calculation-for-a-towns-contribution-to-hr">Specific Calculation for a Town’s Contribution to HR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specific-calculation-for-a-towns-money-contribution">Specific Calculation for a Town’s Money Contribution</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="counter_battery_fire.html">Counter Battery Fire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gaining_losing_city_support.html">Gaining and Losing City Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hr.html">HR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="money.html">Money</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player_rank.html">Player Rank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="radio_towers.html">Radio Towers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="town_support.html">Town Support</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev_guide/snippets.html">Snippets</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../extras/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../extras/links.html">Links</a></li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="army_training.html"
+                          title="previous chapter">Army Training</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="counter_battery_fire.html"
+                          title="next chapter">Counter Battery Fire</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/player_guide/concepts_info/concepts/benefits_of_controlling_a_town.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="counter_battery_fire.html" title="Counter Battery Fire"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="army_training.html" title="Army Training"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../concepts_overview.html" >Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Benefits of Controlling a Town</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Official Antistasi Community.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>
