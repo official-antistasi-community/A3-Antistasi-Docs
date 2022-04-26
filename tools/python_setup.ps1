@@ -46,7 +46,8 @@ if (-Not $python10Installed){
 & "pipx" install sphinx==4.5.0
 
 # inject the sub-dependencies for sphinx
-& "pipx" inject sphinx sphinx-bootstrap-theme==0.8.1
+
 & "pipx" inject sphinx sphinxcontrib-images==0.9.4
 & "pipx" inject sphinx sphinxcontrib-mermaid==0.7.1
 & "pipx" inject sphinx myst-parser==0.17.2
+& "pipx" inject sphinx groundwork-sphinx-theme==1.1.1

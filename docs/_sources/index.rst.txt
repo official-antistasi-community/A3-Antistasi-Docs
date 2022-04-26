@@ -2,7 +2,9 @@
 Welcome to the Antistasi Guide!
 ===========================================
 
-.. thumbnail:: /_images/AS_Insignia.png
+
+
+.. thumbnail:: /_images/antistasi_main_image.png
    :width: 500px
    :show_caption: False
 
