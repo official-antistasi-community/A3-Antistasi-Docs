@@ -9,12 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+.. note::
+  Note: You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet. 
 
 
 .. topic:: Outcome
@@ -23,9 +19,9 @@ Category
       :header-rows: 1
 
       * - Result
-        - :ref:`concept_money`
-        - :ref:`concept_hr`
-        - :ref:`concept_town_support`
+        - Money
+        - HR
+        - Town Support
         - Next Enemy
         - Enemy
         - Player

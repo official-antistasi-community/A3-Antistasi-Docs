@@ -9,11 +9,7 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+  This mission is quite rare and map dependent. The mission is looking to see if you are in range of a building called “Land_Offices_01_V1_F” and most cities do not have this building, even fewer maps have it. 
 
 
 
@@ -23,9 +19,9 @@ Category
       :header-rows: 1
 
       * - Result
-        - :ref:`concept_money`
-        - :ref:`concept_hr`
-        - :ref:`concept_town_support`
+        - Money
+        - HR
+        - Town Support
         - Next Enemy
         - Enemy
         - Player
