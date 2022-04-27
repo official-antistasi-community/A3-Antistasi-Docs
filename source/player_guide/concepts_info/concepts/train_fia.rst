@@ -1,6 +1,6 @@
-.. _concept_armytraining:
+.. _concept_trainfia:
 
-Army Training
+Train FIA
 =================
 
 The calculation for your army’s skill is:
