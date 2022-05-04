@@ -6,25 +6,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Money &#8212; Antistasi Guide  documentation</title>
+    <title>Train FIA &#8212; Antistasi Guide  documentation</title>
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\css\lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
     <script src="../../../_static/doctools.js"></script>
     <script src="../../../_static/clipboard.min.js"></script>
     <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/sphinxcontrib-images\LightBox2\lightbox2\dist\js\lightbox-plus-jquery.min.js"></script>
-    <script src="../../../_static/sphinxcontrib-images\LightBox2\lightbox2-customize\jquery-noconflict.js"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="../../../_static/sphinxcontrib-images/LightBox2/lightbox2-customize/jquery-noconflict.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Player Rank" href="player_rank.html" />
-    <link rel="prev" title="HR" href="hr.html" /> 
+    <link rel="next" title="Win / Loss Conditions" href="win_loss_conditions.html" />
+    <link rel="prev" title="Radio Towers" href="radio_towers.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
@@ -33,14 +33,14 @@
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="player_rank.html" title="Player Rank"
+          <a href="win_loss_conditions.html" title="Win / Loss Conditions"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="hr.html" title="HR"
+          <a href="radio_towers.html" title="Radio Towers"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../concepts_overview.html" accesskey="U">Basic Concepts</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Money</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Train FIA</a></li> 
       </ul>
     </div>  
 
@@ -49,8 +49,42 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="money">
-<span id="concept-money"></span><h1>Money<a class="headerlink" href="#money" title="Permalink to this headline">¶</a></h1>
+  <section id="train-fia">
+<span id="concept-trainfia"></span><h1>Train FIA<a class="headerlink" href="#train-fia" title="Permalink to this headline">¶</a></h1>
+<p>The calculation for your army’s skill is:</p>
+<p>Friendly AI Skill = (0.6 / [Skill Multiplier] + 0.015 * [Army Training Level]);</p>
+<p><strong>Skill Multiplier Values</strong></p>
+<ul class="simple">
+<li><p>Easy 1</p></li>
+<li><p>Normal 2</p></li>
+<li><p>Hard 3</p></li>
+</ul>
+<p><strong>Rules on Max Army Training</strong></p>
+<ul class="simple">
+<li><p>Hard Cap = 20 (Only available at War Level 10)</p></li>
+<li><p>Dynamic Cap = [War Level] * 2 (Ex: At War Level 3 you can only train your army to 6)</p></li>
+</ul>
+<p><strong>Side Notes</strong></p>
+<ul class="simple">
+<li><p>Marksmen get an additional bonus for aimingAccuracy and aimingShake</p></li>
+<li><p>Squad Leaders get an additional bonus for courage and commanding</p></li>
+<li><p>For a definition of the skills above and all skills governing AI behavior see this article: <a class="reference external" href="https://community.bistudio.com/wiki/Arma_3:_AI_Skill">https://community.bistudio.com/wiki/Arma_3:_AI_Skill</a></p></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul class="simple">
+<li><p>Easy difficulty, maxed out soldiers skill: (.6 / 1 + .015 * 20) = .9 (Expert)</p></li>
+<li><p>Hard difficulty, maxed out soldier skill: (.6 / 3 + .015 * 20) = .5 (Recruit)</p></li>
+<li><p>War level 3 (max training = 6) on Easy: (.6 / 1 + .015 * 6) = .69 (Veteran)</p></li>
+<li><p>War level 3 (max training = 6) on Hard: (.6 / 3 + .015 * 6) = .29 (Rookie)</p></li>
+</ul>
+<p>Skill values based on <a class="reference external" href="https://community.bistudio.com/wiki/setSkill">https://community.bistudio.com/wiki/setSkill</a></p>
+<ul class="simple">
+<li><p>Novice &lt; 0.25</p></li>
+<li><p>Rookie &gt;= 0.25 and &lt;= 0.45</p></li>
+<li><p>Recruit &gt; 0.45 and &lt;= 0.65</p></li>
+<li><p>Veteran &gt; 0.65 and &lt;= 0.85</p></li>
+<li><p>Expert &gt; 0.85</p></li>
+</ul>
 </section>
 
 
@@ -65,15 +99,16 @@
     <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../missions_info/missions_overview.html">Mission Info</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../concepts_overview.html">Basic Concepts</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="army_training.html">Army Training</a></li>
+<li class="toctree-l2"><a class="reference internal" href="airstrikes.html">Airstrikes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="benefits_of_controlling_a_town.html">Benefits of Controlling a Town</a></li>
 <li class="toctree-l2"><a class="reference internal" href="counter_battery_fire.html">Counter Battery Fire</a></li>
 <li class="toctree-l2"><a class="reference internal" href="gaining_losing_city_support.html">Gaining and Losing City Support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hr.html">HR</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Money</a></li>
+<li class="toctree-l2"><a class="reference internal" href="losing_petros_penalties.html">Losing Petros Penalties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="map_markers.html">Map Markers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="player_rank.html">Player Rank</a></li>
 <li class="toctree-l2"><a class="reference internal" href="radio_towers.html">Radio Towers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="town_support.html">Town Support</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Train FIA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="win_loss_conditions.html">Win / Loss Conditions</a></li>
 </ul>
 </li>
 </ul>
@@ -88,18 +123,18 @@
   </div>
   <div>
     <h4>Previous topic</h4>
-    <p class="topless"><a href="hr.html"
-                          title="previous chapter">HR</a></p>
+    <p class="topless"><a href="radio_towers.html"
+                          title="previous chapter">Radio Towers</a></p>
   </div>
   <div>
     <h4>Next topic</h4>
-    <p class="topless"><a href="player_rank.html"
-                          title="next chapter">Player Rank</a></p>
+    <p class="topless"><a href="win_loss_conditions.html"
+                          title="next chapter">Win / Loss Conditions</a></p>
   </div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/player_guide/concepts_info/concepts/money.rst.txt"
+      <li><a href="../../../_sources/player_guide/concepts_info/concepts/train_fia.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -124,14 +159,14 @@
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="player_rank.html" title="Player Rank"
+          <a href="win_loss_conditions.html" title="Win / Loss Conditions"
              >next</a> |</li>
         <li class="right" >
-          <a href="hr.html" title="HR"
+          <a href="radio_towers.html" title="Radio Towers"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="../concepts_overview.html" >Basic Concepts</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Money</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Train FIA</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
