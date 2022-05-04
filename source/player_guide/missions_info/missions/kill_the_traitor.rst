@@ -9,8 +9,8 @@ Category
 
 .. topic:: Description
 
-.. note::
-  Note: You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet. 
+   .. note::
+      You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet.
 
 
 .. topic:: Outcome

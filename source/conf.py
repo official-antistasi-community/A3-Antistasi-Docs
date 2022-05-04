@@ -1,63 +1,77 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# -- Path setup --------------------------------------------------------------
 
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
+# region [Boilerplate]
 
 import os
 import sys
 import time
 
 sys.path.insert(0, os.path.abspath('.'))
+from _config_helper import get_groundworks_paths
+# endregion [Boilerplate]
 
-
-# -- Project information -----------------------------------------------------
+# region [Project_Info]
 
 project = 'Antistasi Guide'
-copyright = f'{time.strftime("%Y")!s}, Official Antistasi Community'
+project_copyright = f'{time.strftime("%Y")!s}, Official Antistasi Community'
 author = 'Official Antistasi Community'
 
 
-# -- General configuration ---------------------------------------------------
+antistasi_organization_name = "official-antistasi-community"
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
-extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc","sphinx.ext.githubpages",'sphinx_copybutton']
-pdf_documents = [('index', 'rst2pdf', 'Sample rst2pdf doc', 'Your Name'), ]
-# Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+antistasi_repo_name = "A3-Antistasi"
+
+html_logo = "_images/antistasi_main_image_small.png"
+html_favicon = "_images/antistasi_main_image_tiny.png"
+
+# endregion [Project_Info]
+
+# region [Sphinx_Settings]
+
+extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc", "sphinx.ext.githubpages", 'sphinx_copybutton']
 
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
+templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
+
+html_static_path = [str(get_groundworks_paths()["static"]), '_static']
+html_css_files = [
+    'css/extra_style.css',
+]
 exclude_patterns = []
+
+
+# get available styles via `pygmentize -L styles`
+pygments_style = "one-dark"
+
+# endregion[Sphinx_Settings]
+
+# region [Extension_Settings]
+
 mermaid_params = ['--theme', 'forest', '--width', '2000', '--backgroundColor', 'transparent']
 
-# -- Options for HTML output -------------------------------------------------
+# endregion[Extension_Settings]
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
+# region [HTML_Output_Settings]
 
 
 html_theme = 'groundwork'
 html_theme_options = {
-
     "contribute": True,
-    "github_user": "official-antistasi-community",
-    "github_fork": "official-antistasi-community/A3-Antistasi",
+    "github_user": antistasi_organization_name,
+    "github_fork": f"{antistasi_organization_name}/{antistasi_repo_name}",
+    "sidebar_width": "300px"
 }
 
 
-# Add any paths that contain custom static files (such as style sheets) here,
-# relative to this directory. They are copied after the builtin static files,
-# so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_last_updated_fmt = "%Y-%m-%d %H:%M:%S"
+html_permalinks_icon = ""
+html_show_sourcelink = False
+html_show_sphinx = False
+
+html_sidebars = {
+    '**': ['globaltoc.html',
+           'sourcelink.html',
+           'searchbox.html',
+           'contribute.html']
+}
+# endregion[HTML_Output_Settings]

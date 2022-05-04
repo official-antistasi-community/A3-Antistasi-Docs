@@ -2,9 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Generate HTML",
-            "command": "${workspaceFolder}/make.bat",
-            "args": ["html"],
+            "label": "Generate LOCAL HTML",
+            "command": "${workspaceFolder}/.venv/Scripts/antistasi-sqf-tools.exe",
+            "args": ["docs", "build", "-b", "html"],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
