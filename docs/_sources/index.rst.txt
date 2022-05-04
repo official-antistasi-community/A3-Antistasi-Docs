@@ -10,10 +10,11 @@ Official Antistasi Community Edition Wiki
 
 .. topic:: Description
 
-   .. include:: ../data/short_description.txt
+   .. include:: /_data/short_description.txt
 
 Beginners Guide
 =================
+
 
 Coming soon.
 
