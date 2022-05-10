@@ -1,0 +1,14 @@
+<h3>Extras</h3>
+<ul>
+    <li>
+        <ul>
+            {%- for extra_link in extras_links %}
+            {% set extra_link_name = extra_link.split('/')[-1].title() %}
+            <li><a href="{{ pathto(extra_link.lstrip('/')+'.html',1) }}">{{ extra_link_name }}</a></li>
+
+                    {%- endfor %}
+
+
+        </ul>
+    </li>
+</ul>

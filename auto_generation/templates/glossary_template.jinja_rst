@@ -1,0 +1,20 @@
+.. _extra_glossary:
+
+Glossary
+=============
+
+
+
+{%for category,items in data.items() %}
+
+{{make_section(category)}}
+
+
+   .. glossary::
+
+         {% for item in items %}
+         {{item.name}} : {{category}}
+            {{item.description}}
+
+         {%endfor%}
+{%endfor%}

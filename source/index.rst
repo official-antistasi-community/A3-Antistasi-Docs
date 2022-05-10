@@ -7,51 +7,38 @@ Official Antistasi Community Edition Wiki
 .. thumbnail:: /_images/antistasi_main_image.png
    :width: 500px
    :show_caption: False
+   :align: center
 
 .. topic:: Description
 
    .. include:: /_data/short_description.txt
 
-Beginners Guide
-=================
+
+Content
+=======
 
 
-Coming soon.
-
-Detailed Reference Guide
-=========================
 
 .. toctree::
-   :maxdepth: 2
-   :name: Player Guide
+   :maxdepth: 1
 
-   /player_guide/missions_info/missions_overview
-   /player_guide/concepts_info/concepts_overview
+   /beginners_guide/beginners_guide_index
+   /reference_guide/reference_guide_index
+   /dev_guide/dev_guide_index
 
-
-
-
-Dev Guide
-==============
 
 .. toctree::
-   :maxdepth: 2
-   :name: Dev Guide
-   :glob:
-
-   /dev_guide/*
-
-
-
-Extras
------------
-
-.. toctree::
-   :maxdepth: 2
-   :name: Extras
+   :hidden:
    :glob:
 
    /extras/*
+
+
+
+
+
+
+
 
 
 

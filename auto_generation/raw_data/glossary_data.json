@@ -1,0 +1,18 @@
+{
+    "meta": { "template_file": "glossary_template.jinja_rst" },
+    "default_data": { "category": "general", "sort_importance": 0 },
+    "data": [
+        {
+            "name": "Github",
+            "description": "Site to host a Git Repository",
+            "category": "general",
+            "sort_importance": 0
+        },
+        { "name": "Steam", "description": "It is just Steam" },
+        {
+            "name": "Biki",
+            "description": "Bohemia Interactive Wiki",
+            "category": "arma_3"
+        }
+    ]
+}

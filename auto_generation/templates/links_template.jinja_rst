@@ -1,0 +1,15 @@
+.. _extra_links:
+
+
+Links
+=========
+
+{%for category, items in data.items()%}
+
+{{make_section(category)}}
+{%for item in items%}
+* `{{item.name}} <{{item.url}}>`_
+
+{%endfor%}
+
+{%endfor%}

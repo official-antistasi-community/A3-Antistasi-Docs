@@ -1,0 +1,23 @@
+{
+    "meta": { "template_file": "links_template.jinja_rst" },
+    "default_data": { "category": "general", "sort_importance": 0 },
+    "data": [
+        {
+            "name": "Antistasi Repo",
+            "url": "https://github.com/official-antistasi-community/A3-Antistasi",
+            "category": "general",
+            "sort_importance": 1
+        },
+        {
+            "name": "Steam Workshop Items",
+            "url": "https://steamcommunity.com/id/OfficialAntiStasiCommunity/myworkshopfiles/",
+            "category": "steam",
+            "sort_importance": 0
+        },
+        {
+            "name": "Community Discord Server",
+            "url": "https://discord.gg/TYDwCRKnKX",
+            "category": "community"
+        }
+    ]
+}

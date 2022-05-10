@@ -1,0 +1,36 @@
+@import "groundwork.css";
+
+
+{%if use_extra_style %}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {height: 100%;}
+div.footer {height: 10%;}
+div.topic {padding: 25px;}
+
+div.topic p.topic-title {font-size: x-large;}
+{% if topic_background_color %}
+div.topic {
+  background-color: {{topic_background_color}};
+}
+{% endif %}
+
+{% if topic_border_color %}
+
+div.topic {
+    border: 5px double;
+    border-color: {{topic_border_color}};
+}
+{% endif %}
+{% if code_block_color %}
+pre {
+    background: {{code_block_color}};
+}
+{% endif %}
+
+
+{%endif%}

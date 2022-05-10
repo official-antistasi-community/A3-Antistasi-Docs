@@ -231,3 +231,4 @@ generate_config.ini
 /docs/doctrees
 .vscode/settings.json
 created
+/tools/quick_scripts
