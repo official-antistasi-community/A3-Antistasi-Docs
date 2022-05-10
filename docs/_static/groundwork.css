@@ -41,11 +41,11 @@ div.documentwrapper {
 }
 
 div.bodywrapper {
-    margin: 0 0 0 ;
+    margin: 0 0 0 300px;
 }
 
 div.sphinxsidebar {
-    width: ;
+    width: 300px;
 }
 
 hr {
@@ -97,6 +97,13 @@ div.sphinxsidebar a:focus {
 }
 
 div.sphinxsidebar {
+    /* Uncomment the following 2 lines to enable scrolling for the sticky sidebar */
+    top: 30px;
+    bottom: 0;
+    margin: 0;
+    position: fixed;
+    overflow: auto;
+    height: auto;
     font-size: 14px;
     line-height: 1.5;
 }
