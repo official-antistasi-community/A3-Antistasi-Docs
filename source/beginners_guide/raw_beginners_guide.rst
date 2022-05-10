@@ -350,7 +350,7 @@ Petros
 -------
 
 Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose 
-a considerable amount of HR and money.
+a considerable amount of HR and money. Also see: :ref:`concept_losingpetrospenalties`
 
 **HQ management**
 
@@ -358,7 +358,7 @@ a considerable amount of HR and money.
 -  **In game members list** - Displays all server members. Non server members cannot do certain things. Server admins can add members through the commander’s Y menu.
 -  **Manage garrisons** - Allows you to add or remove soldiers from friendly captured locations.
 -  **Move HQ to another zone** - There will be times where your base will be compromised. You will know this when you get a “defend Petros” mission. Note that they never learn about your HQ’s location, if you keep it there after the attack it will not make any difference.
--  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game.
+-  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game. Also see: :ref:`concept_trainfia`
 -  **Rebuild assets** - In war, things blow up. In the process of taking a factory, you may have killed all the workers. In order to repair assets, hit this button. Clicking the button will take you to the map where you can choose to rebuild the zones you want. Repairing assets costs you 5000 per location.
 -  **Mission select** - Here you can request missions. More information about missions is available below.
 
@@ -475,7 +475,7 @@ Commander menu
 - **Normal squad** - 8-member with a medic and AT capabilities
 - **Engineer squad** - 8-member with an engineer, medic, and AT capabilities
 - **MG squad** - 8-member squad with a HMG, medic and AT capabilities
-- **Mortar squad** - 8-member squad with mortar, medic and AT capabilities
+- **Mortar squad** - 8-member squad with mortar, medic and AT capabilities. Also see: :ref:`concept_counterbatteryfire`
 - **Recruit Inf team** - 4 men small cost. Can be used for crewing vehicles
 - **Recruit AT team** - 5 members with 3 of which with AT launchers. Medic capabilities
 - **Recruit AT car** - SPG-9 Technical with 2 members, a gunner and a driver
@@ -833,7 +833,7 @@ Vehicles
    when you enter them
 
 -  Military vehicles are vehicles that cannot go undercover and are
-   sometimes armed.Weapon statics such as a mortar or HMG’s can also be
+   sometimes armed. Weapon statics such as a mortar or HMG’s can also be
    bought.
 
 -  Off-roads are the backbone of the resistance. These can carry up to 6
