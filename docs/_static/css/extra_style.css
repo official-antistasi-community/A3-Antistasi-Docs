@@ -1,31 +1,3 @@
 @import "groundwork.css";
 
 
-
-
-html {
-    margin: 0;
-    height: 100%;
-}
-
-body {height: 100%;}
-div.footer {height: 10%;}
-div.topic {padding: 25px;}
-
-div.topic p.topic-title {font-size: x-large;}
-
-div.topic {
-  background-color: rgba(200, 200, 200, 0.5);
-}
-
-
-
-
-div.topic {
-    border: 5px double;
-    border-color: black;
-}
-
-
-
-
