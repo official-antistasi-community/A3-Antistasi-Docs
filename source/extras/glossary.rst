@@ -18,9 +18,6 @@ General
             Site to host a Git Repository
 
 
-         Steam : General
-            It is just Steam
-
 
 
 
