@@ -48,9 +48,6 @@ I recommend playing rebels versus government versus invaders first. It’s
 easier and allows you to fight two different factions.
 
 
-
-
-
 How to set up a game
 =====================
 
@@ -128,6 +125,8 @@ Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
 Map Markers
 ================
 
+Main Article: :ref:`concept_mapmarkers`
+
 With that out of the way we can get into the mechanics of the mission.
 Map Markers, also known as strategic zones, are areas controlled by BLUFOR, OPFOR, or guerrillas.
 They all have a specific function and are guarded by their occupiers.
@@ -154,6 +153,8 @@ off weak, but can be strengthened over time.
 
 Towns
 ======
+
+Main Article: :ref:`concept_gainingandlosingcitysupport`
 
 -  Towns are where you will find the people and their vehicles to
    “\ *tactically acquire.”*
@@ -329,7 +330,7 @@ fuel, ammo, or repair truck.
 *Take these trucks and store them in the garage*. I recommend locking
 them so no one takes them out.
 
-The tent
+The Tent
 --------
 
 **Sleep**
@@ -363,6 +364,8 @@ a considerable amount of HR and money.
 
 Missions
 =========
+
+Main Article: :ref:`mission_overview`
 
 There are several categories of missions all which have different tasks and rewards:
 
@@ -408,8 +411,10 @@ Most convoys are similar so I decided to make a one size fits all guide.
 
 
 
-Airstrike points
+Airstrike Points
 =================
+
+Main Article: :ref:`concept_airstrikes`
 
 -  Once you capture an airbase you will get a passive income of
    airstrike points.
@@ -433,46 +438,17 @@ Press the “y” key to open this menu. You will use this menu for fast
 travel, managing AI, transferring and managing money, recruiting, and
 more.
 
-**Fast travel**
+- **Fast Travel** - Depending on your parameters setting, you can fast travel to and from different zones provided there are no enemies within 500 meters of you. You can use fast travel to transport High Command squads and vehicles as well.
 
--  Depending on your parameters setting, you can fast travel to and from
-   different zones provided there are no enemies within 500 meters of
-   you.
+- **Player and Money** - Here you can add or remove a player to/from the member list temporarily (until the server is restarted). Non server members do not have access to equipment that is not unlocked. Look at a player and press add server member to give them server membership. You can transfer your personal money to other players or the faction funds.
 
--  You can use fast travel to transport High Command squads and vehicles
-   as well.
+- **Undercover On** - Use this setting to go undercoverif you are not being spotted by anyone and are not wearing suspicious equipment.
 
-**Player and Money**
+- **Construct Here** - A number of objects used for cover and obstacles can be built through this menu. Only bunker options cost money and you must have an engineer in your squad or be an engineer to build bunkers.
 
--  Here you can add or remove a player to/from the member list
-   temporarily (until the server is restarted). Non server members do
-   not have access to equipment that is not unlocked. Look at a player
-   and press add server member to give them server membership.
+- **Garage vehicle** - Look at a vehicle while in a friendly location and press this button to send it to the garage.
 
--  You can transfer your personal money to other players or the faction
-   funds.
-
-**Undercover on**
-
--  Use this setting to go undercoverif you are not being spotted by
-   anyone and are not wearing suspicious equipment.
-
-**Construct here**
-
--  A number of objects used for cover and obstacles can be built through
-   this menu.
-
--  Only bunker options cost money and you must have an engineer in your
-   squad or be an engineer to build bunkers.
-
-**Garage vehicle**
-
--  Look at a vehicle while in a friendly location and press this button
-   to send it to the garage.
-
-**Unlock vehicle**
-
--  Allows other groups to use your vehicle.
+- **Unlock vehicle** - Allows other groups to use your vehicle.
 
 AI Management Menu
 ------------------
@@ -482,190 +458,62 @@ select the command you want to do. For example, if I want only one of my
 squad mates to loot, I’d select them through the function keys then
 select “Auto Ream/loot.”
 
-   **Temp AI Control**
-
--  This option allows you to take direct control of an AI unit.
-
-..
-
-   **Auto rearm/loot**
-
--  This command will allow your AI to upgrade their equipment from
-   fallen enemies. If you use this command while they are in a vehicle,
-   the AI will load the loot into that vehicle instead.
-
-..
-
-   **Auto heal**
-
--  This command allows your AI to heal themselves and others.
-
-..
-
-   **Squad Sitrep**
-
--  Use for HC squads. They will tell you their combat status, how many
-   of them are still alive, and if they are embarked or disembarked from
-   their vehicle.
-
-..
-
-   **Garrison units**
-
--  Use this command to add units to a garrison. This is especially
-   useful when you have just taken a strategic zone and you need to
-   defend from an enemy counterattack.
-
-..
-
-   **Dismiss units**
-
--  Use this to dismiss/delete units. You will gain back the money for
-   the vehicles but not for infantry/crew.
-
-..
-
-   **Squad add vehicle**
-
--  Give HC squads vehicles they can use. This is especially useful for
-   the INF team that is small enough to serve as a crew for armoured
-   vehicles.
-
-..
-
-   **Mount/ Dismount**
-
--  Forces HC squad units to mount/dismount their assigned vehicle.
+- **Temp AI Control** - This option allows you to take direct control of an AI unit.
+- **Auto Rearm/Loot** - This command will allow your AI to upgrade their equipment from fallen enemies. If you use this command while they are in a vehicle, the AI will load the loot into that vehicle instead.
+- **Auto Heal** - This command allows your AI to heal themselves and others.
+- **Squad Sitrep** - Use for HC squads. They will tell you their combat status, how many of them are still alive, and if they are embarked or disembarked from their vehicle.
+- **Garrison units** - Use this command to add units to a garrison. This is especially useful when you have just taken a strategic zone and you need to defend from an enemy counterattack.
+- **Dismiss units** - Use this to dismiss/delete units. You will gain back the money for the vehicles but not for infantry/crew.
+- **Squad add vehicle** - Give HC squads vehicles they can use. This is especially useful for the INF team that is small enough to serve as a crew for armoured vehicles.
+- **Mount/ Dismount** - Forces HC squad units to mount/dismount their assigned vehicle.
 
 Commander menu
 --------------
 
-   **Recruit squad Menu**
+**Recruit Inf Squad**
 
-   **Recruit inf squad**
+- **Normal squad** - 8-member with a medic and AT capabilities
+- **Engineer squad** - 8-member with an engineer, medic, and AT capabilities
+- **MG squad** - 8-member squad with a HMG, medic and AT capabilities
+- **Mortar squad** - 8-member squad with mortar, medic and AT capabilities
+- **Recruit Inf team** - 4 men small cost. Can be used for crewing vehicles
+- **Recruit AT team** - 5 members with 3 of which with AT launchers. Medic capabilities
+- **Recruit AT car** - SPG-9 Technical with 2 members, a gunner and a driver
+- **Recruit AA truck** - 2 members with a ZU-23-2 AA platform mounted on a Ural truck
+- **Recruit MG team** - 2 members with an HMG
+- **Recruit Mortar team** - 2 members with a mortar
+- **Recruit Sniper team** - 2 members. One spotter and one sniper.
 
-   **Normal squad**
+**Air Support**
 
--  8-member with a medic and AT capabilities
+- **HE bombs** - High explosive bombs. Effective against infantry
+- **Cluster bombs** - Effective against armoured vehicles
+- **Napalm bombs** - Effective against infantry
+- **Add to air support** - Trades an air vehicle that you are looking at for air support points
 
-..
-
-   **Engineer squad**
-
--  8-member with an engineer, medic, and AT capabilities
-
-..
-
-   **MG squad**
-
--  8-member squad with a HMG, medic and AT capabilities
-
-..
-
-   **Mortar Squad**
-
--  8-member squad with mortar, medic and AT capabilities
-
-..
-
-   **Recruit Inf Team**
-
--  4 men small cost. Can be used for crewing vehicles
-
-..
-
-   **Recruit AT team**
-
--  5 members with 3 of which with AT launchers. Medic capabilities.
-
-..
-
-   **Recruit AT car**
-
--  SPG-9 Technical with 2 members, a gunner and a driver.
-
-..
-
-   **Recruit AA truck**
-
--  2 members with a ZU-23-2 AA platform mounted on a Ural truck.
-
-..
-
-   **Recruit MG team**
-
--  2 members with an HMG.
-
-..
-
-   **Recruit Mortar team**
-
--  2 members with a mortar.
-
-..
-
-   **Recruit Sniper team**
-
--  2 members. One spotter and one sniper.
-
-..
-
-   **Air Support**
-
-   **HE bombs**
-
--  High explosive bombs. Effective against infantry
-
-..
-
-   **Cluster bombs**
-
--  Effective against armoured vehicles
-
-..
-
-   **Napalm bombs**
-
--  Effective against infantry.
-
-..
-
-   **Add to air support**
-
--  Trades an air vehicle that you are looking at for air support points.
-
-..
-
-   **Build outpost/Roadblock**
+**Build outpost/Roadblock**
 
 -  Click on a road to place a roadblock. A 5-man roadblock team will
    spawn and drive an armed vehicle to that location to guard the road.
    Click away from a road and you will get a 2-man observation outpost
    who will provide recon and will not fire unless fired upon.
 
-..
 
-   **Garbage clean**
+**Garbage clean**
 
 -  Cleans up the map of items left over. This will help with performance
    especially after many/large fights.
 
-..
-
-   **Delete outpost/ roadblock**
+**Delete outpost / roadblock**
 
 -  Deletes observation posts/roadblocks.
 
-..
-
-   **Resign/Eligible**
+**Resign/Eligible**
 
 -  Makes you resign as commander OR become eligible/ineligible for being
    given the role.
 
-..
-
-   **Sell Vehicle**
+**Sell Vehicle**
 
 -  Sells a vehicle you are looking at for money.
 
@@ -686,7 +534,7 @@ Personal Squad management
 -  Be the spotter. Your AI will start with terrible spotting skill. The
    person in charge of spotting is the team leader, who has the highest
    spotting skill. But when you are in charge, you are the team leader.
-   That is why you must spot for your AI. (\` + space while looking at
+   That is why you must spot for your AI. (\ ` + space while looking at
    target to spot) your AI will track enemies that you spot and fire
    with astonishing accuracy.
 
@@ -743,13 +591,13 @@ I will quickly go over how to store equipment in this game, because
 there are many ways to do it and sometimes you may have trouble storing
 a particular item.
 
-**Transfer vehicle cargo**\ **
+**Transfer vehicle cargo**
 
 -  Anything you put inside your vehicle can be quickly and easily
    transferred into the arsenal by using the interaction menu while
    looking at the arsenal.
 
-**storing loot boxes and arsenal boxes**\ **
+**Storing loot boxes and arsenal boxes**
 
 -  Sometimes you will find an ammo box filled with weapons and equipment
    that you can load onto a truck and take back to base.
@@ -760,7 +608,7 @@ a particular item.
    vehicle.
 
 -  Once you get to the base, the easiest way to transfer to the arsenal
-   is unloading the box, opening the Y menu, then selecting “put vehicle
+   is unloading the box, opening the Y menu, then selecting “Put vehicle
    in garage.”
 
 -  Sometimes that might not work. Another way is with the box still
@@ -781,29 +629,21 @@ Looting
 
 -  Looting is a core part of Antistasi. You need to learn how to
    effectively and safely collect loot.
-
 -  For starters, always have a loot box. You can obtain loot boxes for
    $10 at the vehicle box.
-
 -  These loot boxes can be loaded into the back of the truck or inside
    the cargo of any vehicle using ace interact if there is not enough
    cargo capacity.
-
 -  Loot boxes allow you to collect loot with the press of a button.
-
 -  Simply look at the box and use the interaction menu to collect
    loot.
-
 -  The loot box only collects loot that has yet to be unlocked. I.E., it
    will not pick up the M4 if you already unlocked it inside the
    arsenal.
-
 -  You should only loot when you believe it is safe to do so.
-
 -  Use your vehicle as cover while looting, it will save your life. I
    like to drive in between unlooted enemies, loading and unloading the
    loot box as needed. This way I can retain the safety of the vehicle.
-
 -  | You can also use the Auto Rearm/loot function AI in a vehicle to
      have them collect and load loot into the vehicle for you.
    |
@@ -843,56 +683,35 @@ Managing your loot and arsenal
    the arsenal and as a result you and your soldiers will become more
    lethal. But there are ways you can speed up this process.
 
-|
-|
-|
-
 **There are essentially two schools of thought when it comes to
 equipment.**
 
 -  The first is to **never take any equipment you want unlocked until it
    is unlocked.** Choose to use worse weapons and equipment so that you
-   may unlock that equipment faster.
+   may unlock that equipment faster. For example, I have 20 M4s **but I choose to use a FAL instead until I get 5 more M4s.**
 
-Example, I have 20 M4s **but I choose to use a FAL instead until I get 5
-more M4s.**
+-  The second method is to take everything you want **as long as you believe it will make you more likely to come home alive.**
 
--  The second method is to take everything you want **as long as you
-   believe it will make you more likely to come home alive.**
-
--  Both methods have merit. I used to religiously use the first method
-   and died and failed more often, but when I DID succeed, I kept those
-   weapons no matter what.
-
--  I think it is more optimal to use what you have if it will make you
-   more effective. Recently I started using equipment that was rare and
-   I found I won more often.
-
--  It’s really a risk versus reward analysis at the end of the day. Do
-   what you think is optimal.
+Both methods have merit. I used to religiously use the first method   and died and failed more often, but when I DID succeed, I kept those weapons no matter what. I think it is more optimal to use what you have if it will make you more effective. Recently I started using equipment that was rare and I found I won more often. It’s really a risk versus reward analysis at the end of the day. Do what you think is optimal.
 
 Loadouts
 =========
 
--  Please note there are no rules to loadouts, but if you are using the
-   ACE mod, you have to account for medical supplies, ammo, weapons, and
-   how that equipment will affect your weight. The heavier you are, the
-   faster your stamina bar will deplete. This will have an adverse
-   effect on your accuracy and speed.
+Please note there are no rules to loadouts, but if you are using the
+ACE mod, you have to account for medical supplies, ammo, weapons, and
+how that equipment will affect your weight. The heavier you are, the
+faster your stamina bar will deplete. This will have an adverse
+effect on your accuracy and speed.
 
--  I assume you are using ACE for this tutorial.
+I assume you are using ACE for this tutorial.
 
 Here are some suggestions on loadouts you will likely need to pull
 quickly during emergencies. All of these loadouts will have 5 elastic
 bandages, 5 packing bandages, two 500m blood, 2 splints, 2 tourniquets
-and an entrenching tool. For most loadouts I carry only two grenades and
+and an entrenching tool. For most loadouts, I carry only two grenades and
 two smoke grenades.
 
-|
-|
-
 | **Starting loadout**
-|
 
 -  Starting loadout, I go with a lot of grenades and pistol ammunition,
    I find the WW2 bolt action rifles you get at the start do not do
@@ -900,9 +719,6 @@ two smoke grenades.
 
 -  I spam grenades and don’t carry a primary to offset the weight of the
    grenades.
-
-|
-|
 
 **AT and AA**
 
@@ -918,10 +734,7 @@ two smoke grenades.
 -  This will make me unbearably heavy so I will have to put some of the
    rockets in my truck to allow me to move around.
 
-|
-|
-
-**MG**\ **
+**MG**
 
 -  There are times where I want/ need to kill infantry fast. Enemies in
    Antistasi clump up a lot and makes machine gunners drool.
@@ -930,6 +743,8 @@ two smoke grenades.
    do not carry a secondary.
 
 -  I put ammo in my vehicle to offset the weight.
+
+
 
 Undercover and how to use it
 =============================
@@ -1073,7 +888,7 @@ Taking a strategic point
 -  You will also need a large amount of infantry on standby. Taking a
    point, you may be able to do alone, *but if you leave the strategic
    zone or more than a single enemy comes inside the strategic zone, the
-   zone will flip to the enemy.\ *\ ****
+   zone will flip to the enemy.*
 
 -  That is something you never want for reasons I'll explain later. That
    is why you will always want friendly infantry nearby to take and hold
@@ -1085,10 +900,10 @@ Taking a strategic point
    equipment and their training will definitely be inferior to the
    enemy. That is why I bring double at least.
 
-**Scouting your target**\ **
+**Scouting your target**
 
 -  Go to map info and check to see if the garrison is in a weakened
-   state\ **.** *If its status is weakened or decimated it will have a
+   state. *If its status is weakened or decimated it will have a
    smaller garrison and easier to attack.*
 
 -  You should also scout the point you will attack and plan ahead.
@@ -1128,29 +943,13 @@ Taking a strategic point
 -  The enemy WILL attempt to take this point again, make sure you are
    there to keep that point.
 
-|
-|
-|
 
 Taking an airbase
 =================
 
--  So, you have a few towns, resources, factories and outposts under
-   your control, a good amount of HR, money, equipment and even some
-   armour assets. What’s the next big step? Taking an airbase of
-   course.
+So, you have a few towns, resources, factories and outposts under your control, a good amount of HR, money, equipment and even some armour assets. What’s the next big step? Taking an airbase of course. Taking an airbase is your gateway to what I call the late game. It allows you to ungarage and use air assets, you have the chance to gain a couple armour and air assets, and you cement your hold on the region. It’s a HUGE power spike.
 
--  Taking an airbase is your gateway to what I call the late game. It
-   allows you to ungarage and use air assets, you have the chance to
-   gain a couple armour and air assets, and you cement your hold on the
-   region. It’s a HUGE power spike.
-
--  But it is not for the faint of heart. This won’t be your usual
-   outpost smash. Air Bases have multiple squads of infantry, MG towers,
-   mortars and even stationary AA Armoured vehicles.
-
--  There are no armour patrols. Only a stationary AA vehicle which can
-   be anything.
+But it is not for the faint of heart. This won’t be your usual outpost smash. Air Bases have multiple squads of infantry, MG towers, mortars and even stationary AA Armoured vehicles. There are no armour patrols. Only a stationary AA vehicle which can be anything.
 
 **What you will need**
 
@@ -1173,29 +972,20 @@ Taking an airbase
    the infantry in killing off the remaining infantry and take the
    airbase.
 
-|
-|
-
 This is all easier said than done, it might be a process. It once took
 me an hour of dying, and sending waves of infantry to finally take it.
 But the ruthless amount of equipment and manpower it may take is all
 worth the reward. This is part of the victory conditions so either way,
 you need the air base.
 
-|
-|
 
 Enemy AI behaviour
 ==================
 
-|
-| Many people who play Arma 3 don’t understand how the AI works. They
-  complain of the AI being terminators. They never miss, they don’t see
-  foliage, etc. this section will explain how the AI works and how to
-  more effectively manipulate and win against them.
-
-|
-|
+Many people who play Arma 3 don’t understand how the AI works. They
+complain of the AI being terminators. They never miss, they don’t see
+foliage, etc. this section will explain how the AI works and how to
+more effectively manipulate and win against them.
 
 -  *AI responds to suppression.* Enemy AI who are suppressed will react
    irrationally and their accuracy and spotting skill will decrease.
@@ -1230,9 +1020,9 @@ Enemy AI behaviour
    firing from. They do not prevent the AI from hearing the shot
    altogether.
 
--  *Continually firing your weapon without pause, even with a suppressor
+-  Continually firing your weapon without pause, even with a suppressor
    will result in the AI looking for the source of the incoming fire and
-   identify the source of the fire unless the attacker relocates.*
+   identify the source of the fire unless the attacker relocates.
 
 -  AI can hear you breathing when you are fatigued.
 
@@ -1246,27 +1036,24 @@ Enemy AI behaviour
    they shoot at a stationary target. Keep moving in combat to avoid
    getting shot.
 
--  *AI willattempt to advance and flank the enemy.* Keep moving to
+-  *AI will attempt to advance and flank the enemy.* Keep moving to
    avoid being flanked by the enemy.
 
 Credit:
 
 https://armedassault.fandom.com/wiki/AI_Basics:_Detection
 
-|
-|
-
 https://armedassault.fandom.com/wiki/AI_Basics:_Targeting_priority
 
 Support System
 ==============
 
-   Enemy squad leaders can call in support in various forms when they
-   come under attack from either opposing force. The ability to call in
-   supports CAN be transferred from a killed squad leader to the next
-   person who controls the group. As the war level increases, more
-   options to what the faction can call in opens up. There are more
-   factors than just war level to what may be called in.
+Enemy squad leaders can call in support in various forms when they
+come under attack from either opposing force. The ability to call in
+supports CAN be transferred from a killed squad leader to the next
+person who controls the group. As the war level increases, more
+options to what the faction can call in opens up. There are more
+factors than just war level to what may be called in.
 
 Supports:
 
@@ -1294,6 +1081,8 @@ Supports:
 
 Victory condition
 =================
+
+Main Article: :ref:`concept_winlossconditions`
 
 Now it’s time to understand how we win the game. You must own all
 airbases and more than 50% of the population of Altis must support your
@@ -1416,4 +1205,4 @@ Contributors
 
 Thanks to the following contributors for making this guide possible: 
 
-Moni, Meerkat, Bob Murphy, DeathTouchWilly
+Moni, Meerkat, Bob Murphy, Giddi, DeathTouchWilly
