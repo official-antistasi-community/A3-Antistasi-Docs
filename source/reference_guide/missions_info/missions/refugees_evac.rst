@@ -9,11 +9,9 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+  -  Some gendarmes are guarding some refugees in a town. Kill the guards, recruit the refugees by using the drop-down menu on them, then take them back to HQ.
+  -  Gendarmes are easy to kill so this should be easier than other missions.
+  -  Make sure to take a large vehicle capable of carrying 6+ people.
 
 
 

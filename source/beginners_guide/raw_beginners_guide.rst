@@ -367,119 +367,31 @@ Missions
 There are several categories of missions all which have different tasks and rewards:
 
 - **Assassination Missions** 
-   - Kill the traitor
-   - Kill the officer
-   - Spec Ops
+   - :ref:`mission_kill_the_traitor`
+   - :ref:`mission_kill_the_officer`
+   - :ref:`mission_specops`
 - **Logistics Missions**
-   - Steal or destroy an ammo truck
-   - Bank robbery
-   - Salvage supplies
+   - :ref:`mission_steal_or_destroy_ammo_truck`
+   - :ref:`mission_bank_mission`
+   - :ref:`mission_salvage_supplies`
 - **Support missions**
-   - City supplies
+   - :ref:`mission_city_supplies`
 - **Destroy missions**
-   - Steal or Destroy enemy armour
+   - :ref:`mission_steal_or_destroy_armor`
+   - :ref:`mission_downed_heli`
+   - :ref:`mission_destroy_radio_tower`
+   - :ref:`mission_tower_rebuild_disrupt`
+- **Rescue Missions**
+   - :ref:`mission_pow_rescue`
+   - :ref:`mission_refugees_evac`
+- **Conquest Missions**
+   - :ref:`mission_resource_acquisition____take_the_outpost`
 - **Convoy Missions**
-   - Supply convoys
-   - Armoured convoy
-   - Ammo convoy
-   - Money convoy
-   - Prisoner convoy
-
-
-..
-
-   **Destroy downed helicopter**
-
--  Opportunistic mission in which an enemy helicopter has crashed.
-
--  The helicopter is guarded by the pilots and some men.
-
--  Enemy will send troops to repair the helicopter and then fly it back.
-
--  Make sure you get there in time to get the asset.
-
-..
-
-   **Destroy radio tower**
-
--  Destroy a radio tower to disrupt propaganda broadcast in the
-      region.
-
--  Sneak in or blast your way into the outpost and place explosives on
-      the radio tower.
-
--  You will need explosives to complete this mission.
-
--  I recommend trying this at night with NVGs if possible.
-
-..
-
-   **Destroy repair vehicle/tower rebuild disrupt**
-
--  After you destroy a radio tower the government will attempt to repair
-      the tower with a repair vehicle.
-
--  Try to steal it to gain a new source vehicle to repair other vehicles
-      and entrenchments.
-
--  If all else fails, simply blow it up with a rocket launcher or
-      mortar.
-
-Rescue missions
-----------------
-
-   **POW rescue**
-
--  A POW is imprisoned in an outpost. You have to free and return him to
-      HQ.
-
--  This is a hard mission because you cannot use any explosives to kill
-      the 2-3 squads’ worth of enemy infantry guarding him without
-      murdering the POW.
-
--  I recommend staying away from this mission. It’s not worth the
-      effort.
-
-..
-
-   **Refugee evac**
-
--  Some gendarmes are guarding some refugees in a town. Kill the guards,
-      recruit the refugees by using the drop-down menu on them, then
-      take them back to HQ.
-
--  gendarmes are easy to kill so this should be easier than other
-      missions.
-
--  Make sure to take a large vehicle capable of carrying 6+ people.
-
-Conquest missions
-------------------
-
-   **Take the outpost**
-
--  This refers to an outpost as it is marked on the map and sometimes
-      refers to a checkpoint.
-
--  If they map marker for the mission is on a road and is not on an
-      outpost, then it is a checkpoint. In which case this is an easy
-      way to gain some gear and money.
-
--  Refer to taking a strategic zone section for more tips on capturing
-      outposts.
-
-..
-
-   **Resource acquisition**
-
--  Take a resource depot. You do not have to keep the resource after you
-      take it.
-
--  Do not use explosives like mortars or GMGs. civilians are inside and
-      if killed you will incur aggression penalties and the resources
-      will be “destroyed”
-
--  Resources typically have weakened defences compared to outposts.
+   - :ref:`mission_supplies_convoy`
+   - :ref:`mission_armored_convoy`
+   - :ref:`mission_ammo_convoy`
+   - :ref:`mission_money_convoy`
+   - :ref:`mission_prisoner_convoy`
 
 **Convoy ambush tips**
 
@@ -1417,7 +1329,7 @@ Walkthrough
    the enemy from brainwashing the people and allow you to more easily
    convert them.
 
-**Mid game**\ **
+**Mid game**
 
 -  Once the original goal is completed, it’s time to take a strategic
    zone (refer to taking a strategic zone section), take an outpost with
@@ -1455,7 +1367,7 @@ Walkthrough
 -  Note that attacking an airbase does not have to succeed on the first
    attack. Launch multiple attacks and whittle them down.
 
-**Late game**\ **
+**Late game**
 
 -  Gaining an airbase is your way of knowing “we’re in the end game
    now”

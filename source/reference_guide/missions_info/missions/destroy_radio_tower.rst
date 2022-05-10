@@ -9,11 +9,11 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
 
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+  -  Destroy a radio tower to disrupt propaganda broadcast in the region.
+  -  Sneak in or blast your way into the outpost and place explosives on the radio tower.
+  -  You will need explosives to complete this mission.
+  -  I recommend trying this at night with NVGs if possible.
 
 
 
