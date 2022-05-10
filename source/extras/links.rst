@@ -11,7 +11,7 @@ General
 -----------
 
 
-  * `Antistasi Repo <https://github.com/official-antistasi-community/A3-Antistasi>`_
+* `Antistasi Repo <https://github.com/official-antistasi-community/A3-Antistasi>`_
 
 
 
