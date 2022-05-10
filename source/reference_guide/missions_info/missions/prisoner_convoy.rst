@@ -15,32 +15,32 @@ Category
 
 .. topic:: Outcome
 
-   .. list-table:: Outcome
+   .. list-table:: 
       :header-rows: 1
 
       * - Result
         - Money
         - HR
         - Town Support
-        - Next Enemy
-        - Enemy
-        - Player
-        - Commander
+        - Next Attack
+        - Enemy Aggression
+        - Player Points
+        - Commander Points
 
       * - **Success**
-        - prisoner
+        - 300 / 600 per prisoner
         - ``-``
+        - +10 / +20 support in nearest town
         - ``-``
-        - ``-``
-        - ``-``
-        - ``-``
-        - ``-``
+        - +10 for 2 hours
+        - 1 point per POW
+        - 1 point per POW
 
       * - **Failure**
         - ``-``
         - ``-``
         - ``-``
         - ``-``
+        - -10 for 60 minutes
         - ``-``
-        - ``-``
-        - ``-``
+        - -10 / -20
