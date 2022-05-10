@@ -15,6 +15,8 @@ Category
 
 .. topic:: Outcome
 
+  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
    .. list-table:: 
       :header-rows: 1
 
