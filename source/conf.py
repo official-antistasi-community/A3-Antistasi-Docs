@@ -57,7 +57,7 @@ mermaid_params = ['--theme', 'forest', '--width', '2000', '--backgroundColor', '
 # region [HTML_Output_Settings]
 
 
-html_theme = 'classic'
+html_theme = 'groundwork'
 
 html_theme_options = {}
 
