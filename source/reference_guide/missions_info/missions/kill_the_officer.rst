@@ -9,12 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  The mission is very similar to the “Kill the traitor” mission. The differences are that the unit is already at a established location like an airfield.
+  -  Hence, he is protected by all the units within the area, which makes it harder to eliminate the target, unless you can snipe him or hit him with a mortar
 
 
 .. topic:: Outcome

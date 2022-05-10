@@ -9,12 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  Armoured convoy moving from one outpost to another. Will have armoured vehicles.
+  -  A risky but considerable opportunity to score yourself from armour. **Be sure to bring AT assets.**
 
 
 .. topic:: Outcome

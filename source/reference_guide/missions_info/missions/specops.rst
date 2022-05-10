@@ -9,12 +9,10 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  A squad of Special forces have been spotted nearby. You must eliminate this squad.
+  -  Good way to get some sweet loot.
+  -  First spot the enemy while undercover. Then ambush them.
+  -  I find mortars and MGs are the easiest way to complete this mission but be careful, spec ops teams often spawn close to minefields
 
 
 .. topic:: Outcome

@@ -9,12 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  Convoy bringing supplies to a town to attempt to convert it back to occupiers.
+  -  Stop the convoy to prohibit this and take the boxer truck to the town yourself for additional support.
 
 
 .. topic:: Outcome

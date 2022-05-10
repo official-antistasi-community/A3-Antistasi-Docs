@@ -9,13 +9,11 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-
+  -  Take the supplies to a town and guard it until the timer ends.
+  -  Patrols will respond within vicinity of the town.
+  -  Enemies coming within the area will reset the timer.
+  -  Sit in a nearby house and kill any enemies that come close. The timer should attract nearby gendarme patrols.
+  -  This is unconfirmed but often there is an enemy QRF that comes after the mission is completed.
 
 .. topic:: Outcome
 

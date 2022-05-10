@@ -9,11 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+  -  Rare mission, but is an opportunity to get some firepower.
+  -  I advise attempting to sneak into the vehicle and bolt before the enemy takes you out.
 
 
 

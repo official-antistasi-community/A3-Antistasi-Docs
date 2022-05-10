@@ -9,12 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  A convoy of prisoners is being escorted from one outpost to another.
+  -  Kill the driver and the guards and drive the prisoner’s vehicle back to base.
 
 
 .. topic:: Outcome

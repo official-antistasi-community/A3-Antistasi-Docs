@@ -1,126 +1,6 @@
-
-
-
-
 ======================
 Beginners Guide
 =====================
-
-The Guerilla’s Guide to Antistasi
-
-|
-| **Written by Moni**
-
-Checked and adapted by the Official Antistasi Community
-
-Content
-=======
-
-`Introduction 4 <#introduction>`__
-
-`What is Antistasi? 5 <#what-is-antistasi>`__
-
-`Game modes 5 <#game-modes>`__
-
-`How to set up a game 5 <#how-to-set-up-a-game>`__
-
-`Your parameters 5 <#your-parameters>`__
-
-`What mods should I use? 6 <#what-mods-should-i-use>`__
-
-`Strategic Zones 7 <#strategic-zones>`__
-
-`Air Bases 7 <#air-bases>`__
-
-`Outposts 7 <#outposts>`__
-
-`Radio towers 7 <#radio-towers>`__
-
-`Towns 7 <#towns>`__
-
-`Town support system 7 <#town-support-system>`__
-
-`Resources 8 <#resources>`__
-
-`Factories 8 <#factories>`__
-
-`Info Bar 9 <#info-bar>`__
-
-`Your Headquarters 10 <#your-headquarters>`__
-
-`The flag 10 <#the-flag>`__
-
-`The garage / vehicle arsenal 10 <#the-garage-vehicle-arsenal>`__
-
-`The Arsenal 10 <#the-arsenal>`__
-
-`The Whiteboard / Map 10 <#the-whiteboard-map>`__
-
-`Sources for the Garage 11 <#sources-for-the-garage>`__
-
-`The tent 11 <#the-tent>`__
-
-`Petros 11 <#petros>`__
-
-`Missions 13 <#missions>`__
-
-`Assassination missions 13 <#assassination-missions>`__
-
-`Logistics missions 13 <#logistics-missions>`__
-
-`Convoy Missions 14 <#convoy-missions>`__
-
-`Support missions 15 <#support-missions>`__
-
-`Destroy missions 15 <#destroy-missions>`__
-
-`Rescue missions 16 <#rescue-missions>`__
-
-`Conquest missions 16 <#conquest-missions>`__
-
-`Overview of Antistasi mission rewards
-17 <#overview-of-antistasi-mission-rewards>`__
-
-`Airstrike points 18 <#airstrike-points>`__
-
-`The Y menu 19 <#the-y-menu>`__
-
-`AI Management Menu 19 <#ai-management-menu>`__
-
-`Commander menu 20 <#commander-menu>`__
-
-`AI management and commanding the AI (micro managing)
-23 <#ai-management-and-commanding-the-ai-micro-managing>`__
-
-`Personal Squad management 23 <#personal-squad-management>`__
-
-`HC squad management 23 <#hc-squad-management>`__
-
-`Storing equipment 24 <#storing-equipment>`__
-
-`Looting 25 <#looting>`__
-
-`Managing your loot and arsenal 25 <#managing-your-loot-and-arsenal>`__
-
-`Loadouts 27 <#loadouts>`__
-
-`Undercover and how to use it 28 <#undercover-and-how-to-use-it>`__
-
-`HQ placement 29 <#hq-placement>`__
-
-`Vehicles 30 <#vehicles>`__
-
-`Taking a strategic point 31 <#taking-a-strategic-point>`__
-
-`Taking an airbase 33 <#taking-an-airbase>`__
-
-`Enemy AI behaviour 34 <#enemy-ai-behaviour>`__
-
-`Support System 35 <#support-system>`__
-
-`Victory condition 36 <#victory-condition>`__
-
-`Walkthrough 37 <#walkthrough>`__
 
 Introduction
 =============
@@ -242,69 +122,38 @@ Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
 `Antistasi 3CB BAF
 Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`__
 
-`Antistasi RHS Base
- <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
+`Antistasi RHS 
+Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
 
-Strategic Zones
+Map Markers
 ================
 
 With that out of the way we can get into the mechanics of the mission.
-Strategic zones are areas controlled by BLUFOR, OPFOR, or guerrillas.
+Map Markers, also known as strategic zones, are areas controlled by BLUFOR, OPFOR, or guerrillas.
 They all have a specific function and are guarded by their occupiers.
 It’s essential to understand how these strategic zones operate to be
-able to prioritize and plan appropriately.Note that garrisons may start
+able to prioritize and plan appropriately. Note that garrisons may start
 off weak, but can be strengthened over time.
 
-Air Bases
-----------
-
--  **Air Bases are the** **Headquarters of the enemy air force.** the
-   origin of all air and armoured assets is their air bases. They are
-   effectively the Headquarters / main staging points of BLUFOR and
-   OPFOR.
-
--  Taking an airbase provides you with an income of airstrike points;
+-  **Airbases** are the headquarters of the enemy air force and main staging points for BLUFOR and
+   OPFOR. You must be war level 3 to capture them. Taking an airbase provides you with an income of airstrike points;
    used for calling in airstrikes on the map.
 
--  Enemy armour and air assets are stored on the airbase.
-
--  **Air Bases are the only area that can ungarage air assets**(other
-   than the civilian helicopter).
-
--  Airbases are the most fortified of all strategic zones. This includes
-   armoured patrols, multiple squads of infantry, mortars, .50 Cal
-   emplacements and more.
-
--  You must be war level 3 to capturethem.
-
-Outposts
----------
-
--  **Outposts are fortifications garrisoned by the enemy.** They inhibit
+-  **Outposts** are fortifications garrisoned by the enemy. They inhibit
    guerrilla operations in the surrounding area and will send patrols
-   and the local garrison to counter resistance actions.
+   and the local garrison to counter resistance actions. Outposts sometimes
+   have radio towers inside them. Get more information on radio towers here.
 
--  Most outposts are well guarded with .50 Cal emplacements on top of
-   large towers and around a platoon of infantry. **Outposts sometimes
-   have radio towers inside them.**
+-  **Resources** give passive income to the occupier. Civilians work the resource. If they are killed the resource will be
+   destroyed.
 
-Radio towers
--------------
+-  **Factories** multiply the income you gain from resources. Civilians work the factory. If 4 of the workers are killed the
+   factory will be considered destroyed.
 
--  Some but not all outposts have radio towers.
-
--  These radio towers broadcast propaganda to neighbouring towns.
-
--  **The controller of a radio tower gains +1 support and -1 enemy
-   support to each neighbouring town per “tick” (every ten minutes)**
-
--  Guerrillas that capture a radio tower can broadcast their own
-   propaganda and gain the same benefits.
-
--  Enemy controlled towers jam TFAR radios
+-  **Seaports** boost the HR you resource each income tick and also discount the cost of vehicles purchased at the HQ.
 
 Towns
---------
+======
 
 -  Towns are where you will find the people and their vehicles to
    “\ *tactically acquire.”*
@@ -321,7 +170,7 @@ Towns
 -  The town will be guarded by police when the AI factions control it.
 
 Town support system
-~~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 -  The town support system is a simple system. **Having more people
    supporting your side than the occupiers, the town will flip to your
@@ -335,30 +184,6 @@ Town support system
 
 -  **The town flips to the rebel’s side if more people support you than
    the enemy inside the town.**
-
-Resources
-----------
-
--  **Resources give passive income to the occupier.**
-
--  Civilians work the resource. If they are killed the resource will be
-   destroyed.
-
--  Garrisons of the resource are often weakened or even decimated at the
-   beginning of the game.
-
-Factories
-----------
-
--  Factories multiply the income you gain from resources
-
--  **Factories do not give any bonus without resources.**
-
--  **Civilians work the factory. If 4 of the workers are killed the
-   factory will be considered destroyed.**
-
--  Garrisons are typically weaker in factories at the start of the
-   game.
 
 Info Bar
 ========
@@ -417,15 +242,12 @@ The garage / vehicle arsenal
 -  Inside the garage You can mount certain weapons to vehicles. For
    example, if you have a .50 Cal MG you may be able to mount it on the
    back of a truck.
-
--  | You can also customize your vehicle changing its attachments or
-     painting it a different colour.
-   |
+-  You can also customize your vehicle changing its attachments or painting it a different colour.
 
 **Heal nearby units**
 
 -  Hit this button to heal, refill stamina and allow all players and
-   ungaraged vehicles to go undercover close to the red box.\ ****
+   ungaraged vehicles to go undercover close to the red box.
 
 **Buy vehicle**
 
@@ -467,7 +289,7 @@ The Whiteboard / Map
 -  There are also minor tweaks you can make here like toggling music or
    selecting how many civilians can spawn at a time (list each option).
 
-**map info**
+**Map info**
 
 -  Map info is a useful tool for information. It tells you how many
    people support you or the occupiers, and **if you click on icons, it
@@ -478,10 +300,8 @@ The Whiteboard / Map
    invaders have killed there.
 
 -  Clicking on any other zone will tell you its status combined with the
-   garrison’s general strength\ **.** Consider attacking weakened or
+   garrison’s general strength. Consider attacking weakened or
    decimated zones over higher strength garrisons.
-
--
 
 Sources for the Garage
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -528,303 +348,43 @@ The tent
 Petros
 -------
 
--  Petros is the leader of the resistance. Think of him as a banished
-   political figure.
-
--  He is the leader of the resistance. if he dies you will lose a
-   considerable amount of HR and money.
+Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose 
+a considerable amount of HR and money.
 
 **HQ management**
 
-   **Grab $100 from pool**
-
--  You can take money from the faction and put it in your wallet. Some
-      things can only be bought with personal money so you will need to
-      use this from time to time.
-
-..
-
-   **In game members list**
-
--  Displays all server members. Non server members cannot do certain
-      things.
-
--  Server admins can add members through the commander’s Y menu.
-
-..
-
-   **Manage garrisons**
-
--  Allows you to add or remove soldiers from friendly captured
-      locations.
-
-..
-
-   **Move HQ to another zone**
-
--  There will be times where your base will be compromised. You will
-      know this when you get a “defend Petros” mission.
-
-..
-
-   Note that they never learn about your HQ’s location, if you keep it
-   there after the attack it will not make any difference.
-
--  You should move HQ asap as these attacks target Petros directly, if
-      Petros dies, you lose HR and money.
-
--  HQ should also be used to facilitate your operations by keeping it
-      relatively close to the areas you are fighting in. Be sure to keep
-      it somewhere safe though to avoid it being discovered.
-
-..
-
-   **Train troops**
-
--  Your troops suck at the beginning of game. You basically gave a
-      villager a weapon and point them in the general direction of the
-      enemy.
-
--  You will need to train your men to turn them into soldiers. You do
-      this through copious amounts of money.
-
--  This is where the majority of money will go in the mid to late game.
-
-..
-
-
-
-   **Rebuild assets**
-
--  In war, things blow up. In the process of taking a factory, you may
-      have killed all the workers. In order to repair assets, hit this
-      button.
-
--  Clicking the button will take you to the map where you can choose to
-      rebuild the zones you want. Repairing assets costs you 5000 per
-      location.
-
-**Mission select**
-
--  Here you can request missions. All missions and mission rewards are
-   below.
+-  **Grab $100 from pool** - You can take money from the faction and put it in your wallet. Some things can only be bought with personal money so you will need to use this from time to time.
+-  **In game members list** - Displays all server members. Non server members cannot do certain things. Server admins can add members through the commander’s Y menu.
+-  **Manage garrisons** - Allows you to add or remove soldiers from friendly captured locations.
+-  **Move HQ to another zone** - There will be times where your base will be compromised. You will know this when you get a “defend Petros” mission. Note that they never learn about your HQ’s location, if you keep it there after the attack it will not make any difference.
+-  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game.
+-  **Rebuild assets** - In war, things blow up. In the process of taking a factory, you may have killed all the workers. In order to repair assets, hit this button. Clicking the button will take you to the map where you can choose to rebuild the zones you want. Repairing assets costs you 5000 per location.
+-  **Mission select** - Here you can request missions. More information about missions is available below.
 
 Missions
 =========
 
-Assassination missions
------------------------
+There are several categories of missions all which have different tasks and rewards:
+
+- **Assassination Missions** 
+   - Kill the traitor
+   - Kill the officer
+   - Spec Ops
+- **Logistics Missions**
+   - Steal or destroy an ammo truck
+   - Bank robbery
+   - Salvage supplies
+- **Support missions**
+   - City supplies
+- **Destroy missions**
+   - Steal or Destroy enemy armour
+- **Convoy Missions**
+   - Supply convoys
+   - Armoured convoy
+   - Ammo convoy
+   - Money convoy
+   - Prisoner convoy
 
-   **Kill the traitor**
-
--  Someone betrayed the resistance and is ratting you out to the
-      authorities.
-
--  If the mission fails, you will lose money and HR.
-
--  If the traitor makes it to an airbase, your HQ will be attacked.
-
--  The traitor will usually be protected by around 2-3 squads of
-      patrolling infantry.
-
--  the traitor will be armed with a pistol and will always be indoors.
-
--  Nearby, you will see a car parked outside. It differs in between
-      mods what vehicle this is but for RHS it is a UAZ military
-      vehicle.
-
--  When you get close to the traitor, he will attempt to escape to his
-      car and drive to the nearest airfield.
-
--  Get near him, follow him to his car and follow him away out of town.
-      Once it is safe, stop his vehicle with your truck, get out and
-      kill him.
-
--  OR you can attempt to kill his guards and the infantry protecting
-      him. This will require some creative coordination or heavy fire
-      power.
-
--  The traitor will likely run to his vehicle once shots are fired.
-      Shoot out his wheels so he cannot escape.
-
-**Kill the officer**
-
--  The mission is very similar to the “Kill the traitor” mission.
-
--  The differences are that the unit is already at a established
-      location like an airfield.
-
--  Hence, he is protected by all the units within the area, which makes
-      it harder to eliminate the target, unless you can snipe him or
-      similar.
-
-..
-
-   **Spec Ops**
-
--  A squad of Special forces have been spotted nearby. You must
-      eliminate this squad.
-
--  Good way to get some sweet loot.
-
--  First spot the enemy while undercover. Then ambush them.
-
--  I find mortars and MGs are the easiest way to complete this mission
-
--  be careful, spec ops teams often spawn close to minefields
-
-Logistics missions
--------------------
-
-   **Steal or destroy an ammo truck**
-
--  This is your opportunity to get some sweet gear and an ammo truck to
-      rearm future vehicles and emplacements.
-
--  The ammo truck will usually be near an outpost with 1-2 squads of
-      infantry guarding it.
-
--  you can simply walk past them as a civilian, get in and drive away.
-      Pedal to the metal because right as you get into that ammo truck,
-      they are going to blast you with everything they have.
-
--  It will be helpful to create a plan for escape before executing. Try
-      to avoid the .50 Cal MGs, those are the most likely thing to kill
-      you.
-
--  If you do get killed, the vehicle will most likely continue to get
-      fired at until it explodes, so either way mission accomplished.
-
-..
-
-   **Bank robbery**
-
--  Go to a bank with a boxer truck and wait (x) minutes to complete.
-
--  The timer will attract all nearby patrols in the vicinity.
-
--  the bank is made of glass so this can be hard to pull off.
-
--  Get to the top floor and pick enemies off from above.
-
--  After the timer is done, get in the boxer truck and RTB. enjoy your
-      influx of cash.
-
-..
-
-   **Salvage supplies**
-
--  This is the one mission I personally have never completed.
-
--  It’s usually right by an enemy seaport and you have to find or buy a
-   boat with a wench.
-
--  go to the place, look for the supplies, then use the winch to extract
-   the supplies.
-
-Convoy Missions
-----------------
-
-   **Supply convoys**
-
--  convoy bringing supplies to a town to attempt to convert it back to
-      occupiers.
-
--  stop the convoy to prohibit this and take the boxer truck to the town
-      yourself for additional support.
-
-..
-
-   **Armoured convoy**
-
--  Armoured convoy moving from one outpost to another. Will have
-      armoured vehicles.
-
--  A risky but considerable opportunity to score yourself from armour.
-      **Be sure to bring AT assets.**
-
-..
-
-   **Ammo convoy**
-
--  Moving from outpost to outpost with an ammo truck.
-
--  Spare the ammo truck for some nice loot and a new source ammo truck
-      to rearm vehicles and emplacements.
-
-..
-
-   **Money convoy**
-
--  A convoy with a boxer truck filled with cash driving from one outpost
-      to resource.
-
--  Ambush the convoy and take the boxer truck back to HQ for a
-      considerable cash bonus.
-
--  More heavily armoured than other convoys.
-
-..
-
-   **Prisoner convoy**
-
--  A convoy of prisoners is being escorted from one outpost to another.
-
--  Kill the driver and the guards and drive the prisoner’s vehicle back
-      to base.
-
-..
-
-   **Convoy ambush tips**
-
-   most convoys are similar so I decided to make a one size fits all
-   guide.
-
--  Use mines and IEDs only on isolated roads where civilians will not
-      drive.
-
--  Set up entrenchments through the Y menu or using your E tool.
-
--  Use roadblocks to slow down or immobilize the enemy.
-
--  LMGs, grenade, and rocket launchers will help thin the numbers.
-
--  Most convoys will have one or two light vehicles with 50.cal Mgs, and
-      infantry trucks.
-
--  Priorities are the 50. Cals, then the infantry trucks.
-
--  Try and kill the infantry as they disembark.
-
--  you won’t be able to loot soldiers killed inside destroyed vehicles
-      however. better yet, spray them with an MG as they disembark.
-
-Support missions
------------------
-
-   **City supplies**
-
--  Take the supplies to a town and guard it until the timer ends.
-
--  Patrols will respond within vicinity of the town.
-
--  Enemies coming within the area will reset the timer.
-
--  Sit in a nearby house and kill any enemies that come close. The timer
-      should attract nearby gendarme patrols.
-
--  This is unconfirmed but often there is an enemy QRF that comes after
-      the mission is completed.
-
-Destroy missions
------------------
-
-   **Steal or Destroy enemy armour**
-
--  Rare mission, but is an opportunity to get some firepower.
-
--  I advise attempting to sneak into the vehicle and bolt before the
-   enemy takes you out.
 
 ..
 
@@ -921,80 +481,20 @@ Conquest missions
 
 -  Resources typically have weakened defences compared to outposts.
 
-Overview of Antistasi mission rewards
-=====================================
+**Convoy ambush tips**
 
-Credit: Bob Murphy
+Most convoys are similar so I decided to make a one size fits all guide.
 
-**Assassination missions**
+-  Use mines and IEDs only on isolated roads where civilians will not drive.
+-  Set up entrenchments through the Y menu or using your E tool.
+-  Use roadblocks to slow down or immobilize the enemy.
+-  LMGs, grenade, and rocket launchers will help thin the numbers.
+-  Most convoys will have one or two light vehicles with 50.cal Mgs, and infantry trucks.
+-  Priorities are the 50. Cals, then the infantry trucks.
+-  Try and kill the infantry as they disembark.
+-  You won’t be able to loot soldiers killed inside destroyed vehicles. Better yet, spray them with an MG as they disembark.
 
--  Assassinate Spec Ops - increased city support - 200 to 400 bucks plus
-      gear
 
--  Assassinate Traitor - some HR (weird formula) - 300+ bucks plus gear
-
-**Conquer mission**
-
--  200 to 400 bucks
-
--  some city support
-
--  the gear you can loot
-
-**Convoy missions**
-
--  money convoy gives 5000 bucks plus gear
-
--  ammunition convoy 300+ bucks plus gear
-
--  armour convoy increases city support plus you hopefully get nice
-      vehicles plus gear
-
--  prisoner convoy gives you 1 hr plus 300+ bucks PER rescued prisoner
-      plus gear
-
--  reinforcement convoy increases city support and gives gear
-
--  supplies convoy can massively increase the city support plus gear
-
-**Destroy missions**
-
--  Destroy radio tower - player score and aggro related plus gear
-
--  Destroy repair truck - 300 + bucks plus gear
-
-**Logistics missions**
-
--  Ammo - 300+ bucks plus gear
-
--  Bank - 5000+ bucks plus gear
-
--  Salvage - 300+ bucks plus gear
-
--  Supplies - huge city support effect, money and HR depending on war
-      level and such
-
-**Repair antenna**
-
--  Has influence on next attack time, personal reputation and aggro plus
-      gear
-
-**Rescue mission**
-
--  Prisoner - HR based on people count, Money based on people count and
-      war level, the gear you can loot (2HR and 100+ pp)
-
--  Refugees - HR based on people count, Money based on people count and
-      war level, the gear you can loot (1HR and 100 pp)
-
-**Disclaimer:**
-
-Wherever there is a + behind a number, the number has possible
-multipliers for difficulty, war level or else which can increase the
-amount paid out.
-
-This information was quickly taken out of the code and I (bob murphy)
-can NOT guarantee that the information is complete and/or correct.
 
 Airstrike points
 =================
@@ -1849,8 +1349,6 @@ https://armedassault.fandom.com/wiki/AI_Basics:_Targeting_priority
 Support System
 ==============
 
-credit: meerkat
-
    Enemy squad leaders can call in support in various forms when they
    come under attack from either opposing force. The ability to call in
    supports CAN be transferred from a killed squad leader to the next
@@ -2001,3 +1499,9 @@ Walkthrough
    it. Good luck commander!
 
 
+Contributors
+============
+
+Thanks to the following contributors for making this guide possible: 
+
+Moni, Meerkat, Bob Murphy, DeathTouchWilly

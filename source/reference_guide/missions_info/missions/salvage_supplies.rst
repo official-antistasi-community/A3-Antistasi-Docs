@@ -9,12 +9,9 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  This mission is quite rare.
+  -  It’s usually right by an enemy seaport and you have to find or buy a boat with a wench.
+  -  Go to the place, look for the supplies, then use the winch to extract the supplies.
 
 
 .. topic:: Outcome

@@ -9,11 +9,8 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
+  -  Moving from outpost to outpost with an ammo truck.
+  -  Spare the ammo truck for some nice loot and a new source ammo truck to rearm vehicles and emplacements.
 
 
 

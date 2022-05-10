@@ -9,12 +9,9 @@ Category
 
 .. topic:: Description
 
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+  -  A convoy with a boxer truck filled with cash driving from one outpost to resource.
+  -  Ambush the convoy and take the boxer truck back to HQ for a considerable cash bonus.
+  -  More heavily armoured than other convoys.
 
 
 .. topic:: Outcome
