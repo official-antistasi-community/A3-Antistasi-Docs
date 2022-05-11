@@ -58,7 +58,6 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
             "contribute": True,
             "github_user": self.antistasi_organization_name,
             "github_fork": f"{self.antistasi_organization_name}/{self.antistasi_repo_name}",
-            "sidebar_width": "300px",
             "globaltoc_includehidden": True,
             "stickysidebarscrollable": True
         }

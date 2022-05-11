@@ -26,6 +26,8 @@ Write-Host $(`
 
 & "python" -m venv --clear --upgrade-deps $venvDir
 
+if ($? -eq $False) {exit}
+
 
 Write-Host $(`
     "`n"+`

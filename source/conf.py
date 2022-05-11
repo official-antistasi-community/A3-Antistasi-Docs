@@ -29,7 +29,7 @@ html_favicon = "_images/antistasi_main_favicon.png"
 
 # region [Sphinx_Settings]
 
-extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc", "sphinx.ext.githubpages", 'sphinx_copybutton', "sphinx_design"]
+extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc", "sphinx.ext.githubpages", 'sphinx_copybutton', "sphinx_design", 'sphinx.ext.autosectionlabel']
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
@@ -40,7 +40,7 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 html_css_files = [
     'css/extra_style.css',
 ]
-exclude_patterns = []
+exclude_patterns = ["available_label.json"]
 
 
 # get available styles via `pygmentize -L styles`
@@ -51,13 +51,13 @@ pygments_style = "one-dark"
 # region [Extension_Settings]
 
 mermaid_params = ['--theme', 'forest', '--width', '2000', '--backgroundColor', 'transparent']
-
+autosectionlabel_prefix_document = True
 # endregion[Extension_Settings]
 
 # region [HTML_Output_Settings]
 
 
-html_theme = 'classic'
+html_theme = 'groundwork'
 
 html_theme_options = {}
 

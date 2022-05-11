@@ -1,6 +1,42 @@
 # Tools
 
-## Files
+## Python
+
+### Requirements
+
+- at least Python `3.9` has to be installed. Preferably Python `3.10`
+  - installer for Python 3.10 [Windows 64bit](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
+  - other installers at [python.org](https://www.python.org/downloads/)
+
+- ⚠️**Python has to be on your `Path`, this can be set in the installer via checkbox**⚠️
+
+### Workspace Setup (*Venv*)
+
+- run `setup_python_venv.ps1` inside this Folder (`tools/setup_python_venv.ps1`)
+  - this will create a Python-Venv with the name `.venv` inside the root folder
+  - it will also install all `dependencies` and `dev-dependencies` (formatter, linter,...) into this virtual-environment(`Venv`)
+
+----
+
+### Building locally
+
+#### Via Vscode-tasks
+
+- a task named `Generate LOCAL HTML` is already definded via vscode-workspace-tasks (`.vscode/tasks.json`)
+
+  > This will take the `source` folder as input and build the docs as `HTML` inside the folder `created/html`
+
+#### Via Command-Line
+
+- make sure that the venv is activated
+
+- use the command `antistasi-sqf-tools docs build -b html`
+
+  >   This will take the `source` folder as input and build the docs as `HTML` inside the folder `created/html`
+
+----
+
+----
 
 ## Useful links
 
