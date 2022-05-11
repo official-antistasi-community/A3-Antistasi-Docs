@@ -8,37 +8,36 @@ Category
     :ref:`mission_category_rescue`
 
 .. topic:: Description
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
+ 
+  -  A POW is imprisoned in an outpost. You have to free and return him to HQ.
+  -  This is a hard mission because you cannot use any explosives to kill the 2-3 squads’ worth of enemy infantry guarding him without murdering the POW.
+  -  I recommend staying away from this mission. It’s not worth the effort.
 
 
 .. topic:: Outcome
 
-   .. list-table:: Outcome
+  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. list-table:: 
       :header-rows: 1
 
       * - Result
         - Money
         - HR
         - Town Support
-        - Next Enemy
-        - Enemy
-        - Player
-        - Commander
+        - Next Attack
+        - Enemy Aggression
+        - Player Points
+        - Commander Points
 
       * - **Success**
-        - prisoner
+        - 100 / 200 per POW
+        - 2 per prisoner
+        - Some support from city you rescued them from
         - ``-``
-        - ``-``
-        - ``-``
-        - ``-``
-        - ``-``
-        - ``-``
+        - +1.5 per prisoner for 90 minutes
+        - 1 point per POW
+        - 1 point per POW
 
       * - **Failure**
         - ``-``
@@ -47,4 +46,4 @@ Category
         - ``-``
         - ``-``
         - ``-``
-        - ``-``
+        - -10 / -20

@@ -26,7 +26,7 @@ try to make file names adhere to these rules:
 
 Create a virtual environment for Python called venv and then install these libraries:
 
-```pip install sphinx==4.5.0 sphinxcontrib-images==0.9.4 sphinxcontrib-mermaid==0.7.1 myst-parser==0.17.2 groundwork-sphinx-theme==1.1.1 sphinx-copybutton==0.5.0 sphinxcontrib-fulltoc==1.2.0 antistasi_sqf_tools```
+```pip install sphinx==4.5.0 sphinxcontrib-images==0.9.4 sphinxcontrib-mermaid==0.7.1 myst-parser==0.17.2 groundwork-sphinx-theme==1.1.1 sphinx-copybutton==0.5.0 sphinxcontrib-fulltoc==1.2.0 antistasi_sqf_tools sphinx-design```
 
 then copy the ini file to the root folder of the repo folder
 

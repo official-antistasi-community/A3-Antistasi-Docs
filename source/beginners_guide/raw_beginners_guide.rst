@@ -1,126 +1,6 @@
-
-
-
-
 ======================
 Beginners Guide
 =====================
-
-The Guerilla’s Guide to Antistasi
-
-|
-| **Written by Moni**
-
-Checked and adapted by the Official Antistasi Community
-
-Content
-=======
-
-`Introduction 4 <#introduction>`__
-
-`What is Antistasi? 5 <#what-is-antistasi>`__
-
-`Game modes 5 <#game-modes>`__
-
-`How to set up a game 5 <#how-to-set-up-a-game>`__
-
-`Your parameters 5 <#your-parameters>`__
-
-`What mods should I use? 6 <#what-mods-should-i-use>`__
-
-`Strategic Zones 7 <#strategic-zones>`__
-
-`Air Bases 7 <#air-bases>`__
-
-`Outposts 7 <#outposts>`__
-
-`Radio towers 7 <#radio-towers>`__
-
-`Towns 7 <#towns>`__
-
-`Town support system 7 <#town-support-system>`__
-
-`Resources 8 <#resources>`__
-
-`Factories 8 <#factories>`__
-
-`Info Bar 9 <#info-bar>`__
-
-`Your Headquarters 10 <#your-headquarters>`__
-
-`The flag 10 <#the-flag>`__
-
-`The garage / vehicle arsenal 10 <#the-garage-vehicle-arsenal>`__
-
-`The Arsenal 10 <#the-arsenal>`__
-
-`The Whiteboard / Map 10 <#the-whiteboard-map>`__
-
-`Sources for the Garage 11 <#sources-for-the-garage>`__
-
-`The tent 11 <#the-tent>`__
-
-`Petros 11 <#petros>`__
-
-`Missions 13 <#missions>`__
-
-`Assassination missions 13 <#assassination-missions>`__
-
-`Logistics missions 13 <#logistics-missions>`__
-
-`Convoy Missions 14 <#convoy-missions>`__
-
-`Support missions 15 <#support-missions>`__
-
-`Destroy missions 15 <#destroy-missions>`__
-
-`Rescue missions 16 <#rescue-missions>`__
-
-`Conquest missions 16 <#conquest-missions>`__
-
-`Overview of Antistasi mission rewards
-17 <#overview-of-antistasi-mission-rewards>`__
-
-`Airstrike points 18 <#airstrike-points>`__
-
-`The Y menu 19 <#the-y-menu>`__
-
-`AI Management Menu 19 <#ai-management-menu>`__
-
-`Commander menu 20 <#commander-menu>`__
-
-`AI management and commanding the AI (micro managing)
-23 <#ai-management-and-commanding-the-ai-micro-managing>`__
-
-`Personal Squad management 23 <#personal-squad-management>`__
-
-`HC squad management 23 <#hc-squad-management>`__
-
-`Storing equipment 24 <#storing-equipment>`__
-
-`Looting 25 <#looting>`__
-
-`Managing your loot and arsenal 25 <#managing-your-loot-and-arsenal>`__
-
-`Loadouts 27 <#loadouts>`__
-
-`Undercover and how to use it 28 <#undercover-and-how-to-use-it>`__
-
-`HQ placement 29 <#hq-placement>`__
-
-`Vehicles 30 <#vehicles>`__
-
-`Taking a strategic point 31 <#taking-a-strategic-point>`__
-
-`Taking an airbase 33 <#taking-an-airbase>`__
-
-`Enemy AI behaviour 34 <#enemy-ai-behaviour>`__
-
-`Support System 35 <#support-system>`__
-
-`Victory condition 36 <#victory-condition>`__
-
-`Walkthrough 37 <#walkthrough>`__
 
 Introduction
 =============
@@ -166,9 +46,6 @@ Game modes
 
 I recommend playing rebels versus government versus invaders first. It’s
 easier and allows you to fight two different factions.
-
-
-
 
 
 How to set up a game
@@ -242,69 +119,42 @@ Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
 `Antistasi 3CB BAF
 Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`__
 
-`Antistasi RHS Base
- <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
+`Antistasi RHS 
+Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
 
-Strategic Zones
+Map Markers
 ================
 
+Main Article: :ref:`concept_mapmarkers`
+
 With that out of the way we can get into the mechanics of the mission.
-Strategic zones are areas controlled by BLUFOR, OPFOR, or guerrillas.
+Map Markers, also known as strategic zones, are areas controlled by BLUFOR, OPFOR, or guerrillas.
 They all have a specific function and are guarded by their occupiers.
 It’s essential to understand how these strategic zones operate to be
-able to prioritize and plan appropriately.Note that garrisons may start
+able to prioritize and plan appropriately. Note that garrisons may start
 off weak, but can be strengthened over time.
 
-Air Bases
-----------
-
--  **Air Bases are the** **Headquarters of the enemy air force.** the
-   origin of all air and armoured assets is their air bases. They are
-   effectively the Headquarters / main staging points of BLUFOR and
-   OPFOR.
-
--  Taking an airbase provides you with an income of airstrike points;
+-  **Airbases** are the headquarters of the enemy air force and main staging points for BLUFOR and
+   OPFOR. You must be war level 3 to capture them. Taking an airbase provides you with an income of airstrike points;
    used for calling in airstrikes on the map.
 
--  Enemy armour and air assets are stored on the airbase.
-
--  **Air Bases are the only area that can ungarage air assets**(other
-   than the civilian helicopter).
-
--  Airbases are the most fortified of all strategic zones. This includes
-   armoured patrols, multiple squads of infantry, mortars, .50 Cal
-   emplacements and more.
-
--  You must be war level 3 to capturethem.
-
-Outposts
----------
-
--  **Outposts are fortifications garrisoned by the enemy.** They inhibit
+-  **Outposts** are fortifications garrisoned by the enemy. They inhibit
    guerrilla operations in the surrounding area and will send patrols
-   and the local garrison to counter resistance actions.
+   and the local garrison to counter resistance actions. Outposts sometimes
+   have radio towers inside them. Get more information on radio towers here.
 
--  Most outposts are well guarded with .50 Cal emplacements on top of
-   large towers and around a platoon of infantry. **Outposts sometimes
-   have radio towers inside them.**
+-  **Resources** give passive income to the occupier. Civilians work the resource. If they are killed the resource will be
+   destroyed.
 
-Radio towers
--------------
+-  **Factories** multiply the income you gain from resources. Civilians work the factory. If 4 of the workers are killed the
+   factory will be considered destroyed.
 
--  Some but not all outposts have radio towers.
-
--  These radio towers broadcast propaganda to neighbouring towns.
-
--  **The controller of a radio tower gains +1 support and -1 enemy
-   support to each neighbouring town per “tick” (every ten minutes)**
-
--  Guerrillas that capture a radio tower can broadcast their own
-   propaganda and gain the same benefits.
-
--  Enemy controlled towers jam TFAR radios
+-  **Seaports** boost the HR you resource each income tick and also discount the cost of vehicles purchased at the HQ.
 
 Towns
---------
+======
+
+Main Article: :ref:`concept_gainingandlosingcitysupport`
 
 -  Towns are where you will find the people and their vehicles to
    “\ *tactically acquire.”*
@@ -321,7 +171,7 @@ Towns
 -  The town will be guarded by police when the AI factions control it.
 
 Town support system
-~~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 -  The town support system is a simple system. **Having more people
    supporting your side than the occupiers, the town will flip to your
@@ -335,30 +185,6 @@ Town support system
 
 -  **The town flips to the rebel’s side if more people support you than
    the enemy inside the town.**
-
-Resources
-----------
-
--  **Resources give passive income to the occupier.**
-
--  Civilians work the resource. If they are killed the resource will be
-   destroyed.
-
--  Garrisons of the resource are often weakened or even decimated at the
-   beginning of the game.
-
-Factories
-----------
-
--  Factories multiply the income you gain from resources
-
--  **Factories do not give any bonus without resources.**
-
--  **Civilians work the factory. If 4 of the workers are killed the
-   factory will be considered destroyed.**
-
--  Garrisons are typically weaker in factories at the start of the
-   game.
 
 Info Bar
 ========
@@ -417,15 +243,12 @@ The garage / vehicle arsenal
 -  Inside the garage You can mount certain weapons to vehicles. For
    example, if you have a .50 Cal MG you may be able to mount it on the
    back of a truck.
-
--  | You can also customize your vehicle changing its attachments or
-     painting it a different colour.
-   |
+-  You can also customize your vehicle changing its attachments or painting it a different colour.
 
 **Heal nearby units**
 
 -  Hit this button to heal, refill stamina and allow all players and
-   ungaraged vehicles to go undercover close to the red box.\ ****
+   ungaraged vehicles to go undercover close to the red box.
 
 **Buy vehicle**
 
@@ -467,7 +290,7 @@ The Whiteboard / Map
 -  There are also minor tweaks you can make here like toggling music or
    selecting how many civilians can spawn at a time (list each option).
 
-**map info**
+**Map info**
 
 -  Map info is a useful tool for information. It tells you how many
    people support you or the occupiers, and **if you click on icons, it
@@ -478,10 +301,8 @@ The Whiteboard / Map
    invaders have killed there.
 
 -  Clicking on any other zone will tell you its status combined with the
-   garrison’s general strength\ **.** Consider attacking weakened or
+   garrison’s general strength. Consider attacking weakened or
    decimated zones over higher strength garrisons.
-
--
 
 Sources for the Garage
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -509,7 +330,7 @@ fuel, ammo, or repair truck.
 *Take these trucks and store them in the garage*. I recommend locking
 them so no one takes them out.
 
-The tent
+The Tent
 --------
 
 **Sleep**
@@ -528,476 +349,72 @@ The tent
 Petros
 -------
 
--  Petros is the leader of the resistance. Think of him as a banished
-   political figure.
-
--  He is the leader of the resistance. if he dies you will lose a
-   considerable amount of HR and money.
+Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose 
+a considerable amount of HR and money. Also see: :ref:`concept_losingpetrospenalties`
 
 **HQ management**
 
-   **Grab $100 from pool**
-
--  You can take money from the faction and put it in your wallet. Some
-      things can only be bought with personal money so you will need to
-      use this from time to time.
-
-..
-
-   **In game members list**
-
--  Displays all server members. Non server members cannot do certain
-      things.
-
--  Server admins can add members through the commander’s Y menu.
-
-..
-
-   **Manage garrisons**
-
--  Allows you to add or remove soldiers from friendly captured
-      locations.
-
-..
-
-   **Move HQ to another zone**
-
--  There will be times where your base will be compromised. You will
-      know this when you get a “defend Petros” mission.
-
-..
-
-   Note that they never learn about your HQ’s location, if you keep it
-   there after the attack it will not make any difference.
-
--  You should move HQ asap as these attacks target Petros directly, if
-      Petros dies, you lose HR and money.
-
--  HQ should also be used to facilitate your operations by keeping it
-      relatively close to the areas you are fighting in. Be sure to keep
-      it somewhere safe though to avoid it being discovered.
-
-..
-
-   **Train troops**
-
--  Your troops suck at the beginning of game. You basically gave a
-      villager a weapon and point them in the general direction of the
-      enemy.
-
--  You will need to train your men to turn them into soldiers. You do
-      this through copious amounts of money.
-
--  This is where the majority of money will go in the mid to late game.
-
-..
-
-
-
-   **Rebuild assets**
-
--  In war, things blow up. In the process of taking a factory, you may
-      have killed all the workers. In order to repair assets, hit this
-      button.
-
--  Clicking the button will take you to the map where you can choose to
-      rebuild the zones you want. Repairing assets costs you 5000 per
-      location.
-
-**Mission select**
-
--  Here you can request missions. All missions and mission rewards are
-   below.
+-  **Grab $100 from pool** - You can take money from the faction and put it in your wallet. Some things can only be bought with personal money so you will need to use this from time to time.
+-  **In game members list** - Displays all server members. Non server members cannot do certain things. Server admins can add members through the commander’s Y menu.
+-  **Manage garrisons** - Allows you to add or remove soldiers from friendly captured locations.
+-  **Move HQ to another zone** - There will be times where your base will be compromised. You will know this when you get a “defend Petros” mission. Note that they never learn about your HQ’s location, if you keep it there after the attack it will not make any difference.
+-  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game. Also see: :ref:`concept_trainfia`
+-  **Rebuild assets** - In war, things blow up. In the process of taking a factory, you may have killed all the workers. In order to repair assets, hit this button. Clicking the button will take you to the map where you can choose to rebuild the zones you want. Repairing assets costs you 5000 per location.
+-  **Mission select** - Here you can request missions. More information about missions is available below.
 
 Missions
 =========
 
-Assassination missions
------------------------
-
-   **Kill the traitor**
-
--  Someone betrayed the resistance and is ratting you out to the
-      authorities.
-
--  If the mission fails, you will lose money and HR.
-
--  If the traitor makes it to an airbase, your HQ will be attacked.
-
--  The traitor will usually be protected by around 2-3 squads of
-      patrolling infantry.
-
--  the traitor will be armed with a pistol and will always be indoors.
-
--  Nearby, you will see a car parked outside. It differs in between
-      mods what vehicle this is but for RHS it is a UAZ military
-      vehicle.
-
--  When you get close to the traitor, he will attempt to escape to his
-      car and drive to the nearest airfield.
-
--  Get near him, follow him to his car and follow him away out of town.
-      Once it is safe, stop his vehicle with your truck, get out and
-      kill him.
-
--  OR you can attempt to kill his guards and the infantry protecting
-      him. This will require some creative coordination or heavy fire
-      power.
-
--  The traitor will likely run to his vehicle once shots are fired.
-      Shoot out his wheels so he cannot escape.
-
-**Kill the officer**
-
--  The mission is very similar to the “Kill the traitor” mission.
-
--  The differences are that the unit is already at a established
-      location like an airfield.
-
--  Hence, he is protected by all the units within the area, which makes
-      it harder to eliminate the target, unless you can snipe him or
-      similar.
-
-..
-
-   **Spec Ops**
-
--  A squad of Special forces have been spotted nearby. You must
-      eliminate this squad.
-
--  Good way to get some sweet loot.
-
--  First spot the enemy while undercover. Then ambush them.
-
--  I find mortars and MGs are the easiest way to complete this mission
-
--  be careful, spec ops teams often spawn close to minefields
-
-Logistics missions
--------------------
-
-   **Steal or destroy an ammo truck**
-
--  This is your opportunity to get some sweet gear and an ammo truck to
-      rearm future vehicles and emplacements.
-
--  The ammo truck will usually be near an outpost with 1-2 squads of
-      infantry guarding it.
-
--  you can simply walk past them as a civilian, get in and drive away.
-      Pedal to the metal because right as you get into that ammo truck,
-      they are going to blast you with everything they have.
-
--  It will be helpful to create a plan for escape before executing. Try
-      to avoid the .50 Cal MGs, those are the most likely thing to kill
-      you.
-
--  If you do get killed, the vehicle will most likely continue to get
-      fired at until it explodes, so either way mission accomplished.
-
-..
-
-   **Bank robbery**
-
--  Go to a bank with a boxer truck and wait (x) minutes to complete.
-
--  The timer will attract all nearby patrols in the vicinity.
-
--  the bank is made of glass so this can be hard to pull off.
-
--  Get to the top floor and pick enemies off from above.
-
--  After the timer is done, get in the boxer truck and RTB. enjoy your
-      influx of cash.
-
-..
-
-   **Salvage supplies**
-
--  This is the one mission I personally have never completed.
-
--  It’s usually right by an enemy seaport and you have to find or buy a
-   boat with a wench.
-
--  go to the place, look for the supplies, then use the winch to extract
-   the supplies.
-
-Convoy Missions
-----------------
-
-   **Supply convoys**
-
--  convoy bringing supplies to a town to attempt to convert it back to
-      occupiers.
-
--  stop the convoy to prohibit this and take the boxer truck to the town
-      yourself for additional support.
-
-..
-
-   **Armoured convoy**
-
--  Armoured convoy moving from one outpost to another. Will have
-      armoured vehicles.
-
--  A risky but considerable opportunity to score yourself from armour.
-      **Be sure to bring AT assets.**
-
-..
-
-   **Ammo convoy**
-
--  Moving from outpost to outpost with an ammo truck.
-
--  Spare the ammo truck for some nice loot and a new source ammo truck
-      to rearm vehicles and emplacements.
-
-..
-
-   **Money convoy**
-
--  A convoy with a boxer truck filled with cash driving from one outpost
-      to resource.
-
--  Ambush the convoy and take the boxer truck back to HQ for a
-      considerable cash bonus.
-
--  More heavily armoured than other convoys.
-
-..
-
-   **Prisoner convoy**
-
--  A convoy of prisoners is being escorted from one outpost to another.
-
--  Kill the driver and the guards and drive the prisoner’s vehicle back
-      to base.
-
-..
-
-   **Convoy ambush tips**
-
-   most convoys are similar so I decided to make a one size fits all
-   guide.
-
--  Use mines and IEDs only on isolated roads where civilians will not
-      drive.
-
+Main Article: :ref:`mission_overview`
+
+There are several categories of missions all which have different tasks and rewards:
+
+- **Assassination Missions** 
+   - :ref:`mission_kill_the_traitor`
+   - :ref:`mission_kill_the_officer`
+   - :ref:`mission_specops`
+- **Logistics Missions**
+   - :ref:`mission_steal_or_destroy_ammo_truck`
+   - :ref:`mission_bank_mission`
+   - :ref:`mission_salvage_supplies`
+- **Support missions**
+   - :ref:`mission_city_supplies`
+- **Destroy missions**
+   - :ref:`mission_steal_or_destroy_armor`
+   - :ref:`mission_downed_heli`
+   - :ref:`mission_destroy_radio_tower`
+   - :ref:`mission_tower_rebuild_disrupt`
+- **Rescue Missions**
+   - :ref:`mission_pow_rescue`
+   - :ref:`mission_refugees_evac`
+- **Conquest Missions**
+   - :ref:`mission_resource_acquisition____take_the_outpost`
+- **Convoy Missions**
+   - :ref:`mission_supplies_convoy`
+   - :ref:`mission_armored_convoy`
+   - :ref:`mission_ammo_convoy`
+   - :ref:`mission_money_convoy`
+   - :ref:`mission_prisoner_convoy`
+
+**Convoy ambush tips**
+
+Most convoys are similar so I decided to make a one size fits all guide.
+
+-  Use mines and IEDs only on isolated roads where civilians will not drive.
 -  Set up entrenchments through the Y menu or using your E tool.
-
 -  Use roadblocks to slow down or immobilize the enemy.
-
 -  LMGs, grenade, and rocket launchers will help thin the numbers.
-
--  Most convoys will have one or two light vehicles with 50.cal Mgs, and
-      infantry trucks.
-
+-  Most convoys will have one or two light vehicles with 50.cal Mgs, and infantry trucks.
 -  Priorities are the 50. Cals, then the infantry trucks.
-
 -  Try and kill the infantry as they disembark.
+-  You won’t be able to loot soldiers killed inside destroyed vehicles. Better yet, spray them with an MG as they disembark.
 
--  you won’t be able to loot soldiers killed inside destroyed vehicles
-      however. better yet, spray them with an MG as they disembark.
 
-Support missions
------------------
 
-   **City supplies**
-
--  Take the supplies to a town and guard it until the timer ends.
-
--  Patrols will respond within vicinity of the town.
-
--  Enemies coming within the area will reset the timer.
-
--  Sit in a nearby house and kill any enemies that come close. The timer
-      should attract nearby gendarme patrols.
-
--  This is unconfirmed but often there is an enemy QRF that comes after
-      the mission is completed.
-
-Destroy missions
------------------
-
-   **Steal or Destroy enemy armour**
-
--  Rare mission, but is an opportunity to get some firepower.
-
--  I advise attempting to sneak into the vehicle and bolt before the
-   enemy takes you out.
-
-..
-
-   **Destroy downed helicopter**
-
--  Opportunistic mission in which an enemy helicopter has crashed.
-
--  The helicopter is guarded by the pilots and some men.
-
--  Enemy will send troops to repair the helicopter and then fly it back.
-
--  Make sure you get there in time to get the asset.
-
-..
-
-   **Destroy radio tower**
-
--  Destroy a radio tower to disrupt propaganda broadcast in the
-      region.
-
--  Sneak in or blast your way into the outpost and place explosives on
-      the radio tower.
-
--  You will need explosives to complete this mission.
-
--  I recommend trying this at night with NVGs if possible.
-
-..
-
-   **Destroy repair vehicle/tower rebuild disrupt**
-
--  After you destroy a radio tower the government will attempt to repair
-      the tower with a repair vehicle.
-
--  Try to steal it to gain a new source vehicle to repair other vehicles
-      and entrenchments.
-
--  If all else fails, simply blow it up with a rocket launcher or
-      mortar.
-
-Rescue missions
-----------------
-
-   **POW rescue**
-
--  A POW is imprisoned in an outpost. You have to free and return him to
-      HQ.
-
--  This is a hard mission because you cannot use any explosives to kill
-      the 2-3 squads’ worth of enemy infantry guarding him without
-      murdering the POW.
-
--  I recommend staying away from this mission. It’s not worth the
-      effort.
-
-..
-
-   **Refugee evac**
-
--  Some gendarmes are guarding some refugees in a town. Kill the guards,
-      recruit the refugees by using the drop-down menu on them, then
-      take them back to HQ.
-
--  gendarmes are easy to kill so this should be easier than other
-      missions.
-
--  Make sure to take a large vehicle capable of carrying 6+ people.
-
-Conquest missions
-------------------
-
-   **Take the outpost**
-
--  This refers to an outpost as it is marked on the map and sometimes
-      refers to a checkpoint.
-
--  If they map marker for the mission is on a road and is not on an
-      outpost, then it is a checkpoint. In which case this is an easy
-      way to gain some gear and money.
-
--  Refer to taking a strategic zone section for more tips on capturing
-      outposts.
-
-..
-
-   **Resource acquisition**
-
--  Take a resource depot. You do not have to keep the resource after you
-      take it.
-
--  Do not use explosives like mortars or GMGs. civilians are inside and
-      if killed you will incur aggression penalties and the resources
-      will be “destroyed”
-
--  Resources typically have weakened defences compared to outposts.
-
-Overview of Antistasi mission rewards
-=====================================
-
-Credit: Bob Murphy
-
-**Assassination missions**
-
--  Assassinate Spec Ops - increased city support - 200 to 400 bucks plus
-      gear
-
--  Assassinate Traitor - some HR (weird formula) - 300+ bucks plus gear
-
-**Conquer mission**
-
--  200 to 400 bucks
-
--  some city support
-
--  the gear you can loot
-
-**Convoy missions**
-
--  money convoy gives 5000 bucks plus gear
-
--  ammunition convoy 300+ bucks plus gear
-
--  armour convoy increases city support plus you hopefully get nice
-      vehicles plus gear
-
--  prisoner convoy gives you 1 hr plus 300+ bucks PER rescued prisoner
-      plus gear
-
--  reinforcement convoy increases city support and gives gear
-
--  supplies convoy can massively increase the city support plus gear
-
-**Destroy missions**
-
--  Destroy radio tower - player score and aggro related plus gear
-
--  Destroy repair truck - 300 + bucks plus gear
-
-**Logistics missions**
-
--  Ammo - 300+ bucks plus gear
-
--  Bank - 5000+ bucks plus gear
-
--  Salvage - 300+ bucks plus gear
-
--  Supplies - huge city support effect, money and HR depending on war
-      level and such
-
-**Repair antenna**
-
--  Has influence on next attack time, personal reputation and aggro plus
-      gear
-
-**Rescue mission**
-
--  Prisoner - HR based on people count, Money based on people count and
-      war level, the gear you can loot (2HR and 100+ pp)
-
--  Refugees - HR based on people count, Money based on people count and
-      war level, the gear you can loot (1HR and 100 pp)
-
-**Disclaimer:**
-
-Wherever there is a + behind a number, the number has possible
-multipliers for difficulty, war level or else which can increase the
-amount paid out.
-
-This information was quickly taken out of the code and I (bob murphy)
-can NOT guarantee that the information is complete and/or correct.
-
-Airstrike points
+Airstrike Points
 =================
+
+Main Article: :ref:`concept_airstrikes`
 
 -  Once you capture an airbase you will get a passive income of
    airstrike points.
@@ -1021,46 +438,17 @@ Press the “y” key to open this menu. You will use this menu for fast
 travel, managing AI, transferring and managing money, recruiting, and
 more.
 
-**Fast travel**
+- **Fast Travel** - Depending on your parameters setting, you can fast travel to and from different zones provided there are no enemies within 500 meters of you. You can use fast travel to transport High Command squads and vehicles as well.
 
--  Depending on your parameters setting, you can fast travel to and from
-   different zones provided there are no enemies within 500 meters of
-   you.
+- **Player and Money** - Here you can add or remove a player to/from the member list temporarily (until the server is restarted). Non server members do not have access to equipment that is not unlocked. Look at a player and press add server member to give them server membership. You can transfer your personal money to other players or the faction funds.
 
--  You can use fast travel to transport High Command squads and vehicles
-   as well.
+- **Undercover On** - Use this setting to go undercoverif you are not being spotted by anyone and are not wearing suspicious equipment.
 
-**Player and Money**
+- **Construct Here** - A number of objects used for cover and obstacles can be built through this menu. Only bunker options cost money and you must have an engineer in your squad or be an engineer to build bunkers.
 
--  Here you can add or remove a player to/from the member list
-   temporarily (until the server is restarted). Non server members do
-   not have access to equipment that is not unlocked. Look at a player
-   and press add server member to give them server membership.
+- **Garage vehicle** - Look at a vehicle while in a friendly location and press this button to send it to the garage.
 
--  You can transfer your personal money to other players or the faction
-   funds.
-
-**Undercover on**
-
--  Use this setting to go undercoverif you are not being spotted by
-   anyone and are not wearing suspicious equipment.
-
-**Construct here**
-
--  A number of objects used for cover and obstacles can be built through
-   this menu.
-
--  Only bunker options cost money and you must have an engineer in your
-   squad or be an engineer to build bunkers.
-
-**Garage vehicle**
-
--  Look at a vehicle while in a friendly location and press this button
-   to send it to the garage.
-
-**Unlock vehicle**
-
--  Allows other groups to use your vehicle.
+- **Unlock vehicle** - Allows other groups to use your vehicle.
 
 AI Management Menu
 ------------------
@@ -1070,190 +458,62 @@ select the command you want to do. For example, if I want only one of my
 squad mates to loot, I’d select them through the function keys then
 select “Auto Ream/loot.”
 
-   **Temp AI Control**
-
--  This option allows you to take direct control of an AI unit.
-
-..
-
-   **Auto rearm/loot**
-
--  This command will allow your AI to upgrade their equipment from
-   fallen enemies. If you use this command while they are in a vehicle,
-   the AI will load the loot into that vehicle instead.
-
-..
-
-   **Auto heal**
-
--  This command allows your AI to heal themselves and others.
-
-..
-
-   **Squad Sitrep**
-
--  Use for HC squads. They will tell you their combat status, how many
-   of them are still alive, and if they are embarked or disembarked from
-   their vehicle.
-
-..
-
-   **Garrison units**
-
--  Use this command to add units to a garrison. This is especially
-   useful when you have just taken a strategic zone and you need to
-   defend from an enemy counterattack.
-
-..
-
-   **Dismiss units**
-
--  Use this to dismiss/delete units. You will gain back the money for
-   the vehicles but not for infantry/crew.
-
-..
-
-   **Squad add vehicle**
-
--  Give HC squads vehicles they can use. This is especially useful for
-   the INF team that is small enough to serve as a crew for armoured
-   vehicles.
-
-..
-
-   **Mount/ Dismount**
-
--  Forces HC squad units to mount/dismount their assigned vehicle.
+- **Temp AI Control** - This option allows you to take direct control of an AI unit.
+- **Auto Rearm/Loot** - This command will allow your AI to upgrade their equipment from fallen enemies. If you use this command while they are in a vehicle, the AI will load the loot into that vehicle instead.
+- **Auto Heal** - This command allows your AI to heal themselves and others.
+- **Squad Sitrep** - Use for HC squads. They will tell you their combat status, how many of them are still alive, and if they are embarked or disembarked from their vehicle.
+- **Garrison units** - Use this command to add units to a garrison. This is especially useful when you have just taken a strategic zone and you need to defend from an enemy counterattack.
+- **Dismiss units** - Use this to dismiss/delete units. You will gain back the money for the vehicles but not for infantry/crew.
+- **Squad add vehicle** - Give HC squads vehicles they can use. This is especially useful for the INF team that is small enough to serve as a crew for armoured vehicles.
+- **Mount/ Dismount** - Forces HC squad units to mount/dismount their assigned vehicle.
 
 Commander menu
 --------------
 
-   **Recruit squad Menu**
+**Recruit Inf Squad**
 
-   **Recruit inf squad**
+- **Normal squad** - 8-member with a medic and AT capabilities
+- **Engineer squad** - 8-member with an engineer, medic, and AT capabilities
+- **MG squad** - 8-member squad with a HMG, medic and AT capabilities
+- **Mortar squad** - 8-member squad with mortar, medic and AT capabilities. Also see: :ref:`concept_counterbatteryfire`
+- **Recruit Inf team** - 4 men small cost. Can be used for crewing vehicles
+- **Recruit AT team** - 5 members with 3 of which with AT launchers. Medic capabilities
+- **Recruit AT car** - SPG-9 Technical with 2 members, a gunner and a driver
+- **Recruit AA truck** - 2 members with a ZU-23-2 AA platform mounted on a Ural truck
+- **Recruit MG team** - 2 members with an HMG
+- **Recruit Mortar team** - 2 members with a mortar
+- **Recruit Sniper team** - 2 members. One spotter and one sniper.
 
-   **Normal squad**
+**Air Support**
 
--  8-member with a medic and AT capabilities
+- **HE bombs** - High explosive bombs. Effective against infantry
+- **Cluster bombs** - Effective against armoured vehicles
+- **Napalm bombs** - Effective against infantry
+- **Add to air support** - Trades an air vehicle that you are looking at for air support points
 
-..
-
-   **Engineer squad**
-
--  8-member with an engineer, medic, and AT capabilities
-
-..
-
-   **MG squad**
-
--  8-member squad with a HMG, medic and AT capabilities
-
-..
-
-   **Mortar Squad**
-
--  8-member squad with mortar, medic and AT capabilities
-
-..
-
-   **Recruit Inf Team**
-
--  4 men small cost. Can be used for crewing vehicles
-
-..
-
-   **Recruit AT team**
-
--  5 members with 3 of which with AT launchers. Medic capabilities.
-
-..
-
-   **Recruit AT car**
-
--  SPG-9 Technical with 2 members, a gunner and a driver.
-
-..
-
-   **Recruit AA truck**
-
--  2 members with a ZU-23-2 AA platform mounted on a Ural truck.
-
-..
-
-   **Recruit MG team**
-
--  2 members with an HMG.
-
-..
-
-   **Recruit Mortar team**
-
--  2 members with a mortar.
-
-..
-
-   **Recruit Sniper team**
-
--  2 members. One spotter and one sniper.
-
-..
-
-   **Air Support**
-
-   **HE bombs**
-
--  High explosive bombs. Effective against infantry
-
-..
-
-   **Cluster bombs**
-
--  Effective against armoured vehicles
-
-..
-
-   **Napalm bombs**
-
--  Effective against infantry.
-
-..
-
-   **Add to air support**
-
--  Trades an air vehicle that you are looking at for air support points.
-
-..
-
-   **Build outpost/Roadblock**
+**Build outpost/Roadblock**
 
 -  Click on a road to place a roadblock. A 5-man roadblock team will
    spawn and drive an armed vehicle to that location to guard the road.
    Click away from a road and you will get a 2-man observation outpost
    who will provide recon and will not fire unless fired upon.
 
-..
 
-   **Garbage clean**
+**Garbage clean**
 
 -  Cleans up the map of items left over. This will help with performance
    especially after many/large fights.
 
-..
-
-   **Delete outpost/ roadblock**
+**Delete outpost / roadblock**
 
 -  Deletes observation posts/roadblocks.
 
-..
-
-   **Resign/Eligible**
+**Resign/Eligible**
 
 -  Makes you resign as commander OR become eligible/ineligible for being
    given the role.
 
-..
-
-   **Sell Vehicle**
+**Sell Vehicle**
 
 -  Sells a vehicle you are looking at for money.
 
@@ -1274,7 +534,7 @@ Personal Squad management
 -  Be the spotter. Your AI will start with terrible spotting skill. The
    person in charge of spotting is the team leader, who has the highest
    spotting skill. But when you are in charge, you are the team leader.
-   That is why you must spot for your AI. (\` + space while looking at
+   That is why you must spot for your AI. (\ ` + space while looking at
    target to spot) your AI will track enemies that you spot and fire
    with astonishing accuracy.
 
@@ -1331,13 +591,13 @@ I will quickly go over how to store equipment in this game, because
 there are many ways to do it and sometimes you may have trouble storing
 a particular item.
 
-**Transfer vehicle cargo**\ **
+**Transfer vehicle cargo**
 
 -  Anything you put inside your vehicle can be quickly and easily
    transferred into the arsenal by using the interaction menu while
    looking at the arsenal.
 
-**storing loot boxes and arsenal boxes**\ **
+**Storing loot boxes and arsenal boxes**
 
 -  Sometimes you will find an ammo box filled with weapons and equipment
    that you can load onto a truck and take back to base.
@@ -1348,7 +608,7 @@ a particular item.
    vehicle.
 
 -  Once you get to the base, the easiest way to transfer to the arsenal
-   is unloading the box, opening the Y menu, then selecting “put vehicle
+   is unloading the box, opening the Y menu, then selecting “Put vehicle
    in garage.”
 
 -  Sometimes that might not work. Another way is with the box still
@@ -1369,29 +629,21 @@ Looting
 
 -  Looting is a core part of Antistasi. You need to learn how to
    effectively and safely collect loot.
-
 -  For starters, always have a loot box. You can obtain loot boxes for
    $10 at the vehicle box.
-
 -  These loot boxes can be loaded into the back of the truck or inside
    the cargo of any vehicle using ace interact if there is not enough
    cargo capacity.
-
 -  Loot boxes allow you to collect loot with the press of a button.
-
 -  Simply look at the box and use the interaction menu to collect
    loot.
-
 -  The loot box only collects loot that has yet to be unlocked. I.E., it
    will not pick up the M4 if you already unlocked it inside the
    arsenal.
-
 -  You should only loot when you believe it is safe to do so.
-
 -  Use your vehicle as cover while looting, it will save your life. I
    like to drive in between unlooted enemies, loading and unloading the
    loot box as needed. This way I can retain the safety of the vehicle.
-
 -  | You can also use the Auto Rearm/loot function AI in a vehicle to
      have them collect and load loot into the vehicle for you.
    |
@@ -1431,56 +683,35 @@ Managing your loot and arsenal
    the arsenal and as a result you and your soldiers will become more
    lethal. But there are ways you can speed up this process.
 
-|
-|
-|
-
 **There are essentially two schools of thought when it comes to
 equipment.**
 
 -  The first is to **never take any equipment you want unlocked until it
    is unlocked.** Choose to use worse weapons and equipment so that you
-   may unlock that equipment faster.
+   may unlock that equipment faster. For example, I have 20 M4s **but I choose to use a FAL instead until I get 5 more M4s.**
 
-Example, I have 20 M4s **but I choose to use a FAL instead until I get 5
-more M4s.**
+-  The second method is to take everything you want **as long as you believe it will make you more likely to come home alive.**
 
--  The second method is to take everything you want **as long as you
-   believe it will make you more likely to come home alive.**
-
--  Both methods have merit. I used to religiously use the first method
-   and died and failed more often, but when I DID succeed, I kept those
-   weapons no matter what.
-
--  I think it is more optimal to use what you have if it will make you
-   more effective. Recently I started using equipment that was rare and
-   I found I won more often.
-
--  It’s really a risk versus reward analysis at the end of the day. Do
-   what you think is optimal.
+Both methods have merit. I used to religiously use the first method   and died and failed more often, but when I DID succeed, I kept those weapons no matter what. I think it is more optimal to use what you have if it will make you more effective. Recently I started using equipment that was rare and I found I won more often. It’s really a risk versus reward analysis at the end of the day. Do what you think is optimal.
 
 Loadouts
 =========
 
--  Please note there are no rules to loadouts, but if you are using the
-   ACE mod, you have to account for medical supplies, ammo, weapons, and
-   how that equipment will affect your weight. The heavier you are, the
-   faster your stamina bar will deplete. This will have an adverse
-   effect on your accuracy and speed.
+Please note there are no rules to loadouts, but if you are using the
+ACE mod, you have to account for medical supplies, ammo, weapons, and
+how that equipment will affect your weight. The heavier you are, the
+faster your stamina bar will deplete. This will have an adverse
+effect on your accuracy and speed.
 
--  I assume you are using ACE for this tutorial.
+I assume you are using ACE for this tutorial.
 
 Here are some suggestions on loadouts you will likely need to pull
 quickly during emergencies. All of these loadouts will have 5 elastic
 bandages, 5 packing bandages, two 500m blood, 2 splints, 2 tourniquets
-and an entrenching tool. For most loadouts I carry only two grenades and
+and an entrenching tool. For most loadouts, I carry only two grenades and
 two smoke grenades.
 
-|
-|
-
 | **Starting loadout**
-|
 
 -  Starting loadout, I go with a lot of grenades and pistol ammunition,
    I find the WW2 bolt action rifles you get at the start do not do
@@ -1488,9 +719,6 @@ two smoke grenades.
 
 -  I spam grenades and don’t carry a primary to offset the weight of the
    grenades.
-
-|
-|
 
 **AT and AA**
 
@@ -1506,10 +734,7 @@ two smoke grenades.
 -  This will make me unbearably heavy so I will have to put some of the
    rockets in my truck to allow me to move around.
 
-|
-|
-
-**MG**\ **
+**MG**
 
 -  There are times where I want/ need to kill infantry fast. Enemies in
    Antistasi clump up a lot and makes machine gunners drool.
@@ -1518,6 +743,8 @@ two smoke grenades.
    do not carry a secondary.
 
 -  I put ammo in my vehicle to offset the weight.
+
+
 
 Undercover and how to use it
 =============================
@@ -1606,7 +833,7 @@ Vehicles
    when you enter them
 
 -  Military vehicles are vehicles that cannot go undercover and are
-   sometimes armed.Weapon statics such as a mortar or HMG’s can also be
+   sometimes armed. Weapon statics such as a mortar or HMG’s can also be
    bought.
 
 -  Off-roads are the backbone of the resistance. These can carry up to 6
@@ -1661,7 +888,7 @@ Taking a strategic point
 -  You will also need a large amount of infantry on standby. Taking a
    point, you may be able to do alone, *but if you leave the strategic
    zone or more than a single enemy comes inside the strategic zone, the
-   zone will flip to the enemy.\ *\ ****
+   zone will flip to the enemy.*
 
 -  That is something you never want for reasons I'll explain later. That
    is why you will always want friendly infantry nearby to take and hold
@@ -1673,10 +900,10 @@ Taking a strategic point
    equipment and their training will definitely be inferior to the
    enemy. That is why I bring double at least.
 
-**Scouting your target**\ **
+**Scouting your target**
 
 -  Go to map info and check to see if the garrison is in a weakened
-   state\ **.** *If its status is weakened or decimated it will have a
+   state. *If its status is weakened or decimated it will have a
    smaller garrison and easier to attack.*
 
 -  You should also scout the point you will attack and plan ahead.
@@ -1716,29 +943,13 @@ Taking a strategic point
 -  The enemy WILL attempt to take this point again, make sure you are
    there to keep that point.
 
-|
-|
-|
 
 Taking an airbase
 =================
 
--  So, you have a few towns, resources, factories and outposts under
-   your control, a good amount of HR, money, equipment and even some
-   armour assets. What’s the next big step? Taking an airbase of
-   course.
+So, you have a few towns, resources, factories and outposts under your control, a good amount of HR, money, equipment and even some armour assets. What’s the next big step? Taking an airbase of course. Taking an airbase is your gateway to what I call the late game. It allows you to ungarage and use air assets, you have the chance to gain a couple armour and air assets, and you cement your hold on the region. It’s a HUGE power spike.
 
--  Taking an airbase is your gateway to what I call the late game. It
-   allows you to ungarage and use air assets, you have the chance to
-   gain a couple armour and air assets, and you cement your hold on the
-   region. It’s a HUGE power spike.
-
--  But it is not for the faint of heart. This won’t be your usual
-   outpost smash. Air Bases have multiple squads of infantry, MG towers,
-   mortars and even stationary AA Armoured vehicles.
-
--  There are no armour patrols. Only a stationary AA vehicle which can
-   be anything.
+But it is not for the faint of heart. This won’t be your usual outpost smash. Air Bases have multiple squads of infantry, MG towers, mortars and even stationary AA Armoured vehicles. There are no armour patrols. Only a stationary AA vehicle which can be anything.
 
 **What you will need**
 
@@ -1761,29 +972,20 @@ Taking an airbase
    the infantry in killing off the remaining infantry and take the
    airbase.
 
-|
-|
-
 This is all easier said than done, it might be a process. It once took
 me an hour of dying, and sending waves of infantry to finally take it.
 But the ruthless amount of equipment and manpower it may take is all
 worth the reward. This is part of the victory conditions so either way,
 you need the air base.
 
-|
-|
 
 Enemy AI behaviour
 ==================
 
-|
-| Many people who play Arma 3 don’t understand how the AI works. They
-  complain of the AI being terminators. They never miss, they don’t see
-  foliage, etc. this section will explain how the AI works and how to
-  more effectively manipulate and win against them.
-
-|
-|
+Many people who play Arma 3 don’t understand how the AI works. They
+complain of the AI being terminators. They never miss, they don’t see
+foliage, etc. this section will explain how the AI works and how to
+more effectively manipulate and win against them.
 
 -  *AI responds to suppression.* Enemy AI who are suppressed will react
    irrationally and their accuracy and spotting skill will decrease.
@@ -1818,9 +1020,9 @@ Enemy AI behaviour
    firing from. They do not prevent the AI from hearing the shot
    altogether.
 
--  *Continually firing your weapon without pause, even with a suppressor
+-  Continually firing your weapon without pause, even with a suppressor
    will result in the AI looking for the source of the incoming fire and
-   identify the source of the fire unless the attacker relocates.*
+   identify the source of the fire unless the attacker relocates.
 
 -  AI can hear you breathing when you are fatigued.
 
@@ -1834,29 +1036,24 @@ Enemy AI behaviour
    they shoot at a stationary target. Keep moving in combat to avoid
    getting shot.
 
--  *AI willattempt to advance and flank the enemy.* Keep moving to
+-  *AI will attempt to advance and flank the enemy.* Keep moving to
    avoid being flanked by the enemy.
 
 Credit:
 
 https://armedassault.fandom.com/wiki/AI_Basics:_Detection
 
-|
-|
-
 https://armedassault.fandom.com/wiki/AI_Basics:_Targeting_priority
 
 Support System
 ==============
 
-credit: meerkat
-
-   Enemy squad leaders can call in support in various forms when they
-   come under attack from either opposing force. The ability to call in
-   supports CAN be transferred from a killed squad leader to the next
-   person who controls the group. As the war level increases, more
-   options to what the faction can call in opens up. There are more
-   factors than just war level to what may be called in.
+Enemy squad leaders can call in support in various forms when they
+come under attack from either opposing force. The ability to call in
+supports CAN be transferred from a killed squad leader to the next
+person who controls the group. As the war level increases, more
+options to what the faction can call in opens up. There are more
+factors than just war level to what may be called in.
 
 Supports:
 
@@ -1884,6 +1081,8 @@ Supports:
 
 Victory condition
 =================
+
+Main Article: :ref:`concept_winlossconditions`
 
 Now it’s time to understand how we win the game. You must own all
 airbases and more than 50% of the population of Altis must support your
@@ -1919,7 +1118,7 @@ Walkthrough
    the enemy from brainwashing the people and allow you to more easily
    convert them.
 
-**Mid game**\ **
+**Mid game**
 
 -  Once the original goal is completed, it’s time to take a strategic
    zone (refer to taking a strategic zone section), take an outpost with
@@ -1957,7 +1156,7 @@ Walkthrough
 -  Note that attacking an airbase does not have to succeed on the first
    attack. Launch multiple attacks and whittle them down.
 
-**Late game**\ **
+**Late game**
 
 -  Gaining an airbase is your way of knowing “we’re in the end game
    now”
@@ -2001,3 +1200,9 @@ Walkthrough
    it. Good luck commander!
 
 
+Contributors
+============
+
+Thanks to the following contributors for making this guide possible: 
+
+Moni, Meerkat, Bob Murphy, Giddi, DeathTouchWilly

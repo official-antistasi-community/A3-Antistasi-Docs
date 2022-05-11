@@ -29,22 +29,31 @@ Category
         - Money
         - HR
         - Town Support
-        - Next Enemy
-        - Enemy
-        - Player
-        - Commander
+        - Next Attack
+        - Enemy Aggression
+        - Player Points
+        - Commander Points
 
-      * - **Success**
+      * - **Success: Occupier Attacking**
         - 300/300 €
         - ``-``
         - ``-``
         - ``-``
+        - Occupier +10 for 60 minutes and Invader +5 for 60 minutes
+        - 10
+        - ``-``
+
+      * - **Success: Invader Attacking**
+        - 300/300 €
         - ``-``
         - ``-``
+        - ``-``
+        - Occupier +5 for 60 minutes and Invader +10 for 60 minutes
+        - 10
         - ``-``
 
       * - **Failure**
-        - ``-``
+        - :ref:`concept_losingpetrospenalties`
         - ``-``
         - ``-``
         - ``-``
