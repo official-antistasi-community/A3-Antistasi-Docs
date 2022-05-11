@@ -80,15 +80,25 @@
 </dl>
 <div class="topic">
 <p class="topic-title">Description</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet.</p>
-</div>
+<ul class="simple">
+<li><p>Someone betrayed the resistance and is ratting you out to the
+authorities. If the traitor makes it to an airbase, your HQ will be attacked.</p></li>
+<li><p>The traitor will usually be protected by around 2-3 squads of
+patrolling infantry.</p></li>
+<li><p>The traitor will be armed with a pistol and will always be indoors.</p></li>
+<li><p>Nearby, you will see a car parked outside. It differs in between mods what vehicle this is but for RHS it is a UAZ military vehicle.</p></li>
+<li><p>When you get close to the traitor, he will attempt to escape to his car and drive to the nearest airfield.</p></li>
+<li><p>Get near him, follow him to his car and follow him away out of town. Once it is safe, stop his vehicle with your truck, get out and kill him.</p></li>
+<li><p>OR you can attempt to kill his guards and the infantry protecting him. This will require some creative coordination or heavy fire power.</p></li>
+<li><p>The traitor will likely run to his vehicle once shots are fired. Shoot out his wheels so he cannot escape.</p></li>
+<li><p>You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet.</p></li>
+</ul>
 </div>
 <div class="topic">
 <p class="topic-title">Outcome</p>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Outcome</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<p><em>Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a “difficulty” modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.</em></p>
+<blockquote>
+<div><table class="docutils align-default">
 <colgroup>
 <col style="width: 13%" />
 <col style="width: 13%" />
@@ -104,10 +114,10 @@
 <th class="head"><p>Money</p></th>
 <th class="head"><p>HR</p></th>
 <th class="head"><p>Town Support</p></th>
-<th class="head"><p>Next Enemy</p></th>
-<th class="head"><p>Enemy</p></th>
-<th class="head"><p>Player</p></th>
-<th class="head"><p>Commander</p></th>
+<th class="head"><p>Next Attack</p></th>
+<th class="head"><p>Enemy Aggression</p></th>
+<th class="head"><p>Player Points</p></th>
+<th class="head"><p>Commander Points</p></th>
 </tr>
 </thead>
 <tbody>
@@ -117,11 +127,20 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>10 / 20</p></td>
+<td><p>5 / 10</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Failure</strong></p></td>
+<tr class="row-odd"><td><p><strong>Failed: Mission Expired</strong></p></td>
 <td><p>-30%</p></td>
+<td><p>-30%</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td><p>-10</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Failed: Traitor Escaped</strong></p></td>
+<td><p><a class="reference internal" href="defend_petros.html#mission-defend-petros"><span class="std std-ref">Defend Petros</span></a> OR if Defend Petros already active then reveal some of your mines</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
@@ -131,6 +150,7 @@
 </tr>
 </tbody>
 </table>
+</div></blockquote>
 </div>
 </section>
 
@@ -153,7 +173,7 @@
 <li class="toctree-l4 current"><a class="reference internal" href="../mission_categories/assassination.html">Assassination</a><ul class="current">
 <li class="toctree-l5 current"><a class="current reference internal" href="#">Kill The Traitor</a></li>
 <li class="toctree-l5"><a class="reference internal" href="kill_the_officer.html">Kill The Officer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="specops.html">Specops</a></li>
+<li class="toctree-l5"><a class="reference internal" href="specops.html">Spec Ops</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../mission_categories/conquest.html">Conquest</a></li>
@@ -219,6 +239,6 @@
       </div>
       <div class="clearer"></div>
     </div> 
-<div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/May/10</div>
+<div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/May/11</div>
   </body>
 </html>

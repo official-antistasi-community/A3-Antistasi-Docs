@@ -3,16 +3,6 @@
 Rescue
 ========
 
-
-.. topic:: Description
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-   🚨 PLACEHOLDER 🚨
-
-   ⚠️ - ⚠️ - ⚠️ - ⚠️ - ⚠️
-
-
 .. toctree::
    :maxdepth: 1
    :caption: Missions:
