@@ -29,7 +29,14 @@ html_favicon = "_images/antistasi_main_favicon.png"
 
 # region [Sphinx_Settings]
 
-extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc", "sphinx.ext.githubpages", 'sphinx_copybutton', "sphinx_design", 'sphinx.ext.autosectionlabel']
+extensions = ["myst_parser",
+              'sphinxcontrib.mermaid',
+              'sphinxcontrib.images',
+              "sphinxcontrib.fulltoc",
+              "sphinx.ext.githubpages",
+              'sphinx_copybutton',
+              "sphinx_design",
+              'sphinx.ext.autosectionlabel']
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
@@ -38,7 +45,7 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 
 
 html_css_files = [
-    'css/extra_style.css',
+    'css/extra_style.css'
 ]
 exclude_patterns = ["available_label.json"]
 

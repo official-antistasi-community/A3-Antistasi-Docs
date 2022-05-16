@@ -36,7 +36,7 @@ Write-Host $(`
     "`n-----------------------------------------------------------------------------------------------`n" )`
     -ForegroundColor Yellow
 
-& $venvExecutable -m pip install -r $requirementsFile
+& $venvExecutable -m pip install --require-virtualenv -r $requirementsFile
 
 Write-Host $(`
     "`n"+`
@@ -45,7 +45,7 @@ Write-Host $(`
     "`n-----------------------------------------------------------------------------------------------`n" )`
     -ForegroundColor Yellow
 
-& $venvExecutable -m pip install -r $requirementsFileDev
+& $venvExecutable -m pip install --require-virtualenv -r $requirementsFileDev
 
 
 
