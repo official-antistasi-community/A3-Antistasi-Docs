@@ -47,7 +47,7 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 html_css_files = [
     'css/extra_style.css'
 ]
-exclude_patterns = ["available_label.json"]
+exclude_patterns = ["available_label.json","extras/*"]
 
 
 # get available styles via `pygmentize -L styles`
