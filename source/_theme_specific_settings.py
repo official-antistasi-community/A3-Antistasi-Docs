@@ -68,7 +68,8 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
             "github_user": self.antistasi_organization_name,
             "github_fork": f"{self.antistasi_organization_name}/{self.antistasi_repo_name}",
             "globaltoc_includehidden": True,
-            "stickysidebarscrollable": True
+            "stickysidebarscrollable": True,
+            "stickysidebar": False
         }
 
     def apply_pygments_style(self) -> None:
