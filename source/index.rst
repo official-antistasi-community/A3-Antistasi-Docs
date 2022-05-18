@@ -27,11 +27,6 @@ Content
    /dev_guide/dev_guide_index
 
 
-.. toctree::
-   :hidden:
-   :glob:
-
-   /extras/*
 
 
 
