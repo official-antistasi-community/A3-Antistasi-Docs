@@ -38,6 +38,14 @@
 
 ----
 
+## Extensions Usage
+
+[see extensions_readme.md](/tools/extensions_readme.md)
+
+----
+
+----
+
 ## Useful links
 
 - [reStructuredText](https://docutils.sourceforge.io/rst.html)

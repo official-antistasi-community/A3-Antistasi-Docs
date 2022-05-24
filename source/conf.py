@@ -7,8 +7,8 @@ import sys
 import time
 
 sys.path.insert(0, os.path.abspath('.'))
-from _config_helper import get_groundworks_paths
-from _theme_specific_settings import apply_theme_specific_settings, THEME_SPECIFIC_OPTIONS_CLASSES
+from _config_utils._config_helper import get_groundworks_paths, get_generate_config
+from _config_utils._theme_specific_settings import apply_theme_specific_settings, THEME_SPECIFIC_OPTIONS_CLASSES
 # endregion [Boilerplate]
 
 # region [Project_Info]
@@ -21,7 +21,7 @@ author = 'Official Antistasi Community'
 antistasi_organization_name = "official-antistasi-community"
 
 antistasi_repo_name = "A3-Antistasi"
-
+issues_github_path = f"{antistasi_organization_name}/{antistasi_repo_name}"
 html_logo = "_images/antistasi_main_logo.png"
 html_favicon = "_images/antistasi_main_favicon.png"
 
@@ -29,7 +29,15 @@ html_favicon = "_images/antistasi_main_favicon.png"
 
 # region [Sphinx_Settings]
 
-extensions = ["myst_parser", 'sphinxcontrib.mermaid', 'sphinxcontrib.images', "sphinxcontrib.fulltoc", "sphinx.ext.githubpages", 'sphinx_copybutton', "sphinx_design", 'sphinx.ext.autosectionlabel']
+extensions = ["myst_parser",
+              'sphinxcontrib.mermaid',
+              'sphinxcontrib.images',
+              "sphinxcontrib.fulltoc",
+              "sphinx.ext.githubpages",
+              #   'sphinx_copybutton',
+              "sphinx_design",
+              'sphinx.ext.autosectionlabel',
+              'sphinx_issues']
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
@@ -40,7 +48,7 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 html_css_files = [
     'css/extra_style.css',
 ]
-exclude_patterns = ["available_label.json"]
+exclude_patterns = ["available_label.json", "extras/*"]
 
 
 # get available styles via `pygmentize -L styles`

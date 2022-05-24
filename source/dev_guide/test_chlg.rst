@@ -12,10 +12,6 @@ Version 2.5.3
 Major
 ---------------------
 
-- Rework of punishment attacks `#2119 <https://github.com/official-antistasi-community/A3-Antistasi/pull/2119>`_.
+- Rework of punishment attacks :issue:`2119`.
    - Punishment attacks no longer sent against occupant controlled towns.
-
-+++++++++++++++++++++++++++++++++++++++
-
-
 

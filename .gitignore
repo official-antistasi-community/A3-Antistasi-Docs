@@ -232,3 +232,4 @@ generate_config.ini
 .vscode/settings.json
 created
 /tools/quick_scripts
+*.env

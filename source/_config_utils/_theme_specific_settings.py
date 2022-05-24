@@ -50,7 +50,8 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
 
     def apply_html_sidebars(self) -> None:
         super().apply_html_sidebars()
-        self.global_data["html_sidebars"]["**"] += ['sidebar_extras.html', 'contribute.html']
+        # self.global_data["html_sidebars"]["**"] += ['sidebar_extras.html', 'contribute.html']
+        self.global_data["html_sidebars"]["**"] += ['contribute.html']
 
     def apply_html_theme_options(self) -> None:
         super().apply_html_theme_options()
@@ -59,12 +60,13 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
             "github_user": self.antistasi_organization_name,
             "github_fork": f"{self.antistasi_organization_name}/{self.antistasi_repo_name}",
             "globaltoc_includehidden": True,
-            "stickysidebarscrollable": True
+            "stickysidebarscrollable": True,
+            "stickysidebar": False
         }
 
     def apply_pygments_style(self) -> None:
         super().apply_pygments_style()
-        self.global_data["pygments_style"] = "dracula"
+        self.global_data["pygments_style"] = "one-dark"
 
     def apply_html_context(self) -> None:
         super().apply_html_context()
