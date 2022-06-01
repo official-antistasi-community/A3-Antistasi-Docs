@@ -4,6 +4,7 @@ Official Antistasi Community Edition Wiki
 
 
 
+
 .. thumbnail:: /_images/antistasi_main_image.png
    :width: 500px
    :show_caption: False
@@ -12,6 +13,8 @@ Official Antistasi Community Edition Wiki
 .. topic:: Description
 
    .. include:: /_data/short_description.txt
+
+
 
 
 Content

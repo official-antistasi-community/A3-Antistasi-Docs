@@ -24,7 +24,8 @@ antistasi_repo_name = "A3-Antistasi"
 issues_github_path = f"{antistasi_organization_name}/{antistasi_repo_name}"
 html_logo = "_images/antistasi_main_logo.png"
 html_favicon = "_images/antistasi_main_favicon.png"
-
+github_username = antistasi_organization_name
+github_repository = antistasi_repo_name
 # endregion [Project_Info]
 
 # region [Sphinx_Settings]
@@ -34,10 +35,12 @@ extensions = ["myst_parser",
               'sphinxcontrib.images',
               "sphinxcontrib.fulltoc",
               "sphinx.ext.githubpages",
-              #   'sphinx_copybutton',
+              'sphinx_copybutton',
               "sphinx_design",
               'sphinx.ext.autosectionlabel',
-              'sphinx_issues']
+              'sphinx_issues',
+              "sphinx_toolbox.shields"
+              ]
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]

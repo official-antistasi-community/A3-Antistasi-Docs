@@ -70,7 +70,7 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
 
     def apply_html_context(self) -> None:
         super().apply_html_context()
-        self.global_data["html_context"] |= {"code_block_color": "rgb(79, 76, 103)"}
+        self.global_data["html_context"] |= {"use_extra_style": True, "code_block_color": "rgb(79, 76, 103)"}
 
 
 class ClassicSpecificOptions(ThemeSpecificSettingTemplate):
