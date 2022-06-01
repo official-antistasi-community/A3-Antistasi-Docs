@@ -45,7 +45,8 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 
 
 html_css_files = [
-    'css/extra_style.css'
+    'css/extra_style.css',
+    'css/tiles.css'
 ]
 exclude_patterns = ["available_label.json","extras/*"]
 
