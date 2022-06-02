@@ -1,26 +1,31 @@
 .sd-card {
-    background-color: #505050 !important;
+    background-color: #404040 !important;
     border-radius: 0.5rem !important;
+    box-shadow: 0.1rem 0.1rem 7px 1px #606060 !important;
 }
 
 .sd-card-header.header-2 {
     font-size: 180% !important;
-    background-color: #606060 !important;
+    border-radius: 0.5rem !important;
+    background-color: #505050 !important;
 }
 .sd-card-header.header-3 {
     font-size: 150% !important;
-    background-color: #707070 !important;
+    background-color: #606060 !important;
     border-radius: 0.5rem !important;
 }
 
 .sd-card-header.header-3-light {
     font-weight: bold;
-    background-color: #707070 !important;
+    background-color: #606060 !important;
     border-radius: 0.5rem !important;
 }
 
 .sd-card-3 {
-    background-color: #606060 !important;
+    background-color: #505050 !important;
+    border-radius: 0.5rem !important;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #656565 !important;
 }
 
 body {
@@ -33,4 +38,58 @@ body {
 
 .hidden h2 {
     display: none;
+}
+
+.sphinxsidebar h3 {
+    background-color: #303030 !important;
+    border: 1px solid #303030 !important;
+    border-radius: 5px 0 0 5px !important;
+    padding-left: 1rem !important;
+}
+
+.table-2 tr:hover {
+    background-color: #303030;
+}
+
+.table-2 {
+    background-color: #505050 !important;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #656565 !important;
+}
+
+table {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    border-collapse: collapse;
+}
+
+tr {
+    border: none;
+}
+
+table tr:first-child th {
+    border-top: none !important;
+}
+table tr td:last-child, table tr th:last-child {
+    border-right: none !important;
+}
+table tr td:first-child, table tr th:first-child {
+    border-left: none !important;
+}
+table tr:last-child td {
+    border-bottom: none !important;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem !important;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem !important;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem !important;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem !important;
 }

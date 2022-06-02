@@ -7,7 +7,12 @@ Kill The Traitor
 Category
     :ref:`mission_category_assassination`
 
-.. topic:: Description
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
+
+   Description
+   ^^^^^^^^^^^
 
    -  Someone betrayed the resistance and is ratting you out to the
       authorities. If the traitor makes it to an airbase, your HQ will be attacked.
@@ -21,12 +26,17 @@ Category
    -  The traitor will likely run to his vehicle once shots are fired. Shoot out his wheels so he cannot escape.
    -  You can find Intel on the Traitor’s family from dead enemy soldiers. This can be used by Petros to blackmail the Traitor into staying quiet.
 
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-.. topic:: Outcome
+   Outcome
+   ^^^^^^^
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
 
-   .. list-table:: 
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result
@@ -37,7 +47,6 @@ Category
         - Enemy Aggression
         - Player Points
         - Commander Points
-
       * - **Success**
         - 300/600 €
         - ``-``
@@ -46,7 +55,6 @@ Category
         - ``-``
         - 10 / 20
         - 5 / 10
-
       * - **Failed: Mission Expired**
         - -30%
         - -30%
@@ -55,7 +63,6 @@ Category
         - ``-``
         - ``-``
         - -10
-
       * - **Failed: Traitor Escaped**
         - :ref:`mission_defend_petros` OR if Defend Petros already active then reveal some of your mines
         - ``-``
