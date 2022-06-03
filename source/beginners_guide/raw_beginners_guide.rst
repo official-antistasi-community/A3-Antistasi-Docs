@@ -286,7 +286,7 @@ Your Headquarters
    facilitate various functions. We will go over these now.
 
    .. dropdown:: The flag
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       -  The flag is where you recruit soldiers into your personal squad.
@@ -297,7 +297,7 @@ Your Headquarters
          unlocked.
 
    .. dropdown:: The garage / vehicle arsenal
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       **Open garage**
@@ -334,7 +334,7 @@ Your Headquarters
          parameter in parameters
 
    .. dropdown:: The Arsenal
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       -  The arsenal is where all weapons and equipment are stored and
@@ -344,7 +344,7 @@ Your Headquarters
          changes in equipment.
 
    .. dropdown:: The Whiteboard / Map
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       **Game options**
@@ -371,7 +371,7 @@ Your Headquarters
          decimated zones over higher strength garrisons.
 
    .. dropdown:: Sources for the Garage
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       Open the garage and you will see three white squares in the bottom right
@@ -398,7 +398,7 @@ Your Headquarters
       them so no one takes them out.
 
    .. dropdown:: The Tent
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       **Sleep**
@@ -413,7 +413,7 @@ Your Headquarters
          these options.
 
    .. dropdown:: Petros
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose
@@ -534,7 +534,7 @@ The Y menu
    - **Unlock vehicle** - Allows other groups to use your vehicle.
 
    .. dropdown:: AI Management Menu
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       How to use: select the squad mate/HC squad you want to command, then
@@ -552,7 +552,7 @@ The Y menu
       - **Mount/ Dismount** - Forces HC squad units to mount/dismount their assigned vehicle.
 
    .. dropdown:: Commander menu
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       **Recruit Inf Squad**
@@ -616,7 +616,7 @@ AI management and commanding
    how they work to understand how to fight and command AI effectively.
 
    .. dropdown:: Personal Squad management
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       -  First, learn the command system. Learning how to more intricately
@@ -650,7 +650,7 @@ AI management and commanding
          distract a local outpost while you destroy their radio tower.
 
    .. dropdown:: HC squad management
-      :class-title: header-3
+      :class-title: header-3-light
       :class-container: sd-card-3
 
       -  HC squads are primarily controlled through the Y menu and the map.

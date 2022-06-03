@@ -4,8 +4,9 @@
 Kill The Traitor
 ====================
 
-Category
-    :ref:`mission_category_assassination`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
+
+Category: :ref:`mission_category_assassination`
 
 .. card::
    :class-card: sd-mt-3

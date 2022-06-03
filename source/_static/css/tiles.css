@@ -19,6 +19,8 @@
     font-weight: bold;
     background-color: #606060 !important;
     border-radius: 0.5rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
 }
 
 .sd-card-3 {
@@ -92,4 +94,8 @@ table tr:last-child td:first-child {
 }
 table tr:last-child td:last-child {
     border-bottom-right-radius: 0.5rem !important;
+}
+
+.category-p {
+    font-size: 90%;
 }
