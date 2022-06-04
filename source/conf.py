@@ -36,6 +36,7 @@ extensions = ["myst_parser",
               "sphinx.ext.githubpages",
               'sphinx_copybutton',
               "sphinx_design",
+              'linuxdoc.rstFlatTable',
               'sphinx.ext.autosectionlabel']
 
 
