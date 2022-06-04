@@ -50,6 +50,10 @@ body {
     display: none;
 }
 
+.hidden-index-page h1, .hidden-index-page h2 {
+    display: none;
+}
+
 .sphinxsidebar h3 {
     background-color: #303030 !important;
     border: 1px solid #303030 !important;
