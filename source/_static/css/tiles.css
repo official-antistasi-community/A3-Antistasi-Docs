@@ -49,7 +49,15 @@ body {
     padding-left: 1rem !important;
 }
 
-.table-2 tr:hover {
+.table-2 tr:first-child th {
+    background-color: #606060 !important;
+}
+
+.table-2 tr td:first-child {
+    background-color: #606060;
+}
+
+.table-2 tr:hover td {
     background-color: #303030;
 }
 

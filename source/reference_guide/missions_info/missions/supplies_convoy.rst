@@ -4,20 +4,32 @@
 Supplies Convoy
 ==================
 
-Category
-    :ref:`mission_category_convoy`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
 
-.. topic:: Description
+Category: :ref:`mission_category_convoy`
 
-  -  Convoy bringing supplies to a town to attempt to convert it back to occupiers.
-  -  Stop the convoy to prohibit this and take the boxer truck to the town yourself for additional support.
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
+
+   Description
+   ^^^^^^^^^^^
+
+   -  Convoy bringing supplies to a town to attempt to convert it back to occupiers.
+   -  Stop the convoy to prohibit this and take the boxer truck to the town yourself for additional support.
 
 
-.. topic:: Outcome
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+   Outcome
+   ^^^^^^^
 
-   .. list-table:: 
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result
@@ -63,4 +75,4 @@ Category
         - ``-``
         - -10 for 60 minutes
         - ``-``
-        - -10 / -20        
+        - -10 / -20
