@@ -4,22 +4,32 @@
 Tower Rebuild Disrupt
 ==========================
 
-Category
-    :ref:`mission_category_spawned_dynamically`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
 
-.. topic:: Description
+Category: :ref:`mission_category_spawned_dynamically`
 
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-  -  After you destroy a radio tower the government will attempt to repair the tower with a repair vehicle.
-  -  Try to steal it to gain a new source vehicle to repair other vehicles and entrenchments.
-  -  If all else fails, simply blow it up with a rocket launcher or mortar.
+   Description
+   ^^^^^^^^^^^
 
+   -  After you destroy a radio tower the government will attempt to repair the tower with a repair vehicle.
+   -  Try to steal it to gain a new source vehicle to repair other vehicles and entrenchments.
+   -  If all else fails, simply blow it up with a rocket launcher or mortar.
 
-.. topic:: Outcome
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+   Outcome
+   ^^^^^^^
 
-   .. list-table:: 
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result

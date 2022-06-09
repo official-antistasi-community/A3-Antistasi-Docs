@@ -1,0 +1,215 @@
+.sd-card {
+    background-color: #404040 !important;
+    border-radius: 0.5rem !important;
+    box-shadow: 0.1rem 0.1rem 7px 1px #606060 !important;
+}
+
+.sd-card-header.header-2 {
+    font-size: 180% !important;
+    border-radius: 0.5rem !important;
+    background-color: #505050 !important;
+}
+
+.sd-card-header.header-2-light {
+    font-weight: bold;
+    font-size: 140% !important;
+    border-radius: 0.5rem !important;
+    background-color: #505050 !important;
+}
+
+.sd-card-header.header-3 {
+    font-size: 150% !important;
+    background-color: #606060 !important;
+    border-radius: 0.5rem !important;
+}
+
+.sd-card-header.header-3-light {
+    font-weight: bold;
+    background-color: #606060 !important;
+    border-radius: 0.5rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.sd-card-3 {
+    background-color: #505050 !important;
+    border-radius: 0.5rem !important;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #656565 !important;
+}
+
+body {
+    background-color: #202020 !important;
+}
+
+.body {
+    background-color: #303030 !important;
+}
+
+.hidden h2 {
+    display: none;
+}
+
+.hidden-index-page h1, .hidden-index-page h2 {
+    display: none;
+}
+
+.sphinxsidebar h3 {
+    background-color: #303030 !important;
+    border: 1px solid #303030 !important;
+    border-radius: 5px 0 0 5px !important;
+    padding-left: 1rem !important;
+}
+
+.table-2 tr:first-child th {
+    background-color: #606060 !important;
+}
+
+.table-2 tr td:first-child {
+    background-color: #606060;
+}
+
+.table-2 tr:hover td {
+    background-color: #303030;
+}
+
+.table-2 {
+    background-color: #505050 !important;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #656565 !important;
+}
+
+table {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    border-collapse: collapse;
+}
+
+tr {
+    border: none;
+}
+
+table tr:first-child th {
+    border-top: none !important;
+}
+table tr td:last-child, table tr th:last-child {
+    border-right: none !important;
+}
+table tr td:first-child, table tr th:first-child {
+    border-left: none !important;
+}
+table tr:last-child td {
+    border-bottom: none !important;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem !important;
+}
+table tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem !important;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5rem !important;
+}
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem !important;
+}
+
+.category-p {
+    font-size: 90%;
+}
+
+.table-mission-info table {
+    border: none !important;
+    border-radius: 0.5rem !important;
+    border-collapse: collapse;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #656565 !important;
+}
+
+.table-mission-info tr {
+    border: none;
+}
+
+.table-mission-info table tr:first-child th {
+    border-top: none !important;
+}
+.table-mission-info table tr td:last-child, .table-mission-info table tr th:last-child {
+    border-right: none !important;
+}
+.table-mission-info table tr td:first-child, .table-mission-info table tr th:first-child {
+    border-left: none !important;
+}
+.table-mission-info table tr:last-child td {
+    border-bottom: none !important;
+}
+
+.table-mission-info table tr:first-child th:first-child {
+    border-top-left-radius: 0.5rem !important;
+}
+.table-mission-info table tr:first-child th:last-child {
+    border-top-right-radius: 0.5rem !important;
+}
+
+.table-mission-info table tr:last-child td:first-child {
+    border-bottom-left-radius: initial !important;
+}
+.table-mission-info table tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5rem !important;
+}
+
+.table-mission-info tr:hover td:last-child,
+.table-mission-info tr:hover td:nth-last-child(2),
+.table-mission-info tr:hover td:nth-last-child(3),
+.table-mission-info tr:hover td:nth-last-child(4),
+.table-mission-info tr:hover td:nth-last-child(5),
+.table-mission-info tr:hover td:nth-last-child(6),
+.table-mission-info tr:hover td:nth-last-child(7),
+.table-mission-info tr:hover td:nth-last-child(8) {
+    background-color: #303030;
+}
+
+.table-mission-info tr td:last-child,
+.table-mission-info tr td:nth-last-child(2),
+.table-mission-info tr td:nth-last-child(3),
+.table-mission-info tr td:nth-last-child(4),
+.table-mission-info tr td:nth-last-child(5),
+.table-mission-info tr td:nth-last-child(6),
+.table-mission-info tr td:nth-last-child(7),
+.table-mission-info tr td:nth-last-child(8) {
+    background-color: #505050;
+}
+
+.table-mission-info tr td:nth-last-child(9),
+.table-mission-info tr td:nth-last-child(10) {
+    background-color: #606060;
+
+}
+
+.table-mission-info tr:first-child th {
+    background-color: #606060;
+}
+
+.table-mission-info tr:nth-last-child(5) td:nth-last-child(10) {
+    border-bottom: none !important;
+    border-bottom-left-radius: 0.5rem !important;
+}
+
+.table-mission-info tr:nth-last-child(2) td:nth-last-child(9) {
+    border-bottom: none !important;
+}
+
+.code-block-2 pre {
+    border-radius: 0.5rem !important;
+    border-radius: 0.5rem !important;
+    box-shadow: inset 0.1rem 0.1rem 7px 1px #606060 !important;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 15rem !important;
+}
+
+div.sphinxsidebar {
+    width: 15rem !important;
+}
