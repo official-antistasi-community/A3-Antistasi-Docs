@@ -4,18 +4,30 @@
 Reinforcements Convoy
 ==========================
 
-Category
-    :ref:`mission_category_convoy`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
 
-.. topic:: Description
+Category: :ref:`mission_category_convoy`
 
-  - Intercept and destroy a convoy before it reaches a map marker it intends to reinforce.
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-.. topic:: Outcome
+   Description
+   ^^^^^^^^^^^
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+   - Intercept and destroy a convoy before it reaches a map marker it intends to reinforce.
 
-   .. list-table:: 
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
+
+   Outcome
+   ^^^^^^^
+
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result
