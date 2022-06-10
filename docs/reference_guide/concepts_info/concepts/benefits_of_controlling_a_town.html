@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/extra_style.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
@@ -71,54 +72,103 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="benefits-of-controlling-a-town">
+  <section class="hidden" id="benefits-of-controlling-a-town">
 <span id="concept-benefitsofcontrollingatown"></span><h1>Benefits of Controlling a Town<a class="headerlink" href="#benefits-of-controlling-a-town" title="Permalink to this headline"></a></h1>
 <section id="benefits">
 <h2>Benefits<a class="headerlink" href="#benefits" title="Permalink to this headline"></a></h2>
-<p>Controlling a town brings with it a number of benefits:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-mt-3 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Benefits</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Controlling a town brings with it a number of benefits:</p>
 <ol class="arabic simple">
-<li><p>Having the support of more than 50% of the population is a win condition</p></li>
-<li><p>It will increase the amount of HR you get from the population of the town. The amount of HR you get is relative to the population of the town and whether you control the town (among other factors). Controlling a town effectively doubles the HR you will receive from it.</p></li>
-<li><p>You get a (small) amount of money as well from the population that supports you</p></li>
-<li><p>If you control a town, it definitely won’t spawn enemy patrols</p></li>
-<li><p>The support hit you receive when stealing a car from the town is lower</p></li>
-<li><p>Perhaps the most important benefit is that the Occupiers will obsessively attack rebel towns to no real effect. This flaw in the enemy’s strategy is basically what gives the player the ability to expand elsewhere on the map and keep their important holdings (like resources) safe</p></li>
+<li><p class="sd-card-text">Having the support of more than 50% of the population is a win condition</p></li>
+<li><p class="sd-card-text">It will increase the amount of HR you get from the population of the town. The amount of HR you get is relative to the population of the town and whether you control the town (among other factors). Controlling a town effectively doubles the HR you will receive from it.</p></li>
+<li><p class="sd-card-text">You get a (small) amount of money as well from the population that supports you</p></li>
+<li><p class="sd-card-text">If you control a town, it definitely won’t spawn enemy patrols</p></li>
+<li><p class="sd-card-text">The support hit you receive when stealing a car from the town is lower</p></li>
+<li><p class="sd-card-text">Perhaps the most important benefit is that the Occupiers will obsessively attack rebel towns to no real effect. This flaw in the enemy’s strategy is basically what gives the player the ability to expand elsewhere on the map and keep their important holdings (like resources) safe</p></li>
 </ol>
+</div>
+</div>
 </section>
 <section id="specific-calculation-for-a-towns-contribution-to-hr">
 <h2>Specific Calculation for a Town’s Contribution to HR<a class="headerlink" href="#specific-calculation-for-a-towns-contribution-to-hr" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-mt-3 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Specific Calculation for a Town’s Contribution to HR</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Algorithm</p>
+</div>
+<div class="sd-card-body docutils">
 <ol class="arabic simple">
-<li><p>[Population] * ([Amount of Support] / 10000)</p></li>
-<li><p>If the town is not controlled by the player’s faction, divide the number by 2</p></li>
-<li><p>If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
-<li><p>Always round the number up</p></li>
+<li><p class="sd-card-text">[Population] * ([Amount of Support] / 10000)</p></li>
+<li><p class="sd-card-text">If the town is not controlled by the player’s faction, divide the number by 2</p></li>
+<li><p class="sd-card-text">If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
+<li><p class="sd-card-text">Always round the number up</p></li>
 </ol>
-<p>You may notice here that if you have any amount of support in the town it will always at least give you 1 HR. No matter how small the fraction of an HR is calculated to be, you always round up.</p>
-<p>An example:</p>
+</div>
+</div>
+<p class="sd-card-text">You may notice here that if you have any amount of support in the town it will always at least give you 1 HR. No matter how small the fraction of an HR is calculated to be, you always round up.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Example<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ol class="arabic simple">
-<li><p>Given a town with 290 population and 35 support for the player’s faction. The town is NOT controlled by the player and the player does not control the nearby radio tower</p></li>
-<li><p>290 * (35 / 10000) = 1.015</p></li>
-<li><p>We do not control the city so divide by 2 = .5075</p></li>
-<li><p>We do not control the closest radio tower so divide by 2 = .25375</p></li>
-<li><p>Always round up the result = 1 HR</p></li>
+<li><p class="sd-card-text">Given a town with 290 population and 35 support for the player’s faction. The town is NOT controlled by the player and the player does not control the nearby radio tower</p></li>
+<li><p class="sd-card-text">290 * (35 / 10000) = 1.015</p></li>
+<li><p class="sd-card-text">We do not control the city so divide by 2 = .5075</p></li>
+<li><p class="sd-card-text">We do not control the closest radio tower so divide by 2 = .25375</p></li>
+<li><p class="sd-card-text">Always round up the result = 1 HR</p></li>
 </ol>
+</div>
+</details></div>
+</div>
 </section>
 <section id="specific-calculation-for-a-towns-money-contribution">
 <h2>Specific Calculation for a Town’s Money Contribution<a class="headerlink" href="#specific-calculation-for-a-towns-money-contribution" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-mt-3 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Specific Calculation for a Town’s Contribution to HR</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Algorithm</p>
+</div>
+<div class="sd-card-body docutils">
 <ol class="arabic simple">
-<li><p>[Population] * ([Amount of Support] / 100) / 3</p></li>
-<li><p>If the town is not controlled by the player’s faction, divide the number by 2</p></li>
-<li><p>If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
-<li><p>Always round the number up</p></li>
+<li><p class="sd-card-text">[Population] * ([Amount of Support] / 100) / 3</p></li>
+<li><p class="sd-card-text">If the town is not controlled by the player’s faction, divide the number by 2</p></li>
+<li><p class="sd-card-text">If the closest radio town is not owned by the player’s faction, divide the number by 2 again</p></li>
+<li><p class="sd-card-text">Always round the number up</p></li>
 </ol>
-<p>An example:</p>
+</div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Example<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <ol class="arabic simple">
-<li><p>Given the same situation as the example above</p></li>
-<li><p>290 * (35 / 100) / 3 = 33.8333333333</p></li>
-<li><p>We do not control the city so divide by 2 = 16.9166666667</p></li>
-<li><p>We do not control the closest radio tower so divide by 2 = 8.45833333333</p></li>
-<li><p>Always round up the result = $9</p></li>
+<li><p class="sd-card-text">Given the same situation as the example above</p></li>
+<li><p class="sd-card-text">290 * (35 / 100) / 3 = 33.8333333333</p></li>
+<li><p class="sd-card-text">We do not control the city so divide by 2 = 16.9166666667</p></li>
+<li><p class="sd-card-text">We do not control the closest radio tower so divide by 2 = 8.45833333333</p></li>
+<li><p class="sd-card-text">Always round up the result = $9</p></li>
 </ol>
+</div>
+</details></div>
+</div>
 </section>
 </section>
 
@@ -134,9 +184,10 @@
             </a></p>
 <h3><a href="../../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/beginners_guide_index.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../../reference_guide_index.html">Detailed Reference Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../missions_info/missions_overview.html">Mission Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/mission_info.html">Mission Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/missions_overview.html">Categories</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../concepts_overview.html">Basic Concepts</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="airstrikes.html">Airstrikes</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Benefits of Controlling a Town</a><ul>
@@ -159,10 +210,6 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../dev_guide/dev_guide_index.html">Dev Guide</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../extras/glossary.html">Glossary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../extras/links.html">Links</a></li>
-</ul>
 
 <div id="searchbox" style="display: none" role="search">
   <!--<h3>Search</h3>-->
@@ -173,19 +220,7 @@
       <input type="hidden" name="area" value="default" />
     </form>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script><h3>Extras</h3>
-<ul>
-    <li>
-        <ul>
-            
-            <li><a href="../../../extras/glossary.html">Glossary</a></li>
-            
-            <li><a href="../../../extras/links.html">Links</a></li>
-
-
-        </ul>
-    </li>
-</ul>
+<script type="text/javascript">$('#searchbox').show(0);</script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <div class="contribute">
         <h3>GitHub</h3>
@@ -206,6 +241,6 @@
       </div>
       <div class="clearer"></div>
     </div> 
-<div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/May/11</div>
+<div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/June/09</div>
   </body>
 </html>

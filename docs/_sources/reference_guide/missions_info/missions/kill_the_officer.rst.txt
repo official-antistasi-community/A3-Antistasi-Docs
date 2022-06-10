@@ -4,20 +4,31 @@
 Kill The Officer
 ====================
 
-Category
-    :ref:`mission_category_assassination`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
 
-.. topic:: Description
+Category: :ref:`mission_category_assassination`
 
-  -  The mission is very similar to the “Kill the traitor” mission. The differences are that the unit is already at a established location like an airfield.
-  -  Hence, he is protected by all the units within the area, which makes it harder to eliminate the target, unless you can snipe him or hit him with a mortar
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
+   Description
+   ^^^^^^^^^^^
 
-.. topic:: Outcome
+   -  The mission is very similar to the “Kill the traitor” mission. The differences are that the unit is already at a established location like an airfield.
+   -  Hence, he is protected by all the units within the area, which makes it harder to eliminate the target, unless you can snipe him or hit him with a mortar
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-   .. list-table:: 
+   Outcome
+   ^^^^^^^
+
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result

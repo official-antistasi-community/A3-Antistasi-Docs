@@ -4,23 +4,35 @@
 Bank Mission
 ===============
 
-Category
-    :ref:`mission_category_logistics`
+.. rst-class:: sd-mt-0 sd-mb-4 category-p
 
-.. topic:: Description
+Category: :ref:`mission_category_logistics`
 
-  - This mission is quite rare and map dependent. The mission is looking to see if you are in range of a building called “Land_Offices_01_V1_F” and most cities do not have this building, even fewer maps have it. 
-  -  Go to a bank with a boxer truck and wait (x) minutes to complete.
-  -  The timer will attract all nearby patrols in the vicinity.
-  -  The bank is made of glass so this can be hard to pull off.
-  -  Get to the top floor and pick enemies off from above.
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
+
+   Description
+   ^^^^^^^^^^^
+
+   - This mission is quite rare and map dependent. The mission is looking to see if you are in range of a building called “Land_Offices_01_V1_F” and most cities do not have this building, even fewer maps have it.
+   -  Go to a bank with a boxer truck and wait (x) minutes to complete.
+   -  The timer will attract all nearby patrols in the vicinity.
+   -  The bank is made of glass so this can be hard to pull off.
+   -  Get to the top floor and pick enemies off from above.
 
 
-.. topic:: Outcome
+.. card::
+   :class-card: sd-mt-3
+   :class-header: header-2
 
-  *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+   Outcome
+   ^^^^^^^
 
-   .. list-table:: 
+   *Note that cells which have two values separated by a / indicate that the reward or penalty depends on if the mission was created with a "difficulty" modifier. The difficulty modifier will make the mission harder but increase the payout. The exact formula is: if a random number 1-10 is lower than your War Level then make the mission harder but with higher payout.*
+
+   .. rst-class:: table-2
+   .. list-table::
       :header-rows: 1
 
       * - Result

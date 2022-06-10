@@ -59,7 +59,7 @@ extensions = ["myst_parser",
               'sphinx.ext.autosectionlabel',
               'sphinx_issues',
               "sphinx_toolbox.shields"
-              ]
+              'linuxdoc.rstFlatTable']
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
@@ -69,8 +69,9 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 
 html_css_files = [
     'css/extra_style.css',
+    'css/tiles.css'
 ]
-exclude_patterns = ["available_label.json", "extras/*"]
+exclude_patterns = ["available_label.json","extras/*"]
 
 
 # get available styles via `pygmentize -L styles`

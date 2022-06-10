@@ -17,6 +17,10 @@ class ThemeSpecificSettingTemplate:
                                      "use_extra_style": False,
                                      "base_css_name": self.theme_name}
 
+    def apply_html_theme_path(self) -> None:
+        if "html_theme_path" not in self.global_data:
+            self.global_data["html_theme_path"] = []
+
     def apply_html_theme_options(self) -> None:
         if "html_theme_options" not in self.global_data:
             self.global_data["html_theme_options"] = self.default_html_theme_options.copy()
@@ -32,11 +36,16 @@ class ThemeSpecificSettingTemplate:
         if "html_context" not in self.global_data:
             self.global_data["html_context"] = self.default_html_context.copy()
 
+    def apply_other_options(self) -> None:
+        pass
+
     def apply(self) -> dict[str, object]:
+        self.apply_html_theme_path()
         self.apply_html_theme_options()
         self.apply_html_sidebars()
         self.apply_pygments_style()
         self.apply_html_context()
+        self.apply_other_options()
         return self.global_data
 
 
@@ -50,7 +59,6 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
 
     def apply_html_sidebars(self) -> None:
         super().apply_html_sidebars()
-        # self.global_data["html_sidebars"]["**"] += ['sidebar_extras.html', 'contribute.html']
         self.global_data["html_sidebars"]["**"] += ['contribute.html']
 
     def apply_html_theme_options(self) -> None:
@@ -60,7 +68,7 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
             "github_user": self.antistasi_organization_name,
             "github_fork": f"{self.antistasi_organization_name}/{self.antistasi_repo_name}",
             "globaltoc_includehidden": True,
-            "stickysidebarscrollable": True,
+            "stickysidebarscrollable": False,
             "stickysidebar": False
         }
 
@@ -100,6 +108,20 @@ class ClassicSpecificOptions(ThemeSpecificSettingTemplate):
                                                    "relbarbgcolor": "#222222",
                                                    "footerbgcolor": "#222222",
                                                    "codebgcolor": "#111111"}
+
+
+class BootstrapSpecificOptions(ThemeSpecificSettingTemplate):
+    theme_name: str = "bootstrap"
+
+    # def apply_html_theme_path(self) -> None:
+    #     super().apply_html_theme_path()
+    #     import sphinx_bootstrap_theme
+    #     print(sphinx_bootstrap_theme.get_html_theme_path())
+    #     self.global_data["html_theme_path"] += sphinx_bootstrap_theme.get_html_theme_path()
+
+    def apply_html_theme_options(self) -> None:
+        super().apply_html_theme_options()
+        self.global_data["html_theme_options"] |= {"bootswatch_theme": "cosmo"}
 
 
 def _collect_all_theme_options() -> dict[str, type[ThemeSpecificSettingTemplate]]:

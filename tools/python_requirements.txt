@@ -11,4 +11,4 @@ sphinx-issues>=0.3.0
 sphinx-design==0.1.0
 yarl==1.7.2
 PyGithub==1.55
-sphinx-issues==3.0.1
+linuxdoc==20211220
