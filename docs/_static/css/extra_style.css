@@ -1,3 +1,43 @@
-@import "groundwork.css";
+@import url("groundwork.css");
+
+
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {height: 100%;}
+div.footer {height: 10%;}
+div.topic {padding: 25px;}
+
+div.topic p.topic-title {font-size: x-large;}
+
+
+
+
+pre {
+    background: rgb(79, 76, 103);
+}
+
+
+
+
+
+
+
+
+
+div.warning {
+    background: rgba(225,0,0,0.5);
+}
+
+hr.docutils {
+    border-width: 0px;
+    filter:drop-shadow(0px 10px 10px black);
+    height: 25px;
+    background-image: linear-gradient(to right, rgba(50, 175, 181, 0.75),rgba(50, 175, 181, 0.75), rgba(241, 216, 25, 0.75),rgba(24, 27, 32, 0.75), rgba(24, 27, 32, 0.75));
+}
+
 
 
