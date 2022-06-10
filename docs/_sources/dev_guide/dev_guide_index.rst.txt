@@ -10,4 +10,6 @@ Dev Guide
       :maxdepth: 1
       :glob:
 
-      /dev_guide/*
+      /dev_guide/ace_file.rst
+      /dev_guide/changelog.rst
+      /dev_guide/snippets.rst

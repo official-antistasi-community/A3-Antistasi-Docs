@@ -13,7 +13,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/sphinx-toolbox.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinxcontrib-images/LightBox2/lightbox2/dist/css/lightbox.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/extra_style.css" />
     <link rel="stylesheet" type="text/css" href="../_static/css/tiles.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -72,12 +71,17 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="ace-settings">
-<h1>ACE-SETTINGS<a class="headerlink" href="#ace-settings" title="Permalink to this headline"></a></h1>
-<p><strong>FILE:</strong> <a class="reference download internal" download="" href="../_downloads/f29474c452ebeaf6bb45094a9c08c9d6/ace_settings.txt"><code class="xref download docutils literal notranslate"><span class="pre">ace_settings.txt</span></code></a></p>
+  <section class="hidden" id="ace-settings">
+<span id="dev-guide-ace-settings"></span><h1>ACE-SETTINGS<a class="headerlink" href="#ace-settings" title="Permalink to this headline"></a></h1>
+<p class="sd-mt-0 sd-mb-4 category-p">FILE: <a class="reference download internal" download="" href="../_downloads/f29474c452ebeaf6bb45094a9c08c9d6/ace_settings.txt"><code class="xref download docutils literal notranslate"><span class="pre">ace_settings.txt</span></code></a></p>
 <section id="antistasi">
 <h2>Antistasi<a class="headerlink" href="#antistasi" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">HR_GRG_dLock</span><span class="w">                                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Antistasi</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">HR_GRG_dLock</span><span class="w">                                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">HR_GRG_PoolBase</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">10</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">HR_GRG_PoolIncr</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">HR_GRG_Pylons_Enabled</span><span class="w">                                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -86,10 +90,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">HR_GRG_ServiceDisabled_Repair</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-map">
 <h2>ACE Map<a class="headerlink" href="#ace-map" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_map_BFT_Enabled</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Map</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_map_BFT_Enabled</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_map_BFT_HideAiGroups</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_map_BFT_Interval</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_map_BFT_ShowPlayerNames</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -105,19 +116,33 @@
 <span class="n">ace_markers_timestampHourFormat</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">24</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-fire">
 <h2>ACE Fire<a class="headerlink" href="#ace-fire" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_fire_dropWeapon</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Fire</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_fire_dropWeapon</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_fire_enabled</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_fire_enableFlare</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_fire_enableScreams</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-zeus">
 <h2>ACE Zeus<a class="headerlink" href="#ace-zeus" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_autoAddObjects</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Zeus</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_autoAddObjects</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_canCreateZeus</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_radioOrdnance</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_remoteWind</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -126,10 +151,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_zeus_zeusBird</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-common">
 <h2>ACE Common<a class="headerlink" href="#ace-common" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_allowFadeMusic</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Common</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_allowFadeMusic</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_checkPBOsAction</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_checkPBOsCheckAll</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_checkPBOsWhitelist</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;[]&quot;</span><span class="w"></span>
@@ -142,10 +174,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_noradio_enabled</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-pylons">
 <h2>ACE Pylons<a class="headerlink" href="#ace-pylons" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_enabledForZeus</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Pylons</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_enabledForZeus</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_enabledFromAmmoTrucks</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_rearmNewPylons</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_requireEngineer</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -154,10 +193,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_pylons_timePerPylon</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">10</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-scopes">
 <h2>ACE Scopes<a class="headerlink" href="#ace-scopes" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_correctZeroing</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Scopes</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_correctZeroing</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_deduceBarometricPressureFromTerrainAltitude</span><span class="w">          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_defaultZeroRange</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="mi">100</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_enabled</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -170,10 +216,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_scopes_zeroReferenceTemperature</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="mi">15</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-volume">
 <h2>ACE Volume<a class="headerlink" href="#ace-volume" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">acex_volume_enabled</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Volume</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">acex_volume_enabled</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">acex_volume_fadeDelay</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">acex_volume_lowerInVehicles</span><span class="w">                                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">acex_volume_reduction</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">5</span><span class="w"></span>
@@ -181,10 +234,17 @@
 <span class="n">acex_volume_showNotification</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-arsenal">
 <h2>ACE Arsenal<a class="headerlink" href="#ace-arsenal" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_arsenal_allowDefaultLoadouts</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Arsenal</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_arsenal_allowDefaultLoadouts</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_arsenal_allowSharedLoadouts</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_arsenal_camInverted</span><span class="w">                                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_arsenal_enableIdentityTabs</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -193,27 +253,48 @@
 <span class="n">ace_arsenal_fontHeight</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">5.5</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-fortify">
 <h2>ACE Fortify<a class="headerlink" href="#ace-fortify" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_fortify_markObjectsOnMap</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Fortify</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_fortify_markObjectsOnMap</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_fortify_timeCostCoefficient</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_fortify_timeMin</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mf">1.5</span><span class="w"></span>
 <span class="n">acex_fortify_settingHint</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-goggles">
 <h2>ACE Goggles<a class="headerlink" href="#ace-goggles" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_goggles_effects</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Goggles</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_goggles_effects</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_goggles_showClearGlasses</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_goggles_showInThirdPerson</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-hearing">
 <h2>ACE Hearing<a class="headerlink" href="#ace-hearing" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hearing_autoAddEarplugsToUnits</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Hearing</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hearing_autoAddEarplugsToUnits</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_hearing_disableEarRinging</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hearing_earplugsVolume</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">0.5</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hearing_enableCombatDeafness</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -221,10 +302,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hearing_unconsciousnessVolume</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="mf">0.4</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-medical">
 <h2>ACE Medical<a class="headerlink" href="#ace-medical" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_medical_ai_enabledFor</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Medical</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_medical_ai_enabledFor</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_medical_AIDamageThreshold</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mf">0.1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_medical_bleedingCoefficient</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mf">0.3</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_medical_blood_bloodLifetime</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">300</span><span class="w"></span>
@@ -314,51 +402,93 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_medical_treatment_woundStitchTime</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">5</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-respawn">
 <h2>ACE Respawn<a class="headerlink" href="#ace-respawn" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_respawn_removeDeadBodiesDisconnected</span><span class="w">                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Respawn</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_respawn_removeDeadBodiesDisconnected</span><span class="w">                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_respawn_savePreDeathGear</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-sitting">
 <h2>ACE Sitting<a class="headerlink" href="#ace-sitting" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_sitting_enable</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Sitting</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_sitting_enable</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-weapons">
 <h2>ACE Weapons<a class="headerlink" href="#ace-weapons" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_persistentLaserEnabled</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Weapons</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_common_persistentLaserEnabled</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_laserpointer_enabled</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_reload_displayText</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_reload_showCheckAmmoSelf</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_weaponselect_displayText</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-weather">
 <h2>ACE Weather<a class="headerlink" href="#ace-weather" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_weather_enabled</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Weather</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_weather_enabled</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_weather_showCheckAirTemperature</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_weather_updateInterval</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="mi">60</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_weather_windSimulation</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-captives">
 <h2>ACE Captives<a class="headerlink" href="#ace-captives" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_captives_allowHandcuffOwnSide</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Captives</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_captives_allowHandcuffOwnSide</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_captives_allowSurrender</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_captives_requireSurrender</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_captives_requireSurrenderAi</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-cook-off">
 <h2>ACE Cook off<a class="headerlink" href="#ace-cook-off" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_ammoCookoffDuration</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mf">0.5</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Cook off</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_ammoCookoffDuration</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mf">0.5</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_enable</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_enableAmmobox</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_enableAmmoCookoff</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -366,65 +496,121 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cookoff_probabilityCoef</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-dragging">
 <h2>ACE Dragging<a class="headerlink" href="#ace-dragging" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_dragging_dragAndFire</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Dragging</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_dragging_dragAndFire</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-g-forces">
 <h2>ACE G-Forces<a class="headerlink" href="#ace-g-forces" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_gforces_coef</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">0.8</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE G-Forces</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_gforces_coef</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">0.8</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_gforces_enabledFor</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-grenades">
 <h2>ACE Grenades<a class="headerlink" href="#ace-grenades" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_grenades_convertExplosives</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Grenades</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_grenades_convertExplosives</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-headless">
 <h2>ACE Headless<a class="headerlink" href="#ace-headless" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_headless_delay</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">15</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Headless</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_headless_delay</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">15</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_headless_enabled</span><span class="w">                                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_headless_endMission</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_headless_log</span><span class="w">                                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_headless_transferLoadout</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-pointing">
 <h2>ACE Pointing<a class="headerlink" href="#ace-pointing" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_finger_enabled</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Pointing</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_finger_enabled</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_finger_indicatorColor</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.503034</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_finger_indicatorForSelf</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_finger_maxRange</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mf">5.01867</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-trenches">
 <h2>ACE Trenches<a class="headerlink" href="#ace-trenches" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_trenches_bigEnvelopeDigDuration</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">25</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Trenches</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_trenches_bigEnvelopeDigDuration</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">25</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_trenches_bigEnvelopeRemoveDuration</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="mi">15</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_trenches_smallEnvelopeDigDuration</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">20</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_trenches_smallEnvelopeRemoveDuration</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="mi">12</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-vehicles">
 <h2>ACE Vehicles<a class="headerlink" href="#ace-vehicles" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_vehicles_hideEjectAction</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Vehicles</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_vehicles_hideEjectAction</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_vehicles_keepEngineRunning</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_vehicles_speedLimiterStep</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="mi">5</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-artillery">
 <h2>ACE Artillery<a class="headerlink" href="#ace-artillery" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_artillerytables_advancedCorrections</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Artillery</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_artillerytables_advancedCorrections</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_artillerytables_disableArtilleryComputer</span><span class="w">                          </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_mk6mortar_airResistanceEnabled</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_mk6mortar_allowCompass</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -432,10 +618,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_mk6mortar_useAmmoHandling</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-logistics">
 <h2>ACE Logistics<a class="headerlink" href="#ace-logistics" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cargo_enable</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Logistics</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cargo_enable</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_cargo_enableRename</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_cargo_loadTimeCoefficient</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mf">3.46515</span><span class="w"></span>
 <span class="n">ace_cargo_openAfterUnload</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
@@ -461,17 +654,31 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_repair_wheelRepairRequiredItems</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="p">[]</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-map-tools">
 <h2>ACE Map Tools<a class="headerlink" href="#ace-map-tools" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_maptools_drawStraightLines</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Map Tools</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_maptools_drawStraightLines</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_maptools_rotateModifierKey</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="ace-name-tags">
 <h2>ACE Name Tags<a class="headerlink" href="#ace-name-tags" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_nametags_ambientBrightnessAffectViewDist</span><span class="w">                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Name Tags</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_nametags_ambientBrightnessAffectViewDist</span><span class="w">                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">ace_nametags_defaultNametagColor</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mf">0.77</span><span class="p">,</span><span class="mf">0.51</span><span class="p">,</span><span class="mf">0.08</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
 <span class="n">ace_nametags_nametagColorBlue</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mf">0.67</span><span class="p">,</span><span class="mf">0.67</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
 <span class="n">ace_nametags_nametagColorGreen</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mf">0.67</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.67</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
@@ -489,19 +696,33 @@
 <span class="n">ace_nametags_tagSize</span><span class="w">                                                        </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-spectator">
 <h2>ACE Spectator<a class="headerlink" href="#ace-spectator" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_spectator_enableAI</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Spectator</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_spectator_enableAI</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_spectator_maxFollowDistance</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">5</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_spectator_restrictModes</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_spectator_restrictVisions</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-explosives">
 <h2>ACE Explosives<a class="headerlink" href="#ace-explosives" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_explosives_customTimerDefault</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mi">30</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Explosives</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_explosives_customTimerDefault</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mi">30</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_explosives_customTimerMax</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">900</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_explosives_customTimerMin</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">5</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_explosives_explodeOnDefuse</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -509,10 +730,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_explosives_requireSpecialist</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-interaction">
 <h2>ACE Interaction<a class="headerlink" href="#ace-interaction" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_disableNegativeRating</span><span class="w">                           </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Interaction</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_disableNegativeRating</span><span class="w">                           </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_enableGroupRenaming</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_enableMagazinePassing</span><span class="w">                           </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_enableTeamManagement</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -520,10 +748,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_interaction_interactWithTerrainObjects</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-nightvision">
 <h2>ACE Nightvision<a class="headerlink" href="#ace-nightvision" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_aimDownSightsBlur</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="mf">0.14061</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Nightvision</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_aimDownSightsBlur</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="mf">0.14061</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_disableNVGsWithSights</span><span class="w">                           </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_effectScaling</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="mf">0.284091</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_fogScaling</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">0.241047</span><span class="w"></span>
@@ -531,10 +766,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_nightvision_shutterEffects</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-overheating">
 <h2>ACE Overheating<a class="headerlink" href="#ace-overheating" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_cookoffCoef</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mf">2.50373</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Overheating</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_cookoffCoef</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mf">2.50373</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_coolingCoef</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_displayTextOnJam</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_enabled</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -551,20 +793,34 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_overheating_unJamOnSwapBarrel</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-quick-mount">
 <h2>ACE Quick Mount<a class="headerlink" href="#ace-quick-mount" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_quickmount_distance</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">3</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Quick Mount</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_quickmount_distance</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">3</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_quickmount_enabled</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_quickmount_enableMenu</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">3</span><span class="w"></span>
 <span class="n">ace_quickmount_priority</span><span class="w">                                                     </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_quickmount_speed</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">15</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-map-gestures">
 <h2>ACE Map Gestures<a class="headerlink" href="#ace-map-gestures" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_map_gestures_allowCurator</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Map Gestures</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_map_gestures_allowCurator</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_map_gestures_allowSpectator</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_map_gestures_briefingMode</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_map_gestures_defaultColor</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.88</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.7</span><span class="p">]</span><span class="w"></span>
@@ -577,10 +833,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_map_gestures_onlyShowFriendlys</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-switch-units">
 <h2>ACE Switch Units<a class="headerlink" href="#ace-switch-units" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_enableSafeZone</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Switch Units</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_enableSafeZone</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_enableSwitchUnits</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_safeZoneRadius</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="mi">100</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_switchToCivilian</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -589,18 +852,32 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_switchunits_switchToWest</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-vehicle-lock">
 <h2>ACE Vehicle Lock<a class="headerlink" href="#ace-vehicle-lock" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehiclelock_defaultLockpickStrength</span><span class="w">                         </span><span class="o">=</span><span class="w">     </span><span class="mi">10</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Vehicle Lock</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehiclelock_defaultLockpickStrength</span><span class="w">                         </span><span class="o">=</span><span class="w">     </span><span class="mi">10</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehiclelock_lockVehicleInventory</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehiclelock_vehicleStartingLockState</span><span class="w">                        </span><span class="o">=</span><span class="w">     </span><span class="mi">-1</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-field-rations">
 <h2>ACE Field Rations<a class="headerlink" href="#ace-field-rations" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_field_rations_affectAdvancedFatigue</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Field Rations</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_field_rations_affectAdvancedFatigue</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_field_rations_enabled</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">acex_field_rations_hudShowLevel</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">acex_field_rations_hudTransparency</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">-1</span><span class="w"></span>
@@ -613,10 +890,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">acex_field_rations_waterSourceActions</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-uncategorized">
 <h2>ACE Uncategorized<a class="headerlink" href="#ace-uncategorized" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_fastroping_requireRopeItems</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Uncategorized</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_fastroping_requireRopeItems</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_gunbag_swapGunbagEnabled</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_hitreactions_minDamageToTrigger</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="mf">0.122781</span><span class="w"></span>
 <span class="n">ace_inventory_inventoryDisplaySize</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
@@ -630,10 +914,17 @@
 <span class="n">ace_tagging_quickTag</span><span class="w">                                                        </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-user-interface">
 <h2>ACE User Interface<a class="headerlink" href="#ace-user-interface" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_allowSelectiveUI</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE User Interface</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_allowSelectiveUI</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_ammoCount</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_ammoType</span><span class="w">                                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_commandMenu</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -671,27 +962,48 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_ui_zeroing</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-magazine-repack">
 <h2>ACE Magazine Repack<a class="headerlink" href="#ace-magazine-repack" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_magazinerepack_repackLoadedMagazines</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Magazine Repack</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_magazinerepack_repackLoadedMagazines</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_magazinerepack_timePerAmmo</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="mf">1.5</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_magazinerepack_timePerBeltLink</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="mi">8</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_magazinerepack_timePerMagazine</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-wind-deflection">
 <h2>ACE Wind Deflection<a class="headerlink" href="#ace-wind-deflection" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_winddeflection_enabled</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Wind Deflection</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_winddeflection_enabled</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_winddeflection_simulationInterval</span><span class="w">                           </span><span class="o">=</span><span class="w">     </span><span class="mf">0.05</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_winddeflection_vehicleEnabled</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-advanced-fatigue">
 <h2>ACE Advanced Fatigue<a class="headerlink" href="#ace-advanced-fatigue" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_fatigue_enabled</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Advanced Fatigue</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_fatigue_enabled</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_fatigue_enableStaminaBar</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_advanced_fatigue_fadeStaminaBar</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_fatigue_loadFactor</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
@@ -701,10 +1013,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_fatigue_terrainGradientFactor</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-interaction-menu">
 <h2>ACE Interaction Menu<a class="headerlink" href="#ace-interaction-menu" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_gestures_showOnInteractionMenu</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Interaction Menu</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_gestures_showOnInteractionMenu</span><span class="w">                                          </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">ace_interact_menu_actionOnKeyRelease</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">ace_interact_menu_addBuildingActions</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_alwaysUseCursorInteraction</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -726,10 +1045,17 @@
 <span class="n">ace_interact_menu_useListMenuSelf</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-view-restriction">
 <h2>ACE View Restriction<a class="headerlink" href="#ace-view-restriction" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_viewrestriction_mode</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE View Restriction</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">acex_viewrestriction_mode</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_viewrestriction_modeSelectiveAir</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_viewrestriction_modeSelectiveFoot</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">acex_viewrestriction_modeSelectiveLand</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
@@ -737,20 +1063,34 @@
 <span class="n">acex_viewrestriction_preserveView</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-advanced-throwing">
 <h2>ACE Advanced Throwing<a class="headerlink" href="#ace-advanced-throwing" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_enabled</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Advanced Throwing</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_enabled</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_enablePickUp</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_enablePickUpAttached</span><span class="w">                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_showMouseControls</span><span class="w">                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_throwing_showThrowArc</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-advanced-ballistics">
 <h2>ACE Advanced Ballistics<a class="headerlink" href="#ace-advanced-ballistics" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_ammoTemperatureEnabled</span><span class="w">                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Advanced Ballistics</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_ammoTemperatureEnabled</span><span class="w">                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_barrelLengthInfluenceEnabled</span><span class="w">            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_bulletTraceEnabled</span><span class="w">                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_enabled</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -758,20 +1098,34 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_advanced_ballistics_simulationInterval</span><span class="w">                      </span><span class="o">=</span><span class="w">     </span><span class="mf">0.05</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-crew-served-weapons">
 <h2>ACE Crew Served Weapons<a class="headerlink" href="#ace-crew-served-weapons" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_ammoHandling</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Crew Served Weapons</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_ammoHandling</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_defaultAssemblyMode</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_dragAfterDeploy</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_handleExtraMagazines</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_csw_progressBarTimeCoefficent</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-view-distance-limiter">
 <h2>ACE View Distance Limiter<a class="headerlink" href="#ace-view-distance-limiter" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_viewdistance_enabled</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE View Distance Limiter</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_viewdistance_enabled</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_viewdistance_limitViewDistance</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="mi">8000</span><span class="w"></span>
 <span class="n">ace_viewdistance_objectViewDistanceCoeff</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">ace_viewdistance_viewDistanceAirVehicle</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="mi">8</span><span class="w"></span>
@@ -779,28 +1133,49 @@
 <span class="n">ace_viewdistance_viewDistanceOnFoot</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">4</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-advanced-vehicle-damage">
 <h2>ACE Advanced Vehicle Damage<a class="headerlink" href="#ace-advanced-vehicle-damage" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehicle_damage_enableCarDamage</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Advanced Vehicle Damage</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">ace_vehicle_damage_enableCarDamage</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_vehicle_damage_enabled</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">ace_vehicle_damage_removeAmmoDuringCookoff</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-fragmentation-simulation">
 <h2>ACE Fragmentation Simulation<a class="headerlink" href="#ace-fragmentation-simulation" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_enabled</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Fragmentation Simulation</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_enabled</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_maxTrack</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_maxTrackPerFrame</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">0</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_reflectionsEnabled</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">ace_frag_spallEnabled</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-interaction-menu-self-more">
 <h2>ACE Interaction Menu (Self) - More<a class="headerlink" href="#ace-interaction-menu-self-more" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_interact_menu_more__ACE_CheckAirTemperature</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Interaction Menu (Self) - More</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_interact_menu_more__ACE_CheckAirTemperature</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_more__ace_csw_deploy</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_more__ACE_Equipment</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_more__ACE_Explosives</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -836,10 +1211,17 @@
 <span class="n">ace_interact_menu_more__UPSL_aime_vehicle_seats_turnin_action</span><span class="w">               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="ace-interaction-menu-self-move-to-root">
 <h2>ACE Interaction Menu (Self) - Move to Root<a class="headerlink" href="#ace-interaction-menu-self-move-to-root" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_interact_menu_moveToRoot__ACE_Equipment__ace_atragmx_open</span><span class="w">               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">ACE Interaction Menu (Self) - Move to Root</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">ace_interact_menu_moveToRoot__ACE_Equipment__ace_atragmx_open</span><span class="w">               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_moveToRoot__ACE_Equipment__ace_attach_Attach</span><span class="w">              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_moveToRoot__ACE_Equipment__ace_attach_Detach</span><span class="w">              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">ace_interact_menu_moveToRoot__ACE_Equipment__ACE_CheckDogtags</span><span class="w">               </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -935,16 +1317,30 @@
 <span class="n">ace_interact_menu_moveToRoot__UPSL_aime_vehicle_seats_getout_action__UPSL_aime_vehicle_seats_eject_action</span><span class="w"> </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="aime-general">
 <h2>AIME General<a class="headerlink" href="#aime-general" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_setting_hide</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME General</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_setting_hide</span><span class="w">                                                      </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="grad-trenches">
 <h2>GRAD Trenches<a class="headerlink" href="#grad-trenches" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_allowBigEnvelope</span><span class="w">                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">GRAD Trenches</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_allowBigEnvelope</span><span class="w">                        </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_allowCamouflage</span><span class="w">                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_allowDigging</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_allowEffects</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -981,10 +1377,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">grad_trenches_functions_vehicleEnvelopeRemovalTime</span><span class="w">                    </span><span class="o">=</span><span class="w">     </span><span class="mi">90</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="zeus-enhanced">
 <h2>Zeus Enhanced<a class="headerlink" href="#zeus-enhanced" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">zen_camera_adaptiveSpeed</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Zeus Enhanced</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">zen_camera_adaptiveSpeed</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">zen_camera_defaultSpeedCoef</span><span class="w">                                                 </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">zen_camera_fastSpeedCoef</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">zen_camera_followTerrain</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -1020,19 +1423,33 @@
 <span class="n">zen_vision_enableWhiteHotRedCold</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="aime-inventory">
 <h2>AIME Inventory<a class="headerlink" href="#aime-inventory" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_inventory_setting_assemble_action</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME Inventory</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_inventory_setting_assemble_action</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_inventory_setting_backpack_action</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_inventory_setting_holder_action</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_inventory_setting_open_action</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="vet-unflipping">
 <h2>VET_Unflipping<a class="headerlink" href="#vet-unflipping" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_require_serviceVehicle</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">VET_Unflipping</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_require_serviceVehicle</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_require_toolkit</span><span class="w">                                        </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_time</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">20</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_unit_man_limit</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="mi">7</span><span class="w"></span>
@@ -1040,33 +1457,61 @@
 <span class="n">force</span><span class="w"> </span><span class="n">vet_unflipping_vehicle_mass_limit</span><span class="w">                                     </span><span class="o">=</span><span class="w">     </span><span class="mi">100000</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="aime-vehicle-seats">
 <h2>AIME Vehicle Seats<a class="headerlink" href="#aime-vehicle-seats" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_vehicle_seats_setting_change_action</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME Vehicle Seats</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_vehicle_seats_setting_change_action</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_seats_setting_force_eject</span><span class="w">                                 </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_seats_setting_getin_action</span><span class="w">                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_seats_setting_getout_action</span><span class="w">                               </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_seats_setting_turnout_action</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="aime-ammo-type-menu">
 <h2>AIME Ammo Type Menu<a class="headerlink" href="#aime-ammo-type-menu" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_change_ammo_setting_ammo_class</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME Ammo Type Menu</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_change_ammo_setting_ammo_class</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_change_ammo_setting_vehicle_ammo_class</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="aime-group-management">
 <h2>AIME Group Management<a class="headerlink" href="#aime-group-management" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_group_setting_drop_leader_action</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME Group Management</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_group_setting_drop_leader_action</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="aime-vehicle-controls">
 <h2>AIME Vehicle Controls<a class="headerlink" href="#aime-vehicle-controls" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_vehicle_controls_setting_arty_computer_action</span><span class="w">                     </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME Vehicle Controls</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_vehicle_controls_setting_arty_computer_action</span><span class="w">                     </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_controls_setting_collision_action</span><span class="w">                         </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_controls_setting_engine_action</span><span class="w">                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_vehicle_controls_setting_flaps_action</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -1077,10 +1522,17 @@
 <span class="n">UPSL_aime_vehicle_controls_setting_user_actions</span><span class="w">                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="community-base-addons">
 <h2>Community Base Addons<a class="headerlink" href="#community-base-addons" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">cba_diagnostic_ConsoleIndentType</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">-1</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Community Base Addons</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">cba_diagnostic_ConsoleIndentType</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="mi">-1</span><span class="w"></span>
 <span class="n">cba_disposable_dropUsedLauncher</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="mi">2</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">cba_disposable_replaceDisposableLauncher</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">cba_events_repetitionMode</span><span class="w">                                                   </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
@@ -1090,10 +1542,17 @@
 <span class="n">cba_ui_StorePasswords</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="tfar-global-settings">
 <h2>TFAR - Global settings<a class="headerlink" href="#tfar-global-settings" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">TFAR_AICanHearPlayer</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">TFAR - Global settings</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">TFAR_AICanHearPlayer</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">TFAR_AICanHearSpeaker</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">TFAR_allowDebugging</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">tfar_core_noTSNotConnectedHint</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
@@ -1142,10 +1601,17 @@
 <span class="n">force</span><span class="w"> </span><span class="n">force</span><span class="w"> </span><span class="n">TFAR_voiceCone</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="dui-squad-radar-main">
 <h2>DUI - Squad Radar - Main<a class="headerlink" href="#dui-squad-radar-main" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_ace_hide_interaction</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">DUI - Squad Radar - Main</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_ace_hide_interaction</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">diwako_dui_colors</span><span class="w">                                                           </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;standard&quot;</span><span class="w"></span>
 <span class="n">diwako_dui_font</span><span class="w">                                                             </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;RobotoCondensed&quot;</span><span class="w"></span>
 <span class="n">diwako_dui_icon_style</span><span class="w">                                                       </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;standard&quot;</span><span class="w"></span>
@@ -1160,18 +1626,32 @@
 <span class="n">diwako_dui_reset_ui_pos</span><span class="w">                                                     </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="aime-gps-and-uav-terminal">
 <h2>AIME GPS and UAV Terminal<a class="headerlink" href="#aime-gps-and-uav-terminal" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_uav_terminal_setting_gps_action</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">AIME GPS and UAV Terminal</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">UPSL_aime_uav_terminal_setting_gps_action</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_uav_terminal_setting_term_action</span><span class="w">                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">UPSL_aime_uav_terminal_setting_uav_action</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="dui-squad-radar-radar">
 <h2>DUI - Squad Radar - Radar<a class="headerlink" href="#dui-squad-radar-radar" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_compass_hide_alone_group</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">DUI - Squad Radar - Radar</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_compass_hide_alone_group</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">diwako_dui_compass_hide_blip_alone_group</span><span class="w">                                    </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">diwako_dui_compass_icon_scale</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
 <span class="n">diwako_dui_compass_opacity</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="mi">1</span><span class="w"></span>
@@ -1220,10 +1700,17 @@
 <span class="n">diwako_dui_use_layout_editor</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="tfar-clientside-settings">
 <h2>TFAR - Clientside settings<a class="headerlink" href="#tfar-clientside-settings" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">TFAR_curatorCamEars</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">TFAR - Clientside settings</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">TFAR_curatorCamEars</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">TFAR_default_radioVolume</span><span class="w">                                                    </span><span class="o">=</span><span class="w">     </span><span class="mi">6</span><span class="w"></span>
 <span class="n">TFAR_intercomDucking</span><span class="w">                                                        </span><span class="o">=</span><span class="w">     </span><span class="mf">0.2</span><span class="w"></span>
 <span class="n">TFAR_intercomVolume</span><span class="w">                                                         </span><span class="o">=</span><span class="w">     </span><span class="mf">0.1</span><span class="w"></span>
@@ -1241,10 +1728,17 @@
 <span class="n">TFAR_volumeModifier_forceSpeech</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="dui-squad-radar-nametags">
 <h2>DUI - Squad Radar - Nametags<a class="headerlink" href="#dui-squad-radar-nametags" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_nametags_customRankStyle</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;[[&quot;&quot;PRIVATE&quot;&quot;,&quot;&quot;CORPORAL&quot;&quot;,&quot;&quot;SERGEANT&quot;&quot;,&quot;&quot;LIEUTENANT&quot;&quot;,&quot;&quot;CAPTAIN&quot;&quot;,&quot;&quot;MAJOR&quot;&quot;,&quot;&quot;COLONEL&quot;&quot;],[&quot;&quot;Pvt.&quot;&quot;,&quot;&quot;Cpl.&quot;&quot;,&quot;&quot;Sgt.&quot;&quot;,&quot;&quot;Lt.&quot;&quot;,&quot;&quot;Capt.&quot;&quot;,&quot;&quot;Maj.&quot;&quot;,&quot;&quot;Col.&quot;&quot;]]&quot;</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">DUI - Squad Radar - Nametags</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">diwako_dui_nametags_customRankStyle</span><span class="w">                                         </span><span class="o">=</span><span class="w">     </span><span class="s">&quot;[[&quot;&quot;PRIVATE&quot;&quot;,&quot;&quot;CORPORAL&quot;&quot;,&quot;&quot;SERGEANT&quot;&quot;,&quot;&quot;LIEUTENANT&quot;&quot;,&quot;&quot;CAPTAIN&quot;&quot;,&quot;&quot;MAJOR&quot;&quot;,&quot;&quot;COLONEL&quot;&quot;],[&quot;&quot;Pvt.&quot;&quot;,&quot;&quot;Cpl.&quot;&quot;,&quot;&quot;Sgt.&quot;&quot;,&quot;&quot;Lt.&quot;&quot;,&quot;&quot;Capt.&quot;&quot;,&quot;&quot;Maj.&quot;&quot;,&quot;&quot;Col.&quot;&quot;]]&quot;</span><span class="w"></span>
 <span class="n">diwako_dui_nametags_deadColor</span><span class="w">                                               </span><span class="o">=</span><span class="w">     </span><span class="p">[</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mf">0.2</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="w"></span>
 <span class="n">diwako_dui_nametags_deadRenderDistance</span><span class="w">                                      </span><span class="o">=</span><span class="w">     </span><span class="mf">3.5</span><span class="w"></span>
 <span class="n">diwako_dui_nametags_drawRank</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -1269,10 +1763,17 @@
 <span class="n">diwako_dui_nametags_useSideIsFriendly</span><span class="w">                                       </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="dui-squad-radar-indicators">
 <h2>DUI - Squad Radar - Indicators<a class="headerlink" href="#dui-squad-radar-indicators" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">diwako_dui_indicators_crew_range_enabled</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">DUI - Squad Radar - Indicators</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">force</span><span class="w"> </span><span class="n">diwako_dui_indicators_crew_range_enabled</span><span class="w">                              </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">diwako_dui_indicators_fov_scale</span><span class="w">                                             </span><span class="o">=</span><span class="w">     </span><span class="kc">false</span><span class="w"></span>
 <span class="n">diwako_dui_indicators_icon_buddy</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">diwako_dui_indicators_icon_leader</span><span class="w">                                           </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -1286,10 +1787,17 @@
 <span class="n">diwako_dui_indicators_useACENametagsRange</span><span class="w">                                   </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="zeus-enhanced-faction-filter">
 <h2>Zeus Enhanced - Faction Filter<a class="headerlink" href="#zeus-enhanced-faction-filter" title="Permalink to this headline"></a></h2>
-<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">zen_faction_filter_0_OPF_F</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Zeus Enhanced - Faction Filter</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">zen_faction_filter_0_OPF_F</span><span class="w">                                                  </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">zen_faction_filter_0_OPF_G_F</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">zen_faction_filter_0_OPF_GEN_F</span><span class="w">                                              </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">zen_faction_filter_0_OPF_R_F</span><span class="w">                                                </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
@@ -1435,6 +1943,8 @@
 <span class="n">zen_faction_filter_3_UK3CB_CHC_C</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 <span class="n">zen_faction_filter_3_UK3CB_TKC_C</span><span class="w">                                            </span><span class="o">=</span><span class="w">     </span><span class="kc">true</span><span class="w"></span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
