@@ -191,7 +191,7 @@ table tr:last-child td:last-child {
     background-color: #606060;
 }
 
-.table-mission-info tr:nth-last-child(5) td:nth-last-child(10) {
+.table-mission-info tr:nth-last-child(2) td:nth-last-child(10) {
     border-bottom: none !important;
     border-bottom-left-radius: 0.5rem !important;
 }

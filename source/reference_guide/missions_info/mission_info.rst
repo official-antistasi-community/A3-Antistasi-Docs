@@ -17,142 +17,6 @@ Mission Info
       - Player
       - Commander
 
-   *  - :rspan:`5` :ref:`mission_category_destroy`
-      - :rspan:`1` :ref:`mission_destroy_radio_tower`
-      - **Success**
-      - ``-``
-      - ``-``
-      - ``-``
-      - 10 / 20 minute delay
-      - +15 for 90 minutes
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - -5 for 60 minutes
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_downed_heli`
-      - **Success**
-      - 300/600 €
-      - ``-``
-      - ``-``
-      - 30 / 60 minute delay
-      - ``-``
-      - 10 / 20
-      - 5 / 10
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - 10 / 20 minutes sooner
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_steal_or_destroy_armor`
-      - **Success**
-      - 300/600 €
-      - ``-``
-      - +10 support in nearest town if Occupier was target or +5 if target was Invader
-      - 10 / 20 minute delay
-      - +10 for 60 minutes
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - -100/-200 €
-      - -5 / -10
-      - Occupier gains 5 / 10 support in nearest town
-      - 10 / 20 minutes sooner
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`5` :ref:`mission_category_logistics`
-      - :rspan:`1` :ref:`mission_steal_or_destroy_ammo_truck`
-      - **Success**
-      - 300 €
-      - ``-``
-      - ``-``
-      - 10 / 20 minute delay
-      - ``-``
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - 10 / 20 minutes sooner
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_bank_mission`
-      - **Success**
-      - 5000/10000 €
-      - ``-``
-      - If you bring the truck for the Bank Mission close enough to the bank to start the countdown, you will lose 20 or 40 support depending on difficulty. The enemy will gain 10 or 20 support. Again, this is just by starting the countdown, success or failure after that will not change the support further.
-      - 30 / 60 minute delay
-      - 20 / 40 for 2 hours
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_salvage_supplies`
-      - **Success**
-      - 300/600 €
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_category_conquest`
-      - :rspan:`1` :ref:`mission_resource_acquisition____take_the_outpost`
-      - **Success**
-      - 200/400 €
-      - ``-``
-      - -5 / -10 Occupier support in nearest town
-      - 10 / 20 minute delay
-      - ``-``
-      - 10 / 20
-      - ``-``
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - +5 / +10 Occupier support in nearest town
-      - 10 / 20 minutes sooner
-      - ``-``
-      - ``-``
-      - -10 / -20
-
    *  - :rspan:`6` :ref:`mission_category_assassination`
       - :rspan:`1` :ref:`mission_kill_the_officer`
       - **Success**
@@ -220,41 +84,22 @@ Mission Info
       - ``-``
       - -10 / -20
 
-   *  - :rspan:`3` :ref:`mission_category_rescue`
-      - :rspan:`1` :ref:`mission_refugees_evac`
+   *  - :rspan:`1` :ref:`mission_category_conquest`
+      - :rspan:`1` :ref:`mission_resource_acquisition____take_the_outpost`
       - **Success**
-      - 100 per refugee
-      - 1 per refugee
+      - 200/400 €
       - ``-``
+      - -5 / -10 Occupier support in nearest town
+      - 10 / 20 minute delay
       - ``-``
-      - -10 for 60 minutes
-      - 1 / 2 points per POW
+      - 10 / 20
       - ``-``
 
    *  - **Failure**
       - ``-``
       - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_pow_rescue`
-      - **Success**
-      - 100 / 200 per POW
-      - 2 per prisoner
-      - Some support from city you rescued them from
-      - ``-``
-      - +1.5 per prisoner for 90 minutes
-      - 1 point per POW
-      - 1 point per POW
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - ``-``
+      - +5 / +10 Occupier support in nearest town
+      - 10 / 20 minutes sooner
       - ``-``
       - ``-``
       - -10 / -20
@@ -298,6 +143,25 @@ Mission Info
       - ``-``
       - -10 / -20
 
+   *  - :rspan:`1` :ref:`mission_money_convoy`
+      - **Success**
+      - 5000/10000 €
+      - ``-``
+      - ``-``
+      - 20 minute delay
+      - +25 for 2 hours
+      - 10 / 20
+      - 5 / 10
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - 20 minutes sooner
+      - -5 for 60 minutes
+      - ``-``
+      - -10 / -20
+
    *  - :rspan:`1` :ref:`mission_prisoner_convoy`
       - **Success**
       - 300 / 600 per prisoner
@@ -333,25 +197,6 @@ Mission Info
       - ``-``
       - ``-``
       - -10 for 60 minutes
-      - ``-``
-      - -10 / -20
-
-   *  - :rspan:`1` :ref:`mission_money_convoy`
-      - **Success**
-      - 5000/10000 €
-      - ``-``
-      - ``-``
-      - 20 minute delay
-      - +25 for 2 hours
-      - 10 / 20
-      - 5 / 10
-
-   *  - **Failure**
-      - ``-``
-      - ``-``
-      - ``-``
-      - 20 minutes sooner
-      - -5 for 60 minutes
       - ``-``
       - -10 / -20
 
@@ -392,21 +237,156 @@ Mission Info
       - ``-``
       - -10 / -20
 
-   *  - :rspan:`1` :ref:`mission_category_support`
-      - :rspan:`1` :ref:`mission_city_supplies`
+   *  - :rspan:`5` :ref:`mission_category_destroy`
+      - :rspan:`1` :ref:`mission_destroy_radio_tower`
       - **Success**
       - ``-``
       - ``-``
-      - -15 / -30 Occupier support in objective town
       - ``-``
-      - +10 for 60 minutes
+      - 10 / 20 minute delay
+      - +15 for 90 minutes
+      - 10 / 20
+      - ``-``
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - -5 for 60 minutes
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`1` :ref:`mission_downed_heli`
+      - **Success**
+      - 300/600 €
+      - ``-``
+      - ``-``
+      - 30 / 60 minute delay
+      - ``-``
       - 10 / 20
       - 5 / 10
 
    *  - **Failure**
       - ``-``
       - ``-``
-      - +5 Occupier support in objective town and -5 support in objective town
+      - ``-``
+      - 10 / 20 minutes sooner
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`1` :ref:`mission_steal_or_destroy_armor`
+      - **Success**
+      - 300/600 €
+      - ``-``
+      - +10 support in nearest town if Occupier was target or +5 if target was Invader
+      - 10 / 20 minute delay
+      - +10 for 60 minutes
+      - 10 / 20
+      - ``-``
+
+   *  - **Failure**
+      - -100/-200 €
+      - -5 / -10
+      - Occupier gains 5 / 10 support in nearest town
+      - 10 / 20 minutes sooner
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`5` :ref:`mission_category_logistics`
+      - :rspan:`1` :ref:`mission_bank_mission`
+      - **Success**
+      - 5000/10000 €
+      - ``-``
+      - If you bring the truck for the Bank Mission close enough to the bank to start the countdown, you will lose 20 or 40 support depending on difficulty. The enemy will gain 10 or 20 support. Again, this is just by starting the countdown, success or failure after that will not change the support further.
+      - 30 / 60 minute delay
+      - 20 / 40 for 2 hours
+      - 10 / 20
+      - ``-``
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`1` :ref:`mission_salvage_supplies`
+      - **Success**
+      - 300/600 €
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - 10 / 20
+      - ``-``
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`1` :ref:`mission_steal_or_destroy_ammo_truck`
+      - **Success**
+      - 300 €
+      - ``-``
+      - ``-``
+      - 10 / 20 minute delay
+      - ``-``
+      - 10 / 20
+      - ``-``
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - 10 / 20 minutes sooner
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`3` :ref:`mission_category_rescue`
+      - :rspan:`1` :ref:`mission_pow_rescue`
+      - **Success**
+      - 100 / 200 per POW
+      - 2 per prisoner
+      - Some support from city you rescued them from
+      - ``-``
+      - +1.5 per prisoner for 90 minutes
+      - 1 point per POW
+      - 1 point per POW
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - ``-``
+      - -10 / -20
+
+   *  - :rspan:`1` :ref:`mission_refugees_evac`
+      - **Success**
+      - 100 per refugee
+      - 1 per refugee
+      - ``-``
+      - ``-``
+      - -10 for 60 minutes
+      - 1 / 2 points per POW
+      - ``-``
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - ``-``
       - ``-``
       - ``-``
       - ``-``
@@ -459,3 +439,23 @@ Mission Info
       - ``-``
       - ``-``
       - -10
+
+   *  - :rspan:`1` :ref:`mission_category_support`
+      - :rspan:`1` :ref:`mission_city_supplies`
+      - **Success**
+      - ``-``
+      - ``-``
+      - -15 / -30 Occupier support in objective town
+      - ``-``
+      - +10 for 60 minutes
+      - 10 / 20
+      - 5 / 10
+
+   *  - **Failure**
+      - ``-``
+      - ``-``
+      - +5 Occupier support in objective town and -5 support in objective town
+      - ``-``
+      - ``-``
+      - ``-``
+      - -10 / -20
