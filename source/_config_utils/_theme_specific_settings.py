@@ -9,13 +9,13 @@ class ThemeSpecificSettingTemplate:
 
     default_pygments_style = "one-dark"
 
-    default_html_context = {"extras_links": ["/extras/glossary", "/extras/links"],
-                            "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729074499",
-                            "code_block_color": None,
-                            "use_extra_style": False}
-
     def __init__(self, global_data: dict[str, object]) -> None:
         self.global_data = global_data.copy()
+        self.default_html_context = {"extras_links": ["/extras/glossary", "/extras/links"],
+                                     "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729074499",
+                                     "code_block_color": None,
+                                     "use_extra_style": False,
+                                     "base_css_name": self.theme_name}
 
     def apply_html_theme_options(self) -> None:
         if "html_theme_options" not in self.global_data:

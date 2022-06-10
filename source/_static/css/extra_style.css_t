@@ -1,5 +1,4 @@
-@import "groundwork.css";
-
+@import url("{{base_css_name}}.css");
 
 {%if use_extra_style %}
 

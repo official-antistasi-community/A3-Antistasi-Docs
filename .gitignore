@@ -233,3 +233,4 @@ generate_config.ini
 created
 /tools/quick_scripts
 *.env
+/source/dev_guide/changelog.rst
