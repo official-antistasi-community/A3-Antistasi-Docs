@@ -14,7 +14,7 @@ Antistasi
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    Antistasi
@@ -35,7 +35,7 @@ ACE Map
 =========
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Map
@@ -63,7 +63,7 @@ ACE Fire
 ==========
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Fire
@@ -81,7 +81,7 @@ ACE Zeus
 ==========
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Zeus
@@ -102,7 +102,7 @@ ACE Common
 ============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Common
@@ -127,7 +127,7 @@ ACE Pylons
 ============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Pylons
@@ -148,7 +148,7 @@ ACE Scopes
 ============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Scopes
@@ -173,7 +173,7 @@ ACE Volume
 ============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Volume
@@ -195,7 +195,7 @@ ACE Arsenal
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Arsenal
@@ -216,7 +216,7 @@ ACE Fortify
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Fortify
@@ -236,7 +236,7 @@ ACE Goggles
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Goggles
@@ -253,7 +253,7 @@ ACE Hearing
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Hearing
@@ -273,7 +273,7 @@ ACE Medical
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Medical
@@ -375,7 +375,7 @@ ACE Respawn
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Respawn
@@ -391,7 +391,7 @@ ACE Sitting
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Sitting
@@ -406,7 +406,7 @@ ACE Weapons
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Weapons
@@ -425,7 +425,7 @@ ACE Weather
 =============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Weather
@@ -443,7 +443,7 @@ ACE Captives
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Captives
@@ -461,7 +461,7 @@ ACE Cook off
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Cook off
@@ -481,7 +481,7 @@ ACE Dragging
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Dragging
@@ -498,7 +498,7 @@ ACE G-Forces
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE G-Forces
@@ -514,7 +514,7 @@ ACE Grenades
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Grenades
@@ -529,7 +529,7 @@ ACE Headless
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Headless
@@ -548,7 +548,7 @@ ACE Pointing
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Pointing
@@ -566,7 +566,7 @@ ACE Trenches
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Trenches
@@ -584,7 +584,7 @@ ACE Vehicles
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Vehicles
@@ -601,7 +601,7 @@ ACE Artillery
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Artillery
@@ -621,7 +621,7 @@ ACE Logistics
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Logistics
@@ -659,7 +659,7 @@ ACE Map Tools
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Map Tools
@@ -675,7 +675,7 @@ ACE Name Tags
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Name Tags
@@ -705,7 +705,7 @@ ACE Spectator
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Spectator
@@ -723,7 +723,7 @@ ACE Explosives
 ================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Explosives
@@ -743,7 +743,7 @@ ACE Interaction
 =================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Interaction
@@ -763,7 +763,7 @@ ACE Nightvision
 =================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Nightvision
@@ -783,7 +783,7 @@ ACE Overheating
 =================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Overheating
@@ -812,7 +812,7 @@ ACE Quick Mount
 =================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Quick Mount
@@ -831,7 +831,7 @@ ACE Map Gestures
 ==================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Map Gestures
@@ -856,7 +856,7 @@ ACE Switch Units
 ==================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Switch Units
@@ -877,7 +877,7 @@ ACE Vehicle Lock
 ==================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Vehicle Lock
@@ -894,7 +894,7 @@ ACE Field Rations
 ===================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Field Rations
@@ -919,7 +919,7 @@ ACE Uncategorized
 ===================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Uncategorized
@@ -945,7 +945,7 @@ ACE User Interface
 ====================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE User Interface
@@ -995,7 +995,7 @@ ACE Magazine Repack
 =====================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Magazine Repack
@@ -1013,7 +1013,7 @@ ACE Wind Deflection
 =====================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Wind Deflection
@@ -1030,7 +1030,7 @@ ACE Advanced Fatigue
 ======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Advanced Fatigue
@@ -1052,7 +1052,7 @@ ACE Interaction Menu
 ======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Interaction Menu
@@ -1086,7 +1086,7 @@ ACE View Restriction
 ======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE View Restriction
@@ -1106,7 +1106,7 @@ ACE Advanced Throwing
 =======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Advanced Throwing
@@ -1125,7 +1125,7 @@ ACE Advanced Ballistics
 =========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Advanced Ballistics
@@ -1145,7 +1145,7 @@ ACE Crew Served Weapons
 =========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Crew Served Weapons
@@ -1164,7 +1164,7 @@ ACE View Distance Limiter
 ===========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE View Distance Limiter
@@ -1184,7 +1184,7 @@ ACE Advanced Vehicle Damage
 =============================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Advanced Vehicle Damage
@@ -1201,7 +1201,7 @@ ACE Fragmentation Simulation
 ==============================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Fragmentation Simulation
@@ -1220,7 +1220,7 @@ ACE Interaction Menu (Self) - More
 ====================================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Interaction Menu (Self) - More
@@ -1268,7 +1268,7 @@ ACE Interaction Menu (Self) - Move to Root
 ============================================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    ACE Interaction Menu (Self) - Move to Root
@@ -1376,7 +1376,7 @@ AIME General
 ==============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME General
@@ -1391,7 +1391,7 @@ GRAD Trenches
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    GRAD Trenches
@@ -1440,7 +1440,7 @@ Zeus Enhanced
 ===============
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    Zeus Enhanced
@@ -1488,7 +1488,7 @@ AIME Inventory
 ================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME Inventory
@@ -1506,7 +1506,7 @@ VET_Unflipping
 ================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    VET_Unflipping
@@ -1526,7 +1526,7 @@ AIME Vehicle Seats
 ====================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME Vehicle Seats
@@ -1545,7 +1545,7 @@ AIME Ammo Type Menu
 =====================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME Ammo Type Menu
@@ -1561,7 +1561,7 @@ AIME Group Management
 =======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME Group Management
@@ -1576,7 +1576,7 @@ AIME Vehicle Controls
 =======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME Vehicle Controls
@@ -1599,7 +1599,7 @@ Community Base Addons
 =======================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    Community Base Addons
@@ -1621,7 +1621,7 @@ TFAR - Global settings
 ========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    TFAR - Global settings
@@ -1682,7 +1682,7 @@ DUI - Squad Radar - Main
 ==========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    DUI - Squad Radar - Main
@@ -1709,7 +1709,7 @@ AIME GPS and UAV Terminal
 ===========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    AIME GPS and UAV Terminal
@@ -1726,7 +1726,7 @@ DUI - Squad Radar - Radar
 ===========================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    DUI - Squad Radar - Radar
@@ -1787,7 +1787,7 @@ TFAR - Clientside settings
 ============================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    TFAR - Clientside settings
@@ -1817,7 +1817,7 @@ DUI - Squad Radar - Nametags
 ==============================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    DUI - Squad Radar - Nametags
@@ -1854,7 +1854,7 @@ DUI - Squad Radar - Indicators
 ================================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    DUI - Squad Radar - Indicators
@@ -1880,7 +1880,7 @@ Zeus Enhanced - Faction Filter
 ================================
 
 .. card::
-   :class-header: header-2
+   :class-header: header-2-light
    :class-card: sd-card-2
 
    Zeus Enhanced - Faction Filter
