@@ -443,31 +443,34 @@ Missions
    There are several categories of missions all which have different tasks and rewards:
 
    - **Assassination Missions**
-      - :ref:`mission_kill_the_traitor`
       - :ref:`mission_kill_the_officer`
+      - :ref:`mission_kill_the_traitor`
       - :ref:`mission_specops`
-   - **Logistics Missions**
-      - :ref:`mission_steal_or_destroy_ammo_truck`
-      - :ref:`mission_bank_mission`
-      - :ref:`mission_salvage_supplies`
-   - **Support missions**
-      - :ref:`mission_city_supplies`
-   - **Destroy missions**
-      - :ref:`mission_steal_or_destroy_armor`
-      - :ref:`mission_downed_heli`
-      - :ref:`mission_destroy_radio_tower`
-      - :ref:`mission_tower_rebuild_disrupt`
-   - **Rescue Missions**
-      - :ref:`mission_pow_rescue`
-      - :ref:`mission_refugees_evac`
    - **Conquest Missions**
       - :ref:`mission_resource_acquisition____take_the_outpost`
    - **Convoy Missions**
-      - :ref:`mission_supplies_convoy`
-      - :ref:`mission_armored_convoy`
       - :ref:`mission_ammo_convoy`
+      - :ref:`mission_armored_convoy`
       - :ref:`mission_money_convoy`
       - :ref:`mission_prisoner_convoy`
+      - :ref:`mission_reinforcements_convoy`
+      - :ref:`mission_supplies_convoy`
+   - **Destroy missions**
+      - :ref:`mission_destroy_radio_tower`
+      - :ref:`mission_downed_heli`
+      - :ref:`mission_steal_or_destroy_armor`
+   - **Logistics Missions**
+      - :ref:`mission_bank_mission`
+      - :ref:`mission_salvage_supplies`
+      - :ref:`mission_steal_or_destroy_ammo_truck`
+   - **Rescue Missions**
+      - :ref:`mission_pow_rescue`
+      - :ref:`mission_refugees_evac`
+   - **Spawned Dynamically**
+      - :ref:`mission_defend_petros`
+      - :ref:`mission_tower_rebuild_disrupt`
+   - **Support missions**
+      - :ref:`mission_city_supplies`
 
    **Convoy ambush tips**
 
