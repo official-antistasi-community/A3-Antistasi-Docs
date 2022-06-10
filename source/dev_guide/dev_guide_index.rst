@@ -7,7 +7,7 @@ Dev Guide
    :class-card: sd-card-2
 
    .. toctree::
-      :maxdepth: 2
+      :maxdepth: 1
       :glob:
 
       /dev_guide/*
