@@ -146,17 +146,17 @@ What mods should I use?
    I recommend the mod sets used on official servers. Of course, you can
    always use vanilla. No mods are needed for this mission.
 
-   `Antistasi 3CB BAF +
-   Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2575673140>`__
-
-   `Antistasi 3CB Factions
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
+   `Antistasi RHS
+   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
 
    `Antistasi 3CB BAF
    Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`__
 
-   `Antistasi RHS
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
+   `Antistasi 3CB Factions
+   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
+
+   `Antistasi 3CB BAF +
+   Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2575673140>`__
 
 Map Markers
 ===========
@@ -285,6 +285,50 @@ Your Headquarters
    stash and retrieve equipment and more. Your HQ has many objects that
    facilitate various functions. We will go over these now.
 
+   .. dropdown:: Petros
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose
+      a considerable amount of HR and money. Also see: :ref:`concept_losingpetrospenalties`
+
+      **HQ management**
+
+      -  **Grab $100 from pool** - You can take money from the faction and put it in your wallet. Some things can only be bought with personal money so you will need to use this from time to time.
+      -  **In game members list** - Displays all server members. Non server members cannot do certain things. Server admins can add members through the commander’s Y menu.
+      -  **Manage garrisons** - Allows you to add or remove soldiers from friendly captured locations.
+      -  **Move HQ to another zone** - There will be times where your base will be compromised. You will know this when you get a “defend Petros” mission. Note that they never learn about your HQ’s location, if you keep it there after the attack it will not make any difference.
+      -  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game. Also see: :ref:`concept_trainfia`
+      -  **Rebuild assets** - In war, things blow up. In the process of taking a factory, you may have killed all the workers. In order to repair assets, hit this button. Clicking the button will take you to the map where you can choose to rebuild the zones you want. Repairing assets costs you 5000 per location.
+      -  **Mission select** - Here you can request missions. More information about missions is available below.
+
+   .. dropdown:: The Whiteboard / Map
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      **Game options**
+
+      -  Here you can persistently save, **which I recommend you do every time
+         you log off** as not doing so will mean you lose your progress since
+         the last autosave.
+
+      -  There are also minor tweaks you can make here like toggling music or
+         selecting how many civilians can spawn at a time (list each option).
+
+      **Map info**
+
+      -  Map info is a useful tool for information. It tells you how many
+         people support you or the occupiers, and **if you click on icons, it
+         will tell you information about that zone.**
+
+      -  Clicking on a town will show you the percentage of support for you
+         versus the occupiers. It also tells you how many civilians the
+         invaders have killed there.
+
+      -  Clicking on any other zone will tell you its status combined with the
+         garrison’s general strength. Consider attacking weakened or
+         decimated zones over higher strength garrisons.
+
    .. dropdown:: The flag
       :class-title: header-3-light
       :class-container: sd-card-3
@@ -295,6 +339,31 @@ Your Headquarters
          and is unlocked inside the arsenal.** Buying an automatic rifleman
          will not give you a man with an LMG if you do not have any LMGs
          unlocked.
+
+   .. dropdown:: The Tent
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      **Sleep**
+
+      -  Whenever you want to skip night-time, just press the “sleep 8 hours”
+         function. Warning! Missions will auto fail if they exceed their time
+         limit.
+
+      **Make things go away**
+
+      -  You can make the rain, the fog, or the nearby forest disappear using
+         these options.
+
+   .. dropdown:: The Arsenal
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      -  The arsenal is where all weapons and equipment are stored and
+         retrieved from.
+
+      -  You can create, save, and load loadouts from the arsenal for quick
+         changes in equipment.
 
    .. dropdown:: The garage / vehicle arsenal
       :class-title: header-3-light
@@ -333,43 +402,6 @@ Your Headquarters
          M4 carbines it will not pick these weapons up. You can change this
          parameter in parameters
 
-   .. dropdown:: The Arsenal
-      :class-title: header-3-light
-      :class-container: sd-card-3
-
-      -  The arsenal is where all weapons and equipment are stored and
-         retrieved from.
-
-      -  You can create, save, and load loadouts from the arsenal for quick
-         changes in equipment.
-
-   .. dropdown:: The Whiteboard / Map
-      :class-title: header-3-light
-      :class-container: sd-card-3
-
-      **Game options**
-
-      -  Here you can persistently save, **which I recommend you do every time
-         you log off** as not doing so will mean you lose your progress since
-         the last autosave.
-
-      -  There are also minor tweaks you can make here like toggling music or
-         selecting how many civilians can spawn at a time (list each option).
-
-      **Map info**
-
-      -  Map info is a useful tool for information. It tells you how many
-         people support you or the occupiers, and **if you click on icons, it
-         will tell you information about that zone.**
-
-      -  Clicking on a town will show you the percentage of support for you
-         versus the occupiers. It also tells you how many civilians the
-         invaders have killed there.
-
-      -  Clicking on any other zone will tell you its status combined with the
-         garrison’s general strength. Consider attacking weakened or
-         decimated zones over higher strength garrisons.
-
    .. dropdown:: Sources for the Garage
       :class-title: header-3-light
       :class-container: sd-card-3
@@ -397,38 +429,6 @@ Your Headquarters
       *Take these trucks and store them in the garage*. I recommend locking
       them so no one takes them out.
 
-   .. dropdown:: The Tent
-      :class-title: header-3-light
-      :class-container: sd-card-3
-
-      **Sleep**
-
-      -  Whenever you want to skip night-time, just press the “sleep 8 hours”
-         function. Warning! Missions will auto fail if they exceed their time
-         limit.
-
-      **Make things go away**
-
-      -  You can make the rain, the fog, or the nearby forest disappear using
-         these options.
-
-   .. dropdown:: Petros
-      :class-title: header-3-light
-      :class-container: sd-card-3
-
-      Petros is the leader of the resistance. Think of him as a banished political figure. He is the leader of the resistance and if he dies you will lose
-      a considerable amount of HR and money. Also see: :ref:`concept_losingpetrospenalties`
-
-      **HQ management**
-
-      -  **Grab $100 from pool** - You can take money from the faction and put it in your wallet. Some things can only be bought with personal money so you will need to use this from time to time.
-      -  **In game members list** - Displays all server members. Non server members cannot do certain things. Server admins can add members through the commander’s Y menu.
-      -  **Manage garrisons** - Allows you to add or remove soldiers from friendly captured locations.
-      -  **Move HQ to another zone** - There will be times where your base will be compromised. You will know this when you get a “defend Petros” mission. Note that they never learn about your HQ’s location, if you keep it there after the attack it will not make any difference.
-      -  **Train troops** - Your troops suck at the beginning of game. You basically gave a villager a weapon and point them in the general direction of the enemy. You will need to train your men to turn them into soldiers. You do this through copious amounts of money. This is where the majority of money will go in the mid to late game. Also see: :ref:`concept_trainfia`
-      -  **Rebuild assets** - In war, things blow up. In the process of taking a factory, you may have killed all the workers. In order to repair assets, hit this button. Clicking the button will take you to the map where you can choose to rebuild the zones you want. Repairing assets costs you 5000 per location.
-      -  **Mission select** - Here you can request missions. More information about missions is available below.
-
 Missions
 ========
 
@@ -443,31 +443,34 @@ Missions
    There are several categories of missions all which have different tasks and rewards:
 
    - **Assassination Missions**
-      - :ref:`mission_kill_the_traitor`
       - :ref:`mission_kill_the_officer`
+      - :ref:`mission_kill_the_traitor`
       - :ref:`mission_specops`
-   - **Logistics Missions**
-      - :ref:`mission_steal_or_destroy_ammo_truck`
-      - :ref:`mission_bank_mission`
-      - :ref:`mission_salvage_supplies`
-   - **Support missions**
-      - :ref:`mission_city_supplies`
-   - **Destroy missions**
-      - :ref:`mission_steal_or_destroy_armor`
-      - :ref:`mission_downed_heli`
-      - :ref:`mission_destroy_radio_tower`
-      - :ref:`mission_tower_rebuild_disrupt`
-   - **Rescue Missions**
-      - :ref:`mission_pow_rescue`
-      - :ref:`mission_refugees_evac`
    - **Conquest Missions**
       - :ref:`mission_resource_acquisition____take_the_outpost`
    - **Convoy Missions**
-      - :ref:`mission_supplies_convoy`
-      - :ref:`mission_armored_convoy`
       - :ref:`mission_ammo_convoy`
+      - :ref:`mission_armored_convoy`
       - :ref:`mission_money_convoy`
       - :ref:`mission_prisoner_convoy`
+      - :ref:`mission_reinforcements_convoy`
+      - :ref:`mission_supplies_convoy`
+   - **Destroy missions**
+      - :ref:`mission_destroy_radio_tower`
+      - :ref:`mission_downed_heli`
+      - :ref:`mission_steal_or_destroy_armor`
+   - **Logistics Missions**
+      - :ref:`mission_bank_mission`
+      - :ref:`mission_salvage_supplies`
+      - :ref:`mission_steal_or_destroy_ammo_truck`
+   - **Rescue Missions**
+      - :ref:`mission_pow_rescue`
+      - :ref:`mission_refugees_evac`
+   - **Spawned Dynamically**
+      - :ref:`mission_defend_petros`
+      - :ref:`mission_tower_rebuild_disrupt`
+   - **Support missions**
+      - :ref:`mission_city_supplies`
 
    **Convoy ambush tips**
 
