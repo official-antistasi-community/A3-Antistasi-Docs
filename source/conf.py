@@ -58,7 +58,7 @@ extensions = ["myst_parser",
               "sphinx_design",
               'sphinx.ext.autosectionlabel',
               'sphinx_issues',
-              "sphinx_toolbox.shields"
+              "sphinx_toolbox.shields",
               'linuxdoc.rstFlatTable']
 
 
