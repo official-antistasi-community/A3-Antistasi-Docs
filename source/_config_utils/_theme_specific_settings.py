@@ -9,13 +9,13 @@ class ThemeSpecificSettingTemplate:
 
     default_pygments_style = "one-dark"
 
-    default_html_context = {"extras_links": ["/extras/glossary", "/extras/links"],
-                            "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729074499",
-                            "code_block_color": None,
-                            "use_extra_style": False}
-
     def __init__(self, global_data: dict[str, object]) -> None:
         self.global_data = global_data.copy()
+        self.default_html_context = {"extras_links": ["/extras/glossary", "/extras/links"],
+                                     "steam_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2729074499",
+                                     "code_block_color": None,
+                                     "use_extra_style": False,
+                                     "base_css_name": self.theme_name}
 
     def apply_html_theme_path(self) -> None:
         if "html_theme_path" not in self.global_data:
@@ -74,11 +74,11 @@ class GroundworkSpecificOptions(ThemeSpecificSettingTemplate):
 
     def apply_pygments_style(self) -> None:
         super().apply_pygments_style()
-        self.global_data["pygments_style"] = "dracula"
+        self.global_data["pygments_style"] = "one-dark"
 
     def apply_html_context(self) -> None:
         super().apply_html_context()
-        self.global_data["html_context"] |= {"code_block_color": "rgb(79, 76, 103)"}
+        self.global_data["html_context"] |= {"use_extra_style": True, "code_block_color": "rgb(79, 76, 103)"}
 
 
 class ClassicSpecificOptions(ThemeSpecificSettingTemplate):

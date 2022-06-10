@@ -1,0 +1,21 @@
+/*
+    Author: <author-name>
+
+    Scope: <scope>
+    Environment: <environment>
+    Public: <public>
+
+    Description:
+        <description>
+
+    Parameters:
+        <parameter-number>: <parameter-type> - <parameter-description>
+
+    Returns:
+        -> <return-type>
+
+        <return description>
+
+    Example:
+        <example-code>
+*/

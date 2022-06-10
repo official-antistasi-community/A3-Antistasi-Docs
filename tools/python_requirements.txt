@@ -1,11 +1,14 @@
-antistasi_sqf_tools>=0.3.5
+antistasi_sqf_tools>=0.5.3
 sphinx==4.5.0
 sphinxcontrib-mermaid==0.7.1
 sphinxcontrib-images==0.9.4
-sphinx-bootstrap-theme==0.8.1
 groundwork-sphinx-theme==1.1.1
 sphinxcontrib.fulltoc==1.2.0
+sphinx-toolbox==3.1.0
 sphinx-copybutton==0.5.0
 myst-parser==0.17.2
+sphinx-issues>=0.3.0
 sphinx-design==0.1.0
+yarl==1.7.2
+PyGithub==1.55
 linuxdoc==20211220

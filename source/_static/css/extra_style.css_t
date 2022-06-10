@@ -1,5 +1,4 @@
-@import "groundwork.css";
-
+@import url("{{base_css_name}}.css");
 
 {%if use_extra_style %}
 
@@ -31,6 +30,25 @@ pre {
     background: {{code_block_color}};
 }
 {% endif %}
+
+
+
+
+
+
+
+
+div.warning {
+    background: rgba(225,0,0,0.5);
+}
+
+hr.docutils {
+    border-width: 0px;
+    filter:drop-shadow(0px 10px 10px black);
+    height: 25px;
+    background-image: linear-gradient(to right, rgba(50, 175, 181, 0.75),rgba(50, 175, 181, 0.75), rgba(241, 216, 25, 0.75),rgba(24, 27, 32, 0.75), rgba(24, 27, 32, 0.75));
+}
+
 
 
 {%endif%}
