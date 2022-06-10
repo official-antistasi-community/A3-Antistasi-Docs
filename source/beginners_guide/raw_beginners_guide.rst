@@ -146,17 +146,17 @@ What mods should I use?
    I recommend the mod sets used on official servers. Of course, you can
    always use vanilla. No mods are needed for this mission.
 
-   `Antistasi 3CB BAF +
-   Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2575673140>`__
-
-   `Antistasi 3CB Factions
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
+   `Antistasi RHS
+   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
 
    `Antistasi 3CB BAF
    Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`__
 
-   `Antistasi RHS
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
+   `Antistasi 3CB Factions
+   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
+
+   `Antistasi 3CB BAF +
+   Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2575673140>`__
 
 Map Markers
 ===========
