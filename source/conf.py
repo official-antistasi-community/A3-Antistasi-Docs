@@ -51,7 +51,6 @@ github_repository = antistasi_repo_name
 
 extensions = ["myst_parser",
               'sphinxcontrib.mermaid',
-              'sphinxcontrib.images',
               "sphinxcontrib.fulltoc",
               "sphinx.ext.githubpages",
               'sphinx_copybutton',
