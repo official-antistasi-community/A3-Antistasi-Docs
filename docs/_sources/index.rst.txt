@@ -4,9 +4,9 @@
 Official Antistasi Community Edition Wiki
 ===============================================
 
-.. thumbnail:: /_images/antistasi_main_image.png
+.. image:: /_images/antistasi_main_image.png
    :width: 500px
-   :show_caption: False
+   :scale: 50 %
    :align: center
 
 .. card::
