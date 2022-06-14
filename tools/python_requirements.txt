@@ -1,4 +1,4 @@
-antistasi_sqf_tools==0.5.11
+antistasi_sqf_tools==0.5.12
 myst-parser
 sphinxcontrib-mermaid
 groundwork-sphinx-theme
