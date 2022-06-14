@@ -86,7 +86,7 @@ autosectionlabel_prefix_document = True
 
 # region [HTML_Output_Settings]
 
-
+html_search_language="en"
 html_theme = 'groundwork'
 
 html_theme_options = {}
