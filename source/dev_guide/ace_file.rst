@@ -3,22 +3,41 @@
 .. rst-class:: hidden
 
 ==============
-ACE-SETTINGS
+Mod-Settings
 ==============
 
 .. rst-class:: sd-mt-0 sd-mb-4 category-p
 
 FILE: :download:`ace_settings.txt </_data/ace_settings.txt>`
 
-Antistasi
-==============
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   | Below you see the mod settings that we are using on our official servers. These settings are tested, balanced and working with Antistasi.
+   | Following mods are listed here:
+
+   - :ref:`dev_guide_mod_settings_antistasi`
+   - :ref:`ACE <dev_guide_mod_settings_ace>`
+   - :ref:`AIME (ACE Interaction Menu Expansion) <dev_guide_mod_settings_aime>`
+   - :ref:`dev_guide_mod_settings_cba`
+   - :ref:`DUI <dev_guide_mod_settings_dui>`
+   - :ref:`dev_guide_mod_settings_grad`
+   - :ref:`TFAR beta <dev_guide_mod_settings_tfar_beta>`
+   - :ref:`dev_guide_mod_settings_vet_unflipping`
+   - :ref:`dev_guide_mod_settings_zeus_enhanced`
+
+.. _dev_guide_mod_settings_antistasi:
+
+Antistasi mod settings
+============================
 
 .. card::
    :class-header: header-2-light
    :class-card: sd-card-2
 
-   Antistasi
-   ^^^^^^^^^^^^^^
+   Antistasi mod settings
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. rst-class:: code-block-2
    .. code-block:: toml
@@ -30,6 +49,8 @@ Antistasi
       force HR_GRG_ServiceDisabled_Rearm                                          =     false
       force HR_GRG_ServiceDisabled_Refuel                                         =     false
       force HR_GRG_ServiceDisabled_Repair                                         =     false
+
+.. _dev_guide_mod_settings_ace:
 
 ACE Map
 =========
@@ -1372,6 +1393,8 @@ ACE Interaction Menu (Self) - Move to Root
       ace_interact_menu_moveToRoot__UPSL_aime_vehicle_seats_eject_action__UPSL_aime_vehicle_seats_eject_confirm_action =     false
       ace_interact_menu_moveToRoot__UPSL_aime_vehicle_seats_getout_action__UPSL_aime_vehicle_seats_eject_action =     false
 
+.. _dev_guide_mod_settings_aime:
+
 AIME General
 ==============
 
@@ -1386,103 +1409,6 @@ AIME General
    .. code-block:: toml
 
       UPSL_aime_setting_hide                                                      =     true
-
-GRAD Trenches
-===============
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   GRAD Trenches
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      force force grad_trenches_functions_allowBigEnvelope                        =     true
-      force force grad_trenches_functions_allowCamouflage                         =     true
-      force force grad_trenches_functions_allowDigging                            =     true
-      force grad_trenches_functions_allowEffects                                  =     true
-      force force grad_trenches_functions_allowGiantEnvelope                      =     true
-      force grad_trenches_functions_allowHitDecay                                 =     true
-      force force grad_trenches_functions_allowLongEnvelope                       =     true
-      force force grad_trenches_functions_allowShortEnvelope                      =     true
-      force force grad_trenches_functions_allowSmallEnvelope                      =     true
-      force force grad_trenches_functions_allowTrenchDecay                        =     true
-      force force grad_trenches_functions_allowVehicleEnvelope                    =     true
-      force grad_trenches_functions_bigEnvelopeDamageMultiplier                   =     2
-      force force grad_trenches_functions_bigEnvelopeDigTime                      =     60
-      force grad_trenches_functions_bigEnvelopeRemovalTime                        =     30
-      force force grad_trenches_functions_buildFatigueFactor                      =     0
-      force force grad_trenches_functions_camouflageRequireEntrenchmentTool       =     true
-      force grad_trenches_functions_createTrenchMarker                            =     false
-      force force grad_trenches_functions_decayTime                               =     1800
-      force grad_trenches_functions_giantEnvelopeDamageMultiplier                 =     1
-      force force grad_trenches_functions_giantEnvelopeDigTime                    =     180
-      force grad_trenches_functions_giantEnvelopeRemovalTime                      =     90
-      force grad_trenches_functions_hitDecayMultiplier                            =     1
-      force force grad_trenches_functions_LongEnvelopeDigTime                     =     100
-      force grad_trenches_functions_LongEnvelopeRemovalTime                       =     50
-      force grad_trenches_functions_shortEnvelopeDamageMultiplier                 =     2
-      force force grad_trenches_functions_shortEnvelopeDigTime                    =     30
-      force grad_trenches_functions_shortEnvelopeRemovalTime                      =     15
-      force grad_trenches_functions_smallEnvelopeDamageMultiplier                 =     3
-      force force grad_trenches_functions_smallEnvelopeDigTime                    =     40
-      force grad_trenches_functions_smallEnvelopeRemovalTime                      =     20
-      force force grad_trenches_functions_stopBuildingAtFatigueMax                =     true
-      force force grad_trenches_functions_timeoutToDecay                          =     3600
-      force grad_trenches_functions_vehicleEnvelopeDamageMultiplier               =     1
-      force force grad_trenches_functions_vehicleEnvelopeDigTime                  =     180
-      force grad_trenches_functions_vehicleEnvelopeRemovalTime                    =     90
-
-Zeus Enhanced
-===============
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   Zeus Enhanced
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      zen_camera_adaptiveSpeed                                                    =     true
-      zen_camera_defaultSpeedCoef                                                 =     1
-      zen_camera_fastSpeedCoef                                                    =     1
-      zen_camera_followTerrain                                                    =     true
-      force zen_common_ascensionMessages                                          =     false
-      force zen_common_autoAddObjects                                             =     true
-      force zen_common_cameraBird                                                 =     false
-      zen_common_darkMode                                                         =     false
-      zen_common_disableGearAnim                                                  =     true
-      zen_common_preferredArsenal                                                 =     1
-      zen_compat_ace_hideModules                                                  =     true
-      zen_context_menu_enabled                                                    =     2
-      zen_context_menu_overrideWaypoints                                          =     false
-      zen_editor_addGroupIcons                                                    =     false
-      zen_editor_declutterEmptyTree                                               =     true
-      zen_editor_disableLiveSearch                                                =     false
-      zen_editor_moveDisplayToEdge                                                =     true
-      force zen_editor_parachuteSounds                                            =     true
-      zen_editor_previews_enabled                                                 =     true
-      zen_editor_randomizeCopyPaste                                               =     false
-      zen_editor_removeWatermark                                                  =     true
-      zen_editor_unitRadioMessages                                                =     0
-      zen_placement_enabled                                                       =     true
-      zen_remote_control_cameraExitPosition                                       =     2
-      zen_visibility_enabled                                                      =     true
-      zen_vision_enableBlackHot                                                   =     false
-      zen_vision_enableBlackHotGreenCold                                          =     false
-      zen_vision_enableBlackHotRedCold                                            =     false
-      zen_vision_enableGreenHotCold                                               =     false
-      zen_vision_enableNVG                                                        =     true
-      zen_vision_enableRedGreenThermal                                            =     false
-      zen_vision_enableRedHotCold                                                 =     false
-      zen_vision_enableWhiteHot                                                   =     true
-      zen_vision_enableWhiteHotRedCold                                            =     false
 
 AIME Inventory
 ================
@@ -1501,26 +1427,6 @@ AIME Inventory
       UPSL_aime_inventory_setting_backpack_action                                 =     true
       UPSL_aime_inventory_setting_holder_action                                   =     true
       UPSL_aime_inventory_setting_open_action                                     =     true
-
-VET_Unflipping
-================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   VET_Unflipping
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      force vet_unflipping_require_serviceVehicle                                 =     false
-      force vet_unflipping_require_toolkit                                        =     false
-      force vet_unflipping_time                                                   =     20
-      force vet_unflipping_unit_man_limit                                         =     7
-      force vet_unflipping_unit_mass_limit                                        =     3000
-      force vet_unflipping_vehicle_mass_limit                                     =     100000
 
 AIME Vehicle Seats
 ====================
@@ -1595,14 +1501,33 @@ AIME Vehicle Controls
       UPSL_aime_vehicle_controls_setting_manual_action                            =     true
       UPSL_aime_vehicle_controls_setting_user_actions                             =     true
 
-Community Base Addons
-=======================
+AIME GPS and UAV Terminal
+===========================
 
 .. card::
    :class-header: header-2-light
    :class-card: sd-card-2
 
-   Community Base Addons
+   AIME GPS and UAV Terminal
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      UPSL_aime_uav_terminal_setting_gps_action                                   =     true
+      UPSL_aime_uav_terminal_setting_term_action                                  =     true
+      UPSL_aime_uav_terminal_setting_uav_action                                   =     true
+
+.. _dev_guide_mod_settings_cba:
+
+CBA - Community Base Addons
+==============================================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   CBA - Community Base Addons
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. rst-class:: code-block-2
@@ -1617,66 +1542,7 @@ Community Base Addons
       cba_ui_notifyLifetime                                                       =     4
       cba_ui_StorePasswords                                                       =     1
 
-TFAR - Global settings
-========================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   TFAR - Global settings
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      force force TFAR_AICanHearPlayer                                            =     true
-      force force TFAR_AICanHearSpeaker                                           =     true
-      force force TFAR_allowDebugging                                             =     false
-      force force tfar_core_noTSNotConnectedHint                                  =     false
-      force force TFAR_defaultIntercomSlot                                        =     0
-      force force TFAR_disableAutoMute                                            =     false
-      force force TFAR_enableIntercom                                             =     true
-      force force TFAR_experimentalVehicleIsolation                               =     false
-      force force TFAR_fullDuplex                                                 =     true
-      force force TFAR_giveLongRangeRadioToGroupLeaders                           =     false
-      force force TFAR_giveMicroDagrToSoldier                                     =     false
-      force force TFAR_givePersonalRadioToRegularSoldier                          =     false
-      force force TFAR_globalRadioRangeCoef                                       =     1
-      force force TFAR_instantiate_instantiateAtBriefing                          =     false
-      force force TFAR_objectInterceptionEnabled                                  =     false
-      force force TFAR_objectInterceptionStrength                                 =     400
-      force force tfar_radiocode_east                                             =     "_opfor"
-      force force tfar_radiocode_independent                                      =     "_independent"
-      force force tfar_radiocode_west                                             =     "_bluefor"
-      force force tfar_radioCodesDisabled                                         =     true
-      force force TFAR_SameLRFrequenciesForSide                                   =     true
-      force force TFAR_SameSRFrequenciesForSide                                   =     true
-      force force TFAR_setting_defaultFrequencies_lr_east                         =     "77"
-      force force TFAR_setting_defaultFrequencies_lr_independent                  =     "77"
-      force force TFAR_setting_defaultFrequencies_lr_west                         =     "77"
-      force force TFAR_setting_defaultFrequencies_sr_east                         =     "31.1,120,130,140,150,160,170,77"
-      force force TFAR_setting_defaultFrequencies_sr_independent                  =     "31.1,120,130,140,150,160,170,77"
-      force force TFAR_setting_defaultFrequencies_sr_west                         =     "31.1,120,130,140,150,160,170,77"
-      force force TFAR_setting_DefaultRadio_Airborne_east                         =     ""
-      force force TFAR_setting_DefaultRadio_Airborne_Independent                  =     ""
-      force force TFAR_setting_DefaultRadio_Airborne_West                         =     ""
-      force force TFAR_setting_DefaultRadio_Backpack_east                         =     ""
-      force force TFAR_setting_DefaultRadio_Backpack_Independent                  =     ""
-      force force TFAR_setting_DefaultRadio_Backpack_west                         =     ""
-      force force TFAR_setting_DefaultRadio_Personal_east                         =     ""
-      force force TFAR_setting_DefaultRadio_Personal_Independent                  =     "TFAR_anprc148jem"
-      force force TFAR_setting_DefaultRadio_Personal_West                         =     ""
-      force force TFAR_setting_DefaultRadio_Rifleman_East                         =     ""
-      force force TFAR_setting_DefaultRadio_Rifleman_Independent                  =     "TFAR_anprc148jem"
-      force force TFAR_setting_DefaultRadio_Rifleman_West                         =     ""
-      force TFAR_spectatorCanHearEnemyUnits                                       =     true
-      force TFAR_spectatorCanHearFriendlies                                       =     true
-      force force TFAR_takingRadio                                                =     2
-      force TFAR_Teamspeak_Channel_Name                                           =     ""
-      force TFAR_Teamspeak_Channel_Password                                       =     ""
-      force force tfar_terrain_interception_coefficient                           =     7
-      force force TFAR_voiceCone                                                  =     true
+.. _dev_guide_mod_settings_dui:
 
 DUI - Squad Radar - Main
 ==========================
@@ -1704,23 +1570,6 @@ DUI - Squad Radar - Main
       diwako_dui_main_squadYellow                                                 =     [1,1,0,1]
       diwako_dui_main_trackingColor                                               =     [0.93,0.26,0.93,1]
       diwako_dui_reset_ui_pos                                                     =     false
-
-AIME GPS and UAV Terminal
-===========================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   AIME GPS and UAV Terminal
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      UPSL_aime_uav_terminal_setting_gps_action                                   =     true
-      UPSL_aime_uav_terminal_setting_term_action                                  =     true
-      UPSL_aime_uav_terminal_setting_uav_action                                   =     true
 
 DUI - Squad Radar - Radar
 ===========================
@@ -1782,36 +1631,6 @@ DUI - Squad Radar - Radar
       force diwako_dui_radar_syncGroup                                            =     false
       force diwako_dui_radar_vehicleCompassEnabled                                =     false
       diwako_dui_use_layout_editor                                                =     false
-
-TFAR - Clientside settings
-============================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   TFAR - Clientside settings
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      TFAR_curatorCamEars                                                         =     false
-      TFAR_default_radioVolume                                                    =     6
-      TFAR_intercomDucking                                                        =     0.2
-      TFAR_intercomVolume                                                         =     0.1
-      TFAR_moveWhileTabbedOut                                                     =     false
-      TFAR_noAutomoveSpectator                                                    =     false
-      TFAR_oldVolumeHint                                                          =     false
-      TFAR_pluginTimeout                                                          =     4
-      TFAR_PosUpdateMode                                                          =     0.1
-      TFAR_showChannelChangedHint                                                 =     true
-      TFAR_ShowDiaryRecord                                                        =     true
-      TFAR_showTransmittingHint                                                   =     true
-      TFAR_ShowVolumeHUD                                                          =     false
-      TFAR_tangentReleaseDelay                                                    =     0
-      TFAR_VolumeHudTransparency                                                  =     0
-      TFAR_volumeModifier_forceSpeech                                             =     false
 
 DUI - Squad Radar - Nametags
 ==============================
@@ -1875,6 +1694,222 @@ DUI - Squad Radar - Indicators
       diwako_dui_indicators_size                                                  =     1
       diwako_dui_indicators_style                                                 =     "standard"
       diwako_dui_indicators_useACENametagsRange                                   =     true
+
+.. _dev_guide_mod_settings_grad:
+
+GRAD Trenches
+===============
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   GRAD Trenches
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force force grad_trenches_functions_allowBigEnvelope                        =     true
+      force force grad_trenches_functions_allowCamouflage                         =     true
+      force force grad_trenches_functions_allowDigging                            =     true
+      force grad_trenches_functions_allowEffects                                  =     true
+      force force grad_trenches_functions_allowGiantEnvelope                      =     true
+      force grad_trenches_functions_allowHitDecay                                 =     true
+      force force grad_trenches_functions_allowLongEnvelope                       =     true
+      force force grad_trenches_functions_allowShortEnvelope                      =     true
+      force force grad_trenches_functions_allowSmallEnvelope                      =     true
+      force force grad_trenches_functions_allowTrenchDecay                        =     true
+      force force grad_trenches_functions_allowVehicleEnvelope                    =     true
+      force grad_trenches_functions_bigEnvelopeDamageMultiplier                   =     2
+      force force grad_trenches_functions_bigEnvelopeDigTime                      =     60
+      force grad_trenches_functions_bigEnvelopeRemovalTime                        =     30
+      force force grad_trenches_functions_buildFatigueFactor                      =     0
+      force force grad_trenches_functions_camouflageRequireEntrenchmentTool       =     true
+      force grad_trenches_functions_createTrenchMarker                            =     false
+      force force grad_trenches_functions_decayTime                               =     1800
+      force grad_trenches_functions_giantEnvelopeDamageMultiplier                 =     1
+      force force grad_trenches_functions_giantEnvelopeDigTime                    =     180
+      force grad_trenches_functions_giantEnvelopeRemovalTime                      =     90
+      force grad_trenches_functions_hitDecayMultiplier                            =     1
+      force force grad_trenches_functions_LongEnvelopeDigTime                     =     100
+      force grad_trenches_functions_LongEnvelopeRemovalTime                       =     50
+      force grad_trenches_functions_shortEnvelopeDamageMultiplier                 =     2
+      force force grad_trenches_functions_shortEnvelopeDigTime                    =     30
+      force grad_trenches_functions_shortEnvelopeRemovalTime                      =     15
+      force grad_trenches_functions_smallEnvelopeDamageMultiplier                 =     3
+      force force grad_trenches_functions_smallEnvelopeDigTime                    =     40
+      force grad_trenches_functions_smallEnvelopeRemovalTime                      =     20
+      force force grad_trenches_functions_stopBuildingAtFatigueMax                =     true
+      force force grad_trenches_functions_timeoutToDecay                          =     3600
+      force grad_trenches_functions_vehicleEnvelopeDamageMultiplier               =     1
+      force force grad_trenches_functions_vehicleEnvelopeDigTime                  =     180
+      force grad_trenches_functions_vehicleEnvelopeRemovalTime                    =     90
+
+.. _dev_guide_mod_settings_tfar_beta:
+
+TFAR - Global settings
+========================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   TFAR - Global settings
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force force TFAR_AICanHearPlayer                                            =     true
+      force force TFAR_AICanHearSpeaker                                           =     true
+      force force TFAR_allowDebugging                                             =     false
+      force force tfar_core_noTSNotConnectedHint                                  =     false
+      force force TFAR_defaultIntercomSlot                                        =     0
+      force force TFAR_disableAutoMute                                            =     false
+      force force TFAR_enableIntercom                                             =     true
+      force force TFAR_experimentalVehicleIsolation                               =     false
+      force force TFAR_fullDuplex                                                 =     true
+      force force TFAR_giveLongRangeRadioToGroupLeaders                           =     false
+      force force TFAR_giveMicroDagrToSoldier                                     =     false
+      force force TFAR_givePersonalRadioToRegularSoldier                          =     false
+      force force TFAR_globalRadioRangeCoef                                       =     1
+      force force TFAR_instantiate_instantiateAtBriefing                          =     false
+      force force TFAR_objectInterceptionEnabled                                  =     false
+      force force TFAR_objectInterceptionStrength                                 =     400
+      force force tfar_radiocode_east                                             =     "_opfor"
+      force force tfar_radiocode_independent                                      =     "_independent"
+      force force tfar_radiocode_west                                             =     "_bluefor"
+      force force tfar_radioCodesDisabled                                         =     true
+      force force TFAR_SameLRFrequenciesForSide                                   =     true
+      force force TFAR_SameSRFrequenciesForSide                                   =     true
+      force force TFAR_setting_defaultFrequencies_lr_east                         =     "77"
+      force force TFAR_setting_defaultFrequencies_lr_independent                  =     "77"
+      force force TFAR_setting_defaultFrequencies_lr_west                         =     "77"
+      force force TFAR_setting_defaultFrequencies_sr_east                         =     "31.1,120,130,140,150,160,170,77"
+      force force TFAR_setting_defaultFrequencies_sr_independent                  =     "31.1,120,130,140,150,160,170,77"
+      force force TFAR_setting_defaultFrequencies_sr_west                         =     "31.1,120,130,140,150,160,170,77"
+      force force TFAR_setting_DefaultRadio_Airborne_east                         =     ""
+      force force TFAR_setting_DefaultRadio_Airborne_Independent                  =     ""
+      force force TFAR_setting_DefaultRadio_Airborne_West                         =     ""
+      force force TFAR_setting_DefaultRadio_Backpack_east                         =     ""
+      force force TFAR_setting_DefaultRadio_Backpack_Independent                  =     ""
+      force force TFAR_setting_DefaultRadio_Backpack_west                         =     ""
+      force force TFAR_setting_DefaultRadio_Personal_east                         =     ""
+      force force TFAR_setting_DefaultRadio_Personal_Independent                  =     "TFAR_anprc148jem"
+      force force TFAR_setting_DefaultRadio_Personal_West                         =     ""
+      force force TFAR_setting_DefaultRadio_Rifleman_East                         =     ""
+      force force TFAR_setting_DefaultRadio_Rifleman_Independent                  =     "TFAR_anprc148jem"
+      force force TFAR_setting_DefaultRadio_Rifleman_West                         =     ""
+      force TFAR_spectatorCanHearEnemyUnits                                       =     true
+      force TFAR_spectatorCanHearFriendlies                                       =     true
+      force force TFAR_takingRadio                                                =     2
+      force TFAR_Teamspeak_Channel_Name                                           =     ""
+      force TFAR_Teamspeak_Channel_Password                                       =     ""
+      force force tfar_terrain_interception_coefficient                           =     7
+      force force TFAR_voiceCone                                                  =     true
+
+TFAR - Clientside settings
+============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   TFAR - Clientside settings
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      TFAR_curatorCamEars                                                         =     false
+      TFAR_default_radioVolume                                                    =     6
+      TFAR_intercomDucking                                                        =     0.2
+      TFAR_intercomVolume                                                         =     0.1
+      TFAR_moveWhileTabbedOut                                                     =     false
+      TFAR_noAutomoveSpectator                                                    =     false
+      TFAR_oldVolumeHint                                                          =     false
+      TFAR_pluginTimeout                                                          =     4
+      TFAR_PosUpdateMode                                                          =     0.1
+      TFAR_showChannelChangedHint                                                 =     true
+      TFAR_ShowDiaryRecord                                                        =     true
+      TFAR_showTransmittingHint                                                   =     true
+      TFAR_ShowVolumeHUD                                                          =     false
+      TFAR_tangentReleaseDelay                                                    =     0
+      TFAR_VolumeHudTransparency                                                  =     0
+      TFAR_volumeModifier_forceSpeech                                             =     false
+
+.. _dev_guide_mod_settings_vet_unflipping:
+
+VET_Unflipping
+================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   VET_Unflipping
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force vet_unflipping_require_serviceVehicle                                 =     false
+      force vet_unflipping_require_toolkit                                        =     false
+      force vet_unflipping_time                                                   =     20
+      force vet_unflipping_unit_man_limit                                         =     7
+      force vet_unflipping_unit_mass_limit                                        =     3000
+      force vet_unflipping_vehicle_mass_limit                                     =     100000
+
+.. _dev_guide_mod_settings_zeus_enhanced:
+
+Zeus Enhanced
+===============
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   Zeus Enhanced
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      zen_camera_adaptiveSpeed                                                    =     true
+      zen_camera_defaultSpeedCoef                                                 =     1
+      zen_camera_fastSpeedCoef                                                    =     1
+      zen_camera_followTerrain                                                    =     true
+      force zen_common_ascensionMessages                                          =     false
+      force zen_common_autoAddObjects                                             =     true
+      force zen_common_cameraBird                                                 =     false
+      zen_common_darkMode                                                         =     false
+      zen_common_disableGearAnim                                                  =     true
+      zen_common_preferredArsenal                                                 =     1
+      zen_compat_ace_hideModules                                                  =     true
+      zen_context_menu_enabled                                                    =     2
+      zen_context_menu_overrideWaypoints                                          =     false
+      zen_editor_addGroupIcons                                                    =     false
+      zen_editor_declutterEmptyTree                                               =     true
+      zen_editor_disableLiveSearch                                                =     false
+      zen_editor_moveDisplayToEdge                                                =     true
+      force zen_editor_parachuteSounds                                            =     true
+      zen_editor_previews_enabled                                                 =     true
+      zen_editor_randomizeCopyPaste                                               =     false
+      zen_editor_removeWatermark                                                  =     true
+      zen_editor_unitRadioMessages                                                =     0
+      zen_placement_enabled                                                       =     true
+      zen_remote_control_cameraExitPosition                                       =     2
+      zen_visibility_enabled                                                      =     true
+      zen_vision_enableBlackHot                                                   =     false
+      zen_vision_enableBlackHotGreenCold                                          =     false
+      zen_vision_enableBlackHotRedCold                                            =     false
+      zen_vision_enableGreenHotCold                                               =     false
+      zen_vision_enableNVG                                                        =     true
+      zen_vision_enableRedGreenThermal                                            =     false
+      zen_vision_enableRedHotCold                                                 =     false
+      zen_vision_enableWhiteHot                                                   =     true
+      zen_vision_enableWhiteHotRedCold                                            =     false
 
 Zeus Enhanced - Faction Filter
 ================================
