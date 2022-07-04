@@ -51,7 +51,6 @@ github_repository = antistasi_repo_name
 
 extensions = ["myst_parser",
               'sphinxcontrib.mermaid',
-              'sphinxcontrib.images',
               "sphinxcontrib.fulltoc",
               "sphinx.ext.githubpages",
               'sphinx_copybutton',
@@ -71,11 +70,11 @@ html_css_files = [
     'css/tiles.css'
 ]
 
-#html_js_files = [
+# html_js_files = [
 #    'js/sponsor-btn.js',
-#]
+# ]
 
-exclude_patterns = ["available_label.json","extras/*"]
+exclude_patterns = ["available_label.json", "extras/*"]
 
 
 # get available styles via `pygmentize -L styles`
