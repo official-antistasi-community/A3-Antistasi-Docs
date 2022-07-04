@@ -51,6 +51,7 @@ github_repository = antistasi_repo_name
 
 extensions = ["myst_parser",
               'sphinxcontrib.mermaid',
+              'sphinxcontrib.images',
               "sphinxcontrib.fulltoc",
               "sphinx.ext.githubpages",
               'sphinx_copybutton',
@@ -69,6 +70,11 @@ html_static_path = [str(get_groundworks_paths()["static"]), '_static']
 html_css_files = [
     'css/tiles.css'
 ]
+
+#html_js_files = [
+#    'js/sponsor-btn.js',
+#]
+
 exclude_patterns = ["available_label.json","extras/*"]
 
 
@@ -85,7 +91,7 @@ autosectionlabel_prefix_document = True
 
 # region [HTML_Output_Settings]
 
-html_search_language="en"
+
 html_theme = 'groundwork'
 
 html_theme_options = {}
