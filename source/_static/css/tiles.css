@@ -213,3 +213,7 @@ div.bodywrapper {
 div.sphinxsidebar {
     width: 15rem !important;
 }
+
+.sd-card-important {
+    box-shadow: 0.1rem 0.1rem 7px 1px #f74343 !important;
+}
