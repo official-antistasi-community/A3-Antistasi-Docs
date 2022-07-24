@@ -20,11 +20,11 @@ div.document {
 }
 
 div.documentwrapper {
-    float: none;
+    float: left;
 }
 
 div.sphinxsidebar {
-    display: block;
+
     float: left;
     width: 102.5%;
     margin: 50px -30px -20px -30px;
