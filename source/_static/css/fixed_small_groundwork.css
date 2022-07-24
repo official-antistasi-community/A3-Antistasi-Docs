@@ -20,7 +20,7 @@ div.document {
 }
 
 div.documentwrapper {
-    float: none;
+    float: left;
 }
 
 div.sphinxsidebar {
