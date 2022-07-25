@@ -1,10 +1,11 @@
-{%- extends "basic/layout.html" %} {%- block extrahead %} {{ super() }} {% if
-    theme_touch_icon %}
-    <link
-        rel="apple-touch-icon"
-        href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}"
-    />
-    {% endif %}
+{%- extends "!basic/layout.html" %}
+    {%- block extrahead %}
+        {% if theme_touch_icon %}
+            <link
+                rel="apple-touch-icon"
+                href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}"
+            />
+        {% endif %}
     <link
         media="only screen and (max-device-width: 480px)"
         href="{{pathto('_static/small_groundwork.css', 1) }}"
@@ -16,9 +17,13 @@
         content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
     />
     <!-- Place this tag in your head or just before your close body tag. -->
-    {% endblock %} {%- block sidebarsearch %} {{ super() }} {%- include
-    "contribute.html" %} {% endblock %} {% block relbar2 %} {% endblock %} {%- block
-    footer %}
+    {% endblock %}
+    {% block sidebar2 %}{% endblock %}
+    {% block sidebar1 %}{% endblock %}
+    {%- block document %}
+        {{ sidebar() }}
+        {{ super() }}
+    {% endblock %}
+    {%- block footer %}
     <div class="footer">&copy; Copyright {{ copyright }}. Last updated {{last_updated}}</div>
     {%- endblock %}
-    
