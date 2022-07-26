@@ -271,11 +271,9 @@ div.footer {
     div.sphinxsidebar {
         margin: 1rem 0px 1rem 0px !important;
         border-radius: 5px;
-        display: block;
         float: none;
         padding: 10px !important;
         width: 98% !important;
-        min-width: 450px;
     }
 
     div.sphinxsidebar a {
@@ -283,6 +281,12 @@ div.footer {
     }
 
     div.documentwrapper {
-        width: 98% !important;
+        width: 102.5% !important;
+        margin: 1rem 0px 1rem 0px !important;
+        border-radius: 5px;
+    }
+
+    div.body {
+        min-width: initial !important;
     }
 }
