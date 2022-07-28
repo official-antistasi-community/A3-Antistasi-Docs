@@ -212,8 +212,81 @@ div.bodywrapper {
 
 div.sphinxsidebar {
     width: 15rem !important;
+    margin-left: initial !important;
 }
 
 .sd-card-important {
     box-shadow: 0.1rem 0.1rem 7px 1px #f74343 !important;
+}
+
+div.documentwrapper {
+    float: initial !important;
+}
+
+div.footer {
+    width: auto !important;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 600px) {
+    div.sphinxsidebar {
+        width: 100% !important;
+        margin-left: initial !important;
+        margin-bottom: 1rem !important;
+        display: block !important;
+        float: initial !important;
+        border-radius: 5px;
+        background-color: #333 !important;
+    }
+    div.bodywrapper {
+        margin-left: 0rem !important;
+    }
+    div.footer {
+        width: auto;
+        margin: 20px auto 30px auto;
+        font-size: 14px;
+        color: #888;
+        text-align: center;
+    }
+    div.document {
+        margin: 1rem auto 0 auto;
+    }
+
+    div.sphinxsidebar h3 a {
+        color: #FFCC00 !important;
+    }
+}
+
+@media only screen and (max-device-width: 480px ) {
+    div.related {
+        display: none !important;
+        margin: 0;
+        padding: 10px 0 20px 0;
+    }
+
+    div.sphinxsidebar p.logo {
+        display: block !important;
+    }
+
+    div.sphinxsidebar {
+        margin: 1rem 0px 1rem 0px !important;
+        border-radius: 5px;
+        float: none;
+        padding: 10px !important;
+        width: 98% !important;
+    }
+
+    div.sphinxsidebar a {
+        color: #FFCC00 !important;
+    }
+
+    div.documentwrapper {
+        width: 102.5% !important;
+        margin: 1rem 0px 1rem 0px !important;
+        border-radius: 5px;
+    }
+
+    div.body {
+        min-width: initial !important;
+    }
 }

@@ -26,12 +26,13 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Changelog" href="changelog.html" />
-    <link rel="prev" title="Dev Guide - WIP" href="dev_guide_index.html" />   
-    <link
-        rel="apple-touch-icon"
-        href="../_static/"""
-    />
-    
+    <link rel="prev" title="Dev Guide - WIP" href="dev_guide_index.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../_static/"""
+            />
+        
     <link
         media="only screen and (max-device-width: 480px)"
         href="../_static/small_groundwork.css"
@@ -61,9 +62,139 @@
           <li class="nav-item nav-item-1"><a href="dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Mod-Settings</a></li> 
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Mod-Settings</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#antistasi-mod-settings">Antistasi mod settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-map">ACE Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-fire">ACE Fire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-zeus">ACE Zeus</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-common">ACE Common</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-pylons">ACE Pylons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-scopes">ACE Scopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-volume">ACE Volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-arsenal">ACE Arsenal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-fortify">ACE Fortify</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-goggles">ACE Goggles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-hearing">ACE Hearing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-medical">ACE Medical</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-respawn">ACE Respawn</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-sitting">ACE Sitting</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-weapons">ACE Weapons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-weather">ACE Weather</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-captives">ACE Captives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-cook-off">ACE Cook off</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-dragging">ACE Dragging</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-g-forces">ACE G-Forces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-grenades">ACE Grenades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-headless">ACE Headless</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-pointing">ACE Pointing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-trenches">ACE Trenches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-vehicles">ACE Vehicles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-artillery">ACE Artillery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-logistics">ACE Logistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-map-tools">ACE Map Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-name-tags">ACE Name Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-spectator">ACE Spectator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-explosives">ACE Explosives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-interaction">ACE Interaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-nightvision">ACE Nightvision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-overheating">ACE Overheating</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-quick-mount">ACE Quick Mount</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-map-gestures">ACE Map Gestures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-switch-units">ACE Switch Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-vehicle-lock">ACE Vehicle Lock</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-field-rations">ACE Field Rations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-uncategorized">ACE Uncategorized</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-user-interface">ACE User Interface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-magazine-repack">ACE Magazine Repack</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-wind-deflection">ACE Wind Deflection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-fatigue">ACE Advanced Fatigue</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu">ACE Interaction Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-view-restriction">ACE View Restriction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-throwing">ACE Advanced Throwing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-ballistics">ACE Advanced Ballistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-crew-served-weapons">ACE Crew Served Weapons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-view-distance-limiter">ACE View Distance Limiter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-vehicle-damage">ACE Advanced Vehicle Damage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-fragmentation-simulation">ACE Fragmentation Simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu-self-more">ACE Interaction Menu (Self) - More</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu-self-move-to-root">ACE Interaction Menu (Self) - Move to Root</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-general">AIME General</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-inventory">AIME Inventory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-vehicle-seats">AIME Vehicle Seats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-ammo-type-menu">AIME Ammo Type Menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-group-management">AIME Group Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-vehicle-controls">AIME Vehicle Controls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aime-gps-and-uav-terminal">AIME GPS and UAV Terminal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cba-community-base-addons">CBA - Community Base Addons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-main">DUI - Squad Radar - Main</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-radar">DUI - Squad Radar - Radar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-nametags">DUI - Squad Radar - Nametags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-indicators">DUI - Squad Radar - Indicators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grad-trenches">GRAD Trenches</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tfar-global-settings">TFAR - Global settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tfar-clientside-settings">TFAR - Clientside settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vet-unflipping">VET_Unflipping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zeus-enhanced">Zeus Enhanced</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zeus-enhanced-faction-filter">Zeus Enhanced - Faction Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippets.html">Snippets</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
@@ -1970,136 +2101,26 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-            <p class="logo"><a href="../index.html">
-              <img class="logo" src="../_static/antistasi_main_logo.png" alt="Logo"/>
-            </a></p>
-<h3><a href="../index.html">Table of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Mod-Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#antistasi-mod-settings">Antistasi mod settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-map">ACE Map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-fire">ACE Fire</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-zeus">ACE Zeus</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-common">ACE Common</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-pylons">ACE Pylons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-scopes">ACE Scopes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-volume">ACE Volume</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-arsenal">ACE Arsenal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-fortify">ACE Fortify</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-goggles">ACE Goggles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-hearing">ACE Hearing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-medical">ACE Medical</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-respawn">ACE Respawn</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-sitting">ACE Sitting</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-weapons">ACE Weapons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-weather">ACE Weather</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-captives">ACE Captives</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-cook-off">ACE Cook off</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-dragging">ACE Dragging</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-g-forces">ACE G-Forces</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-grenades">ACE Grenades</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-headless">ACE Headless</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-pointing">ACE Pointing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-trenches">ACE Trenches</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-vehicles">ACE Vehicles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-artillery">ACE Artillery</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-logistics">ACE Logistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-map-tools">ACE Map Tools</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-name-tags">ACE Name Tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-spectator">ACE Spectator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-explosives">ACE Explosives</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-interaction">ACE Interaction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-nightvision">ACE Nightvision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-overheating">ACE Overheating</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-quick-mount">ACE Quick Mount</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-map-gestures">ACE Map Gestures</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-switch-units">ACE Switch Units</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-vehicle-lock">ACE Vehicle Lock</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-field-rations">ACE Field Rations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-uncategorized">ACE Uncategorized</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-user-interface">ACE User Interface</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-magazine-repack">ACE Magazine Repack</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-wind-deflection">ACE Wind Deflection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-fatigue">ACE Advanced Fatigue</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu">ACE Interaction Menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-view-restriction">ACE View Restriction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-throwing">ACE Advanced Throwing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-ballistics">ACE Advanced Ballistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-crew-served-weapons">ACE Crew Served Weapons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-view-distance-limiter">ACE View Distance Limiter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-advanced-vehicle-damage">ACE Advanced Vehicle Damage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-fragmentation-simulation">ACE Fragmentation Simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu-self-more">ACE Interaction Menu (Self) - More</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ace-interaction-menu-self-move-to-root">ACE Interaction Menu (Self) - Move to Root</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-general">AIME General</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-inventory">AIME Inventory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-vehicle-seats">AIME Vehicle Seats</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-ammo-type-menu">AIME Ammo Type Menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-group-management">AIME Group Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-vehicle-controls">AIME Vehicle Controls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#aime-gps-and-uav-terminal">AIME GPS and UAV Terminal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cba-community-base-addons">CBA - Community Base Addons</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-main">DUI - Squad Radar - Main</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-radar">DUI - Squad Radar - Radar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-nametags">DUI - Squad Radar - Nametags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dui-squad-radar-indicators">DUI - Squad Radar - Indicators</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#grad-trenches">GRAD Trenches</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tfar-global-settings">TFAR - Global settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tfar-clientside-settings">TFAR - Clientside settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#vet-unflipping">VET_Unflipping</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#zeus-enhanced">Zeus Enhanced</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#zeus-enhanced-faction-filter">Zeus Enhanced - Faction Filter</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l2"><a class="reference internal" href="snippets.html">Snippets</a></li>
-</ul>
-</li>
-</ul>
-
-<div id="searchbox" style="display: none" role="search">
-  <!--<h3>Search</h3>-->
-    <form class="search" action="../search.html" method="get">
-      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
-      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-    <div>
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
-        <div class="contribute">
-            <h3>GitHub</h3>
-            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
-               data-icon="octicon-star"
-               data-style="mega"
-               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
-               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
-               data-count-aria-label="# stargazers on GitHub"
-               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
-            <br>
-            <a class="github-button" href="https://github.com/official-antistasi-community"
-               data-style="mega"
-               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
-            <br>
-        </div>
-    </div>
-    <div>
-        <span id="sponsor-btn">
-        </span>
-        <script src="_static/js/sponsor-btn.js"></script>
-    </div>
-
-        </div>
-      </div>
+    
       <div class="clearer"></div>
-    </div> 
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/July/24</div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="changelog.html" title="Changelog"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_index.html" title="Dev Guide - WIP"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Mod-Settings</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/July/28</div>
   </body>
 </html>
