@@ -38,6 +38,15 @@ Administration
    Administration
    ^^^^^^^^^^^^^^^^^^^^^^^^
 
+   .. toctree::
+      :maxdepth: 2
+      :glob:
+
+      /dev_guide/admins/general.rst
+      /dev_guide/admins/history.rst
+      /dev_guide/admins/FactionsAndTemplates.rst
+      /dev_guide/admins/DebugConsoleCommands.rst
+
 Development
 ========================
 
@@ -49,7 +58,7 @@ Development
    ^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. toctree::
-      :maxdepth: 1
+      :maxdepth: 2
       :glob:
 
       /dev_guide/A3AExtender.rst
