@@ -1,12 +1,17 @@
+.. rst-class:: hidden
+
 .. _dev_guide_snippets:
 
-
+================
 Snippets
 ================
 
+Hint for Testing Feedback
+==========================================================
+
 .. card::
    :class-header: header-2-light
-   :class-card: sd-card-2
+   :class-card: sd-card-2 sd-mt-3
 
    Hint for Testing Feedback
    ^^^^^^^^^^^^^^^^^^^^^^^^^^
