@@ -310,14 +310,14 @@ Other Useful Commands
       Repair Buildings
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      Run as local. Repairs the building that you are looking at.
+      Run as server. Repairs the building that you are looking at.
 
       .. rst-class:: code-block-3
       .. code-block:: guess
 
          [cursorObject] remoteExec ["A3A_fnc_repairRuinedBuilding", 2]
 
-      Run as local. Repairs all buildings in the area of a marker.
+      Run as server. Repairs all buildings in the area of a marker.
 
       .. rst-class:: code-block-3
       .. code-block:: guess
