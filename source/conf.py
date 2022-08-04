@@ -70,9 +70,9 @@ html_css_files = [
     'css/tiles.css'
 ]
 
-# html_js_files = [
-#    'js/sponsor-btn.js',
-# ]
+html_js_files = [
+    'js/line-breaker.js',
+]
 
 exclude_patterns = ["available_label.json", "extras/*"]
 

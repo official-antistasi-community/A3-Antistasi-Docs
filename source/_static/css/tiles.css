@@ -299,7 +299,11 @@ div.footer {
 }
 
 .code-paragraph .sd-card-text, .code-paragraph .line {
-    line-height: 2rem;
+    line-height: 2rem !important;
+}
+
+.code-paragraph-2 {
+    line-height: 2rem !important;
 }
 
 .code-block-3 pre {
