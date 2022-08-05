@@ -72,6 +72,7 @@ html_css_files = [
 
 html_js_files = [
     'js/line-breaker.js',
+    'js/link-new-tab.js'
 ]
 
 exclude_patterns = ["available_label.json", "extras/*"]

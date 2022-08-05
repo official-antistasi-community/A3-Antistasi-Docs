@@ -115,6 +115,8 @@ Basic Commands
 
       Both run as local. First adds a certain amount to your personal money, Second adds HR and Money to the faction. Replace PM, HR, Money with the value you want to add. Negative numbers will subtract.
 
+      .. rst-class:: table-2-b
+
       .. flat-table::
          :header-rows: 1
 
@@ -146,6 +148,8 @@ Basic Commands
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
       Run as local. Adds the specified aggro amount (-100 to 100) to the aggression of the specified side, with falloff over the specified time in minutes. Side must be Occupants or Invaders.
+
+      .. rst-class:: table-2-b
 
       .. flat-table::
          :header-rows: 1
@@ -192,6 +196,8 @@ Basic Commands
       | Markername is case-sensitive and needs to be given as a string "outpost_1".
       | Sides are: Teamplayer, Invaders, Occupants
 
+      .. rst-class:: table-2-b
+
       .. flat-table::
          :header-rows: 1
 
@@ -217,6 +223,8 @@ Basic Commands
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
       Run as local. Change the support values of the closest city to you. Values can be negative, both gov and reb must be set to a number from 100 to -100.
+
+      .. rst-class:: table-2-b
 
       .. flat-table::
          :header-rows: 1
