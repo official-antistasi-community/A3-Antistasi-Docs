@@ -81,7 +81,7 @@ With VS code Arma Dev Extension
    - fill in the configuration :code:`.json` file something like this
 
    .. rst-class:: code-block-3
-   .. code-block:: guess
+   .. code-block:: json
 
       {
          "title": "A3 Antistasi",
@@ -109,7 +109,7 @@ With VS code Arma Dev Extension
    - Run the command :code:`Extensions: Open Extension Folder` and navigate to :code:`ole1986.arma-dev-0.0.20 -> out -> helpers -> runArma.js -> ln 54` and add :code:`-debug` to the list
 
    .. rst-class:: code-block-3
-   .. code-block:: guess
+   .. code-block:: js
 
       let args = [
              '2', '1', '0', '-exe', 'arma3_x64.exe',
@@ -177,6 +177,6 @@ With Arma 3 Tools
 
       .. rst-class:: code-paragraph
 
-      - For live editing you need to create this folder structure in your arma 3 directory :code:`x\A3A\addons´, and the create symbolic links from each folder in your repositorys :code:`A3A\addons` folder to the one in your arma directory.
-      - Next you need to go in your ArmA 3 launchers :code:`Parameters tab and under :code:`All Parameters` section :code:`Advanced` tick of the parameter :code:`Enable File-Pathcing`, then under the section :code:`Author` tick of the parameter :code:`Debug Mode`. I recommend favoriting these two for ease of use later on.
+      - For live editing you need to create this folder structure in your arma 3 directory :code:`x\A3A\addons`, and the create symbolic links from each folder in your repositorys :code:`A3A\addons` folder to the one in your arma directory.
+      - Next you need to go in your ArmA 3 launchers :code:`Parameters` tab and under :code:`All Parameters` section :code:`Advanced` tick of the parameter :code:`Enable File-Pathcing`, then under the section :code:`Author` tick of the parameter :code:`Debug Mode`. I recommend favoriting these two for ease of use later on.
       - Now when you start with the build loaded under the :code:`Mods` tab, it will start in Dev mode and allow for recompilation of functions on the go either by reloading the missing or by calling the function :code:`A3A_fnc_prepFunctions`.
