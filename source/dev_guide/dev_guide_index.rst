@@ -58,10 +58,11 @@ Development
    ^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. toctree::
-      :maxdepth: 2
+      :maxdepth: 3
       :glob:
 
       /dev_guide/dev/dev_guide_setup_tools.rst
       /dev_guide/dev/dev_guide_how_to_build.rst
+      /dev_guide/dev/dev_guide_porting.rst
       /dev_guide/A3AExtender.rst
       /dev_guide/dev/dev_guide_build_mission.rst
