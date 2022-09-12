@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Street Artist Editor &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/line-breaker.js"></script>
+    <script src="../../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="How to Extend Antistasi?" href="../../A3AExtender.html" />
+    <link rel="prev" title="Street Artist Generation" href="dev_guide_street_artist_generation.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../A3AExtender.html" title="How to Extend Antistasi?"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_street_artist_generation.html" title="Street Artist Generation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" accesskey="U">Antistasi Porting Instructions</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Street Artist Editor</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../dev_guide_porting.html">Antistasi Porting Instructions</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_porting_map.html">Antistasi Porting Maps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_porting_mod.html">Antistasi Porting Mods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_street_artist_generation.html">Street Artist Generation</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Street Artist Editor</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#important-guidelines">Important Guidelines</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#automated-actions">Automated Actions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#gifs">GIFs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="street-artist-editor">
+<span id="dev-street-artist-editor-guide"></span><h1>Street Artist Editor<a class="headerlink" href="#street-artist-editor" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">See <a class="reference internal" href="dev_guide_street_artist_generation.html#dev-street-artist-generation-guide"><span class="std std-ref">Street Artist Generation</span></a> for starting up the editor.</p>
+<p class="sd-card-text"><em>Help for the Editor’s functions is provided in-game.</em>
+<em>However, there are guidelines for creating A3-Antistasi navGrids.</em></p>
+</div>
+</div>
+<section id="important-guidelines">
+<h2>Important Guidelines<a class="headerlink" href="#important-guidelines" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Important Guidelines</p>
+</div>
+<div class="sd-card-body docutils">
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line"><strong>Along a road section, the closest node must be one at the end.</strong></div>
+<div class="line">The Street Artist Generation takes this into account when simplifying the navGrid. However, there is no checking when the user connects nodes or adds new ones. Ensure that new nodes will not become the closest to any other nearby roads.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line"><strong>Ground supplied outposts should have a node within 300m.</strong></div>
+<div class="line">You can create a path to outposts and airports to allow ground convoys access. You will need to take a screenshot or memorise A3-Antistasi outpost locations as they are not available in the Editor.</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="automated-actions">
+<h2>Automated Actions<a class="headerlink" href="#automated-actions" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Automated Actions</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The Street Artist Editor helps the user avoid common problems.
+There is no way to bypass these systems.</p>
+<ul>
+<li><div class="line-block">
+<div class="line"><strong>If there’s no road path between two nodes, then one of the nodes should be off-road.</strong></div>
+<div class="line">Every time the user connects two road nodes, it will a employ quick pathfinding check to determine whether there is a valid direct connection. If not, it will add a middle node automatically.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line"><strong>Nodes cannot share the same road.</strong></div>
+<div class="line">The minimum distance between two nodes is currently 16cm. This also means an off-road node needs to be at least 16cm from any road.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line"><strong>Nodes must be on top of bridges.</strong></div>
+<div class="line">All added nodes in the Editor are placed on top of the highest surface. The height above ground is displayed next to the cursor. Take this into account for routes going under tunnels or overhangs. To avoid any issues: Place off-road nodes on both ends of the tunnel and hope the AI path safely between them. Nodes snapped to roads will inherit the roads’ height, therefore no intervention is required.</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="gifs">
+<h2>GIFs<a class="headerlink" href="#gifs" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">GIFs</p>
+</div>
+<div class="sd-card-body docutils">
+<figure class="align-default" id="id1">
+<img alt="../../../_images/StreetArtistSetRoadType.gif" src="../../../_images/StreetArtistSetRoadType.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Set Road Types</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<img alt="../../../_images/StreetArtistConnectionAndCreationBasics.gif" src="../../../_images/StreetArtistConnectionAndCreationBasics.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Connection &amp; Creation Basics</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<img alt="../../../_images/StreetArtistCreateIsland.gif" src="../../../_images/StreetArtistCreateIsland.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Create Island</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<img alt="../../../_images/StreetArtistDeletionBrush.gif" src="../../../_images/StreetArtistDeletionBrush.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Deletion brush</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id5">
+<img alt="../../../_images/StreetArtistReRoute.gif" src="../../../_images/StreetArtistReRoute.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Re Route Roads</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
+<img alt="../../../_images/StreetArtistChangeColor.gif" src="../../../_images/StreetArtistChangeColor.gif" />
+<figcaption>
+<p><span class="caption-text">Street Artist- Change Colour Division Mode</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../A3AExtender.html" title="How to Extend Antistasi?"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_street_artist_generation.html" title="Street Artist Generation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" >Antistasi Porting Instructions</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Street Artist Editor</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>

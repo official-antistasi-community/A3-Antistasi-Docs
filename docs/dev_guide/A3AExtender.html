@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>How to Extend Antistasi? &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tiles.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/line-breaker.js"></script>
+    <script src="../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How to build Antistasi (Mission)" href="dev/dev_guide_build_mission.html" />
+    <link rel="prev" title="Street Artist Editor" href="dev/porting/dev_guide_street_artist_editor.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev/dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dev/porting/dev_guide_street_artist_editor.html" title="Street Artist Editor"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">How to Extend Antistasi?</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">How to Extend Antistasi?</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#important-things-to-modify">Important things to modify</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-additions">Example additions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#event-system">Event-System</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#building-the-mod">Building the mod</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="how-to-extend-antistasi">
+<span id="a3a-extender-guide"></span><h1>How to Extend Antistasi?<a class="headerlink" href="#how-to-extend-antistasi" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">An example Code for extending the Antistasi-mod can be found on <a class="reference external" href="https://github.com/HakonRydland/A3AExtender">Github</a>.</p>
+</div>
+</div>
+<section id="important-things-to-modify">
+<h2>Important things to modify<a class="headerlink" href="#important-things-to-modify" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Important things to modify</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">Under addons/core/Includes you need to adapt <code class="code docutils literal notranslate"><span class="pre">script_mod.hpp</span></code> to have a unique <code class="code docutils literal notranslate"><span class="pre">PREFIX</span></code> and <code class="code docutils literal notranslate"><span class="pre">MODFOLDER</span></code>.</p></li>
+<li><p class="sd-card-text">Under all addons <strong>EXCEPT</strong> core you need to update <code class="code docutils literal notranslate"><span class="pre">script_component.hpp</span></code> to have updateded path to match the <code class="code docutils literal notranslate"><span class="pre">MODFOLDER</span></code> define in <code class="code docutils literal notranslate"><span class="pre">script_mod.hpp</span></code>.</p></li>
+</ul>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>#include &quot;\x\<span class="cp">${</span><span class="n">MODFOLDER</span><span class="cp">}</span>\addons\core\Includes\script_mod.hpp&quot;
+</pre></div>
+</div>
+<ul class="code-paragraph">
+<li><div class="line-block">
+<div class="line">Next you need to update all <code class="code docutils literal notranslate"><span class="pre">$PBOPREFIX$</span></code> with the new path <code class="code docutils literal notranslate"><span class="pre">x\${MODFOLDER}\addons\${COMPONENT}</span></code>.</div>
+<div class="line">All ${Something} should be replaced with their corresponding elements.</div>
+</div>
+</li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Example<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">If MODFOLDER is <code class="code docutils literal notranslate"><span class="pre">A3AE</span></code> you would replace all ${MODFOLDER} with A3AE.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;\x\A3AE\addons\core\Includes\script_mod.hpp&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+</details></div>
+</div>
+</section>
+<section id="example-additions">
+<h2>Example additions<a class="headerlink" href="#example-additions" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Example additions</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Maps</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-paragraph line-block">
+<div class="line">Antistasi now supports 3rd party map porting.</div>
+<div class="line">There are two examples added for working with maps. Adding a new map and overwriting/applying additions for an existing map.</div>
+<div class="line">In this examples there are also demonstrations of mission specific overwrites of <code class="code docutils literal notranslate"><span class="pre">mapInfo</span></code> and <code class="code docutils literal notranslate"><span class="pre">navGrid</span></code> data as well as global overwrite/addition.</div>
+<div class="line">You will find all the information regarding this under <code class="code docutils literal notranslate"><span class="pre">A3AE/addons/maps</span></code>.</div>
+<div class="line">Take care to study all the files in the addon to not miss crucial porting steps.</div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Templates</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-paragraph line-block">
+<div class="line">Antistasi now supports 3rd party template additions/overwrites.</div>
+<div class="line">To add new templates or overwrite existing ones follow the demonstration given in <code class="code docutils literal notranslate"><span class="pre">A3AE/addons/templates/Templates/Templates.hpp</span></code>.</div>
+<div class="line">Note that while you can add addon vehicle templates to Antistasi at this time, it should be noted that it is still a limited system and you shouldn’t expect full functionality from them atm.</div>
+<div class="line">Again it’s important to read through all the files in the <code class="code docutils literal notranslate"><span class="pre">templates</span></code> addon to not miss important steps.</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="event-system">
+<h2>Event-System<a class="headerlink" href="#event-system" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Mod integrated event system</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Antistasi’s functionality is extendable by 3rd party mods through the events system, where you can subscribe to events whitin antistasi like for example vehicle initilisation.</p>
+<p class="sd-card-text code-paragraph-2">A record of the events and their arguments can be found in the config under <code class="code docutils literal notranslate"><span class="pre">A3A</span> <span class="pre">&gt;&gt;</span> <span class="pre">Events</span></code> where the class name is the event name and the sub class params contains a list of the arguments in order of argument index, each element of this list contains a <code class="code docutils literal notranslate"><span class="pre">discription</span></code>, a list of valid <code class="code docutils literal notranslate"><span class="pre">types</span></code> (array, string, number, <cite>…</cite>) and a flag for if it is <code class="code docutils literal notranslate"><span class="pre">optional</span></code> (not guarented to be passed along). In addition to this class of arguments is a flag for the execution location of the event (<code class="code docutils literal notranslate"><span class="pre">isLocal</span></code>, 1 = local, 0 = global)</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Subscribe to an Event<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To subscribe to an event you use the <code class="code docutils literal notranslate"><span class="pre">A3A_Events_fnc_addEventListener</span></code>.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
+<span class="cm">Description:</span>
+<span class="cm">    Add a listener to an event, allowing you to trigger functions when that event occurs</span>
+
+<span class="cm">Arguments:</span>
+<span class="cm">0. &lt;String&gt; Event identifier, as registered in configFile &gt;&gt; A3A &gt;&gt; Events</span>
+<span class="cm">1. &lt;String&gt; Unique identifier of listener</span>
+<span class="cm">2. &lt;String|Code&gt; Code block or name of function to excecute on event occurance</span>
+
+<span class="cm">Return Value:</span>
+<span class="cm">&lt;Array&lt;Event, ID&gt;&gt; data needed to remove listener</span>
+
+<span class="cm">Scope: Any</span>
+<span class="cm">Environment: unscheduled</span>
+<span class="cm">Public: Yes</span>
+<span class="cm">Dependencies:</span>
+
+<span class="cm">Example:</span>
+<span class="cm">*/</span><span class="w"></span>
+
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;someFuncName&quot;</span><span class="p">]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">systemChat</span><span class="w"> </span><span class="s">&quot;Example event listener triggered!&quot;</span><span class="p">}]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">someFunc</span><span class="p">]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Unsubscribe an Event<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To remove an event listener use the <code class="code docutils literal notranslate"><span class="pre">A3A_Events_fnc_removeEventListener</span></code> function.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c">/**</span>
+<span class="c">Description:</span>
+<span class="c">    Removes a event listener</span>
+
+<span class="c">Arguments:</span>
+<span class="c">0. &lt;String&gt; Event the listener is subscribed to</span>
+<span class="c">1. &lt;String&gt; The event listeners unique identifier</span>
+
+<span class="c">Return Value:</span>
+<span class="c">&lt;Nil|Array&gt; Nil if failed, deleted event listener otherwise</span>
+
+<span class="c">Scope: Any</span>
+<span class="c">Environment: unscheduled</span>
+<span class="c">Public: Yes</span>
+<span class="c">Dependencies:</span>
+<span class="c">*/</span><span class="w"></span>
+
+<span class="nt">Example</span><span class="o">:</span><span class="w"> </span><span class="cp">[</span><span class="s2">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;A3A_Events_example&quot;</span><span class="cp">]</span><span class="w"> </span><span class="nt">call</span><span class="w"> </span><span class="nt">A3A_Events_fnc_removeEventListener</span><span class="o">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-card-3">
+<summary class="sd-summary-title sd-card-header header-3-light">
+Unsubscribe all Events<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">To remove all event listener of a type use the <code class="code docutils literal notranslate"><span class="pre">A3A_events_fnc_removeAllEventListeners</span></code> function.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c">/**</span>
+<span class="c">Description:</span>
+<span class="c">    Removes all event listeners subscribed to a particular event</span>
+
+<span class="c">Arguments:</span>
+<span class="c">0. &lt;String&gt; Event to remove listeners from</span>
+
+<span class="c">Return Value: &lt;Nil|Array&gt; Nil if failed, the removed listeners otherwise</span>
+
+<span class="c">Scope: Any</span>
+<span class="c">Environment: unscheduled</span>
+<span class="c">Public: Yes</span>
+<span class="c">Dependencies:</span>
+<span class="c">*/</span><span class="w"></span>
+
+<span class="nt">Example</span><span class="o">:</span><span class="w"> </span><span class="cp">[</span><span class="s2">&quot;AIVehInit&quot;</span><span class="cp">]</span><span class="w"> </span><span class="nt">call</span><span class="w"> </span><span class="nt">A3A_Events_fnc_removeAllEventListeners</span><span class="o">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</details></div>
+</div>
+</section>
+<section id="building-the-mod">
+<h2>Building the mod<a class="headerlink" href="#building-the-mod" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Building the mod</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-paragraph line-block">
+<div class="line">To build the mod you first need to navigate to <code class="code docutils literal notranslate"><span class="pre">Tools\Builder</span></code> and edit <code class="code docutils literal notranslate"><span class="pre">buildAddons.ps1</span></code>.</div>
+<div class="line">On line 6 replace <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;A3AE&quot;</span></code> with <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;${your</span> <span class="pre">addons</span> <span class="pre">main</span> <span class="pre">folder</span> <span class="pre">name}&quot;</span></code>, so if you name your extension A3A-AltisRemade then the line would be <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;A3A-AltisRemade&quot;</span></code>, save the file and close it.</div>
+<div class="line">Now all you need to do is run the script and it will build the mod for you (note: it will not sign it for you, this needs to be done manually before publishing with <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3</span> <span class="pre">Tools</span></code> -&gt; <code class="code docutils literal notranslate"><span class="pre">DSUtils</span></code> &amp; <code class="code docutils literal notranslate"><span class="pre">Publisher</span></code>).</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev/dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev/porting/dev_guide_street_artist_editor.html" title="Street Artist Editor"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">How to Extend Antistasi?</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>

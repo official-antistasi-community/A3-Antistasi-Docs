@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Factions and Template Overview &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Debug Console Commands for Players and Admins" href="DebugConsoleCommands.html" />
+    <link rel="prev" title="The History of Antistasi" href="history.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="history.html" title="The History of Antistasi"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Factions and Template Overview</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="general.html">Frequently asked questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="history.html">The History of Antistasi</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Factions and Template Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general-overview">General Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#map-specific-overview">Map Specific Overview</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="DebugConsoleCommands.html">Debug Console Commands for Players and Admins</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#development">Development</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="factions-and-template-overview">
+<span id="admin-factionstemplates-guide"></span><h1>Factions and Template Overview<a class="headerlink" href="#factions-and-template-overview" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text mono-space">If you have questions like <code class="docutils literal notranslate"><span class="pre">&quot;I</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">play</span> <span class="pre">against</span> <span class="pre">[random</span> <span class="pre">faction],</span> <span class="pre">how</span> <span class="pre">do</span> <span class="pre">I</span> <span class="pre">do</span> <span class="pre">that?&quot;</span></code> this is the place to look at.
+Antistasi is categorizing the maps into different climates and based on them as well as the mods loaded you get different Factions with adapted camos and such. In addition there are a few special cases like for example the HIDF (Horizon Island Defense Forces) which you only get on Tanoa.</p>
+<p class="sd-card-text">To make sure you have all the assets loaded, click on the links which direct you to the Steam Workshop Item containing the dependencies.</p>
+<p class="sd-card-text"><code class="docutils literal notranslate"><span class="pre">$</span></code> = Placeholder that will be replaced in the future</p>
+</div>
+</div>
+<section id="general-overview">
+<h2>General Overview<a class="headerlink" href="#general-overview" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">General Overview</p>
+</div>
+<div class="sd-card-body docutils">
+<table class="table-mission-info table-map-overview docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Climate / Modset</p></th>
+<th class="head"><p class="sd-card-text">Vanilla</p></th>
+<th class="head"><p class="sd-card-text">VN</p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/RHS">RHS</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-Factions">3CB Factions</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-BAF">3CB BAF</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-BAF-and-Factions">3CB BAF and Factions</a></p></th>
+<th class="head"><p class="sd-card-text">Maps</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Arid</p></td>
+<td><p class="sd-card-text">NATO/CSAT</p></td>
+<td><p class="sd-card-text">PAVN/MACV</p></td>
+<td><p class="sd-card-text">US/AFRF</p></td>
+<td><p class="sd-card-text">TKA West/TKA East</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">BAF/TKA East</p></td>
+<td><p class="sd-card-text">Altis, Kunduz, Malden, Anizay, Takistan, Sahrani, Kujari</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Temperate</p></td>
+<td><p class="sd-card-text">NATO/CSAT</p></td>
+<td><p class="sd-card-text">PAVN/MACV</p></td>
+<td><p class="sd-card-text">US/AFRF</p></td>
+<td><p class="sd-card-text">USMC/AFRF/$</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">Livonia, Chernarus Summer, Virolahti, Tembelan Island</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Tropical</p></td>
+<td><p class="sd-card-text">NATO/CSAT</p></td>
+<td><p class="sd-card-text">PAVN/MACV</p></td>
+<td><p class="sd-card-text">US/AFRF</p></td>
+<td><p class="sd-card-text">CW US/SOV</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">BAF/CW SOV</p></td>
+<td><p class="sd-card-text">Tanoa, Cam Lao Nam</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Arctic</p></td>
+<td><p class="sd-card-text">NATO/CSAT</p></td>
+<td><p class="sd-card-text">PAVN/MACV</p></td>
+<td><p class="sd-card-text">US/AFRF</p></td>
+<td><p class="sd-card-text">USMC/AFRF/$</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">BAF/AFRF</p></td>
+<td><p class="sd-card-text">Chernarus Winter</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="map-specific-overview">
+<h2>Map Specific Overview<a class="headerlink" href="#map-specific-overview" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Map Specific Overview</p>
+</div>
+<div class="sd-card-body docutils">
+<table class="table-mission-info table-map-overview docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Climate / Modset</p></th>
+<th class="head"><p class="sd-card-text">Vanilla</p></th>
+<th class="head"><p class="sd-card-text">VN</p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/RHS">RHS</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-Factions">3CB Factions</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-BAF">3CB BAF</a></p></th>
+<th class="head"><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/3CB-BAF-and-Factions">3CB BAF and Factions</a></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Altis">Altis</a></p></td>
+<td><p class="sd-card-text">AAF/CSAT</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">AAF/ADA</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">BAF/ADA</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Anizay">Anizay</a></p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">ANA/KRG</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">BAF/KRG</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/CamLaoNam">Cam Lao Nam</a></p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Cherno-Summer">Chernarus summer</a></p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">CDF/AFRF</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Cherno-Winter">Chernarus winter</a></p></td>
+<td><p class="sd-card-text">See Arctic</p></td>
+<td><p class="sd-card-text">See Arctic</p></td>
+<td><p class="sd-card-text">CDF/AFRF</p></td>
+<td><p class="sd-card-text">See Arctic</p></td>
+<td><p class="sd-card-text">See Arctic</p></td>
+<td><p class="sd-card-text">See Arctic</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Kunduz">Kunduz</a></p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">ANA/TKA East</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Livonia">Livonia</a></p></td>
+<td><p class="sd-card-text">LDF/CSAT</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">LDF/AFRF</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Malden">Malden</a></p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">MDF/ANA</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">BAF/ANA</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Sahrani">Sahrani</a></p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">KRG/HIDF</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">BAF/HIDF</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Takistan">Takistan</a></p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+<td><p class="sd-card-text">See Arid</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Tanoa">Tanoa</a></p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">HIDF/CW SOV</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+<td><p class="sd-card-text">See Tropical</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Tembelan">Tembelan Island</a></p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">MDF/AFRF</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://antistasi.de/Virolahti">Virolahti</a></p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">LDF/HIDF</p></td>
+<td><p class="sd-card-text">See Temperate</p></td>
+<td><p class="sd-card-text">BAF/HIDF</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="history.html" title="The History of Antistasi"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Factions and Template Overview</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>

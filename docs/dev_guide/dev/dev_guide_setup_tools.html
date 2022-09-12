@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Dev Tools Starter Setup &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to build Antistasi" href="dev_guide_how_to_build.html" />
+    <link rel="prev" title="Debug Console Commands for Players and Admins" href="../admins/DebugConsoleCommands.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../admins/DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dev Tools Starter Setup</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Dev Tools Starter Setup</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#arma-3-dev-extensions">Arma 3 Dev Extensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code-editor-extensions">Code Editor Extensions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="dev-tools-starter-setup">
+<span id="dev-setup-tools-guide"></span><h1>Dev Tools Starter Setup<a class="headerlink" href="#dev-tools-starter-setup" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">For you to be able to properly work with Antistasi and especially SQF, we have collected tools, IDE extensions and such so you can set up your system before starting to work on anything.</div>
+<div class="line">We recommend using VS Code but lowest minimal standard you should use it Notepad++ with SQF Syntax Highlighting.</div>
+<div class="line">Setting up dev tools and extensions or add-ons can be a pain. Here is a summery of links and copy-paste solutions.</div>
+<div class="line">If you have any questions please get in contact with a member of the Dev-Team</div>
+</div>
+</div>
+</div>
+<section id="arma-3-dev-extensions">
+<h2>Arma 3 Dev Extensions<a class="headerlink" href="#arma-3-dev-extensions" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Arma 3 Dev Extensions</p>
+</div>
+<div class="sd-card-body docutils">
+<table class="target-substitude linkname-steam table-mission-info docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Steam URL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">3den Enhanced</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=623475643">3den Enhanced on Steam</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">CBA_A3</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=450814997">CBA_A3 on Steam</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Debug Console</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1231625987">Debug Console on Steam</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Enhanced Movement</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=333310405">Enhanced Movement on Steam</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Extended Function Viewer</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1678581937">Extended Function Viewer on Steam</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">User Input Menus</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1673595418">User Input Menus on Steam</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Zeus Enhanced</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631">Zeus Enhanced on Steam</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Do not use the following to join servers with Battleye enabled!</p>
+</div>
+</div>
+<table class="target-substitude linkname-steam table-mission-info docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Steam URL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Intercept Minimal Dev</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1645973522">Intercept Minimal Dev on Steam</a></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">ArmaZeusCache</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1908099028">ArmaZeusCache on Steam</a></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Arma Debug Engine</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1585582292">Arma Debug Engine on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Arma Script Profiler</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1652506957">Arma Script Profiler on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="code-editor-extensions">
+<h2>Code Editor Extensions<a class="headerlink" href="#code-editor-extensions" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Code Editor Extensions</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Visual Studio Code</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">You can download Visual Studio Code for free on their <a class="reference external" href="https://code.visualstudio.com/download">Website</a>. The following extensions are recommended.</p>
+<table class="target-substitude table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf">SQF Language</a></p></td>
+<td><p class="sd-card-text">Provides language for SQF extensions and highlighting.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki">SQF Wiki</a></p></td>
+<td><p class="sd-card-text">Hover over command, see explanation.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=HkonRRydland.a3cfgfunctions">Arma 3 CfgFunctions</a></p></td>
+<td><p class="sd-card-text">Lets you have Auto completion, function peeking, and header preview for mission functions</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">Github Pull Requests and issues</a></p></td>
+<td><p class="sd-card-text">Review and manage your GitHub pull requests and issues directly in VS Code</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></p></td>
+<td><p class="sd-card-text">Supercharge the Git capabilities built into Visual Studio Code</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></p></td>
+<td><p class="sd-card-text">Real-time collaborative development from the comfort of your favorite tools.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=doi.fileheadercomment">File Header Comment</a></p></td>
+<td><p class="sd-card-text">Insert File Header Comment such as date, time</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint">SQFLint</a></p></td>
+<td><p class="sd-card-text">Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing as it will struggle since there is no description.ext in src folder.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt">Arma 3 - Open Last RPT</a></p></td>
+<td><p class="sd-card-text">Ctrl+Shift+P -&gt; Open Last -&gt; [enter]: will open the last RPT.</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run">Save and Run</a></p></td>
+<td><p class="sd-card-text">Requires some config, see bellow.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4 docutils">
+<div class="sd-card-header header-4-light docutils">
+<p class="sd-card-text">Save and Run</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph-direct target-substitude">Allows running a specified script or program when a keybind is pressed, or a specific filetype is saved. The extension does provide documentation, but here is an example that I use with this repository. Edit the WORKSPACE settings. It’s already in .gitIgnore <code class="code docutils literal notranslate"><span class="pre">...\A3-Antistasi\.vscode\settings.json</span></code>. You can Download an <a class="reference external" href="https://gist.github.com/CalebSerafin/d91c15bfbbf913d13c56e9494abc05ab">Example</a></p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4 docutils">
+<div class="sd-card-header header-4-light docutils">
+<p class="sd-card-text">Antistasi-Dev-Deploy-Configurator</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text target-substitude">It is recommended using the configurator to set up map-template filter for Antistasi-Dev-Deploy.exe So that every save does not update 16+ templates. You can fin this tool and a guide <a class="reference external" href="https://github.com/CalebSerafin/Antistasi-Dev-Deploy/wiki/Antistasi-Dev-Deploy-Configurator">here</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Atom</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4-important sd-mt-3 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Atom is no longer supported by antistasi dev team. However it is still possible to use Atom as an editor for arma. The plugins down below where recommended back then.</p>
+</div>
+</div>
+<table class="target-substitude table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://atom.io/packages/language-arma-atom">Arma language support in Atom</a></p></td>
+<td><p class="sd-card-text">Syntax highlighting, auto-completions and snippets for sqf and other languages used within the Real Virtuality engine</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://atom.io/packages/atom-bracket-highlight">atom-bracket-highlight package</a></p></td>
+<td><p class="sd-card-text">Animates bracket highlighting</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Notepad++</p>
+</div>
+<div class="sd-card-body docutils">
+<table class="target-substitude table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://github.com/Barrow/npp-sqf">Notepad++ SQF Syntax Highlighting and Auto Completion</a></p></td>
+<td><p class="sd-card-text">If you don’t have an IDE and no clue how to work with one, this is basically the minimum requirement to work with it.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../admins/DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Dev Tools Starter Setup</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>

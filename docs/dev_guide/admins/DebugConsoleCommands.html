@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Debug Console Commands for Players and Admins &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Dev Tools Starter Setup" href="../dev/dev_guide_setup_tools.html" />
+    <link rel="prev" title="Factions and Template Overview" href="FactionsAndTemplates.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../dev/dev_guide_setup_tools.html" title="Dev Tools Starter Setup"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FactionsAndTemplates.html" title="Factions and Template Overview"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Players and Admins</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="general.html">Frequently asked questions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="history.html">The History of Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FactionsAndTemplates.html">Factions and Template Overview</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Debug Console Commands for Players and Admins</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#basic-commands">Basic Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#advanced-commands">Advanced Commands</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#other-useful-commands">Other Useful Commands</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#development">Development</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="debug-console-commands-for-players-and-admins">
+<span id="admin-debugcommands-guide"></span><h1>Debug Console Commands for Players and Admins<a class="headerlink" href="#debug-console-commands-for-players-and-admins" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-2 docutils">
+<div class="sd-card-body docutils">
+<div class="mono-space line-block">
+<div class="line"><cite>“Hey Dev, Petros is gone. What should I do?”</cite> and other questions can be answered by the debug commands we collected for you.</div>
+<div class="line">And we have quite a few! They range from teleporting HQ assets, over adding temporary members to cheating in Money and HR (which we don’t recommend - just play it without cheating, you lazy fuck).</div>
+<div class="line">Nevertheless, we hope the debug commands can solve your issues if you have some.</div>
+</div>
+</div>
+</div>
+<section id="basic-commands">
+<h2>Basic Commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-2 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Basic Commands</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">These commands are single liners that do various things, mostly with Antistasi’s functions.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Teleport HQ Assets</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Teleports the relevant asset to your position.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>petros setPos (getPos player);
+flagX setPos (getPos player);
+mapX setPos (getPos player);
+vehicleBox setPos (getPos player);
+boxX setPos (getPos player);
+fireX setPos (getPos player);
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Rebuild HQ at player location</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. This teleports Petros to your position and then executes the “Build HQ” command.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">getpos</span><span class="w"> </span><span class="n">player</span><span class="p">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;A3A_fnc_createPetros&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+<span class="p">[]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;A3A_fnc_buildHQ&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">];</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Force Commander</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Both run as Local. The first one makes you the commander, the second makes the person you are looking at commander.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">player</span><span class="o">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="o">[</span><span class="n">&quot;A3A_fnc_makePlayerBossIfEligible&quot;, 2</span><span class="o">]</span><span class="p">;</span><span class="w"></span>
+<span class="o">[</span><span class="n">cursorTarget</span><span class="o">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="o">[</span><span class="n">&quot;A3A_fnc_makePlayerBossIfEligible&quot;, 2</span><span class="o">]</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Adding Temporary Members</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Both run as local. First one adds yourself, second adds the person you are looking at.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>membersX pushBackUnique (getPlayerUID player); publicVariable &quot;membersX&quot;;
+call A3A_fnc_memberAdd;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Force commander eligibility</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Both run as local. First sets yourself eligible, second sets the person you are looking at.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>player setVariable [&quot;eligible&quot;,true,true];
+cursorTarget setVariable [&quot;eligible&quot;,true,true];
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Resources and money</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Both run as local. First adds a certain amount to your personal money, Second adds HR and Money to the faction. Replace PM, HR, Money with the value you want to add. Negative numbers will subtract.</p>
+<table class="table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Variable</p></th>
+<th class="head"><p class="sd-card-text">Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">PM</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ }</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">HR</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ }</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Money</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ }</p></td>
+</tr>
+</tbody>
+</table>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">PM</span><span class="o">]</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="n">A3A_fnc_resourcesPlayer</span><span class="p">;</span><span class="w"></span>
+
+<span class="o">//</span><span class="w"> </span><span class="o">[</span><span class="n">HR,Money</span><span class="o">]</span><span class="w"></span>
+<span class="o">[</span><span class="n">0,0</span><span class="o">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="o">[</span><span class="n">&quot;A3A_fnc_resourcesFIA&quot;,2</span><span class="o">]</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Prestige / Aggro</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Adds the specified aggro amount (-100 to 100) to the aggression of the specified side, with falloff over the specified time in minutes. Side must be Occupants or Invaders.</p>
+<table class="table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Variable</p></th>
+<th class="head"><p class="sd-card-text">Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">aggroAmount</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ <cite>|</cite> -100 ≤ x ≤ 100 }</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">aggroTime</p></td>
+<td><p class="sd-card-text">{ x ∊ ℕ <cite>|</cite> x &gt; 0 }</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">side</p></td>
+<td><p class="sd-card-text">x ∊ {Occupants, Invaders}</p></td>
+</tr>
+</tbody>
+</table>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[side, aggroAmount, aggroTime] remoteExec [&quot;A3A_fnc_addAggression&quot;,2];
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Force update UI</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Forces the UI bar to update.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[] spawn A3A_fnc_statistics;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Flip Marker</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">Run as local. Changes the owner of a marker. Specify the marker to change and what side to give it to.</div>
+<div class="line">Markername is case-sensitive and needs to be given as a string “outpost_1”.</div>
+<div class="line">Sides are: Teamplayer, Invaders, Occupants</div>
+</div>
+<table class="table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Variable</p></th>
+<th class="head"><p class="sd-card-text">Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">side</p></td>
+<td><p class="sd-card-text">x ∊ {Teamplayer, Occupants, Invaders}</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">markername</p></td>
+<td><p class="sd-card-text">N/A</p></td>
+</tr>
+</tbody>
+</table>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[side, markername] remoteExec [&quot;A3A_fnc_markerChange&quot;, 2];
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">City Support</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Change the support values of the closest city to you. Values can be negative, both gov and reb must be set to a number from 100 to -100.</p>
+<table class="table-2-b docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Variable</p></th>
+<th class="head"><p class="sd-card-text">Values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">gov</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ <cite>|</cite> -100 ≤ x ≤ 100 }</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">reb</p></td>
+<td><p class="sd-card-text">{ x ∊ ℤ <cite>|</cite> -100 ≤ x ≤ 100 }</p></td>
+</tr>
+</tbody>
+</table>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[gov, reb, getPos player, false] remoteExec [&quot;A3A_fnc_citySupportChange&quot;, 2];
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="advanced-commands">
+<h2>Advanced Commands<a class="headerlink" href="#advanced-commands" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-2 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Advanced Commands</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Remove item from arsenal</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Removes the item, specified by classname, from the arsenal.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>private _arsenalTab = &quot;rhs_weap_Izh18&quot; call jn_fnc_arsenal_itemType;
+[_arsenalTab,&quot;rhs_weap_Izh18&quot;,-1] call jn_fnc_arsenal_removeItem;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Remove Array of Items from arsenal</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Removes the item, specified by classname, from the arsenal.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>{
+   private _tab = _x call  jn_fnc_arsenal_itemType;
+   [_tab,_x,-1] call jn_fnc_arsenal_removeItem;
+} forEach someArrayOfTypes;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Add initialRebelEquipment</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Adds all initialRebelEquipment again, for cases as mission started without ace, to add missing items.</p>
+<p class="sd-card-text"><strong>Not recommended to be used after switching between modsets.</strong></p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span> <span class="p">[</span><span class="n">_x</span><span class="p">]</span> <span class="n">call</span> <span class="n">A3A_fnc_unlockEquipment</span> <span class="p">}</span> <span class="n">forEach</span> <span class="n">initialRebelEquipment</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="other-useful-commands">
+<h2>Other Useful Commands<a class="headerlink" href="#other-useful-commands" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-2 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Other Useful Commands</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Repair Buildings</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Repairs the building that you are looking at.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">cursorObject</span><span class="o">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="o">[</span><span class="n">&quot;A3A_fnc_repairRuinedBuilding&quot;, 2</span><span class="o">]</span><span class="w"></span>
+</pre></div>
+</div>
+<p class="sd-card-text code-paragraph">Run as server. Repairs all buildings in the area of a marker. Replace <code class="code docutils literal notranslate"><span class="pre">&quot;marker&quot;</span></code> with the real name of a marker, e.g <code class="code docutils literal notranslate"><span class="pre">“outpost_1”</span></code></p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>{ [_x, true] remoteExec [&quot;A3A_fnc_repairRuinedBuilding&quot;, 2] } forEach (destroyedBuildings inAreaArray &quot;marker&quot;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Vanilla Revive</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. This will revive you and remove any damage.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>player setDamage 0;
+player setVariable [&quot;incapacitated&quot;,false,true];
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Vanilla Stamina reset</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. This will reset your Stamina</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[player, 0] remoteExec [&quot;setFatigue&quot;, _0];
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Ace Revive</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. This will fully heal you and revive if you were downed.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>[player, player] call ace_medical_treatment_fnc_fullHeal
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Regain Undercover (Player)</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. This allows you to go Undercover if you were reported. Will not allow your Vehicle to go Undercover again.</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>player setVariable [&quot;compromised&quot;, 0, true];
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../dev/dev_guide_setup_tools.html" title="Dev Tools Starter Setup"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FactionsAndTemplates.html" title="Factions and Template Overview"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Players and Admins</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>

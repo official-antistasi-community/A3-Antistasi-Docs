@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Antistasi Porting Maps &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/line-breaker.js"></script>
+    <script src="../../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Antistasi Porting Mods" href="dev_guide_porting_mod.html" />
+    <link rel="prev" title="Antistasi Porting Instructions" href="../dev_guide_porting.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_porting_mod.html" title="Antistasi Porting Mods"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../dev_guide_porting.html" title="Antistasi Porting Instructions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" accesskey="U">Antistasi Porting Instructions</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Antistasi Porting Maps</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../dev_guide_porting.html">Antistasi Porting Instructions</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Antistasi Porting Maps</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#map-selection">Map selection</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#necessary-steps-to-port-a-map">Necessary steps to port a map</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_porting_mod.html">Antistasi Porting Mods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_street_artist_generation.html">Street Artist Generation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide_street_artist_editor.html">Street Artist Editor</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="antistasi-porting-maps">
+<span id="dev-porting-guide-maps"></span><h1>Antistasi Porting Maps<a class="headerlink" href="#antistasi-porting-maps" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<section id="map-selection">
+<h2>Map selection<a class="headerlink" href="#map-selection" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Map selection</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Not every map is fit for the use with Antistasi. Antistasi has some requirements that should be met in order to have a map that is properly playable and working with the systems that are within the mission. Some of the requirements are:</p>
+<ul class="simple">
+<li><p class="sd-card-text">a more or less connected road system</p></li>
+<li><p class="sd-card-text">a decent size from at least 10x10km</p></li>
+<li><p class="sd-card-text">villages and cities placed on the map with the correct CfgWorld-Name-Types</p></li>
+<li><p class="sd-card-text">in the optimal case at least one airfield</p></li>
+<li><p class="sd-card-text">the map should be free of clutter aka post-apocalyptic maps are not the best, especially when it comes to pathfinding</p></li>
+</ul>
+<p class="sd-card-text">We have already looked at a ton of maps anc collected the feedback. Here you can find the <a class="reference external" href="https://docs.google.com/spreadsheets/d/18SQCwXzGA8WoxCz8YBgBHZgEu1-uXQmqTMqCxQpADRQ/edit#gid=0">Antistasi Map Consideration List</a>.</p>
+</div>
+</div>
+</section>
+<section id="necessary-steps-to-port-a-map">
+<h2>Necessary steps to port a map<a class="headerlink" href="#necessary-steps-to-port-a-map" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Necessary steps to port a map</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Setting up the NavGrid</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">All maps need a custom navigation grid used for spawning vehicles and directing convoys.
+Quick start guide and generation can be found on <a class="reference internal" href="dev_guide_street_artist_editor.html#dev-street-artist-editor-guide"><span class="std std-ref">Street Artist Generation</span></a>.
+See <a class="reference internal" href="dev_guide_street_artist_editor.html#dev-street-artist-editor-guide"><span class="std std-ref">Steet Artist Editor</span></a> for A3-Antistasi navGrid Guidelines (and GIFs!).</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Setting up the mission.sqm</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Of course not only the navGrid has to be prepared, but also the mission in itself.
+Antistasi utilizes a system of different markers to recognize, where units and assets should be spawned, detected and/or deleted. These markers need to follow certain rules to be able to be recognized properly.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4 docutils">
+<div class="sd-card-header header-4-light docutils">
+<p class="sd-card-text">Example</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph-direct">In the picture below you see the markers that can be used for an airport.
+The main marker is the one called <code class="code docutils literal notranslate"><span class="pre">airport_1</span></code>. This marker should cover the whole area of the airport and units will only spawn and man buildings/statics within the marker. Patrols will spawn outside of the marker.
+As visible, all other markers (besides the spawnPoint, which is the starting point for convoys) have the first 4 letters of <code class="code docutils literal notranslate"><span class="pre">airport</span></code>, then the matching number and then the purpose identifier following. This way the code knows the purpose as well as the belonging of said marker to the main marker.</p>
+<img alt="../../../_images/example-marker-airport-map-porting.png" src="../../../_images/example-marker-airport-map-porting.png" />
+<p class="sd-card-text code-paragraph-direct">The same concept is used for seaports <code class="code docutils literal notranslate"><span class="pre">seap</span></code>, outposts <code class="code docutils literal notranslate"><span class="pre">outp</span></code>, factories <code class="code docutils literal notranslate"><span class="pre">fact</span></code> and resources <code class="code docutils literal notranslate"><span class="pre">reso</span></code>.</p>
+</div>
+</div>
+<p class="sd-card-text">[marker explanation missing]</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Setting up the folder structure and other necessary files</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">[content missing]</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_porting_mod.html" title="Antistasi Porting Mods"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../dev_guide_porting.html" title="Antistasi Porting Instructions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" >Antistasi Porting Instructions</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Antistasi Porting Maps</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/September/12</div>
+  </body>
+</html>
