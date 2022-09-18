@@ -67,3 +67,4 @@ Development
       /dev_guide/A3AExtender.rst
       /dev_guide/dev/dev_guide_build_mission.rst
       /dev_guide/dev/dev_guide_technical_standards_for_core_contrib.rst
+      /dev_guide/dev/dev_guide_console_commands.rst

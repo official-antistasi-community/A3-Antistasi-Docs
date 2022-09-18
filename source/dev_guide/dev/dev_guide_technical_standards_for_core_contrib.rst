@@ -65,7 +65,7 @@ Standardised Header
           ["something", player, 2.718281828, 4, nil, ["Tom","Dick","Harry"], ["UID123Money",0], "hint ""Hello World!"""] call A3A_fnc_standardizedHeader; // false
       */
 
-   .. rst-class:: code-paragraph-direct
+   .. rst-class:: code-paragraph
 
    - Maintainer is the person/people who (mostly) knows how the current code works. People who contributed: Localisation; Refactors; Small bug; etcetera; fixes do not go here. The maintainer list is updated when the code has rewritten/overhauled by a new person/people and the previous maintainer(s) will not be able to assist in troubles concerning the current code.
    - Remove unused fields.
