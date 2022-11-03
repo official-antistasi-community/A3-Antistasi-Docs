@@ -19,7 +19,7 @@ Support System
 
    Each support typically has an availability function (actually returns a weight now, could be renamed), a creation function (intended to be called by createSupport, and so returns fairly quickly), and a persistently spawned routine that manages the support while active. Multi-target supports update the A3A_activeSupports array to indicate readiness and completion.
 
-   All working supports from the previous system have been preserved except for Gunship and the orbital laser, which need updating to new systems.
+   All working supports from the previous system have been preserved except for Gunship, which need updating to new systems.
 
    Individual supports have been heavily refactored and in some cases rewritten. Some common trends:
 
