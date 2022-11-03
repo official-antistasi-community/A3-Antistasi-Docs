@@ -20,6 +20,6 @@ Agression Update Loop
       - :code:`A3A_balanceResourceRate` is the resources of each type typically gained by a faction every 10 minutes, currently just :code:`balancePlayerScale * balanceVehicleCost`. The defence cap is currently at :code:`10 * A3A_balanceResourceRate`.
       - :code:`A3A_enemyBalanceMul` is a parameter (default 10, because params don't do FP) that multiplies :code:`A3A_balancePlayerScale` to make the game generally harder or easier.
       - :code:`A3A_enemyAttackMul` is a parameter that multiplies attack resource rate to make attacks faster or slower.
-      - :code:`A3A_invaderBalanceMul` are temporary multipliers applied to invader resource gain rates. These aren't currently parameterized.
+      - :code:`A3A_invaderBalanceMul` is a parameter that multiplies invader resource gain rates.
 
    ResourceCheck (the 10-minute loop) still has most of its former responsibilities, although it now runs with any active players (not necessarily a commander), and no longer generates supply convoys against flipped towns (now the responsibility of chooseAttack).
