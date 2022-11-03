@@ -16,6 +16,6 @@ Attack choice system
    - Attacks against rebel targets outside mission distance are now permitted, although chance is reduced.
    - Danger of flying over other enemy locations is taken into account.
    - Threat of other nearby locations is taken into account, not just the target.
-   - Distance has no effect (other than the hard air distance cap), but nearby land bases are beneficial.
+   - Distance from air bases has less effect, with nearby land bases being more important.
    - Supply convoys are now used instead of occupant city attacks.
    - HQ attacks are now generated with the same system
