@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Technical Standards for Core Code Contributions &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Debug Console Commands for Devs" href="dev_guide_console_commands.html" />
+    <link rel="prev" title="How to build Antistasi (Mission)" href="dev_guide_build_mission.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Technical Standards for Core Code Contributions</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Technical Standards for Core Code Contributions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#standardised-header">Standardised Header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#standardised-variable-types">Standardised Variable Types</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="technical-standards-for-core-code-contributions">
+<span id="dev-code-contribution"></span><h1>Technical Standards for Core Code Contributions<a class="headerlink" href="#technical-standards-for-core-code-contributions" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">Contributing new file or updating old ones, please follow the Standardised Header format.</div>
+<div class="line">We are working with Localization within Antistasi so people can translate the content to their respective languages and make Antistasi more accessible. Please check out and follow Localization Standards.</div>
+<div class="line">We collected some Standardised Variable Types and put them together with small explanations Standardised Variable Types.</div>
+<div class="line">Getting started Reviewing Pull Requests.</div>
+</div>
+</div>
+</div>
+<section id="standardised-header">
+<h2>Standardised Header<a class="headerlink" href="#standardised-header" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Standardised Header</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-2 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">/*</span>
+<span class="n">Maintainer</span><span class="p">:</span> <span class="n">Maria</span> <span class="n">Martinez</span><span class="p">,</span> <span class="n">James</span> <span class="n">Johnson</span>
+    <span class="n">Calculates</span> <span class="n">the</span> <span class="n">logarithmic</span> <span class="n">mean</span> <span class="n">of</span> <span class="n">the</span> <span class="n">arguments</span><span class="o">.</span>
+    <span class="n">Places</span> <span class="n">a</span> <span class="n">marker</span> <span class="n">on</span> <span class="n">the</span> <span class="nb">map</span> <span class="n">where</span> <span class="n">Petros</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">standing</span><span class="o">.</span>
+    <span class="n">Finally</span><span class="p">,</span> <span class="n">concludes</span> <span class="n">whether</span> <span class="n">the</span> <span class="n">player</span> <span class="n">will</span> <span class="n">win</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">lottery</span><span class="o">.</span>
+
+<span class="n">Arguments</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">STRING</span><span class="o">&gt;</span> <span class="n">The</span> <span class="n">first</span> <span class="n">argument</span>
+    <span class="o">&lt;</span><span class="n">OBJECT</span><span class="o">&gt;</span> <span class="n">The</span> <span class="n">second</span> <span class="n">argument</span>
+    <span class="o">&lt;</span><span class="n">SCALAR</span><span class="o">&gt;</span> <span class="n">Float</span> <span class="ow">or</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">SQF</span><span class="o">.</span>
+    <span class="o">&lt;</span><span class="n">INTEGER</span><span class="o">&gt;</span> <span class="n">If</span> <span class="n">the</span> <span class="n">number</span> <span class="n">cannot</span> <span class="n">have</span> <span class="n">fractional</span> <span class="n">values</span><span class="o">.</span>
+    <span class="o">&lt;</span><span class="n">BOOL</span><span class="o">&gt;</span> <span class="n">Optional</span> <span class="nb">input</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="n">true</span><span class="p">)</span>
+    <span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">STRING</span><span class="o">&gt;&gt;</span> <span class="n">Array</span> <span class="n">of</span> <span class="n">a</span> <span class="n">specific</span> <span class="nb">type</span> <span class="p">(</span><span class="n">string</span> <span class="ow">in</span> <span class="n">this</span> <span class="n">case</span><span class="p">)</span><span class="o">.</span>
+    <span class="o">&lt;</span><span class="n">STRING</span><span class="p">,</span><span class="n">ANY</span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">key</span><span class="o">-</span><span class="n">pair</span> <span class="k">as</span> <span class="n">compound</span> <span class="nb">type</span><span class="p">,</span> <span class="n">shorthand</span> <span class="n">by</span> <span class="n">omitting</span> <span class="n">ARRAY</span><span class="o">.</span>
+    <span class="o">&lt;</span><span class="n">CODE</span><span class="o">|</span><span class="n">STRING</span><span class="o">&gt;</span> <span class="n">Optional</span> <span class="nb">input</span> <span class="k">with</span> <span class="n">synonymous</span> <span class="n">types</span><span class="p">,</span> <span class="n">string</span> <span class="n">compiles</span> <span class="n">into</span> <span class="n">code</span><span class="o">.</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="p">{</span><span class="n">true</span><span class="p">})</span>
+    <span class="o">&lt;</span><span class="n">STRING</span><span class="o">&gt;</span> <span class="n">Optional</span> <span class="n">singular</span> <span class="n">String</span> <span class="nb">input</span> <span class="o">|</span> <span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&gt;</span> <span class="n">Optional</span> <span class="n">Array</span> <span class="nb">input</span> <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">])</span>
+    <span class="o">&lt;</span><span class="n">CODE</span><span class="o">&lt;</span><span class="n">OBJECT</span><span class="p">,</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">STRING</span><span class="o">&gt;&gt;</span> <span class="n">Code</span> <span class="n">that</span> <span class="n">takes</span> <span class="n">arguments</span> <span class="n">of</span> <span class="n">an</span> <span class="nb">object</span><span class="p">,</span> <span class="n">a</span> <span class="n">scalar</span><span class="p">,</span> <span class="n">a</span> <span class="n">scalar</span><span class="p">,</span> <span class="ow">and</span> <span class="n">returns</span> <span class="n">a</span> <span class="n">string</span><span class="o">.</span>
+
+<span class="n">Return</span> <span class="n">Value</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">BOOL</span><span class="o">&gt;</span> <span class="n">If</span> <span class="n">the</span> <span class="n">player</span> <span class="n">will</span> <span class="n">win</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">lottery</span><span class="o">.</span>
+
+<span class="n">Scope</span><span class="p">:</span> <span class="n">Server</span><span class="o">/</span><span class="n">Server</span><span class="o">&amp;</span><span class="n">HC</span><span class="o">/</span><span class="n">Clients</span><span class="o">/</span><span class="n">Any</span><span class="p">,</span> <span class="n">Local</span> <span class="n">Arguments</span><span class="o">/</span><span class="n">Global</span> <span class="n">Arguments</span><span class="p">,</span> <span class="n">Local</span> <span class="n">Effect</span><span class="o">/</span><span class="n">Global</span> <span class="n">Effect</span>
+<span class="n">Environment</span><span class="p">:</span> <span class="n">Scheduled</span><span class="o">/</span><span class="n">Unscheduled</span><span class="o">/</span><span class="n">Any</span>
+<span class="n">Public</span><span class="p">:</span> <span class="n">Yes</span><span class="o">/</span><span class="n">No</span>
+<span class="n">Dependencies</span><span class="p">:</span>
+    <span class="o">&lt;</span><span class="n">STRING</span><span class="o">&gt;</span> <span class="n">A3A_guerFactionName</span>
+    <span class="o">&lt;</span><span class="n">SCALER</span><span class="o">&gt;</span> <span class="n">LBX_lvl1Price</span>
+
+<span class="n">Example</span><span class="p">:</span>
+    <span class="p">[</span><span class="s2">&quot;something&quot;</span><span class="p">,</span> <span class="n">player</span><span class="p">,</span> <span class="mf">2.718281828</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">nil</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;Tom&quot;</span><span class="p">,</span><span class="s2">&quot;Dick&quot;</span><span class="p">,</span><span class="s2">&quot;Harry&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;UID123Money&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;hint &quot;&quot;Hello World!&quot;&quot;&quot;</span><span class="p">]</span> <span class="n">call</span> <span class="n">A3A_fnc_standardizedHeader</span><span class="p">;</span> <span class="o">//</span> <span class="n">false</span>
+<span class="o">*/</span>
+</pre></div>
+</div>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">Maintainer is the person/people who (mostly) knows how the current code works. People who contributed: Localisation; Refactors; Small bug; etcetera; fixes do not go here. The maintainer list is updated when the code has rewritten/overhauled by a new person/people and the previous maintainer(s) will not be able to assist in troubles concerning the current code.</p></li>
+<li><p class="sd-card-text">Remove unused fields.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Public:</span> <span class="pre">Yes</span></code> means this function is not tied to a complex system but can be freely called by other code/debug console.</p></li>
+<li><p class="sd-card-text">It is not necessary to specify exact <a class="reference internal" href="#dev-code-contribution-standardvariables"><span class="std std-ref">code/array structure</span></a> (just <code class="code docutils literal notranslate"><span class="pre">&lt;CODE&gt;</span></code> or <code class="code docutils literal notranslate"><span class="pre">&lt;ARRAY&gt;</span></code>). However, a specific structure makes it clear what is expected/returned.</p></li>
+<li><p class="sd-card-text">It is not normal to have 10 arguments. The majority of humans can only <a class="reference external" href="https://www.dictionary.com/browse/subitize">subitise</a> ~5 items, use that as a guide.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="standardised-variable-types">
+<span id="dev-code-contribution-standardvariables"></span><h2>Standardised Variable Types<a class="headerlink" href="#standardised-variable-types" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Standardised Variable Types</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Because SQF is a small dynamically typed scripting language, there is no default design in of structures and variable types. I have created this guideline to clear the confusion about how to express variable types for function. The following syntax design is inspired by C# Func&lt;&gt; delegates(Except that name/description is coming after the type).</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Simple Types</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nv">ARRAY</span><span class="o">&gt;</span> <span class="nv">banList</span>
+<span class="o">&lt;</span><span class="nv">BOOL</span><span class="o">&gt;</span> <span class="nv">easyMode</span>
+<span class="o">&lt;</span><span class="nv">CODE</span><span class="o">&gt;</span> <span class="nv">crateFiller</span>
+<span class="o">&lt;</span><span class="nv">CONFIG</span><span class="o">&gt;</span> <span class="nv">uniformParent</span>
+<span class="o">&lt;</span><span class="nv">CONTROL</span><span class="o">&gt;</span> <span class="nv">vehicleBuyMenu</span>
+<span class="o">&lt;</span><span class="nv">DISPLAY</span><span class="o">&gt;</span> <span class="nv">currentPlayerMenu</span>
+<span class="o">&lt;</span><span class="nv">GROUP</span><span class="o">&gt;</span> <span class="nv">AIPatrol</span>
+<span class="o">&lt;</span><span class="nv">LOCATION</span><span class="o">&gt;</span> <span class="nv">village1</span>
+<span class="o">&lt;</span><span class="nv">OBJECT</span><span class="o">&gt;</span> <span class="nv">Petros</span>
+<span class="o">&lt;</span><span class="nv">SCALAR</span><span class="o">&gt;</span> <span class="nv">chanceOfSuccess</span>
+<span class="o">&lt;</span><span class="nv">SCRIPT</span><span class="o">&gt;</span> <span class="nv">waitForSleep</span>
+<span class="o">&lt;</span><span class="nv">SIDE</span><span class="o">&gt;</span> <span class="nv">invaders</span>
+<span class="o">&lt;</span><span class="nv">STRING</span><span class="o">&gt;</span> <span class="nv">plainMessage</span>
+<span class="o">&lt;</span><span class="nv">TEXT</span><span class="o">&gt;</span> <span class="nv">fancyText</span>
+<span class="o">&lt;</span><span class="nv">NAMESPACE</span><span class="o">&gt;</span> <span class="nv">storageLocation</span>
+<span class="o">&lt;</span><span class="nv">DIARY_RECORD</span><span class="o">&gt;</span> <span class="nv">howToGetStartedGuide</span>
+<span class="o">&lt;</span><span class="nv">TASK</span><span class="o">&gt;</span> <span class="nv">defendPetros</span>
+<span class="o">&lt;</span><span class="nv">HASHMAP</span><span class="o">&gt;</span> <span class="nv">vehicleEnums</span>
+
+<span class="o">&lt;</span><span class="nv">NIL</span><span class="o">&gt;</span> <span class="nv">Usually</span> <span class="nv">used</span> <span class="nv">when</span> <span class="nv">a</span> <span class="nv">function</span> <span class="nv">provides</span> <span class="nv">no</span> <span class="nv">meaningful</span> <span class="k">return</span>.
+<span class="o">&lt;</span><span class="nv">ANY</span><span class="o">&gt;</span> <span class="nv">Accepts</span> <span class="nv">any</span> <span class="nv">type</span>, <span class="nv">including</span> <span class="nv">nil</span>.
+<span class="o">&lt;</span><span class="nv">T</span><span class="o">&gt;</span> <span class="nv">Generic</span> <span class="nv">Type</span>
+<span class="o">&lt;</span><span class="nv">T</span>#<span class="o">&gt;</span> <span class="nv">Generic</span> <span class="nv">Type</span> <span class="k">if</span> <span class="nv">multiple</span> <span class="nv">are</span> <span class="nv">required</span>, <span class="nv">substitute</span> # <span class="nv">with</span> <span class="nv">an</span> <span class="nv">integer</span>.
+</pre></div>
+</div>
+<p class="sd-card-text code-paragraph-direct">These names are based on the return of <code class="code docutils literal notranslate"><span class="pre">typeName</span></code> engine command. Variable names/description go after the the . UPPERCASE capitalisation is not strictly required.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Variables in Arrays</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">STRING</span><span class="o">&gt;&gt;</span> <span class="n">badList</span>
+<span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">SCALAR</span><span class="o">&gt;&gt;</span> <span class="n">weightedSelectionValues</span>
+</pre></div>
+</div>
+<p class="sd-card-text code-paragraph-direct">Arrays passed to functions are expected contain certain types. Just <code class="code docutils literal notranslate"><span class="pre">&lt;ARRAY&gt;</span></code> will not provide enough information.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Anonymous Structs</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">SCALAR</span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="o">.</span>
+<span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">SCALAR</span><span class="p">,</span><span class="n">SCALAR</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">positions</span> <span class="ow">or</span> <span class="n">vectors</span>
+
+<span class="o">&lt;</span><span class="n">STRING</span><span class="p">,</span><span class="n">ANY</span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pair</span><span class="o">.</span>
+<span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">STRING</span><span class="p">,</span><span class="n">ANY</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pairs</span>
+</pre></div>
+</div>
+<p class="sd-card-text code-paragraph-direct">Arrays can be used to pass around structured data. Such as a position, that has to maintain the same order and only 3 values. In this case <code class="code docutils literal notranslate"><span class="pre">&lt;ARRAY&lt;SCALAR&gt;&gt;</span></code> will not do.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Named Structs</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Some structs are common enough that almost everyone working with SQF will know what they are. This can provide a great simplification. PascalCase capitalisation is not strictly required.</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Pos3</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span>
+<span class="o">&lt;</span><span class="n">Vec3</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span>
+<span class="o">&lt;</span><span class="n">Poss</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">2</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">marker</span> <span class="n">positions</span><span class="o">.</span>
+<span class="o">&lt;</span><span class="n">Vec2</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">2</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">marker</span> <span class="n">positions</span><span class="o">.</span>
+
+<span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">Pos3</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">positions</span> <span class="ow">or</span> <span class="n">vectors</span>
+
+<span class="o">&lt;</span><span class="n">KeyPair</span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pair</span>
+<span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">KeyPair</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pairs</span>
+</pre></div>
+</div>
+<p class="sd-card-text">Feel free to add common and strongly defined types here:</p>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;Pos#&gt;</span></code> A collection of scalars where # represents the number of dimensions: <code class="code docutils literal notranslate"><span class="pre">[4,2,0]</span></code></p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;Vec#&gt;</span></code> A collection of scalars where # represents the number of dimensions: <code class="code docutils literal notranslate"><span class="pre">[4,2,0]</span></code></p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;KeyPair&gt;</span></code> A key-value pair. Use in <code class="code docutils literal notranslate"><span class="pre">getVariable</span></code>, and <code class="code docutils literal notranslate"><span class="pre">hashMap</span> <span class="pre">getOrDefault</span> <span class="pre">x</span></code>: <code class="code docutils literal notranslate"><span class="pre">[&quot;keyName&quot;,someValueOfAnyType]</span></code></p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;Map&gt;</span></code> An unordered array of key-value pairs. Use in <code class="code docutils literal notranslate"><span class="pre">createHashMapFromArray</span></code>: <code class="code docutils literal notranslate"><span class="pre">[[&quot;key1&quot;,value1],[&quot;key2&quot;,value2]]</span></code></p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;KeyPair&lt;T&gt;&gt;</span></code> A key-value pair where all values are of the same defined type.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;Map&lt;T&gt;&gt;</span></code> An unordered array of key-value pairs. Values’ type are specified: <code class="code docutils literal notranslate"><span class="pre">[[&quot;key1&quot;,0.5],[&quot;key2&quot;,0.9]]</span></code></p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;UnitLoadout&gt;</span></code> <a class="reference external" href="https://community.bistudio.com/wiki/Unit_Loadout_Array">https://community.bistudio.com/wiki/Unit_Loadout_Array</a></p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Code Params and Return</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph-direct">Passing code around as delegates is required event handlers and actions. Specifying the parameters and return of code will be useful in it’s required in SQF function. In order to shorten and simplify, <code class="code docutils literal notranslate"><span class="pre">&lt;&gt;</span></code> may be omitted if it is not an unnamed struct. The following syntax is inspired by C# Func&lt;&gt; delegates as C++ delegates are a mess.</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_fnc_paired_selectRandom</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">(</span><span class="n">_this</span> <span class="n">apply</span> <span class="p">{</span><span class="n">_x</span><span class="c1">#0}) selectRandomWeighted (_this apply {_x#1});</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p class="sd-card-text code-paragraph-direct">If we wanted to accept a matching param and return signature, it could be expressed as:</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CODE</span><span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">STRING</span><span class="p">,</span><span class="n">SCALAR</span><span class="o">&gt;</span><span class="p">,</span><span class="n">STRING</span><span class="o">&gt;</span> <span class="n">A</span> <span class="n">select</span> <span class="n">random</span> <span class="n">weighted</span> <span class="n">function</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Generic Functions</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The above function does not care what type the values are, as they are just selected at random out an array. However, the return type is linked to the the input type. The params are first and return value last. The following is inspired by C# generics.</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_fnc_map_selectRandom</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">selectRandom</span> <span class="n">_this</span><span class="p">;</span>  <span class="o">//</span> <span class="n">Does</span> <span class="ow">not</span> <span class="n">care</span> <span class="n">what</span> <span class="nb">type</span> <span class="n">the</span> <span class="n">values</span> <span class="n">are</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p class="sd-card-text">If we wanted to accept a matching param and return signature, it could be expressed as:</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CODE</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">,</span><span class="n">KeyPair</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="n">select</span> <span class="n">random</span> <span class="n">weighted</span> <span class="n">function</span> <span class="n">that</span> <span class="n">takes</span> <span class="nb">any</span> <span class="n">value</span> <span class="nb">type</span><span class="o">.</span>
+</pre></div>
+</div>
+<p class="sd-card-text">Sometimes multiple generic types may be required:</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_fnc_swap</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">param</span> <span class="p">[</span><span class="s2">&quot;_var1&quot;</span><span class="p">,</span><span class="s2">&quot;_var2&quot;</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">_var2</span><span class="p">,</span><span class="n">_var1</span><span class="p">];</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p class="sd-card-text">If we wanted to accept a matching param and return signature, it could be expressed as:</p>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">CODE</span><span class="o">&lt;</span><span class="n">T1</span><span class="p">,</span><span class="n">T2</span><span class="p">,</span><span class="o">&lt;</span><span class="n">T2</span><span class="p">,</span><span class="n">T1</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="n">select</span> <span class="n">random</span> <span class="n">weighted</span> <span class="n">function</span> <span class="n">that</span> <span class="n">takes</span> <span class="nb">any</span> <span class="n">value</span> <span class="nb">type</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Technical Standards for Core Code Contributions</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+  </body>
+</html>

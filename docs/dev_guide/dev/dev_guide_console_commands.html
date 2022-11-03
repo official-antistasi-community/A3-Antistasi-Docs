@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Debug Console Commands for Devs &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Technical Standards for Core Code Contributions" href="dev_guide_technical_standards_for_core_contrib.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Devs</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Debug Console Commands for Devs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nearest-marker">Nearest Marker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#display-markernames">Display Markernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#start-an-attack">Start an attack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#spawn-loot-box">Spawn loot box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#force-spawn-missions">Force spawn Missions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#group-cleaner">Group Cleaner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#city-data-extraction">City Data Extraction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#get-antenna-location">Get antenna location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#show-antenna-connections">Show antenna connections</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="debug-console-commands-for-devs">
+<span id="dev-console-commands"></span><h1>Debug Console Commands for Devs<a class="headerlink" href="#debug-console-commands-for-devs" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Please note that this part is still heavily work in progress.
+For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Following is an unsorted collection of debug console commands that usually are not or should not be used by admins and players on live servers.</p>
+</div>
+</div>
+<section id="nearest-marker">
+<h2>Nearest Marker<a class="headerlink" href="#nearest-marker" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Nearest Marker</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Prints nearest marker in a hint on screen.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>[&quot;Nearest Marker&quot;, format [&quot;%1&quot;,([markersX, player] call BIS_fnc_nearestPosition)]] call A3A_fnc_customHint;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="display-markernames">
+<h2>Display Markernames<a class="headerlink" href="#display-markernames" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Display Markernames</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as Local. Changes all markernames to their variable names.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>{
+   _mrk = format [&quot;Dum%1&quot;, _x];
+   _mrk setMarkerTextLocal _x;
+} forEach (outposts + seaports + airportsX + resourcesX + factories);
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="start-an-attack">
+<h2>Start an attack<a class="headerlink" href="#start-an-attack" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Start an attack</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Will start the process of selecting a target for an attack and attacking it for the given side (side can be Invaders or Occupants). This might result in the other side counterattack and take something or four smaller attacks instead of one big attack mission.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">side</span><span class="o">]</span><span class="w"> </span><span class="n">spawn</span><span class="w"> </span><span class="n">A3A_fnc_rebelAttack</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="spawn-loot-box">
+<h2>Spawn loot box<a class="headerlink" href="#spawn-loot-box" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Spawn loot box</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Spawns a loaded, loading enabled, loot box the same way they spawn in outposts.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">_boxX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NATOAmmoBox</span><span class="w"> </span><span class="n">createVehicle</span><span class="w"> </span><span class="n">getPos</span><span class="w"> </span><span class="n">Player</span><span class="p">;</span><span class="w"></span>
+<span class="o">[</span><span class="n">_boxX</span><span class="o">]</span><span class="w"> </span><span class="n">spawn</span><span class="w"> </span><span class="n">A3A_fnc_fillLootCrate</span><span class="p">;</span><span class="w"></span>
+<span class="n">_boxX</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="n">A3A_fnc_logistics_addLoadAction</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="force-spawn-missions">
+<h2>Force spawn Missions<a class="headerlink" href="#force-spawn-missions" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Force spawn Missions</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">Run local. Spawns a Mission if allowed by current conditions. Marker/Locations is a String, its case-sensitive, use Markertext command or CitiesX to find Names.</div>
+<div class="line">Missions can be:</div>
+</div>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_LOG_Ammo</span></code>: Ammotruck Outposts,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_LOG_Salvage</span></code>: Seaports,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_LOG_Supplies</span></code>: CitiesX,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_AS_Official</span></code>: Airports,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_AS_Traitor</span></code>: Towns,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_CON_Outpost</span></code>: Outpost/Control Markers,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_DES_Vehicle</span></code>: Airports,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_RES_Prisoners</span></code>: Outposts,</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_fnc_RES_Refugees</span></code>: CitiesX,</p></li>
+</ul>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>[[&quot;Marker/Locations&quot;],&quot;Mission&quot;] remoteExec [&quot;A3A_fnc_scheduler&quot;,2]
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="group-cleaner">
+<h2>Group Cleaner<a class="headerlink" href="#group-cleaner" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Group Cleaner</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Changes the interval of the group cleaner function.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>debug_cleanGroupDelay = 60;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="city-data-extraction">
+<h2>City Data Extraction<a class="headerlink" href="#city-data-extraction" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">City Data Extraction</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. A script that will return the Name, Civilian Count, type, position, and Size (x,y) in that order.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">_outputData</span> <span class="o">=</span> []<span class="c1">;</span>
+<span class="s2">&quot;</span><span class="s">(getText (_x &gt;&gt; </span><span class="s2">&quot;&quot;</span><span class="s">type</span><span class="s2">&quot;&quot;</span><span class="s">) in [</span><span class="s2">&quot;&quot;</span><span class="s">NameCityCapital</span><span class="s2">&quot;&quot;</span><span class="s">, </span><span class="s2">&quot;&quot;</span><span class="s">NameCity</span><span class="s2">&quot;&quot;</span><span class="s">, </span><span class="s2">&quot;&quot;</span><span class="s">NameVillage</span><span class="s2">&quot;&quot;</span><span class="s">, </span><span class="s2">&quot;&quot;</span><span class="s">CityCenter</span><span class="s2">&quot;&quot;</span><span class="s">]) &amp;&amp;</span>
+<span class="o">!</span><span class="ss">(</span><span class="nv">getText</span> <span class="ss">(</span><span class="nv">_x</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;&quot;</span><span class="nv">Name</span><span class="s2">&quot;&quot;</span><span class="ss">)</span> <span class="nv">isEqualTo</span> <span class="s2">&quot;&quot;&quot;&quot;</span><span class="ss">)</span> <span class="o">&amp;&amp;</span>
+<span class="o">!</span><span class="ss">((</span><span class="nv">configName</span> <span class="nv">_x</span><span class="ss">)</span> <span class="nv">in</span> [<span class="s2">&quot;&quot;</span><span class="nv">Lakatoro01</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">Galili01</span><span class="s2">&quot;&quot;</span>,<span class="s2">&quot;&quot;</span><span class="nv">Sosovu01</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">Ipota01</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">Malden_C_Airport</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">FobNauzad</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">FobObeh</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="mi">22</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="mi">23</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">toipela</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">hirvela</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">Kuusela</span><span class="s2">&quot;&quot;</span>, <span class="s2">&quot;&quot;</span><span class="nv">Niemela</span><span class="s2">&quot;&quot;</span>]<span class="ss">)</span><span class="s2">&quot;</span>
+<span class="nv">configClasses</span> <span class="ss">(</span><span class="nv">configfile</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">CfgWorlds</span><span class="s2">&quot;</span> <span class="o">&gt;&gt;</span> <span class="nv">worldName</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">Names</span><span class="s2">&quot;</span><span class="ss">)</span> <span class="nv">apply</span> {
+
+   <span class="nv">_nameX</span> <span class="o">=</span> <span class="nv">configName</span> <span class="nv">_x</span><span class="c1">;</span>
+   <span class="nv">_sizeX</span> <span class="o">=</span> <span class="nv">getNumber</span> <span class="ss">(</span><span class="nv">_x</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">radiusA</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+   <span class="nv">_sizeY</span> <span class="o">=</span> <span class="nv">getNumber</span> <span class="ss">(</span><span class="nv">_x</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">radiusB</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+   <span class="nv">_size</span> <span class="o">=</span> [<span class="nv">_sizeY</span>, <span class="nv">_sizeX</span>] <span class="nv">select</span> <span class="ss">(</span><span class="nv">_sizeX</span> <span class="o">&gt;</span> <span class="nv">_sizeY</span><span class="ss">)</span><span class="c1">;</span>
+   <span class="nv">_pos</span> <span class="o">=</span> <span class="nv">getArray</span> <span class="ss">(</span><span class="nv">_x</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">position</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+   <span class="nv">_size</span> <span class="o">=</span> [<span class="nv">_size</span>, <span class="mi">400</span>] <span class="nv">select</span> <span class="ss">(</span><span class="nv">_size</span> <span class="o">&lt;</span> <span class="mi">400</span><span class="ss">)</span><span class="c1">;</span>
+   <span class="nv">_type</span> <span class="o">=</span> <span class="nv">getText</span> <span class="ss">(</span><span class="nv">_x</span> <span class="o">&gt;&gt;</span> <span class="s2">&quot;</span><span class="s">type</span><span class="s2">&quot;</span><span class="ss">)</span><span class="c1">;</span>
+
+   <span class="nv">_numCiv</span> <span class="o">=</span> <span class="k">if</span> <span class="ss">(</span><span class="o">!</span><span class="nv">isNull</span> <span class="nv">server</span><span class="ss">)</span> <span class="k">then</span> {<span class="nv">server</span> <span class="nv">getVariable</span> <span class="nv">_namex</span>}<span class="c1">;</span>
+   <span class="k">if</span> <span class="ss">(</span><span class="nv">isNil</span> <span class="s2">&quot;</span><span class="s">_numCiv</span><span class="s2">&quot;</span> <span class="o">||</span> {<span class="o">!</span><span class="ss">(</span><span class="nv">_numCiv</span> <span class="nv">isEqualType</span> <span class="mi">0</span><span class="ss">)</span>}<span class="ss">)</span> <span class="k">then</span>
+   {
+      <span class="nv">_numCiv</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">count</span> <span class="ss">(</span><span class="nv">nearestObjects</span> [<span class="nv">_pos</span>, [<span class="s2">&quot;</span><span class="s">house</span><span class="s2">&quot;</span>], <span class="nv">_size</span>]<span class="ss">))</span><span class="c1">;</span>
+   }<span class="c1">;</span>
+
+   <span class="nv">_outputData</span> <span class="nv">pushBack</span> [<span class="nv">_namex</span>, <span class="nv">_numCiv</span>, <span class="nv">_type</span>, <span class="nv">_pos</span>, <span class="nv">_sizeX</span>, <span class="nv">_sizeY</span>]<span class="c1">;</span>
+}<span class="c1">;</span>
+<span class="nv">_outputData</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="get-antenna-location">
+<h2>Get antenna location<a class="headerlink" href="#get-antenna-location" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Get antenna location</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">private</span><span class="w"> </span><span class="n">_antennatypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Land_TTowerBig_1_F&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Land_TTowerBig_2_F&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Land_Communication_F&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="s2">&quot;Land_Vysilac_FM&quot;</span><span class="p">,</span><span class="s2">&quot;Land_A_TVTower_base&quot;</span><span class="p">,</span><span class="s2">&quot;Land_Telek1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Land_vn_tower_signal_01&quot;</span><span class="p">];</span><span class="w"></span>
+<span class="p">(</span><span class="n">nearestObjects</span><span class="w"> </span><span class="p">[[</span><span class="n">worldSize</span><span class="w"> </span><span class="o">/</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">worldSize</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span><span class="w"> </span><span class="n">_antennatypes</span><span class="p">,</span><span class="w"> </span><span class="n">worldsize</span><span class="p">])</span><span class="w"> </span><span class="n">apply</span><span class="w"> </span><span class="p">{</span><span class="n">getPos</span><span class="w"> </span><span class="n">_x</span><span class="p">};</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="show-antenna-connections">
+<h2>Show antenna connections<a class="headerlink" href="#show-antenna-connections" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Show antenna connections</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Visualizes which city/village is influenced by which antenna on the map like visible below.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="nv">private</span> <span class="nv">_fnc_drawLineMarker</span> <span class="o">=</span> {
+    <span class="nb">params</span> [<span class="s2">&quot;</span><span class="s">_pos1</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">_pos2</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">_name</span><span class="s2">&quot;</span>]<span class="c1">;</span>
+    <span class="nv">private</span> <span class="nv">_mid</span> <span class="o">=</span> <span class="nv">_pos1</span> <span class="nv">vectorAdd</span> <span class="nv">_pos2</span> <span class="nv">vectorMultiply</span> <span class="mi">0</span>.<span class="mi">5</span><span class="c1">;</span>
+    <span class="nv">deleteMarkerLocal</span> <span class="nv">_name</span><span class="c1">;</span>
+    <span class="nv">private</span> <span class="nv">_lineMarker</span> <span class="o">=</span> <span class="nv">createMarkerLocal</span> [<span class="nv">_name</span>, <span class="nv">_mid</span>]<span class="c1">;</span>
+    <span class="nv">_lineMarker</span> <span class="nv">setMarkerShapeLocal</span> <span class="s2">&quot;</span><span class="s">RECTANGLE</span><span class="s2">&quot;</span><span class="c1">;</span>
+    <span class="nv">_lineMarker</span> <span class="nv">setMarkerBrushLocal</span> <span class="s2">&quot;</span><span class="s">SOLID</span><span class="s2">&quot;</span><span class="c1">;</span>
+    <span class="nv">_lineMarker</span> <span class="nv">setMarkerColorLocal</span> <span class="s2">&quot;</span><span class="s">ColorBlack</span><span class="s2">&quot;</span><span class="c1">;</span>
+    <span class="nv">_lineMarker</span> <span class="nv">setMarkerDirLocal</span> <span class="ss">(</span><span class="nv">_pos1</span> <span class="k">getDir</span> <span class="nv">_pos2</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">_lineMarker</span> <span class="nv">setMarkerSizeLocal</span> [<span class="mi">25</span>, <span class="nv">_mid</span> <span class="nv">distance2d</span> <span class="nv">_pos1</span>]<span class="c1">;</span>
+}<span class="c1">;</span>
+
+{
+    <span class="nv">private</span> <span class="nv">_nearTower</span> <span class="o">=</span> [<span class="nv">antennas</span><span class="o">+</span><span class="nv">antennasDead</span>, <span class="nv">markerPos</span> <span class="nv">_x</span>] <span class="k">call</span> <span class="nl">BIS_fnc_nearestPosition</span><span class="c1">;</span>
+    [<span class="nv">markerPos</span> <span class="nv">_x</span>, <span class="nv">getPosATL</span> <span class="nv">_nearTower</span>, <span class="s2">&quot;</span><span class="s">CtoR_</span><span class="s2">&quot;</span><span class="o">+</span><span class="nv">_x</span>] <span class="k">call</span> <span class="nl">_fnc_drawLineMarker</span><span class="c1">;</span>
+} <span class="nv">forEach</span> <span class="nv">citiesX</span><span class="c1">;</span>
+</pre></div>
+</div>
+<figure class="align-default">
+<img alt="../../_images/AltisRadiotowerConnections.jpg" src="../../_images/AltisRadiotowerConnections.jpg" />
+</figure>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Devs</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+  </body>
+</html>
