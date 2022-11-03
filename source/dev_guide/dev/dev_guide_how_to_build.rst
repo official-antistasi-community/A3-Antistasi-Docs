@@ -50,6 +50,7 @@ With AntistasiBuilder
 
       .. rst-class:: code-paragraph
 
+      - AntistasiBuilder can be found under :code:`Tools/Builder/`
       - run the program once, this will generate a config file called :code:`AntistasiBuilder.cfg`
       - open the config file and add the path to the arma 3 tools direcotry under :code:`-a3ToolsDir="PATH"`.
         For example: :code:`-a3ToolsDir="H:\SteamLibrary\steamapps\common\Arma 3 Tools"`
@@ -76,7 +77,7 @@ With VS code Arma Dev Extension
 
    .. rst-class:: code-paragraph
 
-   - Install extension from marketplace
+   - Install extension from `marketplace <https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev>`_
    - configure the extension from the Antistasi workspace by opening the command pallet :code:`Ctrl`/ :code:`⌘` + :code:`Shift` + :code:`P` and running the :code:`Arma 3: configure` command
    - fill in the configuration :code:`.json` file something like this
 

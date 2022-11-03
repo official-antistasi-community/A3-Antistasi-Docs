@@ -7,9 +7,9 @@ How to build Antistasi (Mission)
 ==================================
 
 .. card::
-   :class-card: sd-card-2 sd-mt-3 sd-card-important
+   :class-card: sd-card-2 sd-mt-3 sd-card-warning
 
-   Be aware that this guide only is for Antistasi Version 2.5.x and earlier.
+   **This guide is depricated! Be aware that this guide only is for Antistasi Version 2.5.x and earlier.**
 
 Build with Antistasi Dev Deploy
 ===================================

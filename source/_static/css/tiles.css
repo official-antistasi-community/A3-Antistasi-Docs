@@ -373,3 +373,7 @@ div.footer {
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
 }
+
+.sd-card-warning {
+    box-shadow: 0.1rem 0.1rem 7px 1px #ffc107 !important;
+}
