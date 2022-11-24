@@ -59,6 +59,22 @@ Development
       /dev_guide/dev/dev_guide_how_to_build.rst
       /dev_guide/dev/dev_guide_porting.rst
       /dev_guide/A3AExtender.rst
-      /dev_guide/dev/dev_guide_build_mission.rst
       /dev_guide/dev/dev_guide_technical_standards_for_core_contrib.rst
+      /dev_guide/dev/FunctionsAndFolders.rst
       /dev_guide/dev/dev_guide_console_commands.rst
+
+Deprecated
+========================
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Deprecated
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. toctree::
+      :maxdepth: 3
+      :glob:
+
+      /dev_guide/dev/dev_guide_build_mission.rst
