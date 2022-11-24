@@ -1,5 +1,7 @@
 .. rst-class:: hidden
 
+.. _beginners_guide:
+
 =====================
 Beginners Guide
 =====================

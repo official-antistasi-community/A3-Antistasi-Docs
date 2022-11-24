@@ -1,5 +1,7 @@
 .. rst-class:: hidden
 
+.. _dev_guide:
+
 =========================
 Dev Guide - WIP
 =========================

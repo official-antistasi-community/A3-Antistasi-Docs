@@ -1,3 +1,5 @@
+.. _reference_guide:
+
 
 =============================
 Detailed Reference Guide
