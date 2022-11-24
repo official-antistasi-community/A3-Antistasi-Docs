@@ -64,12 +64,51 @@ Start an attack
    Start an attack
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+   **For versions <= 2.5.5**
+
    Run as server. Will start the process of selecting a target for an attack and attacking it for the given side (side can be Invaders or Occupants). This might result in the other side counterattack and take something or four smaller attacks instead of one big attack mission.
 
    .. rst-class:: code-block-2
    .. code-block:: guess
 
       [side] spawn A3A_fnc_rebelAttack;
+
+   **For Versions >= 3.0.0**
+
+   Run as server. Will start the process of selecting a target for an attack and attacking it for the given side (side can be Invaders or Occupants). Possible attacks include major (waved) attacks, HQ attacks (if the rebel HQ has been detected), punishments and supply convoys.
+
+   .. rst-class:: code-block-2
+   .. code-block:: guess
+
+      [side] spawn A3A_fnc_chooseAttack;
+
+Create a support (3.0.0)
+==================================
+
+.. rst-class:: code-paragraph
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Create a support (3.0.0)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Run as server. Create support (or change target of idle support) of a specified type.
+
+   .. rst-class:: code-block-2
+   .. code-block:: guess
+
+      [type, side, caller, maxSpend, target, targPos, reveal, delay] spawn A3A_fnc_createSupport;
+
+   - :code:`type`: The type of support to send (eg. "QRFLAND", "MORTAR", "CAS", see initSupports).
+   - :code:`side`: The side of the support (Occupants, Invaders).
+   - :code:`caller`: Resource pool to use ("attack", "defence").
+   - :code:`maxSpend`: Maximum resources to spend, mostly used for sizing QRFs. For a full size QRF use 1000.
+   - :code:`target`: The target object of the support. objNull is valid for AREA. false creates with no target (for TARGET).
+   - :code:`targPos`: Target position of the support (eg. getPosATL player).
+   - :code:`reveal`: Amount of info to reveal to rebels, 0 low, 1 high.
+   - :code:`delay`: Optional, setup delay time in seconds, otherwise will calculate based on war tier.
 
 Spawn loot box
 ==================================
@@ -86,7 +125,9 @@ Spawn loot box
    .. rst-class:: code-block-2
    .. code-block:: guess
 
-      _boxX = NATOAmmoBox createVehicle getPos Player;
+      // Select these factions: A3A_faction_occ, A3A_faction_inv, A3A_faction_reb, A3A_faction_civ
+      private _faction = A3A_faction_occ;
+      private _boxX = (_faction get "ammobox")createVehicle getPos Player;
       [_boxX] spawn A3A_fnc_fillLootCrate;
       _boxX call A3A_fnc_logistics_addLoadAction;
 

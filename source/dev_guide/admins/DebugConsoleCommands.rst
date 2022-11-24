@@ -171,14 +171,14 @@ Basic Commands
 
          [side, aggroAmount, aggroTime] remoteExec ["A3A_fnc_addAggression",2];
 
+   .. rst-class:: code-paragraph
+
    .. card::
       :class-card: sd-card-3
       :class-header: header-3
 
       View and adjust enemy resources (3.0.0)
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-      .. rst-class:: code-paragraph
 
       Run as server. Defence resources have a maximum of :code:`10*A3A_balanceResourceRate` (depends on player count, aggro, war tier, difficulty), and cannot be used when below zero. Attacks will be launched if attack resources are above zero.
 
