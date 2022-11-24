@@ -65,4 +65,4 @@ Init
 
    Client Init called once on mission start and JIP
 
-   - `A3A_fnc_initClient <https://github.com/official-antistasi-community/A3-Antistasi/blob/master/A3A/addons/core/functions/init/fn_initClient.sqf>`
+   - `A3A_fnc_initClient <https://github.com/official-antistasi-community/A3-Antistasi/blob/master/A3A/addons/core/functions/init/fn_initClient.sqf>`_
