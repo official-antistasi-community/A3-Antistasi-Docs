@@ -175,6 +175,31 @@ Basic Commands
       :class-card: sd-card-3
       :class-header: header-3
 
+      View and adjust enemy resources (3.0.0)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      Run as server. Defence resources have a maximum of :code:`10*A3A_balanceResourceRate` (depends on player count, aggro, war tier, difficulty), and cannot be used when below zero. Attacks will be launched if attack resources are above zero.
+
+      View all enemy resource counts:
+
+      .. rst-class:: code-block-3
+      .. code-block:: guess
+
+         [A3A_resourcesDefenceOcc, A3A_resourcesDefenceInv, A3A_resourcesAttackOcc, A3A_resourcesAttackInv];
+
+      Add 500 to invader attack resources:
+
+      .. rst-class:: code-block-3
+      .. code-block:: guess
+
+         A3A_resourcesAttackInv = A3A_resourcesAttackInv + 500;
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3
+
       Force update UI
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -292,14 +317,25 @@ Advanced Commands
       Add initialRebelEquipment
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      Run as server. Adds all initialRebelEquipment again, for cases as mission started without ace, to add missing items.
-
       **Not recommended to be used after switching between modsets.**
+
+      | For Versions <= 2.5.5
+      | Run as server. Adds all initialRebelEquipment again, for cases where mission started without ace, to add missing items.
 
       .. rst-class:: code-block-3
       .. code-block::
 
          { [_x] call A3A_fnc_unlockEquipment } forEach initialRebelEquipment
+
+      | For Versions >= 3.0.0
+      | Run as server. Adds all unlimited initialRebelEquipment again, for cases where mission started without ace, to add missing items.
+
+      .. rst-class:: code-block-3
+      .. code-block::
+
+         {
+            if (_x isEqualType "") then { _x call A3A_fnc_unlockEquipment };
+         } foreach (A3A_faction_reb get "initialRebelEquipment");
 
 Other Useful Commands
 =======================
