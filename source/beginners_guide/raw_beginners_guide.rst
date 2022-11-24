@@ -429,6 +429,51 @@ Your Headquarters
       *Take these trucks and store them in the garage*. I recommend locking
       them so no one takes them out.
 
+Commander and Member Functionality
+========================================
+
+.. card::
+   :class-header: header-2
+
+   Commander and Member Functionality
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   **Commander functionality:**
+
+   - Can purchase high command squads & vehicles.
+   - Has access to high command UI (ctrl+space).
+   - Can use Y->AI management menu with HC squads.
+   - Can fast-travel HC squads.
+   - Can order mortar strikes with HC squads (shift+Y).
+   - Has access to direct garrison recruitment (on Petros).
+   - Can create and delete roadblocks & watchposts.
+   - Purchases vehicles with faction money.
+   - Can manage arsenal guest limits.
+   - Persistent save on game options menu is a global save.
+   - Can edit ambient civ limit and spawn distance in game options menu.
+   - Can override garage locks.
+   - Can order airstrikes.
+   - Can steal money from the faction.
+
+   **Member functionality:**
+
+   - Can request missions from Petros.
+   - Can recruit AI for personal squad.
+   - Can take limited(non-unlocked) items from the arsenal.
+
+   .. card::
+      :class-header: header-3
+      :class-card: sd-card-3
+
+      Guest Commander System
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      There is now a parameter to allow guests to be commander. Guests are marked ineligible for commander by default, but can toggle eligibilty in the usual way (Y->commander->???). Eligible members have priority when selecting the commander, and members can force a re-election (and so remove the guest from the commander role) by making themselves eligible.
+
+      Guest commanders have access to a limited range of commander functionality. They can request missions, spend faction money, use high command and move HQ. They cannot override garage locks, steal money from the faction or modify arsenal limits. They also do not receive member privileges such as the ability to recruit AI to their personal squad or take limited items from the arsenal.
+
+      Guest commanders count as a leash centre for the purposes of the guest leash system, which enables the commander and nearby guests to respond to distant attacks and punishments even when there are no members on the server.
+
 Missions
 ========
 
