@@ -154,7 +154,7 @@ Setting up the mission.sqm
    Setting up the mission.sqm
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   .. rst-class:: target-substitude linkname-here
+   .. rst-class:: code-paragraph target-substitude linkname-here
 
    | To start the work on the map itself it is easiest to use something that already contains all the necessary markers, modules and assets rather than starting new. For this purpose, I have created a custom composition which is available `here-3 <https://drive.google.com/file/d/1JYfm_qIOhTOe24mB0aXw46qKJ6tkBks8/view?usp=sharing>`_.
    | Download the rar, go to your :code:``C:\Users\[Username]\Documents\Arma 3 - Other Profiles\[playername]\compositions`` folder or wherever your profile is saved and unpack it.
