@@ -100,7 +100,7 @@ Further Reading
    Further Reading
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   | See `Steet Artist Editor <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Street-Artist-Editor>`_ for A3-Antistasi navGrid Guidelines (and GIFs!).
+   | See `Street Artist Editor <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Street-Artist-Editor>`_ for A3-Antistasi navGrid Guidelines (and GIFs!).
    | You can find further satisfying and accurate documentation on all sorts of things by looking into the headers of files in :code:`./functions/StreetArtist/`.
 
 ------
