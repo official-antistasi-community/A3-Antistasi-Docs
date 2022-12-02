@@ -80,7 +80,7 @@ First steps
    | Now that we have a decision for a map and the first file, we have to start setting up the folder for it.
    | For that purpose, it’s easiest to copy an already existing folder and rename it. The foldername has to be :code:`Antistasi_mapname.mapname`. The mapname has to be exactly what the map is called when saved from the editor like for example `chernarus_summer` for Chernarus Summer, `vt7` for Virolahti or `vn_khe_sanh` for Khe Sanh of the S.O.G. Prairie Fire CDLC. If the name is not exact, it won’t be recognized by the code. Below you for example can see the folder name as well as the files for Altis.
 
-   .. figure:: /_images/construction.png
+   .. figure:: /_images/MapPorting-3.png
 
    .. dropdown:: pic.jpg
       :class-title: header-3-light
