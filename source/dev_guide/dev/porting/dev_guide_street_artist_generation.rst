@@ -22,16 +22,18 @@ Quick Start Guide
    Quick Start Guide
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+   .. rst-class:: code-paragraph
+
    #. Run Arma 3.
    #. Make an empty mp-mission on any map (community or official) with just one player.
    #. Save and close the editor.
-   #. Locate the folder A3-Antistasi\Tools\StreetArtist\.
-   #. Copy Everything in this folder (includes: /Collections/; /functions/; /description.ext; /functions.hpp; /NG_importGUI.hpp)
-   #. Paste into the folder of the mp mission you created. Usually in C:\Users\User\Documents\Arma 3 - Other Profiles\YOUR_ARMA_NAME\mpmissions\MISSION_NAME.MAP\
+   #. Locate the folder :code:``A3-Antistasi\Tools\StreetArtist\``.
+   #. Copy Everything in this folder (includes: :code:`/Collections/`, :code:`/functions/`, :code:`/description.ext`, :code:`/functions.hpp` and :code:`/NG_importGUI.hpp`)
+   #. Paste into the folder of the mp mission you created. Usually in :code:``C:\Users\User\Documents\Arma 3 - Other Profiles\YOUR_ARMA_NAME\mpmissions\MISSION_NAME.MAP\``
    #. Start host LAN multiplayer.
    #. Run and join the mission.
-   #. Press Esc on your keyboard to open debug console.
-   #. Paste [] spawn A3A_fnc_NG_main into big large debug window.
+   #. Press :code:`Esc` on your keyboard to open debug console.
+   #. Paste :code:`[] spawn A3A_fnc_NG_main` into big large debug window.
    #. Click the button Local Exec.
    #. Exit Debug Console, look down, and open map.
    #. Wait for it to start drawing markers.
