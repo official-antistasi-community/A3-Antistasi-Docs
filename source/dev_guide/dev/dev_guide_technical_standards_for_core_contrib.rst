@@ -176,15 +176,19 @@ Standardised Variable Types
       .. rst-class:: code-block-3
       .. code-block::
 
-         <Pos3> A 3D position or vector
+         <PosATL> A 3D position of Type 'Position above terrain level'
+         <PosAGL> A 3D position of Type 'Position above ground level'
+         <PosASL> A 3D position of Type 'Position above sea level'
          <Vec3> A 3D position or vector
-         <Poss> A 2D position or vector, such as marker positions.
+         <Pos2> A 2D position or vector, such as marker positions.
          <Vec2> A 2D position or vector, such as marker positions.
 
          <ARRAY<Pos3>> A list of positions or vectors
 
          <KeyPair> A key-value pair
          <ARRAY<KeyPair>> A list of key-value pairs
+
+      Details about the different position system can be found in the `biki <https://community.bistudio.com/wiki/Position>`_. The required position system should be mentioned in the header.
 
       Feel free to add common and strongly defined types here:
 
