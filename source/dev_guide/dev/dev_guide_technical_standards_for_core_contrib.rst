@@ -15,10 +15,12 @@ Technical Standards for Core Code Contributions
 .. card::
    :class-card: sd-card-2 sd-mt-3
 
-   | Contributing new file or updating old ones, please follow the Standardised Header format.
-   | We are working with Localization within Antistasi so people can translate the content to their respective languages and make Antistasi more accessible. Please check out and follow Localization Standards.
-   | We collected some Standardised Variable Types and put them together with small explanations Standardised Variable Types.
-   | Getting started Reviewing Pull Requests.
+   | Contributing new file or updating old ones, please follow the :ref:`Standardised Header <dev_code_contribution_standard_header>` format.
+   | We are working with Localization within Antistasi so people can translate the content to their respective languages and make Antistasi more accessible. Please check out and follow :ref:`Localization Standards <dev_code_contribution_language>`.
+   | We collected some Standardised Variable Types and put them together with small explanations :ref:`Standardised Variable Types <dev_code_contribution_standardVariables>`.
+   | Getting started :ref:`Reviewing Pull Requests <dev_code_contribution_review_pr>`.
+
+.. _dev_code_contribution_standard_header:
 
 Standardised Header
 ============================================================
@@ -262,3 +264,246 @@ Standardised Variable Types
       .. code-block::
 
          <CODE<T1,T2,<T2,T1>> A select random weighted function that takes any value type.
+
+.. _dev_code_contribution_language:
+
+Languages and Localisation
+============================================================
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Languages and Localisation
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Getting started
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      Localisation in ARMA means the game will try to load the correct language for the version of the game it is currently using. By adding translations, or localisations to this project, we can make it easier for for all players to get involved and use this Mission.
+
+      A technical overview of Localisation can be `found here <https://community.bistudio.com/wiki/Stringtable.xml>`_.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Contributing to Localisation
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      If you want to assist with translations that Dialog buttons, mission text or in game text uses, you will need to make changes to the :code:`Stringtable.xml` file which is found in the main PBO file.
+
+      Making changes to this file can be done with simple text editors, such as notepad however it is advised you use a dedicated tool such as those suggested on the WIKI.
+
+      - `StringForge <https://github.com/ajvorobiev/StringForge/releases>`_
+      - `Tabler <https://github.com/bux/tabler/releases>`_
+      - `SQDev <https://forums.bohemia.net/forums/topic/202181-sqdev-sqf-developing-in-eclipse/>`_
+      - `de_stringtabler <https://github.com/dedmen/de_stringtabler/releases>`_
+
+      .. rst-class:: code-paragraph
+
+      Once you have your tool of choice and have opened the :code:`Stringtable.xml` you will then need to find or create the "Key" to provide your translation.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      For this example I will use the Version number of Antistasi, as this changes frequently and requires manual adjustment each release.
+
+      .. code-block:: xml
+
+          <Container>
+            <Key ID="STR_antistasi_credits_generic_version_text">
+              <Original>1.4c2.0</Original>
+            </Key>
+          </Container>
+
+      **Key Setup**
+      There are two main parts to setting up localisation, the KEY and the Text. From the example we can see the following information.
+
+      - Key : STR_antistasi_credits_generic_version_text
+      - Original : 1.4c2.0
+
+      The Key is used to identify the text you wish to display in game. By default all Keys in Antistasi should follow a standard convention, using following pattern where possible.
+
+      .. rst-class:: code-paragraph
+
+      - Prefix: :code:`STR_antistasi_`
+      - Area of code: :code:`credits_generic`
+      - Item name: :code:`version`
+      - Type: :code:`text`
+
+      From this you can easily determine that this code belongs to "Antistasi", is used in the "Generic Credits" module and contains the "Version" "text".
+
+      **Text Setup**
+
+      The second part of localisation, is the text. This is the actual information which is going to be displayed to users, from the Stringtable when the variable is called.
+
+      .. rst-class:: code-paragraph-2
+
+      When creating a new, or change an old KEY, it needs to contain :code:`<Original></Original>` as a minimum. The :code:`Original` tag implies the default value to be displayed for all game clients, if their default language is not found.
+
+      Currently our version will display the following to all game clients, regardless of their language settings. Adding additional languages requires the use of a new tag containing the language you wish to use. For this example we will use English.
+
+      Our version example is currently:
+
+      .. code-block:: xml
+
+         <Original>1.4c2.0</Original>
+
+      Adding an English localisation can be done with:
+
+      .. code-block:: xml
+
+          <Container>
+            <Key ID="STR_antistasi_credits_generic_version_text">
+              <Original>1.4c2.0</Original>
+              <English>1.4c2.0.6</English>
+            </Key>
+          </Container>
+
+      **Note**: `There are a limited selection of supported languages for localisation <https://community.bistudio.com/wiki/Stringtable.xml#Supported_languages>`_.
+
+   .. card::
+      :class-card: sd-card-3 sd-card-warning
+      :class-header: header-3-light
+
+      Note
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      Whilst we will make an effort to verify the translations provided, it relies on user input and cannot be guaranteed. If you find any problems, please `raise an issue <https://github.com/official-antistasi-community/A3-Antistasi/issues>`_!
+
+.. _dev_code_contribution_review_pr:
+
+Reviewing Pull Requests
+============================================================
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Reviewing Pull Requests
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   The style of reviewing code is very different per person.
+   However, here is an example for getting started:
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Overview
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      I take 7 skims (quickly reading and not paying much attention) over the code looking for these things:
+
+      .. code-block:: markdown
+
+         * [ ] Indentation & Headers
+         * [ ] Naming Conventions & Grammar
+         * [ ] Macros
+         * [ ] Param & Call
+         * [ ] Global Variables
+         * [ ] Local Variables
+         * [ ] Logic (Will take the longest)
+
+      **Equipment**
+
+      - I have lined paper or an Excel spreadsheet to take notes.
+      - Coffee or Tea is a good review parter.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Indentation & Headers
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      - This only applies to new or rewritten functions.
+      - Indentation must be in spaces. 4 spaces is normal. However, if there are a lot of indentation (Barbolani's if-else chaines), then less spaces are acceptable. I use Visual Studio Code to Check-Out the Pull-Request, then I search for the tab character so it will be highlighted.
+      - Headers must attempt the :ref:`standard header <dev_code_contribution_standard_header>`.
+
+      **Not all of the header information is necessary. The most important lines are:**
+
+      .. rst-class:: code-paragraph
+
+      - :code:`Author` (original author and people who might of helped him/her)
+      - :code:`Arguments` & :code:`Return` Value (Does not need to be as specific as :code:`Standardised-Variable-Types`. For example just :code:`<ARRAY>` would be fine. All arguments in :code:`param` must be listed here.)
+      - :code:`Environment` (This is important, if it uses :code:`sleep` it cannot be run from the debug console)
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Naming Conventions & Grammar
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - People should not name their variables :code:`_a`, :code:`_69`, :code:`_someUnrelatedName`, :code:`_bbv`, :code:`_bbc`. The variable name should describe what it holds.
+      - Grammar is not important, and only matters when text is displayed to the player, using :code:`A3A_fnc_customHint`, :code:`systemChat` ect.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Macros
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      Macros are not common. When they are used, just check that they are correct and will not cause problems.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Param & Call
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      Double check that the arguments for :code:`call` match the :code:`param` in the function. Check that the function always returns the expected type.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Global Variables
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - All global variables created must be prefixed. :code:`banList` will not be accepted, it must be :code:`A3A_banList`.
+      - Check that global variables are always created before they are used.
+      - Tell the author if there are possible race-conditions. Usually when clients modify arrays and then broadcast with :code:`publicVariable` or :code:`setVariable [name,value,true]`
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Local Variables
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - All must be declare with :code:`private`.
+      - Check that a local variable is not used in a :code:`spawn` as it will not be defined in that scope.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
+      Logic
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - No syntax errors.
+      - No undefined edge-cases.
+      - Does not need to be 100% optimised. But it cannot be slow when there is a better way to code a function. (Check nested :code:`findIf`, :code:`forEach`, :code:`forFrom`, multiple :code:`nearObject` ect.)
+      - Make sure everthing works as expected.
