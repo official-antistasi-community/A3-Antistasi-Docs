@@ -243,6 +243,41 @@ Your parameters
    -  You can only edit parameters on a mission that has not started.
    -  Your mission’s parameters will save.
 
+Setup UI
+===============
+
+.. card::
+   :class-header: header-2
+
+   Setup UI
+   ^^^^^^^^^^^^^^^
+
+   Antistasi now has a setup UI for choosing factions and parameters, selecting a game to load or creating a new one. On a dedicated server, you need to log in as admin (/ then #login adminpassword) to see the setup UI. There is an (Arma) parameter to automatically load the previous game for unattended restarts, but new games must be created by an admin.
+
+   **Load game tab:**
+
+   This is where you choose which game to load, or to create a new one. All saves from previous Antistasi Community versions and original/Barbolani Antistasi 1.3+ should work. Descriptions of controls:
+
+   - Copy old game: Loads the selected game, but if saved subsequently it will use a new ID & location.
+   - Load old params: Retain the parameters (but nothing else) of the selected game when creating a new one.
+   - Use new save file: Save data to AntistasiCommunity.vars instead of the global username.vars.arma3profile. Makes it easier to transfer saves between machines or profiles.
+
+   **Factions tab:**
+
+   This is where you select which factions, DLC and addon mods to use for a new game. You can change them later, but the arsenal and garage will not be updated. If you're loading an older save, make sure that the settings are correct. Options will be greyed out (or not shown) if their mods are not loaded on the server.
+
+   **Params tab:**
+
+   This is where you set parameters for a new game or change them for an old game. Some notes:
+
+   - If you're playing with friends, you may want to disable membership (which makes everyone a member) and disable TK punishment.
+   - Increasing spawn distance is not recommended due to the impact on performance and enemy behaviour. On more compact maps, reducing spawn distance to ~800m is often a good idea.
+   - When players are AFK they're not counted when balancing the mission. When all players are AFK, new resources and attacks are not generated, so if you're playing solo you can effectively pause the campaign by alt-tabbing.
+   - If you want to change how much enemies attack or send supports, start by changing "Overall enemy resource balance".
+   - Depending on the server skill/precision settings, the AI skill settings here may not change much. Antistasi works well with server precision settings somewhere around 0.5.
+   - SAMs and carpet bombing supports are currently the only "unfair" supports.
+   - When the number of items required to unlock is set to "No unlocks", friendly AIs will spawn with equipment based on the quantities in the arsenal. Magazines need three times as many items to unlock.
+
 Game modes
 ==========
 
