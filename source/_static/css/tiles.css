@@ -377,3 +377,8 @@ div.footer {
 .sd-card-warning {
     box-shadow: 0.1rem 0.1rem 7px 1px #ffc107 !important;
 }
+
+.small-text {
+    font-size: small;
+    font-style: italic;
+}
