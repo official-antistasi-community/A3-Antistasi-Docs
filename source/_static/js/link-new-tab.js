@@ -16,9 +16,11 @@ function addTargetTo() {
         for (let j=0; j < classes.length; j++) {
             if (classes[j].startsWith("linkname-")) {
                 newName = classes[j].substring(classes[j].indexOf("-")+1, classes[j].length);
-                let firstLetter = newName.substring(0,1);
-                let rest = newName.substring(1,newName.length);
-                newName = firstLetter.toUpperCase() + rest;
+                if (newName.toLowerCase().includes("steam")) {
+                    let firstLetter = newName.substring(0,1);
+                    let rest = newName.substring(1,newName.length);
+                    newName = firstLetter.toUpperCase() + rest;
+                }
             }
         }
         if (links.length <= 0) {
