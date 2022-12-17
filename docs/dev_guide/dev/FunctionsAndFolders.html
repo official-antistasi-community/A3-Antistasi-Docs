@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Addon Functions &amp; Folders Library &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css" />
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/line-breaker.js"></script>
+    <script src="../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Debug Console Commands for Devs" href="dev_guide_console_commands.html" />
+    <link rel="prev" title="Technical Standards for Core Code Contributions" href="dev_guide_technical_standards_for_core_contrib.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Addon Functions &amp; Folders Library</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Addon Functions &amp; Folders Library</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#general-information">General information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#addons">Addons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#init">Init</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="addon-functions-folders-library">
+<span id="dev-functions-folder-lib"></span><h1>Addon Functions &amp; Folders Library<a class="headerlink" href="#addon-functions-folders-library" title="Permalink to this headline"></a></h1>
+<section id="general-information">
+<h2>General information<a class="headerlink" href="#general-information" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">General information</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This function library should help the official development team and anyone who changes Antistasi to his personal mission. It will be filled slowly by the official dev team. If you want to contribute to this wiki, contact us on discord.</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Read this library</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The library will be structured like the original code is. So if you have any file in the code, you can easily find it by navigating the folder structure.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="addons">
+<h2>Addons<a class="headerlink" href="#addons" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Addons</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Addons are a isolated module that could work with Antistasi but might not.</p>
+<p class="sd-card-text">Top level view of Addons structure</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/core">core</a> Core functionality of Antisasti</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Events">Events</a> Antistasi’s Event system</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Garage">Garage</a> Antistasi’s New Garage system</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/JeroenArsenal">GUI</a> Antistasi’s New GUIs</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/JeroenArsenal">JeroenArsenal</a> Antistasi’s Limited Arsenal</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Logistics">Logistics</a> Antistasi’s nodes base logtistic system for vehicles</p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/maps">maps</a> Location for Antistasi’s missions for specific terrain</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="init">
+<h2>Init<a class="headerlink" href="#init" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Init</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Server Init called once on mission start</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/blob/master/A3A/addons/core/functions/init/fn_initServer.sqf">A3A_fnc_initServer</a></p></li>
+</ul>
+<p class="sd-card-text">Client Init called once on mission start and JIP</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/blob/master/A3A/addons/core/functions/init/fn_initClient.sqf">A3A_fnc_initClient</a></p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Addon Functions &amp; Folders Library</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
+  </body>
+</html>

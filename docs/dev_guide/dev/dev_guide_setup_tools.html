@@ -28,7 +28,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="How to build Antistasi" href="dev_guide_how_to_build.html" />
-    <link rel="prev" title="Debug Console Commands for Players and Admins" href="../admins/DebugConsoleCommands.html" />
+    <link rel="prev" title="Mod-Settings" href="../ace_file.html" />
         
             <link
                 rel="apple-touch-icon"
@@ -58,10 +58,10 @@
           <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../admins/DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+          <a href="../ace_file.html" title="Mod-Settings"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Dev Tools Starter Setup</a></li> 
       </ul>
     </div>
@@ -75,11 +75,10 @@
             </a></p>
 <h3><a href="../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Dev Tools Starter Setup</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#arma-3-dev-extensions">Arma 3 Dev Extensions</a></li>
@@ -89,11 +88,12 @@
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -181,17 +181,11 @@ For more dev related information please go to our <a class="reference external" 
 <tr class="row-odd"><td><p class="sd-card-text">CBA_A3</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=450814997">CBA_A3 on Steam</a></p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">Debug Console</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1231625987">Debug Console on Steam</a></p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">Enhanced Movement</p></td>
+<tr class="row-even"><td><p class="sd-card-text">Enhanced Movement</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=333310405">Enhanced Movement on Steam</a></p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">Extended Function Viewer</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">Extended Function Viewer</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1678581937">Extended Function Viewer on Steam</a></p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">User Input Menus</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1673595418">User Input Menus on Steam</a></p></td>
 </tr>
 <tr class="row-even"><td><p class="sd-card-text">Zeus Enhanced</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631">Zeus Enhanced on Steam</a></p></td>
@@ -217,13 +211,10 @@ For more dev related information please go to our <a class="reference external" 
 <tr class="row-even"><td><p class="sd-card-text">Intercept Minimal Dev</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1645973522">Intercept Minimal Dev on Steam</a></p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">ArmaZeusCache</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1908099028">ArmaZeusCache on Steam</a></p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">Arma Debug Engine</p></td>
+<tr class="row-odd"><td><p class="sd-card-text">Arma Debug Engine</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1585582292">Arma Debug Engine on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text">Arma Script Profiler</p></td>
+<tr class="row-even"><td><p class="sd-card-text">Arma Script Profiler</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1652506957">Arma Script Profiler on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
 </tr>
 </tbody>
@@ -258,31 +249,28 @@ For more dev related information please go to our <a class="reference external" 
 <tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf">SQF Language</a></p></td>
 <td><p class="sd-card-text">Provides language for SQF extensions and highlighting.</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki">SQF Wiki</a></p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev">Arma Dev</a></p></td>
+<td><p class="sd-card-text">Makes it easier to develop and test mods.</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki">SQF Wiki</a></p></td>
 <td><p class="sd-card-text">Hover over command, see explanation.</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=HkonRRydland.a3cfgfunctions">Arma 3 CfgFunctions</a></p></td>
-<td><p class="sd-card-text">Lets you have Auto completion, function peeking, and header preview for mission functions</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">Github Pull Requests and issues</a></p></td>
-<td><p class="sd-card-text">Review and manage your GitHub pull requests and issues directly in VS Code</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></p></td>
 <td><p class="sd-card-text">Supercharge the Git capabilities built into Visual Studio Code</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></p></td>
 <td><p class="sd-card-text">Real-time collaborative development from the comfort of your favorite tools.</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=doi.fileheadercomment">File Header Comment</a></p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=doi.fileheadercomment">File Header Comment</a></p></td>
 <td><p class="sd-card-text">Insert File Header Comment such as date, time</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint">SQFLint</a></p></td>
-<td><p class="sd-card-text">Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing as it will struggle since there is no description.ext in src folder.</p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint">SQFLint</a></p></td>
+<td><p class="sd-card-text">Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing (it will throw some false errors).</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt">Arma 3 - Open Last RPT</a></p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt">Arma 3 - Open Last RPT</a></p></td>
 <td><p class="sd-card-text">Ctrl+Shift+P -&gt; Open Last -&gt; [enter]: will open the last RPT.</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run">Save and Run</a></p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run">Save and Run</a></p></td>
 <td><p class="sd-card-text">Requires some config, see bellow.</p></td>
 </tr>
 </tbody>
@@ -293,14 +281,6 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text code-paragraph-direct target-substitude">Allows running a specified script or program when a keybind is pressed, or a specific filetype is saved. The extension does provide documentation, but here is an example that I use with this repository. Edit the WORKSPACE settings. It’s already in .gitIgnore <code class="code docutils literal notranslate"><span class="pre">...\A3-Antistasi\.vscode\settings.json</span></code>. You can Download an <a class="reference external" href="https://gist.github.com/CalebSerafin/d91c15bfbbf913d13c56e9494abc05ab">Example</a></p>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4 docutils">
-<div class="sd-card-header header-4-light docutils">
-<p class="sd-card-text">Antistasi-Dev-Deploy-Configurator</p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text target-substitude">It is recommended using the configurator to set up map-template filter for Antistasi-Dev-Deploy.exe So that every save does not update 16+ templates. You can fin this tool and a guide <a class="reference external" href="https://github.com/CalebSerafin/Antistasi-Dev-Deploy/wiki/Antistasi-Dev-Deploy-Configurator">here</a>.</p>
 </div>
 </div>
 </div>
@@ -382,13 +362,13 @@ For more dev related information please go to our <a class="reference external" 
           <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
              >next</a> |</li>
         <li class="right" >
-          <a href="../admins/DebugConsoleCommands.html" title="Debug Console Commands for Players and Admins"
+          <a href="../ace_file.html" title="Mod-Settings"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Dev Tools Starter Setup</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

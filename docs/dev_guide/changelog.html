@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Snippets" href="snippets.html" />
-    <link rel="prev" title="Mod-Settings" href="ace_file.html" />
+    <link rel="next" title="Factions and Template Overview" href="admins/FactionsAndTemplates.html" />
+    <link rel="prev" title="The History of Antistasi" href="admins/history.html" />
         
             <link
                 rel="apple-touch-icon"
@@ -55,13 +55,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="snippets.html" title="Snippets"
+          <a href="admins/FactionsAndTemplates.html" title="Factions and Template Overview"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="ace_file.html" title="Mod-Settings"
+          <a href="admins/history.html" title="The History of Antistasi"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
       </ul>
     </div>
@@ -75,12 +75,15 @@
             </a></p>
 <h3><a href="../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="dev_guide_index.html#general">General</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admins/history.html">The History of Antistasi</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#version-3-0-0">Version 3.0.0</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-2-5-5">Version 2.5.5</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-2-5-4">Version 2.5.4</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-2-5-3">Version 2.5.3</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-2-5-2">Version 2.5.2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-2-5-1">Version 2.5.1</a></li>
@@ -97,6 +100,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#version-2-2-0">Version 2.2.0</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-2-1-2">Version 2.1.2</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-2-1-1">Version 2.1.1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#version-1-4c2-0">Version 1.4c2.0</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-1-4-0">Version 1.4.0</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-1-3-5">Version 1.3.5</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#version-1-3-4">Version 1.3.4</a></li>
@@ -177,11 +181,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#version-0-1-0-beta">Version 0.1.0 BETA</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admins/FactionsAndTemplates.html">Factions and Template Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admins/DebugConsoleCommands.html">Debug Console Commands for Players and Admins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#development">Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -229,6 +235,367 @@
             
   <section id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline"></a></h1>
+<section id="version-3-0-0">
+<h2>Version 3.0.0<a class="headerlink" href="#version-3-0-0" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>17th December 2022</p>
+</div>
+<div class="admonition-major admonition">
+<p class="admonition-title">Major</p>
+<p class="rubric">Conversion to Mod</p>
+<ul class="simple">
+<li><p>The mission has been converted to a full-blown mod to allow for access to new functionality and the ability for maps and templates to be created as addon mods instead of editing the mod itself. It also means that all officially integrated maps will be present with one mod, rather than across many separate mission files.</p></li>
+<li><p>Antistasi related keys can now properly be set within the settings</p></li>
+<li><p>Added support for 3rd party mods to extend Antistasi</p></li>
+</ul>
+<p class="rubric">Added Campaign StartUp UI and safe functionality <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2488">#2488</a></p>
+<ul class="simple">
+<li><p>Allows to select factions for the campaign from all available templates based on mods loaded</p></li>
+<li><p>Allows to have multiple safegames at the same time</p></li>
+<li><p>Allows to set and change parameters for the campaign</p></li>
+<li><p>Allows to set the initial HQ position before starting the campaign</p></li>
+<li><p>Allows to save outside of the vars-file</p></li>
+<li><p>Shows warning when loading a mismatched or outdated mission</p></li>
+</ul>
+<p class="rubric">Complete rework of the attack &amp; support system</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Enemy factions are now resource-limited:</dt><dd><ul>
+<li><p>Each faction has separate pools for attack and defence resources.</p></li>
+<li><p>Any vehicle or unit spawned and/or destroyed has a cost related to their capability.</p></li>
+<li><p>Resource income is dependent on war tier, aggro, active player count and difficulty.</p></li>
+<li><p>Attack vs defence and occupant vs invader resource balances can be adjusted separately.</p></li>
+<li><p>Support system makes decisions based on available resources and location value.</p></li>
+<li><p>Flag capture counterattacks are no longer automatic, instead depending on location and resources.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Vehicle selection improvements:</dt><dd><ul>
+<li><p>More gradual scaling of vehicle quality.</p></li>
+<li><p>More ground and fewer air vehicles used, especially for factions with weak air options.</p></li>
+<li><p>Proportions of transport and support vehicles are more controlled.</p></li>
+<li><p>Punishments and HQ attacks may now include some ground vehicles.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Attack/support behaviour improvements:</dt><dd><ul>
+<li><p>Paratroopers (usually) drop further away and pull their chutes higher.</p></li>
+<li><p>Transport helis land further from the target area.</p></li>
+<li><p>Attack helis are less inclined to suicide into zu-23s.</p></li>
+<li><p>Ground vehicle travel times reduced and infantry offload reliability improved.</p></li>
+<li><p>CAS rewritten for reliability and fairness.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Attack target selection rewritten:</dt><dd><ul>
+<li><p>Enemies can now attack rebel targets outside mission distance at reduced probability.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Enemy HQ knowledge is now persistent:</dt><dd><ul>
+<li><p>Enemies may gain knowledge of HQ when supports are called nearby, or from traitor missions.</p></li>
+<li><p>Once enemies are aware of the HQ, an HQ attack may be launched instead of a normal major attack.</p></li>
+<li><p>Moving HQ more than 1km away will reset the HQ knowledge.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p class="rubric">Fuel economy overhaul</p>
+<ul class="simple">
+<li><p>Vehicles now spawn with a random amount of fuel in the tank and fuel stations are now present and usable on all maps. Containers can be bought to transport additional fuel.</p></li>
+<li><p>Fuel Stations also contain a limited amount of fuel to encourage players to use fuel wisely.</p></li>
+</ul>
+<p class="rubric">New Buy Vehicle UI - <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2259">#2259</a></p>
+<ul class="simple">
+<li><p>A new UI for buying vehicles has been developed which includes far more information than the current one.</p></li>
+</ul>
+<p class="rubric">Added Guest Commander functionality <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2428">#2428</a></p>
+<ul class="simple">
+<li><p>this allows servers to be functional when the member system is enabled and no member is on the servers</p></li>
+</ul>
+<p class="rubric">New mod compatibilities</p>
+<ul class="simple">
+<li><p>Added CUP templates - <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2239">#2239</a> - includes many factions like ACR, AFRF, BAF, CDF, ION, RACS, SLA, TKA, and US Army and US Marines.</p></li>
+<li><p>Added Global Mobilisation templates - <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2427">#2427</a> - includes the factions Bundeswehr and NVA (National People’s Army)</p></li>
+<li><p>Added Unsung templates - <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2379">#2379</a> - includes the factions PAVN and US</p></li>
+</ul>
+<p class="rubric">New maps ports</p>
+<ul class="simple">
+<li><p>Khe Sanh</p></li>
+<li><p>Chernarus Autumn</p></li>
+</ul>
+<p class="rubric">Translated Antistasi additional languages</p>
+<ul class="simple">
+<li><p>Czech</p></li>
+<li><p>French</p></li>
+<li><p>Italian</p></li>
+<li><p>Korean</p></li>
+<li><p>Polish</p></li>
+<li><p>Russian</p></li>
+<li><p>Simplified Chinese</p></li>
+<li><p>Spanish</p></li>
+</ul>
+</div>
+<div class="admonition-minor admonition">
+<p class="admonition-title">Minor</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2178">#2178</a> Added ACE food and drink to the arsenal. (Food only with parameter)</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2181">#2181</a> Civilians are now created in the same way as soldiers allowing for greater customisation/themeing. The configuration for which is found in the civ template files.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2214">#2214</a> Garage system got improved with QoL changes, sorting and adjustments for the fuel system</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2217">#2217</a> capturing a flag can be cancelled and logging for capturing got improved</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2249">#2249</a> Seaports and Airbases can now own radio towers and thus jam radios</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2280">#2280</a> You can now take 5, 10, or 25 items at a time from the vehicle arsenal - Shift-Click takes 5, CTRL-Click takes 10, SHIFT-CTRL-Click takes 25</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2305">#2305</a> Rebel AI can now equip Items that are not Unlocked as soon as there is a sufficient amount and try to use optics that are logical for the weapon. The more you have of an item the more likely they are to equip it.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2306">#2306</a> The non-member limit for items in the arsenal is now configurable by the commander</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2318">#2318</a> Vehicle locking system overhauled. In the past player vehicles where by default locked for everybody outside of the players group. This has been changed so by default everybody can enter every vehicle and when the member system is enabled, members ignore vehicle locks. This is more a feature for servers with large populations.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2329">#2329</a> Added additional spec-ops groups for current and future use</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2381">#2381</a> Added parameters for enemyNearCheck which now only considers enemies in combat mode - (nearly?) every enemy proximity check now uses the same rules.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2393">#2393</a> Disabled rating changes to stop rebel AI turning on players for unreasonable actions</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2394">#2394</a> Garage placement has been changed so that rotating vehicles is smoother</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2395">#2395</a> Added facewear support for AI loadouts</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2418">#2418</a> Implemented QoL looting &amp; logistic tweaks</p></li>
+<li><dl class="simple">
+<dt>Switched loot crate carrying from forceWalk true to allowSprint false (about 2x faster movement)</dt><dd><ul>
+<li><p>Enabled buying loot crates from any rebel flag</p></li>
+<li><p>Fixed incorrect bounding box calc for load/unload</p></li>
+<li><p>Changed load/unload speed to be independent of script load</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2453">#2453</a> Adds additional visible information during vehicle/asset placement</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2454">#2454</a> Maru was removed. Petros is now called Petros on all maps, including Tanoa</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2469">#2469</a> Skip time now checks for active enemy AI instead of any enemy AI</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2477">#2477</a> Added finite rebel launchers and explosives</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2503">#2503</a> Added parameters for initial player and rebel faction money</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2505">#2505</a> Vehicle box now repairs/rearms/refuels vehicles around it when the matching source vehicle is in the garage</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2521">#2521</a> Implemented AFK timeout parameter &amp; status bar indicator to prevent AFK commanders blocking the progress</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2523">#2523</a> KAT Medical implementation got updated to most current Kat - Advanced Medical REWRITE</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2531">#2531</a> Adds logged in admins as members</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2532">#2532</a> Balance utility trucks in cases where the civ factions lack them</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2535">#2535</a> Increased default garage cap to 20 base + 4 per warlevel</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2563">#2563</a> Added parameter for initial HR</p></li>
+</ul>
+</div>
+<div class="admonition-template-updates admonition">
+<p class="admonition-title">Template updates</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Every template was touched up or overhauled <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2181">#2181</a>, <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2316">#2316</a>, <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2467">#2467</a></dt><dd><ul>
+<li><p>Removed unused loadout creation stuff as its all handled by EquipRebell</p></li>
+<li><p>Removed comments as they can be found in Example Templates</p></li>
+<li><p>Updated format of the Rebel Example Template</p></li>
+<li><p>Added If cases for DLC uniforms for Vanilla and RHS</p></li>
+<li><p>Added a check in initVarServer for an empty civ helicopter as it will error with VN rebels</p></li>
+<li><p>Fixed miscased classnames in Vanilla Ai templates</p></li>
+<li><p>Added faces and voices (speaker) for the AI in the templates</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="admonition-map-oupdates admonition">
+<p class="admonition-title">Map oupdates</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Altis</dt><dd><ul>
+<li><p>updated population data, added fuel stations, added seaAttackSpawner, moved support corridors</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Malden</dt><dd><ul>
+<li><p>updated antennas</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tanoa</dt><dd><ul>
+<li><p>added new outpost on NNE island</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Livonia</dt><dd><ul>
+<li><p>added fuel stations, moved support corridors</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Cam Lao Nam</dt><dd><ul>
+<li><p>added fuel stations, added vehicle spawn points</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Chernarus_summer</dt><dd><ul>
+<li><p>towns updated, added fuel stations, added new resource point</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Chernarus_winter</dt><dd><ul>
+<li><p>towns updated, added fuel stations, added new resource point</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Takistan</dt><dd><ul>
+<li><p>updated population data, added 2 additional radio towers</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Sahrani</dt><dd><ul>
+<li><p>updated population data, added fuel stations, added 3 additional radio towers</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Anizay</dt><dd><ul>
+<li><p>updated antennas, added fuel stations</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Kunduz</dt><dd><ul>
+<li><p>updated population data, updated antennas, added fuel stations</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Tembelan Island</dt><dd><ul>
+<li><p>moved markers</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Virolahti</dt><dd><ul>
+<li><p>towns updated, added fuel stations, added bank locations, updated folder structure within sqm, updated vehicle markers, fixed broken marker names, removed edit-terrain-object-modules</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Chernarus_autumn</dt><dd><ul>
+<li><p>added fresh map port</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Khe Sanh</dt><dd><ul>
+<li><p>added fresh map port</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="admonition-groundwork admonition">
+<p class="admonition-title">Groundwork</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2047">#2047</a> Switched over to new template system</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2114">#2114</a> implemented system that gets compatible magazines for a weapon</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2153">#2153</a> Added functionality that formats a scalar as the specified length hexidecimal string</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2168">#2168</a> Added a shortID generator</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2174">#2174</a> &amp; <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2245">#2245</a> Improvements and fixes for the StreetArtist tool</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2186">#2186</a> Added Garbage Collection Component of KeyCache.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2206">#2206</a> Removed the legacy KeyCache files</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2229">#2229</a> Added feature toggle and assets for UI rework</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2230">#2230</a> Added a build tool for the antistasi mod.</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2270">#2270</a> Moved garage initServer to postInit</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2339">#2339</a> Added additional FF-punishment logging</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2352">#2352</a> Moved A3A_climate init to initVarCommon for sanity and HC-functionality</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2365">#2365</a> Added Western Sahara parameter</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2387">#2387</a> Added GUI helper functions</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2403">#2403</a> Added debug code execution logging with name and UID</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2439">#2439</a> Added template verification to ensure quality and prevent errors</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2450">#2450</a> Changed spawning rules for airborne players and rebel UAVs</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2459">#2459</a> Added game type definition</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2460">#2460</a> Added safeguard to mod.cpp</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2511">#2511</a> Switched over to config based logistic nodes</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2534">#2534</a> Move the controls defined in setupDialog.hpp to control.hpp</p></li>
+<li><p>Removed a metric ton of old code</p></li>
+<li><p>Added assets and background functions for the UI rework.</p></li>
+<li><p>Set up a new build and publish pipeline on GitHub</p></li>
+</ul>
+</div>
+<div class="admonition-bugfixes admonition">
+<p class="admonition-title">Bugfixes</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2185">#2185</a> Fixed mixed vehicle pool of Occ and Inv for AI airport creation</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2205">#2205</a> Fixed various incorrect usages of defined macros</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2257">#2257</a> Fixed issues with AI/HC commands</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2260">#2260</a> Fixed patrol dogs not despawning</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2263">#2263</a> Fixed issues with compatible magazine/ammunition detection</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2281">#2281</a> Fixed issues with RHS asset stacking in the arsenal</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2284">#2284</a> Fixed players being able to carry objects into vehicles</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2290">#2290</a> Fixed roadblock vehicles despawning after stealing</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2292">#2292</a> Fixed cargo trucks not being sellable</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2296">#2296</a> Fixed town names in tasks and city info</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2307">#2307</a> Fixed issue of garage code breaking pylons</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2321">#2321</a> Fixed money displays breaking</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2323">#2323</a> Fixed broken flag textures on AI resources and outposts</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2328">#2328</a> Fixed categoryOverrides not being created on clients</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2340">#2340</a> Fixed multiple EHs being added in confirmPlacement</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2344">#2344</a> Fixed incorrect variables used in flight height restrictions</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2390">#2390</a> Fixed behaviour and remoteExec bugs in undercover AI</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2392">#2392</a> Fixed bad JIP marker colours</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2397">#2397</a> Fixed Petros face being used by other AI</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2411">#2411</a> Fixed rebel static mounting on DS</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2430">#2430</a> Fixed issue with everyone being considered admin on  lh (garage)</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2434">#2434</a> Fixed issues high command fast travel and garrison functionality</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2436">#2436</a> Fixed arsenal weapon switch duping magazines</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2449">#2449</a> Fixed issue with ACE cargo unloading of loot crates</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2470">#2470</a> Fixed being able to kill players while carrying items</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2472">#2472</a> Fixed JNA not using the compatibleMagazines command</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2480">#2480</a> Fixed players getting stuck on large objects when carrying something</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2490">#2490</a> Fixed enemy militia trucks not being sellable</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2498">#2498</a> Fixed players being able to mount a static that is being carried</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2508">#2508</a> Fixed an infinite money exploit</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2537">#2537</a> Fixed Antistasi UI layer numbers fighting with other mods</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2551">#2551</a> Fixed being able to search alive teamleaders for intel</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2561">#2561</a> Fixed fn_createAction using the incorrect hashmap key</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2564">#2564</a> Fixed whiteout after alt-tab on maps using darkMapFix</p></li>
+</ul>
+</div>
+<div class="admonition-refactor admonition">
+<p class="admonition-title">Refactor</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2182">#2182</a> Refactored initZones to move relevant hardcoded map information to the map relevant files</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2238">#2238</a> Refactored BattleMenue to prevent conflicts with base game UIs</p></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>Please note that this changelog may contain both spelling/grammatical errors and/or factual errors. Should any factual errors exist, we apologise but with the sheer number of changes made per version it can be easy to lose or mistake a change when writing up the changelog.</p></li>
+</ul>
+</div>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -236,6 +603,68 @@
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+</section>
+<section id="version-2-5-5">
+<h2>Version 2.5.5<a class="headerlink" href="#version-2-5-5" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>18th September 2022</p>
+</div>
+<div class="admonition-template-updates admonition">
+<p class="admonition-title">Template updates</p>
+<ul class="simple">
+<li><p>fixed wrong AFRF template path in selector fallback for 3CB Factions</p></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>Please note that this changelog may contain both spelling/grammatical errors and/or factual errors. Should any factual errors exist, we apologise but with the sheer number of changes made per version it can be easy to lose or mistake a change when writing up the changelog.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="version-2-5-4">
+<h2>Version 2.5.4<a class="headerlink" href="#version-2-5-4" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>12th July 2022</p>
+</div>
+<div class="admonition-template-updates admonition">
+<p class="admonition-title">Template updates</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2302">#2302</a> Vanilla templates overhaul</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2333">#2333</a> RHS templates overhaul</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2009">#2009</a> &amp; <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2333">#2333</a> 3CB Factions templates overhaul and changes faction selection to spice up and increase use of unique weapons and vehicles</p></li>
+<li><p>SOG Prairie Fire templates overhaul (including assets from new SOG PF 1.2 update)</p></li>
+</ul>
+</div>
+<div class="admonition-other admonition">
+<p class="admonition-title">Other</p>
+<ul class="simple">
+<li><p>redid Western Sahara parameter</p></li>
+</ul>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<ul class="simple">
+<li><p>Please note that this changelog may contain both spelling/grammatical errors and/or factual errors. Should any factual errors exist, we apologise but with the sheer number of changes made per version it can be easy to lose or mistake a change when writing up the changelog.</p></li>
+</ul>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
 <section id="version-2-5-3">
 <h2>Version 2.5.3<a class="headerlink" href="#version-2-5-3" title="Permalink to this headline"></a></h2>
 <div class="admonition note">
@@ -244,8 +673,9 @@
 </div>
 <div class="admonition-major admonition">
 <p class="admonition-title">Major</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2119">#2119</a> Rework of punishment attacks</p>
 <ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2119">#2119</a> Rework of punishment attacks</dt><dd><ul>
 <li><p>Punishment attacks no longer sent against occupant-controlled towns.</p></li>
 <li><p>Player scaling added to delay time and attacker vehicle count.</p></li>
 <li><p>Improved vehicle choice and maxUnits control, ensure 2+ transports.</p></li>
@@ -258,8 +688,11 @@
 <li><p>Destroyed cities are now invader-side, to prevent some weird spawning.</p></li>
 <li><p>Destroyed cities no longer switch side, provide rebel HR or resources.</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2121">#2121</a> Rebalanced reinforcements</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2121">#2121</a> Rebalanced reinforcements</dt><dd><ul>
 <li><p>Balance reinforcement system for player count.</p></li>
 <li><p>Enable reinforcing from “carriers”.</p></li>
 <li><p>Separate road patrol generation from reinforcements and rebalance.</p></li>
@@ -268,27 +701,43 @@
 <li><p>Prevent new reinf convoys spamming after a recapture.</p></li>
 <li><p>Fill out the AA &amp; AT squads with a fourth soldier, cap militia squads to 8.</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2124">#2124</a> Added player-count based balance for QRFs / singleAttack / wavedCA</p>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2124">#2124</a> Added player-count based balance for QRFs / singleAttack / wavedCA</p></li>
+</ul>
 </div>
 <div class="admonition-minor admonition">
 <p class="admonition-title">Minor</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2107">#2107</a> Garaging now only is possible at locations with flipable flags and at HQ</p>
 <ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2107">#2107</a> Garaging now only is possible at locations with flipable flags and at HQ</dt><dd><ul>
 <li><p>Airports, outposts, Seaports, Factories, Resources</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2126">#2126</a> Updated the VN templates based on the SOG Prairie Fire update 1.1</p>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2126">#2126</a> Updated the VN templates based on the SOG Prairie Fire update 1.1</p></li>
+</ul>
 </div>
 <div class="admonition-groundwork admonition">
 <p class="admonition-title">Groundwork</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2081">#2081</a> - <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2137">#2137</a> Implements logging of logs over the char limit and arrays</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2112">#2112</a> Changed Civ detection for support-choosing to city+house detection</p>
 <ul class="simple">
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2081">#2081</a> &amp; <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2137">#2137</a> Implements logging of logs over the char limit and arrays</p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2112">#2112</a> Changed Civ detection for support-choosing to city+house detection</dt><dd><ul>
 <li><p>Occupants are not bombing as much cities anymore</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="admonition-refactor admonition">
 <p class="admonition-title">Refactor</p>
-<p class="rubric">Converted functions.hpp tabs to spaces</p>
+<ul class="simple">
+<li><p>Converted functions.hpp tabs to spaces</p></li>
+</ul>
 </div>
 <div class="admonition-bugfixes admonition">
 <p class="admonition-title">Bugfixes</p>
@@ -369,30 +818,47 @@
 </div>
 <div class="admonition-bugfixes admonition">
 <p class="admonition-title">Bugfixes</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2067">#2067</a> Prevent bad unit types being added to garrisons, repairs corrupted saves</p>
 <ul class="simple">
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2067">#2067</a> Prevent bad unit types being added to garrisons, repairs corrupted saves</dt><dd><ul>
 <li><p>childproofs the system and fixes loading issues on saves with problematic garrisons</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2078">#2078</a> <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2085">#2085</a> Resolved JIP conflict between logistics and garrison static actions</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2077">#2077</a> Changed zoneCheck to use marker size based capture radius</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2078">#2078</a> &amp; <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2085">#2085</a> Resolved JIP conflict between logistics and garrison static actions</p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2077">#2077</a> Changed zoneCheck to use marker size based capture radius</dt><dd><ul>
 <li><p>radius is decreased and distance to marker is taken into account</p></li>
 <li><p>people close to the marker can outnumber more people further away from the marker</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2075">#2075</a> Fixed missing return value on actionRevive</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2066">#2066</a> Fixed issues with the buyable light</p>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2068">#2068</a> Changed garage addVehicle checks order</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2075">#2075</a> Fixed missing return value on actionRevive</p></li>
+<li><p><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2066">#2066</a> Fixed issues with the buyable light</p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2068">#2068</a> Changed garage addVehicle checks order</dt><dd><ul>
 <li><p>also fixes the issue that vehicles could be garaged everywhere with enemies nearby</p></li>
 </ul>
-<p class="rubric"><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2084">#2084</a> Fix vehicle kill event handler</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues/2084">#2084</a> Fix vehicle kill event handler</dt><dd><ul>
 <li><p>vehicle kill handler got broken in an Arma update, so vehicle kills were not being registered for any purpose</p></li>
 </ul>
-<p class="rubric">pressing Y (opening the battle menu) during placing cancels the placement</p>
-<p class="rubric">Improved garaging consistency and reliability</p>
-<ul class="simple">
+</dd>
+</dl>
+</li>
+<li><p>pressing Y (opening the battle menu) during placing cancels the placement</p></li>
+<li><dl class="simple">
+<dt>Improved garaging consistency and reliability</dt><dd><ul>
 <li><p>prevents cases of items from vehicle arsenal getting lost when garaging</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 </div>
 <div class="admonition warning">
@@ -856,7 +1322,7 @@ Happy looting!</p>
 </li>
 <li><dl class="simple">
 <dt>New navGrid system</dt><dd><ul>
-<li><p>Completely redid the antistasi internal pathfinding mechanics, enabling us to utilize roads more and better, as we can ensure that the AI does not decide to drive the tank through half a kilometer of wood any more. At least in most cases.</p></li>
+<li><p>Completely redid the Antistasi internal pathfinding mechanics, enabling us to utilize roads more and better, as we can ensure that the AI does not decide to drive the tank through half a kilometer of wood any more. At least in most cases.</p></li>
 </ul>
 </dd>
 </dl>
@@ -1573,7 +2039,20 @@ Happy looting!</p>
 <li><p>Static weapons at airfields can be stolen</p></li>
 <li><p>Russian aircraft spawning in Armia Krajowa fixed</p></li>
 </ul>
-<p>Version 1.4c1.01 through to 1.4c2.0 - 10th August 2019</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="version-1-4c2-0">
+<h2>Version 1.4c2.0<a class="headerlink" href="#version-1-4c2-0" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>10st August 2019</p>
+</div>
 <p class="rubric">All Improvements</p>
 <ul class="simple">
 <li><p>Support for 3CB - You can now play as the British Armed Forces</p></li>
@@ -3851,6 +4330,13 @@ Happy looting!</p>
 <li><p>Few pesky “FIA” here and there.</p></li>
 <li><p>Some anti lag measures when AI attacks an Airbase.</p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="version-0-1-2-4">
 <h2>Version 0.1.2.4<a class="headerlink" href="#version-0-1-2-4" title="Permalink to this headline"></a></h2>
@@ -3880,6 +4366,13 @@ Happy looting!</p>
 <li><p>AIs from sidemissions won’t make anything spawn.</p></li>
 <li><p>Fixed when commander disconnects and despawns his AI + vehicles despite he’s got players in his group.</p></li>
 </ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 </section>
 <section id="version-0-1-2-3-beta">
 <h2>Version 0.1.2.3 BETA<a class="headerlink" href="#version-0-1-2-3-beta" title="Permalink to this headline"></a></h2>
@@ -4020,16 +4513,16 @@ Happy looting!</p>
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="snippets.html" title="Snippets"
+          <a href="admins/FactionsAndTemplates.html" title="Factions and Template Overview"
              >next</a> |</li>
         <li class="right" >
-          <a href="ace_file.html" title="Mod-Settings"
+          <a href="admins/history.html" title="The History of Antistasi"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Changelog</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

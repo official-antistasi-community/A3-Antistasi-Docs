@@ -43,17 +43,11 @@ Arma 3 Dev Extensions
       *  - CBA_A3
          - `CBA_A3 on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=450814997>`_
 
-      *  - Debug Console
-         - `Debug Console on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1231625987>`_
-
       *  - Enhanced Movement
          - `Enhanced Movement on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=333310405>`_
 
       *  - Extended Function Viewer
          - `Extended Function Viewer on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1678581937>`_
-
-      *  - User Input Menus
-         - `User Input Menus on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1673595418>`_
 
       *  - Zeus Enhanced
          - `Zeus Enhanced on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631>`_
@@ -73,9 +67,6 @@ Arma 3 Dev Extensions
 
       *  - Intercept Minimal Dev
          - `Intercept Minimal Dev on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1645973522>`_
-
-      *  - ArmaZeusCache
-         - `ArmaZeusCache on Steam <http://steamcommunity.com/sharedfiles/filedetails/?id=1908099028>`_
 
       *  - Arma Debug Engine
          - `Arma Debug Engine on Steam <https://steamcommunity.com/sharedfiles/filedetails/?id=1585582292>`_ (could have issues, check out steam workshop description and comment)
@@ -113,14 +104,11 @@ Code Editor Extensions
          *  - `SQF Language <https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf>`_
             - Provides language for SQF extensions and highlighting.
 
+         *  - `Arma Dev <https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev>`_
+            - Makes it easier to develop and test mods.
+
          *  - `SQF Wiki <https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki>`_
             - Hover over command, see explanation.
-
-         *  - `Arma 3 CfgFunctions <https://marketplace.visualstudio.com/items?itemName=HkonRRydland.a3cfgfunctions>`_
-            - Lets you have Auto completion, function peeking, and header preview for mission functions
-
-         *  - `Github Pull Requests and issues <https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github>`_
-            - Review and manage your GitHub pull requests and issues directly in VS Code
 
          *  - `GitLens <https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens>`_
             - Supercharge the Git capabilities built into Visual Studio Code
@@ -132,7 +120,7 @@ Code Editor Extensions
             - Insert File Header Comment such as date, time
 
          *  - `SQFLint <https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint>`_
-            - Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing as it will struggle since there is no description.ext in src folder.
+            - Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing (it will throw some false errors).
 
          *  - `Arma 3 - Open Last RPT <https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt>`_
             - Ctrl+Shift+P -> Open Last -> [enter]: will open the last RPT.
@@ -150,17 +138,6 @@ Code Editor Extensions
          .. rst-class:: code-paragraph-direct target-substitude
 
          Allows running a specified script or program when a keybind is pressed, or a specific filetype is saved. The extension does provide documentation, but here is an example that I use with this repository. Edit the WORKSPACE settings. It's already in .gitIgnore :code:`...\A3-Antistasi\.vscode\settings.json`. You can Download an `Example <https://gist.github.com/CalebSerafin/d91c15bfbbf913d13c56e9494abc05ab>`_
-
-      .. card::
-         :class-card: sd-card-4
-         :class-header: header-4-light
-
-         Antistasi-Dev-Deploy-Configurator
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-         .. rst-class:: target-substitude
-
-         It is recommended using the configurator to set up map-template filter for Antistasi-Dev-Deploy.exe So that every save does not update 16+ templates. You can fin this tool and a guide `here <https://github.com/CalebSerafin/Antistasi-Dev-Deploy/wiki/Antistasi-Dev-Deploy-Configurator>`_.
 
    .. card::
       :class-card: sd-card-3

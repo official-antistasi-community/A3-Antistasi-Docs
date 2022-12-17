@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Debug Console Commands for Devs" href="dev_guide_console_commands.html" />
-    <link rel="prev" title="How to build Antistasi (Mission)" href="dev_guide_build_mission.html" />
+    <link rel="next" title="Addon Functions &amp; Folders Library" href="FunctionsAndFolders.html" />
+    <link rel="prev" title="How to Extend Antistasi?" href="../A3AExtender.html" />
         
             <link
                 rel="apple-touch-icon"
@@ -55,13 +55,13 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+          <a href="FunctionsAndFolders.html" title="Addon Functions &amp; Folders Library"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+          <a href="../A3AExtender.html" title="How to Extend Antistasi?"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Technical Standards for Core Code Contributions</a></li> 
       </ul>
     </div>
@@ -75,25 +75,27 @@
             </a></p>
 <h3><a href="../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Technical Standards for Core Code Contributions</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#standardised-header">Standardised Header</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#standardised-variable-types">Standardised Variable Types</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#languages-and-localisation">Languages and Localisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reviewing-pull-requests">Reviewing Pull Requests</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -150,15 +152,15 @@ For more dev related information please go to our <a class="reference external" 
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-body docutils">
 <div class="line-block">
-<div class="line">Contributing new file or updating old ones, please follow the Standardised Header format.</div>
-<div class="line">We are working with Localization within Antistasi so people can translate the content to their respective languages and make Antistasi more accessible. Please check out and follow Localization Standards.</div>
-<div class="line">We collected some Standardised Variable Types and put them together with small explanations Standardised Variable Types.</div>
-<div class="line">Getting started Reviewing Pull Requests.</div>
+<div class="line">Contributing new file or updating old ones, please follow the <a class="reference internal" href="#dev-code-contribution-standard-header"><span class="std std-ref">Standardised Header</span></a> format.</div>
+<div class="line">We are working with Localization within Antistasi so people can translate the content to their respective languages and make Antistasi more accessible. Please check out and follow <a class="reference internal" href="#dev-code-contribution-language"><span class="std std-ref">Localization Standards</span></a>.</div>
+<div class="line">We collected some Standardised Variable Types and put them together with small explanations <a class="reference internal" href="#dev-code-contribution-standardvariables"><span class="std std-ref">Standardised Variable Types</span></a>.</div>
+<div class="line">Getting started <a class="reference internal" href="#dev-code-contribution-review-pr"><span class="std std-ref">Reviewing Pull Requests</span></a>.</div>
 </div>
 </div>
 </div>
 <section id="standardised-header">
-<h2>Standardised Header<a class="headerlink" href="#standardised-header" title="Permalink to this headline"></a></h2>
+<span id="dev-code-contribution-standard-header"></span><h2>Standardised Header<a class="headerlink" href="#standardised-header" title="Permalink to this headline"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
 <div class="sd-card-header header-2-light docutils">
 <p class="sd-card-text">Standardised Header</p>
@@ -281,9 +283,11 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Some structs are common enough that almost everyone working with SQF will know what they are. This can provide a great simplification. PascalCase capitalisation is not strictly required.</p>
-<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Pos3</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span>
+<div class="code-block-3 highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">PosATL</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="n">of</span> <span class="n">Type</span> <span class="s1">&#39;Position above terrain level&#39;</span>
+<span class="o">&lt;</span><span class="n">PosAGL</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="n">of</span> <span class="n">Type</span> <span class="s1">&#39;Position above ground level&#39;</span>
+<span class="o">&lt;</span><span class="n">PosASL</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="n">of</span> <span class="n">Type</span> <span class="s1">&#39;Position above sea level&#39;</span>
 <span class="o">&lt;</span><span class="n">Vec3</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">3</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span>
-<span class="o">&lt;</span><span class="n">Poss</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">2</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">marker</span> <span class="n">positions</span><span class="o">.</span>
+<span class="o">&lt;</span><span class="n">Pos2</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">2</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">marker</span> <span class="n">positions</span><span class="o">.</span>
 <span class="o">&lt;</span><span class="n">Vec2</span><span class="o">&gt;</span> <span class="n">A</span> <span class="mi">2</span><span class="n">D</span> <span class="n">position</span> <span class="ow">or</span> <span class="n">vector</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="n">marker</span> <span class="n">positions</span><span class="o">.</span>
 
 <span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">Pos3</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">positions</span> <span class="ow">or</span> <span class="n">vectors</span>
@@ -292,6 +296,7 @@ For more dev related information please go to our <a class="reference external" 
 <span class="o">&lt;</span><span class="n">ARRAY</span><span class="o">&lt;</span><span class="n">KeyPair</span><span class="o">&gt;&gt;</span> <span class="n">A</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pairs</span>
 </pre></div>
 </div>
+<p class="sd-card-text">Details about the different position system can be found in the <a class="reference external" href="https://community.bistudio.com/wiki/Position">biki</a>. The required position system should be mentioned in the header.</p>
 <p class="sd-card-text">Feel free to add common and strongly defined types here:</p>
 <ul class="code-paragraph simple">
 <li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">&lt;Pos#&gt;</span></code> A collection of scalars where # represents the number of dimensions: <code class="code docutils literal notranslate"><span class="pre">[4,2,0]</span></code></p></li>
@@ -352,6 +357,208 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </div>
 </section>
+<section id="languages-and-localisation">
+<span id="dev-code-contribution-language"></span><h2>Languages and Localisation<a class="headerlink" href="#languages-and-localisation" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Languages and Localisation</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Getting started</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Localisation in ARMA means the game will try to load the correct language for the version of the game it is currently using. By adding translations, or localisations to this project, we can make it easier for for all players to get involved and use this Mission.</p>
+<p class="sd-card-text">A technical overview of Localisation can be <a class="reference external" href="https://community.bistudio.com/wiki/Stringtable.xml">found here</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Contributing to Localisation</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph">If you want to assist with translations that Dialog buttons, mission text or in game text uses, you will need to make changes to the <code class="code docutils literal notranslate"><span class="pre">Stringtable.xml</span></code> file which is found in the main PBO file.</p>
+<p class="sd-card-text">Making changes to this file can be done with simple text editors, such as notepad however it is advised you use a dedicated tool such as those suggested on the WIKI.</p>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/ajvorobiev/StringForge/releases">StringForge</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/bux/tabler/releases">Tabler</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://forums.bohemia.net/forums/topic/202181-sqdev-sqf-developing-in-eclipse/">SQDev</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/dedmen/de_stringtabler/releases">de_stringtabler</a></p></li>
+</ul>
+<p class="sd-card-text code-paragraph">Once you have your tool of choice and have opened the <code class="code docutils literal notranslate"><span class="pre">Stringtable.xml</span></code> you will then need to find or create the “Key” to provide your translation.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text">For this example I will use the Version number of Antistasi, as this changes frequently and requires manual adjustment each release.</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Container&gt;</span>
+  <span class="nt">&lt;Key</span> <span class="na">ID=</span><span class="s">&quot;STR_antistasi_credits_generic_version_text&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Original&gt;</span>1.4c2.0<span class="nt">&lt;/Original&gt;</span>
+  <span class="nt">&lt;/Key&gt;</span>
+<span class="nt">&lt;/Container&gt;</span>
+</pre></div>
+</div>
+<p class="sd-card-text"><strong>Key Setup</strong>
+There are two main parts to setting up localisation, the KEY and the Text. From the example we can see the following information.</p>
+<ul class="simple">
+<li><p class="sd-card-text">Key : STR_antistasi_credits_generic_version_text</p></li>
+<li><p class="sd-card-text">Original : 1.4c2.0</p></li>
+</ul>
+<p class="sd-card-text">The Key is used to identify the text you wish to display in game. By default all Keys in Antistasi should follow a standard convention, using following pattern where possible.</p>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">Prefix: <code class="code docutils literal notranslate"><span class="pre">STR_antistasi_</span></code></p></li>
+<li><p class="sd-card-text">Area of code: <code class="code docutils literal notranslate"><span class="pre">credits_generic</span></code></p></li>
+<li><p class="sd-card-text">Item name: <code class="code docutils literal notranslate"><span class="pre">version</span></code></p></li>
+<li><p class="sd-card-text">Type: <code class="code docutils literal notranslate"><span class="pre">text</span></code></p></li>
+</ul>
+<p class="sd-card-text">From this you can easily determine that this code belongs to “Antistasi”, is used in the “Generic Credits” module and contains the “Version” “text”.</p>
+<p class="sd-card-text"><strong>Text Setup</strong></p>
+<p class="sd-card-text">The second part of localisation, is the text. This is the actual information which is going to be displayed to users, from the Stringtable when the variable is called.</p>
+<p class="sd-card-text code-paragraph-2">When creating a new, or change an old KEY, it needs to contain <code class="code docutils literal notranslate"><span class="pre">&lt;Original&gt;&lt;/Original&gt;</span></code> as a minimum. The <code class="code docutils literal notranslate"><span class="pre">Original</span></code> tag implies the default value to be displayed for all game clients, if their default language is not found.</p>
+<p class="sd-card-text">Currently our version will display the following to all game clients, regardless of their language settings. Adding additional languages requires the use of a new tag containing the language you wish to use. For this example we will use English.</p>
+<p class="sd-card-text">Our version example is currently:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Original&gt;</span>1.4c2.0<span class="nt">&lt;/Original&gt;</span>
+</pre></div>
+</div>
+<p class="sd-card-text">Adding an English localisation can be done with:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;Container&gt;</span>
+  <span class="nt">&lt;Key</span> <span class="na">ID=</span><span class="s">&quot;STR_antistasi_credits_generic_version_text&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Original&gt;</span>1.4c2.0<span class="nt">&lt;/Original&gt;</span>
+    <span class="nt">&lt;English&gt;</span>1.4c2.0.6<span class="nt">&lt;/English&gt;</span>
+  <span class="nt">&lt;/Key&gt;</span>
+<span class="nt">&lt;/Container&gt;</span>
+</pre></div>
+</div>
+<p class="sd-card-text"><strong>Note</strong>: <a class="reference external" href="https://community.bistudio.com/wiki/Stringtable.xml#Supported_languages">There are a limited selection of supported languages for localisation</a>.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 sd-card-warning docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Note</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Whilst we will make an effort to verify the translations provided, it relies on user input and cannot be guaranteed. If you find any problems, please <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/issues">raise an issue</a>!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="reviewing-pull-requests">
+<span id="dev-code-contribution-review-pr"></span><h2>Reviewing Pull Requests<a class="headerlink" href="#reviewing-pull-requests" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Reviewing Pull Requests</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">The style of reviewing code is very different per person.
+However, here is an example for getting started:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Overview</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">I take 7 skims (quickly reading and not paying much attention) over the code looking for these things:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">* [ ]</span> Indentation &amp; Headers
+<span class="k">* [ ]</span> Naming Conventions &amp; Grammar
+<span class="k">* [ ]</span> Macros
+<span class="k">* [ ]</span> Param &amp; Call
+<span class="k">* [ ]</span> Global Variables
+<span class="k">* [ ]</span> Local Variables
+<span class="k">* [ ]</span> Logic (Will take the longest)
+</pre></div>
+</div>
+<p class="sd-card-text"><strong>Equipment</strong></p>
+<ul class="simple">
+<li><p class="sd-card-text">I have lined paper or an Excel spreadsheet to take notes.</p></li>
+<li><p class="sd-card-text">Coffee or Tea is a good review parter.</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Indentation &amp; Headers</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text">This only applies to new or rewritten functions.</p></li>
+<li><p class="sd-card-text">Indentation must be in spaces. 4 spaces is normal. However, if there are a lot of indentation (Barbolani’s if-else chaines), then less spaces are acceptable. I use Visual Studio Code to Check-Out the Pull-Request, then I search for the tab character so it will be highlighted.</p></li>
+<li><p class="sd-card-text">Headers must attempt the <a class="reference internal" href="#dev-code-contribution-standard-header"><span class="std std-ref">standard header</span></a>.</p></li>
+</ul>
+<p class="sd-card-text"><strong>Not all of the header information is necessary. The most important lines are:</strong></p>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Author</span></code> (original author and people who might of helped him/her)</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Arguments</span></code> &amp; <code class="code docutils literal notranslate"><span class="pre">Return</span></code> Value (Does not need to be as specific as <code class="code docutils literal notranslate"><span class="pre">Standardised-Variable-Types</span></code>. For example just <code class="code docutils literal notranslate"><span class="pre">&lt;ARRAY&gt;</span></code> would be fine. All arguments in <code class="code docutils literal notranslate"><span class="pre">param</span></code> must be listed here.)</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Environment</span></code> (This is important, if it uses <code class="code docutils literal notranslate"><span class="pre">sleep</span></code> it cannot be run from the debug console)</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Naming Conventions &amp; Grammar</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">People should not name their variables <code class="code docutils literal notranslate"><span class="pre">_a</span></code>, <code class="code docutils literal notranslate"><span class="pre">_69</span></code>, <code class="code docutils literal notranslate"><span class="pre">_someUnrelatedName</span></code>, <code class="code docutils literal notranslate"><span class="pre">_bbv</span></code>, <code class="code docutils literal notranslate"><span class="pre">_bbc</span></code>. The variable name should describe what it holds.</p></li>
+<li><p class="sd-card-text">Grammar is not important, and only matters when text is displayed to the player, using <code class="code docutils literal notranslate"><span class="pre">A3A_fnc_customHint</span></code>, <code class="code docutils literal notranslate"><span class="pre">systemChat</span></code> ect.</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Macros</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Macros are not common. When they are used, just check that they are correct and will not cause problems.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Param &amp; Call</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph">Double check that the arguments for <code class="code docutils literal notranslate"><span class="pre">call</span></code> match the <code class="code docutils literal notranslate"><span class="pre">param</span></code> in the function. Check that the function always returns the expected type.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Global Variables</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">All global variables created must be prefixed. <code class="code docutils literal notranslate"><span class="pre">banList</span></code> will not be accepted, it must be <code class="code docutils literal notranslate"><span class="pre">A3A_banList</span></code>.</p></li>
+<li><p class="sd-card-text">Check that global variables are always created before they are used.</p></li>
+<li><p class="sd-card-text">Tell the author if there are possible race-conditions. Usually when clients modify arrays and then broadcast with <code class="code docutils literal notranslate"><span class="pre">publicVariable</span></code> or <code class="code docutils literal notranslate"><span class="pre">setVariable</span> <span class="pre">[name,value,true]</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Local Variables</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">All must be declare with <code class="code docutils literal notranslate"><span class="pre">private</span></code>.</p></li>
+<li><p class="sd-card-text">Check that a local variable is not used in a <code class="code docutils literal notranslate"><span class="pre">spawn</span></code> as it will not be defined in that scope.</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Logic</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text">No syntax errors.</p></li>
+<li><p class="sd-card-text">No undefined edge-cases.</p></li>
+<li><p class="sd-card-text">Does not need to be 100% optimised. But it cannot be slow when there is a better way to code a function. (Check nested <code class="code docutils literal notranslate"><span class="pre">findIf</span></code>, <code class="code docutils literal notranslate"><span class="pre">forEach</span></code>, <code class="code docutils literal notranslate"><span class="pre">forFrom</span></code>, multiple <code class="code docutils literal notranslate"><span class="pre">nearObject</span></code> ect.)</p></li>
+<li><p class="sd-card-text">Make sure everthing works as expected.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
 </section>
 
 
@@ -369,16 +576,16 @@ For more dev related information please go to our <a class="reference external" 
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+          <a href="FunctionsAndFolders.html" title="Addon Functions &amp; Folders Library"
              >next</a> |</li>
         <li class="right" >
-          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+          <a href="../A3AExtender.html" title="How to Extend Antistasi?"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Technical Standards for Core Code Contributions</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

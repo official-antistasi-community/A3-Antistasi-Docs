@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Dev Guide - WIP &#8212; Antistasi Guide  documentation</title>
+    <title>Dev Guide &#8212; Antistasi Guide  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/groundwork.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Mod-Settings" href="ace_file.html" />
+    <link rel="next" title="The History of Antistasi" href="admins/history.html" />
     <link rel="prev" title="Win / Loss Conditions" href="../reference_guide/concepts_info/concepts/win_loss_conditions.html" />
         
             <link
@@ -55,13 +55,13 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="ace_file.html" title="Mod-Settings"
+          <a href="admins/history.html" title="The History of Antistasi"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="../reference_guide/concepts_info/concepts/win_loss_conditions.html" title="Win / Loss Conditions"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Dev Guide - WIP</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Dev Guide</a></li> 
       </ul>
     </div>
 
@@ -74,20 +74,15 @@
             </a></p>
 <h3><a href="../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Dev Guide - WIP</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dev Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#general">General</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l3"><a class="reference internal" href="snippets.html">Snippets</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#administration">Administration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="admins/general.html">Frequently asked questions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="admins/history.html">The History of Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="changelog.html">Changelog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="admins/FactionsAndTemplates.html">Factions and Template Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="admins/DebugConsoleCommands.html">Debug Console Commands for Players and Admins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#development">Development</a><ul>
@@ -95,9 +90,13 @@
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_how_to_build.html">How to build Antistasi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deprecated">Deprecated</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 </ul>
 </li>
 </ul>
@@ -145,14 +144,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section class="hidden" id="dev-guide-wip">
-<h1>Dev Guide - WIP<a class="headerlink" href="#dev-guide-wip" title="Permalink to this headline"></a></h1>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Please note that this part is still heavily work in progress.
-For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
-</div>
-</div>
+  <section class="hidden" id="dev-guide">
+<span id="id1"></span><h1>Dev Guide<a class="headerlink" href="#dev-guide" title="Permalink to this headline"></a></h1>
 <section id="general">
 <h2>General<a class="headerlink" href="#general" title="Permalink to this headline"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
@@ -162,29 +155,16 @@ For more dev related information please go to our <a class="reference external" 
 <div class="sd-card-body docutils">
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="snippets.html">Snippets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admins/history.html">The History of Antistasi</a></li>
 </ul>
 </div>
-</div>
-</div>
-</section>
-<section id="administration">
-<h2>Administration<a class="headerlink" href="#administration" title="Permalink to this headline"></a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
-<div class="sd-card-header header-2-light docutils">
-<p class="sd-card-text">Administration</p>
-</div>
-<div class="sd-card-body docutils">
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="admins/general.html">Frequently asked questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admins/history.html">The History of Antistasi</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="admins/history.html#comparison-of-1-9-and-1-4">Comparison of 1.9 and 1.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="admins/history.html#history-of-mission-and-community">History of Mission and Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
-</li>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="admins/FactionsAndTemplates.html">Factions and Template Overview</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="admins/FactionsAndTemplates.html#general-overview">General Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="admins/FactionsAndTemplates.html#map-specific-overview">Map Specific Overview</a></li>
@@ -196,6 +176,11 @@ For more dev related information please go to our <a class="reference external" 
 <li class="toctree-l2"><a class="reference internal" href="admins/DebugConsoleCommands.html#other-useful-commands">Other Useful Commands</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ace_file.html">Mod-Settings</a></li>
 </ul>
 </div>
 </div>
@@ -224,12 +209,25 @@ For more dev related information please go to our <a class="reference external" 
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dev/dev_guide_porting.html">Antistasi Porting Instructions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html">Antistasi Porting Maps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#intro">Intro</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#map-selection">Map selection</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#necessary-steps-to-port-a-map">Necessary steps to port a map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#first-steps">First steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#setting-up-the-mission-sqm">Setting up the mission.sqm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#setting-up-the-mapinfo-hpp">Setting up the mapInfo.hpp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_map.html#integration-into-the-system">Integration into the system</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_porting_mod.html">Antistasi Porting Mods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html">Street Artist Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_porting_mod.html">Antistasi Porting Mods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_porting_mod.html#logistic-system">Logistic System</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html">Street Artist Generation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html#quick-start-guide">Quick Start Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html#generate-navgriddb-open-the-street-artist-editor">Generate navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html#import-navgriddb-open-the-street-artist-editor">Import navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_generation.html#further-reading">Further Reading</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="dev/porting/dev_guide_street_artist_editor.html">Street Artist Editor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_editor.html#important-guidelines">Important Guidelines</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/porting/dev_guide_street_artist_editor.html#automated-actions">Automated Actions</a></li>
@@ -245,26 +243,49 @@ For more dev related information please go to our <a class="reference external" 
 <li class="toctree-l2"><a class="reference internal" href="A3AExtender.html#building-the-mod">Building the mod</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dev/dev_guide_build_mission.html">How to build Antistasi (Mission)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_build_mission.html#build-with-antistasi-dev-deploy">Build with Antistasi Dev Deploy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_build_mission.html#build-with-powershell">Build with Powershell</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html#standardised-header">Standardised Header</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html#standardised-variable-types">Standardised Variable Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html#languages-and-localisation">Languages and Localisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html#reviewing-pull-requests">Reviewing Pull Requests</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dev/FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/FunctionsAndFolders.html#general-information">General information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/FunctionsAndFolders.html#addons">Addons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/FunctionsAndFolders.html#init">Init</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dev/dev_guide_console_commands.html">Debug Console Commands for Devs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#nearest-marker">Nearest Marker</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#display-markernames">Display Markernames</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#start-an-attack">Start an attack</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#create-a-support-3-0-0">Create a support (3.0.0)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#spawn-loot-box">Spawn loot box</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#force-spawn-missions">Force spawn Missions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#group-cleaner">Group Cleaner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#city-data-extraction">City Data Extraction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#get-antenna-location">Get antenna location</a></li>
 <li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_console_commands.html#show-antenna-connections">Show antenna connections</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="deprecated">
+<h2>Deprecated<a class="headerlink" href="#deprecated" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Deprecated</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev/dev_guide_build_mission.html">How to build Antistasi (Mission)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_build_mission.html#build-with-antistasi-dev-deploy">Build with Antistasi Dev Deploy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dev/dev_guide_build_mission.html#build-with-powershell">Build with Powershell</a></li>
 </ul>
 </li>
 </ul>
@@ -289,15 +310,15 @@ For more dev related information please go to our <a class="reference external" 
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="ace_file.html" title="Mod-Settings"
+          <a href="admins/history.html" title="The History of Antistasi"
              >next</a> |</li>
         <li class="right" >
           <a href="../reference_guide/concepts_info/concepts/win_loss_conditions.html" title="Win / Loss Conditions"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../index.html">Antistasi Guide  documentation</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Dev Guide - WIP</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Dev Guide</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Attack choice system &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/line-breaker.js"></script>
+    <script src="../../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Benefits of Controlling a Town" href="benefits_of_controlling_a_town.html" />
+    <link rel="prev" title="Airstrikes" href="airstrikes.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="benefits_of_controlling_a_town.html" title="Benefits of Controlling a Town"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="airstrikes.html" title="Airstrikes"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference_guide_index.html" >Detailed Reference Guide</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../concepts_overview.html" accesskey="U">Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Attack choice system</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../reference_guide_index.html">Detailed Reference Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/mission_info.html">Mission Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/missions_overview.html">Categories</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../concepts_overview.html">Basic Concepts</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="AgressionUpdateLoop.html">Agression Update Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aggto_system_change.html">Aggro System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="airstrikes.html">Airstrikes</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Attack choice system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benefits_of_controlling_a_town.html">Benefits of Controlling a Town</a></li>
+<li class="toctree-l3"><a class="reference internal" href="counter_battery_fire.html">Counter Battery Fire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gaining_losing_city_support.html">Gaining and Losing City Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hq_attack.html">HQ attack system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="losing_petros_penalties.html">Losing Petros Penalties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="map_markers.html">Map Markers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="player_rank.html">Player Rank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qrf_and_attacks.html">QRF and Attack vehicle spawning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="radio_towers.html">Radio Towers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resourcePools.html">Resource Pools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supportSystem.html">Support System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="train_fia.html">Train FIA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="win_loss_conditions.html">Win / Loss Conditions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev_guide/dev_guide_index.html">Dev Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="attack-choice-system">
+<span id="concept-attack-choice-system"></span><h1>Attack choice system<a class="headerlink" href="#attack-choice-system" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-mt-3 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Description</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Once a faction has positive attack resources, it will call chooseAttack to launch an attack. Target selection is handled with findAttackTargets, which weights potential attacks depending on target value and threat. Main differences:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Lower-rated attacks can be chosen, using the weight as a probability.</p></li>
+<li><p class="sd-card-text">Attacks against rebel targets outside mission distance are now permitted, although chance is reduced.</p></li>
+<li><p class="sd-card-text">Danger of flying over other enemy locations is taken into account.</p></li>
+<li><p class="sd-card-text">Threat of other nearby locations is taken into account, not just the target.</p></li>
+<li><p class="sd-card-text">Distance from air bases has less effect, with nearby land bases being more important.</p></li>
+<li><p class="sd-card-text">Supply convoys are now used instead of occupant city attacks.</p></li>
+<li><p class="sd-card-text">HQ attacks are now generated with the same system</p></li>
+</ul>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="benefits_of_controlling_a_town.html" title="Benefits of Controlling a Town"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="airstrikes.html" title="Airstrikes"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference_guide_index.html" >Detailed Reference Guide</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../concepts_overview.html" >Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Attack choice system</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
+  </body>
+</html>

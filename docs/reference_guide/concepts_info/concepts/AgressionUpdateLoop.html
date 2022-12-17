@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Agression Update Loop &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/line-breaker.js"></script>
+    <script src="../../../_static/js/link-new-tab.js"></script>
+    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Aggro System" href="aggto_system_change.html" />
+    <link rel="prev" title="Basic Concepts" href="../concepts_overview.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="aggto_system_change.html" title="Aggro System"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../concepts_overview.html" title="Basic Concepts"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference_guide_index.html" >Detailed Reference Guide</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../concepts_overview.html" accesskey="U">Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Agression Update Loop</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../reference_guide_index.html">Detailed Reference Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/mission_info.html">Mission Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../missions_info/missions_overview.html">Categories</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../concepts_overview.html">Basic Concepts</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Agression Update Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="aggto_system_change.html">Aggro System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="airstrikes.html">Airstrikes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="attack_choice_system.html">Attack choice system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="benefits_of_controlling_a_town.html">Benefits of Controlling a Town</a></li>
+<li class="toctree-l3"><a class="reference internal" href="counter_battery_fire.html">Counter Battery Fire</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gaining_losing_city_support.html">Gaining and Losing City Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hq_attack.html">HQ attack system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="losing_petros_penalties.html">Losing Petros Penalties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="map_markers.html">Map Markers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="player_rank.html">Player Rank</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qrf_and_attacks.html">QRF and Attack vehicle spawning</a></li>
+<li class="toctree-l3"><a class="reference internal" href="radio_towers.html">Radio Towers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="resourcePools.html">Resource Pools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="supportSystem.html">Support System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="train_fia.html">Train FIA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="win_loss_conditions.html">Win / Loss Conditions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../dev_guide/dev_guide_index.html">Dev Guide</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="agression-update-loop">
+<span id="concept-agressionupdateloop"></span><h1>Agression Update Loop<a class="headerlink" href="#agression-update-loop" title="Permalink to this headline"></a></h1>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-mt-3 docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Description</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">This file (basically a 60-second loop) is now responsible for updating all the balance variables, incrementing the four resource pools and launching attacks. Descriptions of balance variables:</p>
+<ul class="code-paragraph simple">
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_activePlayerCount</span></code> is a count of all active players. Activity is determined by a simple client-side getDir check.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_balancePlayerScale</span></code> is the general amount-of-stuff coefficient, normalized to 1 with 6 players at tier 6.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_balanceVehicleCost</span></code> is a rough average resource cost of a single attack vehicle + cargo (if any) at the current war tier.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_balanceResourceRate</span></code> is the resources of each type typically gained by a faction every 10 minutes, currently just <code class="code docutils literal notranslate"><span class="pre">balancePlayerScale</span> <span class="pre">*</span> <span class="pre">balanceVehicleCost</span></code>. The defence cap is currently at <code class="code docutils literal notranslate"><span class="pre">10</span> <span class="pre">*</span> <span class="pre">A3A_balanceResourceRate</span></code>.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_enemyBalanceMul</span></code> is a parameter (default 10, because params don’t do FP) that multiplies <code class="code docutils literal notranslate"><span class="pre">A3A_balancePlayerScale</span></code> to make the game generally harder or easier.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_enemyAttackMul</span></code> is a parameter that multiplies attack resource rate to make attacks faster or slower.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">A3A_invaderBalanceMul</span></code> is a parameter that multiplies invader resource gain rates.</p></li>
+</ul>
+<p class="sd-card-text">ResourceCheck (the 10-minute loop) still has most of its former responsibilities, although it now runs with any active players (not necessarily a commander), and no longer generates supply convoys against flipped towns (now the responsibility of chooseAttack).</p>
+</div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="aggto_system_change.html" title="Aggro System"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../concepts_overview.html" title="Basic Concepts"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference_guide_index.html" >Detailed Reference Guide</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../concepts_overview.html" >Basic Concepts</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Agression Update Loop</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
+  </body>
+</html>

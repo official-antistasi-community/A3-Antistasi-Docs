@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Factions and Template Overview" href="FactionsAndTemplates.html" />
-    <link rel="prev" title="Frequently asked questions" href="general.html" />
+    <link rel="next" title="Changelog" href="../changelog.html" />
+    <link rel="prev" title="Dev Guide" href="../dev_guide_index.html" />
         
             <link
                 rel="apple-touch-icon"
@@ -55,13 +55,13 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="FactionsAndTemplates.html" title="Factions and Template Overview"
+          <a href="../changelog.html" title="Changelog"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="general.html" title="Frequently asked questions"
+          <a href="../dev_guide_index.html" title="Dev Guide"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">The History of Antistasi</a></li> 
       </ul>
     </div>
@@ -75,22 +75,19 @@
             </a></p>
 <h3><a href="../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="general.html">Frequently asked questions</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">The History of Antistasi</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#comparison-of-1-9-and-1-4">Comparison of 1.9 and 1.4</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#history-of-mission-and-community">History of Mission and Community</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#general">General</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">The History of Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../changelog.html">Changelog</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FactionsAndTemplates.html">Factions and Template Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="DebugConsoleCommands.html">Debug Console Commands for Players and Admins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ace_file.html">Mod-Settings</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#development">Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -140,62 +137,27 @@
 <span id="admin-history-guide"></span><h1>The History of Antistasi<a class="headerlink" href="#the-history-of-antistasi" title="Permalink to this headline"></a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Antistasi has a long history of development. Starting from Barbolani, the original creator, over the old Community Dev Team to the current Community Dev Team.
-There are very different versions from us and even a ton more from other creators.
-Here we try to give an overview of how we got to the point which we are right now. And maybe even look a little bit into the future.</p>
+<p class="sd-card-text">Once upon a time Antistasi was created by Barbolani as a guerilla warfare simulator.
+To test his mission and to report the bugs the Official Antistasi Community was created.</p>
+<p class="sd-card-text">It started very small with only 2 handful of people. Servers were rented at own costs, communication was done via TeamSpeak as well as the forum of the old homepage. Over the time the community also helped with the development but mostly under the oversight of Barbolani himself. This proved quite difficult at times because as we like to say “Barbolani works in mysterious ways”. This is by no way meant in any offence but due to the fact that he preferred to work alone and is not a professional coder (which makes the creation of Antistasi even more impressive), he developed Antistasi as a side project next to also having a busy life and a family to take care of. This led to him not being available for months.</p>
+<p class="sd-card-text">During the periods of Barbolanis inactivity the community continued the development process. The first community driven development effort lasted from early 2017 to June 2018. This was largely done by people like Chris, RickyTan, Kendo, Jeroen, Sparker, StefArma, IrLED, AlexTriada, Sebastian and BeZZuBik41, to just name a few. During this time and building on top of Barbolanis version 1.2 they developed until they reached their Antistasi 1.8.x version. This version not only got rid of bugs and improved a lot of the AI, it also implemented famous systems like the Crazy Irish Man – a weapons dealer you could find – or the dynamic frontline which was indicated on the map, created roadblocks along it and also gave passive indication on what targets the AI could attack next. This dev team discontinued working on it in June 2018 and went different ways.
+Some remained in the community and even years later contributed code for the next dev team, some went on to form the team that developed the Arma 3 mod Vindicta, others just left.
+Wherever they all may be, we are grateful for their work and efforts as they pushed the boundaries of Antistasi, created a wonderful mission that literally thousands of people enjoyed and they certainly left us with a lot of ideas, impressions and thoughts that we still consider and work with in the current development of Antistasi.</p>
+<p class="sd-card-text">The second and still ongoing community driven development effort started in May 2019 where after 8 months not hearing from Barbolani the need for bug fixes and adaptations grew so large that something had to be done.
+Due to the fact that Barbolani is from Spain, most of the variables used in Antistasi where Spanish, which of course made it hard for developers from all over the world to properly understand it. Hence over a period of 3 month the codebase of Barbolanis version 1.3 was translated. After that was done the first goals were to remove dependencies, fix critical bugs, increase stability and prevent frame drops and lag. This process went on for months in which a few versions were released. Over the time the dev team grew from just 2-3 people at the start to over 10. And this is not even including helpers, translators or else.
+The work shifted from hot-fixing game-breaking issues to implementing to features, factions and maps. There was space and time to properly rewrite complete systems instead of only patching the old ones. For most code that got added to Antistasi we had a 4-eye-principle, meaning that in the optimal case every single line got at least read and roughly checked by another dev. Luckily the Community by then also was in a partnership with Armahosts which provided and still provides multiple Arma 3 servers with headless clients as well as a large TeamSpeak server. This of course not only helped the community in terms of playing but also gave opportunity to test changes, pre-release-builds and more and helps with keeping the quality of Antistasi at a relatively high level.</p>
+<p class="sd-card-text">Now, in late November of 2022, more than three and a half years after the start of the second community dev team, we are still active and shortly will release the Antistasi Mod. Up until now Antistasi always has been a mission, a scenario which could be played and which came with a lot of Arma 3 based limitations. But since the release of Antistasi 2.5.3 on the 11th October 2021, and in large parts even before that, we have been massively working on moving Antistasi from a mission to a mod as well as reworking major systems within Antistasi.
+This switch is not only giving us more freedom in terms of what we can do, but it also packs all different available maps into one Steam Workshop item, allows us to implement a save-game system, the ability to have multiple campaigns at the same time and way more.
+So, as you can see, the history of Antistasi is by no means linear but very branched out and intricate. And this is not even taking all the other versions into account that are out there like Antistasi Plus, Antistasi Ultimate or countless other versions that are either shared on the Steam Workshop or also the non-published ones that people play on their own servers.</p>
+<p class="sd-card-text">But what also is very apparent is that the history of Antistasi is by no means at the end.
+With the move of Antistasi to a mod we also have integrated a system which gives outside developers the ability to create addons to the Official Antistasi mod. This way a creator could add a feature without the need to reinvent the wheel.
+We hope that many creators will use this system to create addons and enrich the gameplay or maybe even directly work with us to improve our systems and implement new ones.</p>
+<p class="sd-card-text">As the last thing and whilst looking towards a bright future of Antistasi I would like to thank everybody that was or still is part of the Dev Team, all the Dev Helpers, the Template Helpers, the 29 Translators out of 12 countries that already translated and still are translating Antistasi into every language that is compatible with Arma 3, the Admins, Members and Guests of the Official Antistasi Community that we can harass with test builds, every external Developer and Player that gives feedback as well as Armahosts for the amazing partnership.
+Without all of you none of this would make fun or even be possible.</p>
+<p class="sd-card-text">Thank you!</p>
+<p class="sd-card-text">Bob Murphy - Dev Team Lead</p>
 </div>
 </div>
-<section id="comparison-of-1-9-and-1-4">
-<h2>Comparison of 1.9 and 1.4<a class="headerlink" href="#comparison-of-1-9-and-1-4" title="Permalink to this headline"></a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
-<div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">Comparison of 1.9 and 1.4</p>
-</div>
-<div class="sd-card-body docutils">
-<ul class="simple">
-<li><p class="sd-card-text">Improved AI</p></li>
-<li><p class="sd-card-text">more and different missions</p></li>
-<li><p class="sd-card-text">different system regarding cities, city supplies, factories and stuff</p></li>
-<li><p class="sd-card-text">no unlock in the arsenal</p></li>
-<li><p class="sd-card-text">Another garage system</p></li>
-<li><p class="sd-card-text">implementation of ADV enhanced medical</p></li>
-<li><p class="sd-card-text">more vehicles from RHS</p></li>
-<li><p class="sd-card-text">Code re-arrangement</p></li>
-<li><p class="sd-card-text">Some mortars were exchanged for HMG</p></li>
-<li><p class="sd-card-text">curatormodule for #adminLogged</p></li>
-<li><p class="sd-card-text">changes in vehicle prices</p></li>
-<li><p class="sd-card-text">start money changed for faction and players</p></li>
-<li><p class="sd-card-text">more items unlocked like GPS, Parachute, pistol holster, LR</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="history-of-mission-and-community">
-<h2>History of Mission and Community<a class="headerlink" href="#history-of-mission-and-community" title="Permalink to this headline"></a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
-<div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">History of Antistasi Mission and Community</p>
-</div>
-<div class="sd-card-body docutils">
-<div class="line-block">
-<div class="line">Once upon a time, Antistasi was created by Barbolani as a Guerilla warfare simulator for ArmA 3. To test this mission and report bugs this community was set up.</div>
-<div class="line">Over time the community also helped with development but mostly under the oversight of Barbolani himself, this proved quite hard at times because Barbolani works in mysterious ways (as I like to say) and prefers to work alone. He is not a professional coder (which makes the mission even more impressive in my opinion). He developed this mission as a side project, leads a busy life, and has a family to take care of so at times he is unavailable for a very long time.</div>
-<div class="line">In his period of inactivity, the community continued the coding process, and that’s how 1.8.x, which 1.9 is a part of, became a thing. This means that 1.8 is older than 1.4 despite the higher number. Quite confusing, I know.</div>
-<div class="line">After Barbolani came back he disagreed with some changes the community made and continued on his own again - that’s 1.4. This is also why 1.4 and 1.9 have so many different game mechanics and are not compatible in any way.</div>
-<div class="line">So now we have taken up dev work again and the story of Antistasi continues.</div>
-<div class="line">So you could say that 1.4 is Barbolanis’ vision of guerilla warfare in ArmA while 1.8.x is the communities vision of Antistasi.</div>
-<div class="line">After the old Community Dev Team stopped development and bug fixing, the new Community Dev Team build the current stable Version 2.x based on Barbolanis 1.4.0.2 Version.</div>
-</div>
-<p class="sd-card-text">TL;DR:</p>
-<ul class="simple">
-<li><p class="sd-card-text">1.8 and 1.9 are compatible</p></li>
-<li><p class="sd-card-text">1.4 is completely different</p></li>
-<li><p class="sd-card-text">you cant compare 1.8/1.9 and 1.4 with eachother</p></li>
-<li><p class="sd-card-text">2.x is based on Barbolanis’ 1.4.0.2</p></li>
-</ul>
-</div>
-</div>
-</section>
 </section>
 
 
@@ -213,16 +175,16 @@ Here we try to give an overview of how we got to the point which we are right no
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="FactionsAndTemplates.html" title="Factions and Template Overview"
+          <a href="../changelog.html" title="Changelog"
              >next</a> |</li>
         <li class="right" >
-          <a href="general.html" title="Frequently asked questions"
+          <a href="../dev_guide_index.html" title="Dev Guide"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">The History of Antistasi</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

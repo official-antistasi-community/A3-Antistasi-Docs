@@ -61,7 +61,7 @@
           <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Antistasi Porting Instructions</a></li> 
       </ul>
     </div>
@@ -75,11 +75,10 @@
             </a></p>
 <h3><a href="../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
@@ -91,11 +90,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -157,12 +157,25 @@ Nevertheless, we will supply templates and such so you will be able to port maps
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_porting_map.html">Antistasi Porting Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#intro">Intro</a></li>
 <li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#map-selection">Map selection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#necessary-steps-to-port-a-map">Necessary steps to port a map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#first-steps">First steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#setting-up-the-mission-sqm">Setting up the mission.sqm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#setting-up-the-mapinfo-hpp">Setting up the mapInfo.hpp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_map.html#integration-into-the-system">Integration into the system</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_porting_mod.html">Antistasi Porting Mods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html">Street Artist Generation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_porting_mod.html">Antistasi Porting Mods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_porting_mod.html#logistic-system">Logistic System</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html">Street Artist Generation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html#quick-start-guide">Quick Start Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html#generate-navgriddb-open-the-street-artist-editor">Generate navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html#import-navgriddb-open-the-street-artist-editor">Import navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_generation.html#further-reading">Further Reading</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="porting/dev_guide_street_artist_editor.html">Street Artist Editor</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_editor.html#important-guidelines">Important Guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="porting/dev_guide_street_artist_editor.html#automated-actions">Automated Actions</a></li>
@@ -198,10 +211,10 @@ Nevertheless, we will supply templates and such so you will be able to port maps
           <a href="dev_guide_how_to_build.html" title="How to build Antistasi"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Antistasi Porting Instructions</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

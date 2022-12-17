@@ -27,7 +27,8 @@
     <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Technical Standards for Core Code Contributions" href="dev_guide_technical_standards_for_core_contrib.html" />
+    <link rel="next" title="How to build Antistasi (Mission)" href="dev_guide_build_mission.html" />
+    <link rel="prev" title="Addon Functions &amp; Folders Library" href="FunctionsAndFolders.html" />
         
             <link
                 rel="apple-touch-icon"
@@ -54,10 +55,13 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FunctionsAndFolders.html" title="Addon Functions &amp; Folders Library"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Devs</a></li> 
       </ul>
     </div>
@@ -71,22 +75,22 @@
             </a></p>
 <h3><a href="../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Debug Console Commands for Devs</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#nearest-marker">Nearest Marker</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#display-markernames">Display Markernames</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#start-an-attack">Start an attack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-a-support-3-0-0">Create a support (3.0.0)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#spawn-loot-box">Spawn loot box</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#force-spawn-missions">Force spawn Missions</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#group-cleaner">Group Cleaner</a></li>
@@ -97,6 +101,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -193,10 +198,40 @@ For more dev related information please go to our <a class="reference external" 
 <p class="sd-card-text">Start an attack</p>
 </div>
 <div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>For versions &lt;= 2.5.5</strong></p>
 <p class="sd-card-text">Run as server. Will start the process of selecting a target for an attack and attacking it for the given side (side can be Invaders or Occupants). This might result in the other side counterattack and take something or four smaller attacks instead of one big attack mission.</p>
 <div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">side</span><span class="o">]</span><span class="w"> </span><span class="n">spawn</span><span class="w"> </span><span class="n">A3A_fnc_rebelAttack</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
+<p class="sd-card-text"><strong>For Versions &gt;= 3.0.0</strong></p>
+<p class="sd-card-text">Run as server. Will start the process of selecting a target for an attack and attacking it for the given side (side can be Invaders or Occupants). Possible attacks include major (waved) attacks, HQ attacks (if the rebel HQ has been detected), punishments and supply convoys.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">side</span><span class="o">]</span><span class="w"> </span><span class="n">spawn</span><span class="w"> </span><span class="n">A3A_fnc_chooseAttack</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="create-a-support-3-0-0">
+<h2>Create a support (3.0.0)<a class="headerlink" href="#create-a-support-3-0-0" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 code-paragraph docutils">
+<div class="sd-card-header header-2-light docutils">
+<p class="sd-card-text">Create a support (3.0.0)</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as server. Create support (or change target of idle support) of a specified type.</p>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>[type, side, caller, maxSpend, target, targPos, reveal, delay] spawn A3A_fnc_createSupport;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">type</span></code>: The type of support to send (eg. “QRFLAND”, “MORTAR”, “CAS”, see initSupports).</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">side</span></code>: The side of the support (Occupants, Invaders).</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">caller</span></code>: Resource pool to use (“attack”, “defence”).</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">maxSpend</span></code>: Maximum resources to spend, mostly used for sizing QRFs. For a full size QRF use 1000.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">target</span></code>: The target object of the support. objNull is valid for AREA. false creates with no target (for TARGET).</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">targPos</span></code>: Target position of the support (eg. getPosATL player).</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">reveal</span></code>: Amount of info to reveal to rebels, 0 low, 1 high.</p></li>
+<li><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">delay</span></code>: Optional, setup delay time in seconds, otherwise will calculate based on war tier.</p></li>
+</ul>
 </div>
 </div>
 </section>
@@ -208,7 +243,9 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Run as local. Spawns a loaded, loading enabled, loot box the same way they spawn in outposts.</p>
-<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="n">_boxX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NATOAmmoBox</span><span class="w"> </span><span class="n">createVehicle</span><span class="w"> </span><span class="n">getPos</span><span class="w"> </span><span class="n">Player</span><span class="p">;</span><span class="w"></span>
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="w"> </span><span class="k">Select</span><span class="w"> </span><span class="n">these</span><span class="w"> </span><span class="nl">factions</span><span class="p">:</span><span class="w"> </span><span class="n">A3A_faction_occ</span><span class="p">,</span><span class="w"> </span><span class="n">A3A_faction_inv</span><span class="p">,</span><span class="w"> </span><span class="n">A3A_faction_reb</span><span class="p">,</span><span class="w"> </span><span class="n">A3A_faction_civ</span><span class="w"></span>
+<span class="n">private</span><span class="w"> </span><span class="n">_faction</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A3A_faction_occ</span><span class="p">;</span><span class="w"></span>
+<span class="n">private</span><span class="w"> </span><span class="n">_boxX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">_faction</span><span class="w"> </span><span class="k">get</span><span class="w"> </span><span class="ss">&quot;ammobox&quot;</span><span class="p">)</span><span class="n">createVehicle</span><span class="w"> </span><span class="n">getPos</span><span class="w"> </span><span class="n">Player</span><span class="p">;</span><span class="w"></span>
 <span class="o">[</span><span class="n">_boxX</span><span class="o">]</span><span class="w"> </span><span class="n">spawn</span><span class="w"> </span><span class="n">A3A_fnc_fillLootCrate</span><span class="p">;</span><span class="w"></span>
 <span class="n">_boxX</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="n">A3A_fnc_logistics_addLoadAction</span><span class="p">;</span><span class="w"></span>
 </pre></div>
@@ -359,13 +396,16 @@ For more dev related information please go to our <a class="reference external" 
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="dev_guide_technical_standards_for_core_contrib.html" title="Technical Standards for Core Code Contributions"
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FunctionsAndFolders.html" title="Addon Functions &amp; Folders Library"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Devs</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>

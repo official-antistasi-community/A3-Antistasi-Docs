@@ -61,7 +61,7 @@
           <a href="dev_guide_porting_mod.html" title="Antistasi Porting Mods"
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" accesskey="U">Antistasi Porting Instructions</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Street Artist Generation</a></li> 
       </ul>
@@ -76,27 +76,33 @@
             </a></p>
 <h3><a href="../../../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../../dev_guide_index.html">Dev Guide - WIP</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../dev_guide_index.html">Dev Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#general">General</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#administration">Administration</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_how_to_build.html">How to build Antistasi</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../dev_guide_porting.html">Antistasi Porting Instructions</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="dev_guide_porting_map.html">Antistasi Porting Maps</a></li>
 <li class="toctree-l4"><a class="reference internal" href="dev_guide_porting_mod.html">Antistasi Porting Mods</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Street Artist Generation</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Street Artist Generation</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#quick-start-guide">Quick Start Guide</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#generate-navgriddb-open-the-street-artist-editor">Generate navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#import-navgriddb-open-the-street-artist-editor">Import navGridDB &amp; open the Street Artist Editor</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#further-reading">Further Reading</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="dev_guide_street_artist_editor.html">Street Artist Editor</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../A3AExtender.html">How to Extend Antistasi?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../dev_guide_build_mission.html">How to build Antistasi (Mission)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#deprecated">Deprecated</a></li>
 </ul>
 </li>
 </ul>
@@ -150,6 +156,94 @@
 For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
 </div>
 </div>
+<section id="quick-start-guide">
+<h2>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Quick Start Guide</p>
+</div>
+<div class="sd-card-body docutils">
+<ol class="code-paragraph arabic simple">
+<li><p class="sd-card-text">Run Arma 3.</p></li>
+<li><p class="sd-card-text">Make an empty mp-mission on any map (community or official) with just one player.</p></li>
+<li><p class="sd-card-text">Save and close the editor.</p></li>
+<li><p class="sd-card-text">Locate the folder :code:<code class="docutils literal notranslate"><span class="pre">A3-Antistasi\Tools\StreetArtist\</span></code>.</p></li>
+<li><p class="sd-card-text">Copy Everything in this folder (includes: <code class="code docutils literal notranslate"><span class="pre">/Collections/</span></code>, <code class="code docutils literal notranslate"><span class="pre">/functions/</span></code>, <code class="code docutils literal notranslate"><span class="pre">/description.ext</span></code>, <code class="code docutils literal notranslate"><span class="pre">/functions.hpp</span></code> and <code class="code docutils literal notranslate"><span class="pre">/NG_importGUI.hpp</span></code>)</p></li>
+<li><p class="sd-card-text">Paste into the folder of the mp mission you created. Usually in :code:<code class="docutils literal notranslate"><span class="pre">C:\Users\User\Documents\Arma</span> <span class="pre">3</span> <span class="pre">-</span> <span class="pre">Other</span> <span class="pre">Profiles\YOUR_ARMA_NAME\mpmissions\MISSION_NAME.MAP\</span></code></p></li>
+<li><p class="sd-card-text">Start host LAN multiplayer.</p></li>
+<li><p class="sd-card-text">Run and join the mission.</p></li>
+<li><p class="sd-card-text">Press <code class="code docutils literal notranslate"><span class="pre">Esc</span></code> on your keyboard to open debug console.</p></li>
+<li><p class="sd-card-text">Paste <code class="code docutils literal notranslate"><span class="pre">[]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NG_main</span></code> into big large debug window.</p></li>
+<li><p class="sd-card-text">Click the button Local Exec.</p></li>
+<li><p class="sd-card-text">Exit Debug Console, look down, and open map.</p></li>
+<li><p class="sd-card-text">Wait for it to start drawing markers.</p></li>
+<li><p class="sd-card-text">Open a new file.</p></li>
+<li><p class="sd-card-text">Paste into the new file.</p></li>
+<li><p class="sd-card-text">Save.</p></li>
+</ol>
+<p class="sd-card-text">See <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Street-Artist-Editor">Street Artist Editor</a> for A3-Antistasi navGrid Guidelines (and GIFs!).</p>
+</div>
+</div>
+</section>
+<section id="generate-navgriddb-open-the-street-artist-editor">
+<h2>Generate navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#generate-navgriddb-open-the-street-artist-editor" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Generate navGridDB &amp; open the Street Artist Editor</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text code-paragraph-2">Executing <code class="code docutils literal notranslate"><span class="pre">[]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NG_main</span></code> will run with default settings.
+Looking down gives the best performance during this process. You can lower render distance if it helps.
+However, you may need to tweak some arguments depending on the simplification level required for the map.</p>
+<p class="sd-card-text">A3A_fnc_NG_main Arguments:</p>
+<ol class="arabic simple">
+<li><p class="sd-card-text">Max drift is how far the simplified line segment can stray from the road in metres. (Default = 50)</p></li>
+<li><p class="sd-card-text">Junctions are only merged if within this distance from each other. (Default = 15)</p></li>
+<li><p class="sd-card-text">True to automatically start the StreetArtist Editor. (Default = true)</p></li>
+</ol>
+<div class="code-paragraph-2 line-block">
+<div class="line">So running with default settings would also look like <code class="code docutils literal notranslate"><span class="pre">this</span> <span class="pre">[50,15,true]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NG_main;</span></code></div>
+<div class="line">To run with default and not edit use <code class="code docutils literal notranslate"><span class="pre">[nil,nil,false]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NG_main;</span></code></div>
+<div class="line">Max drift is not the only thing that affects road simplification: It will only simplify if the nearestTerrainObject from its position will still return one of it’s neighbouring roads. This prevents virtual convoys that are trying to spawn vehicles from jumping to another nearby road because that is the closest navGrid node.</div>
+</div>
+</div>
+</div>
+</section>
+<section id="import-navgriddb-open-the-street-artist-editor">
+<h2>Import navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#import-navgriddb-open-the-street-artist-editor" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Import navGridDB &amp; open the Street Artist Editor</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">If you have already generated a navGridDB before loading the world and you do not want to regenerate it again: you can use the import function to load it into Arma 3 for viewing or editing.</p>
+<ol class="code-paragraph-2 arabic simple">
+<li><p class="sd-card-text">Local exec <code class="code docutils literal notranslate"><span class="pre">[]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NGSA_main</span></code> in the debug console.</p></li>
+<li><p class="sd-card-text">Press <code class="code docutils literal notranslate"><span class="pre">Continue</span></code> to close debug console. (If you press <code class="code docutils literal notranslate"><span class="pre">Esc</span></code>, you will close the import dialogue!)</p></li>
+<li><p class="sd-card-text">Switch to real-life and open the navGridDB file and Copy everything.</p></li>
+<li><p class="sd-card-text">Switch to Arma 3 and paste it into the editBox and press the the import button.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="further-reading">
+<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Further Reading</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">See <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Street-Artist-Editor">Street Artist Editor</a> for A3-Antistasi navGrid Guidelines (and GIFs!).</div>
+<div class="line">You can find further satisfying and accurate documentation on all sorts of things by looking into the headers of files in <code class="code docutils literal notranslate"><span class="pre">./functions/StreetArtist/</span></code>.</div>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<figure class="align-default">
+<img alt="../../../_images/Street_Artist_generation-1.png" src="../../../_images/Street_Artist_generation-1.png" />
+</figure>
+</section>
 </section>
 
 
@@ -173,11 +267,11 @@ For more dev related information please go to our <a class="reference external" 
           <a href="dev_guide_porting_mod.html" title="Antistasi Porting Mods"
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="../../../index.html">Antistasi Guide  documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide - WIP</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../dev_guide_index.html" >Dev Guide</a> &#187;</li>
           <li class="nav-item nav-item-2"><a href="../dev_guide_porting.html" >Antistasi Porting Instructions</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Street Artist Generation</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/November/03</div>
+    <div class="footer">&copy; Copyright 2022, Official Antistasi Community. Last updated 2022/December/17</div>
   </body>
 </html>
