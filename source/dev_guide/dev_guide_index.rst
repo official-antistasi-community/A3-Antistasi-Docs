@@ -1,17 +1,13 @@
 .. rst-class:: hidden
 
-=========================
-Dev Guide - WIP
-=========================
+.. _dev_guide:
 
-.. card::
-   :class-card: sd-card-2 sd-mt-3 sd-card-important
-
-   Please note that this part is still heavily work in progress.
-   For more dev related information please go to our `Antistasi-Wiki-for-Devs <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs>`_.
+=========================
+Dev Guide
+=========================
 
 General
-============
+========================
 
 .. card::
    :class-card: sd-card-2
@@ -21,31 +17,29 @@ General
    ^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. toctree::
+      :maxdepth: 2
+      :glob:
+
+      /dev_guide/admins/history.rst
+
+   .. toctree::
       :maxdepth: 1
       :glob:
 
-      /dev_guide/ace_file.rst
       /dev_guide/changelog.rst
-      /dev_guide/snippets.rst
-
-Administration
-========================
-
-.. card::
-   :class-card: sd-card-2
-   :class-header: header-2-light
-
-   Administration
-   ^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. toctree::
       :maxdepth: 2
       :glob:
 
-      /dev_guide/admins/general.rst
-      /dev_guide/admins/history.rst
       /dev_guide/admins/FactionsAndTemplates.rst
       /dev_guide/admins/DebugConsoleCommands.rst
+
+   .. toctree::
+      :maxdepth: 1
+      :glob:
+
+      /dev_guide/ace_file.rst
 
 Development
 ========================
@@ -65,6 +59,22 @@ Development
       /dev_guide/dev/dev_guide_how_to_build.rst
       /dev_guide/dev/dev_guide_porting.rst
       /dev_guide/A3AExtender.rst
-      /dev_guide/dev/dev_guide_build_mission.rst
       /dev_guide/dev/dev_guide_technical_standards_for_core_contrib.rst
+      /dev_guide/dev/FunctionsAndFolders.rst
       /dev_guide/dev/dev_guide_console_commands.rst
+
+Deprecated
+========================
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Deprecated
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. toctree::
+      :maxdepth: 3
+      :glob:
+
+      /dev_guide/dev/dev_guide_build_mission.rst

@@ -9,7 +9,7 @@ How to Extend Antistasi?
 .. card::
    :class-card: sd-card-2 sd-mt-3
 
-   An example Code for extending the Antistasi-mod can be found on `Github <https://github.com/HakonRydland/A3AExtender>`_.
+   An example Code for extending the Antistasi-mod can be found on `Github <https://github.com/official-antistasi-community/A3AExtender>`_.
 
 Important things to modify
 ==================================

@@ -298,7 +298,7 @@ div.footer {
     border-radius: 0.5rem !important;
 }
 
-.code-paragraph .sd-card-text, .code-paragraph .line, .code-paragraph-direct, .code-paragraph li {
+.code-paragraph .sd-card-text, .code-paragraph .line, .code-paragraph-direct, .code-paragraph li  {
     line-height: 2rem !important;
 }
 
@@ -376,4 +376,9 @@ div.footer {
 
 .sd-card-warning {
     box-shadow: 0.1rem 0.1rem 7px 1px #ffc107 !important;
+}
+
+.small-text {
+    font-size: small;
+    font-style: italic;
 }

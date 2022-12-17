@@ -1,8 +1,14 @@
 .. rst-class:: hidden
 
-=====================
-Beginners Guide
-=====================
+.. _beginners_guide:
+
+==============================================================================================================================
+Beginners Guide for `Antistasi v3.0 <https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125>`_
+==============================================================================================================================
+
+.. rst-class:: small-text
+
+   By `Moni <https://www.youtube.com/@daman2911/videos>`_, Meerkat, Bob Murphy, Giddi, DeathTouchWilly, Targetingsnake
 
 Introduction
 ============
@@ -14,20 +20,14 @@ Introduction
    Introduction
    ^^^^^^^^^^^^
 
-   I am creating this guide in response to misinformed/outdated guides and
-   the criminal lack of content teaching people how to play this beautiful
-   mission. My goal for this guide is to be the “one stop shop” for
-   everything you need to learn about Antistasi community edition. I will
-   try to keep this guide updated with each new patch.
-
-   This guide is written exclusively for Antistasi community edition.
+   This guide is written exclusively for `Antistasi Community Edition - Version 3.0 <https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125>`_ and following.
    Barbolanis version (the initial mission creator) and other freelance
    versions like Antistasi Plus may or may not be compatible with what I
    say in this guide. That said, I think the tactics and strategies used in
    this guide will likely work in other versions.
 
    This guide has been scrutinized and vetted by the developers and
-   veterans of Antistasi Community edition.
+   veterans of Antistasi Community Edition.
 
 What is Antistasi?
 ==================
@@ -44,27 +44,147 @@ What is Antistasi?
    will start with very little land. The rebels are, well, rebels! As such
    they will start with no land at all.
 
-Game modes
-==========
-
+Supported Modsets
+=======================
 
 .. card::
    :class-header: header-2
 
-   Game modes
-   ^^^^^^^^^^
+   Supported Modset
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   -  Rebel versus government versus invader - a three-way war. Everyone
-      fights everyone
+   | Antistasi is compatible with different modsets as well as maps and of course there are different playable and AI Factions available with each modset.
+   | In the past the selection of the Factions was hard coded into the mission, which prevented the player to have any direct option to change who to play against.
+   | With the release of Antistasi 3.0.0 we have integrated all maps as well as a new Antistasi Setup GUI which at the start of a campaign gives you the option to select from all available Factions to change your enemies and more to your likings.
+   | Whilst modsets and maps can be combined as you wish, we suggest to only load the mods for the Factions you want to play with and not simply load all mods that are compatible.
 
-   -  Rebel versus government - no invaders, just you versus the
-      government
 
-   -  Rebels versus government and invaders - everyone is against you. The
-      invaders and the government are coming for you.
+   .. dropdown:: Factions
+      :class-title: header-3-light
+      :class-container: sd-card-3
 
-   I recommend playing rebels versus government versus invaders first. It’s
-   easier and allows you to fight two different factions.
+      Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
+
+      - A3 AAF
+      - A3 CSAT Arid
+      - A3 CSAT Temperate
+      - A3 LDF
+      - A3 NATO Arid
+      - A3 NATO Temperate
+      - A3 NATO Tropical
+
+      Added Factions with Arma 3 DLCs:
+
+      - Vanilla A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - Vanilla A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - Vanilla A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+
+      Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_:
+
+      - VN MACV
+      - VN PAVN
+
+      Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
+
+      - BW (Bundeswehr)
+      - NVA (National People's Army)
+
+      Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
+
+      - RHS AFRF Arid
+      - RHS AFRF Temperate
+      - RHS CDF
+      - RHS US Army Arid
+      - RHS US Army Temperate
+      - RHS USMC Arid
+      - RHS USMC Temperate
+
+      Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ :
+
+      - 3CB AAF
+      - 3CB ADA
+      - 3CB ANA
+      - 3CB Cold War US
+      - 3CB Cold War USSR
+      - 3CB HIDF
+      - 3CB KRG
+      - 3CB LDF
+      - 3CB MDF
+      - 3CB TKA East
+      - 3CB TKA Mix
+      - 3CB TKA West
+
+      Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_:
+
+      - 3CB BAF Arctic
+      - 3CB BAF Arid
+      - 3CB BAF Temperate
+      - 3CB BAF Tropical
+
+      Added Factions with `CUP <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_:
+
+      - CUP ACR Arid
+      - CUP ACR Temperate
+      - CUP AFRF Arctic
+      - CUP AFRF Arid
+      - CUP AFRF Temperate
+      - CUP BAF Arid
+      - CUP BAF Temperate
+      - CUP CDF Arctic
+      - CUP CDF Temperate
+      - CUP ION Arctic
+      - CUP ION Arid
+      - CUP RACS Arid
+      - CUP RACS Tropical
+      - CUP SLA
+      - CUP TKA
+      - CUP US Army Arid
+      - CUP US Army Temperate
+      - CUP USMC Arid
+      - CUP USMC Temperate
+
+
+      Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_:
+
+      - Unsung PAVN
+      - Unsung US
+
+   .. dropdown:: Maps
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      Available Maps with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
+
+      - Altis
+      - Malden
+      - Livonia (requires the `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - Tanoa (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+
+      Available maps with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_:
+
+      - Cam Lao Nam
+      - Khe Sanh
+
+      Available maps with `CUP Terrains <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
+
+      - Chernarus Autumn
+      - Chernarus Summer
+      - Chernarus Winter
+      - Sahrani
+      - Takistan
+
+      Single maps with their own required mods:
+
+      - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
+      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
+      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
+      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
+
+   .. dropdown:: Additional Mods
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      We are currently supporting more additional mods, details will be following soon.
 
 How to set up a game
 ====================
@@ -119,44 +239,25 @@ Your parameters
    Your parameters
    ^^^^^^^^^^^^^^^
 
-   -  To customize your game, click the parameters option on the top right
-      of the role selection screen.
-
+   -  To customize your game, click the parameters option on the top right of the role selection screen.
    -  You can only edit parameters on a mission that has not started.
-
    -  Your mission’s parameters will save.
 
-   -  Here you can customize your game the way you want it.
-
-   -  For example, I like having the ability to unlock launchers and
-      explosives, so I turn that parameter on.
-
-   -  If you want to start a new game, switch “load last save” from yes to
-      no.
-
-What mods should I use?
-=======================
+Game modes
+==========
 
 .. card::
    :class-header: header-2
 
-   What mods should I use?
-   ^^^^^^^^^^^^^^^^^^^^^^^
+   Game modes
+   ^^^^^^^^^^
 
-   I recommend the mod sets used on official servers. Of course, you can
-   always use vanilla. No mods are needed for this mission.
+   -  Rebel versus government versus invader - a three-way war. Everyone fights everyone
+   -  Rebel versus government - no invaders, just you versus the government
+   -  Rebels versus government and invaders - everyone is against you. The invaders and the government are coming for you.
 
-   `Antistasi RHS
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`__
-
-   `Antistasi 3CB BAF
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`__
-
-   `Antistasi 3CB Factions
-   Base <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`__
-
-   `Antistasi 3CB BAF +
-   Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2575673140>`__
+   I recommend playing rebels versus government versus invaders first. It’s
+   easier and allows you to fight two different factions.
 
 Map Markers
 ===========
@@ -428,6 +529,51 @@ Your Headquarters
 
       *Take these trucks and store them in the garage*. I recommend locking
       them so no one takes them out.
+
+Commander and Member Functionality
+========================================
+
+.. card::
+   :class-header: header-2
+
+   Commander and Member Functionality
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   **Commander functionality:**
+
+   - Can purchase high command squads & vehicles.
+   - Has access to high command UI (ctrl+space).
+   - Can use Y->AI management menu with HC squads.
+   - Can fast-travel HC squads.
+   - Can order mortar strikes with HC squads (shift+Y).
+   - Has access to direct garrison recruitment (on Petros).
+   - Can create and delete roadblocks & watchposts.
+   - Purchases vehicles with faction money.
+   - Can manage arsenal guest limits.
+   - Persistent save on game options menu is a global save.
+   - Can edit ambient civ limit and spawn distance in game options menu.
+   - Can override garage locks.
+   - Can order airstrikes.
+   - Can steal money from the faction.
+
+   **Member functionality:**
+
+   - Can request missions from Petros.
+   - Can recruit AI for personal squad.
+   - Can take limited(non-unlocked) items from the arsenal.
+
+   .. card::
+      :class-header: header-3
+      :class-card: sd-card-3
+
+      Guest Commander System
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      There is now a parameter to allow guests to be commander. Guests are marked ineligible for commander by default, but can toggle eligibilty in the usual way (Y->commander->???). Eligible members have priority when selecting the commander, and members can force a re-election (and so remove the guest from the commander role) by making themselves eligible.
+
+      Guest commanders have access to a limited range of commander functionality. They can request missions, spend faction money, use high command and move HQ. They cannot override garage locks, steal money from the faction or modify arsenal limits. They also do not receive member privileges such as the ability to recruit AI to their personal squad or take limited items from the arsenal.
+
+      Guest commanders count as a leash centre for the purposes of the guest leash system, which enables the commander and nearby guests to respond to distant attacks and punishments even when there are no members on the server.
 
 Missions
 ========
@@ -1429,4 +1575,6 @@ Contributors
 
    Thanks to the following contributors for making this guide possible:
 
-   Moni, Meerkat, Bob Murphy, Giddi, DeathTouchWilly
+   Moni, Meerkat, Bob Murphy, Giddi, DeathTouchWilly, Targetingsnake
+
+   `Moni <https://www.youtube.com/@daman2911/videos>`_ also has some video tutorials on his youtube channel.
