@@ -9,6 +9,11 @@ How to Extend Antistasi?
 .. card::
    :class-card: sd-card-2 sd-mt-3
 
+   With the convertion to a mod Antistasi has added a lot of support for 3rd party mods to add to or alter its behaviour, this includes **adding** and **overwriting** **Templates** and **Maps**
+   in the provided example on `Github <https://github.com/official-antistasi-community/A3AExtender>`_ we have a example of doing just that, along with all the tools and steps to fully make your own mod to extend Antistasi
+
+   Once you have made your own mod with the additions or changes you wanted, simply load it alongside Antistasi the mod and voila you have succesfully added/changed a template/map to Antistasi.
+
    An example Code for extending the Antistasi-mod can be found on `Github <https://github.com/official-antistasi-community/A3AExtender>`_.
 
 Important things to modify
