@@ -239,6 +239,7 @@ Supported Modsets
       - `ALiVE <https://steamcommunity.com/workshop/filedetails/?id=620260972>`_
       - `MCC Sandbox 4 <https://steamcommunity.com/sharedfiles/filedetails/?id=338988835>`_
       - `ASR AI3 <https://steamcommunity.com/workshop/filedetails/?id=642457233>`_
+      - `Project injury Reaction (PiR) <https://steamcommunity.com/workshop/filedetails/?id=1665585720>`_
 
 How to set up a game
 ====================
