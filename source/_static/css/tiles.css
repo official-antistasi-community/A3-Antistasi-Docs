@@ -382,3 +382,18 @@ div.footer {
     font-size: small;
     font-style: italic;
 }
+
+.table-additional-mods {
+    border: none !important;
+    table-layout: unset !important;
+}
+
+.table-additional-mods tr td, .table-additional-mods tr {
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+
+.table-additional-mods tr:last-child td, .table-additional-mods tr:last-child {
+    border-bottom: none !important;
+}
