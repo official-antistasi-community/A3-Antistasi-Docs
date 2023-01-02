@@ -194,10 +194,10 @@ Supported Modsets
          :widths: 20 80
 
          *  - `CBA <https://steamcommunity.com/workshop/filedetails/?id=450814997>`_
-            - CBA is a framework which adds a range of features Arma in itself does not supply. This mod is a dependency for many other mods and it also adds some additional functionality within Antistasi, for example the Extended Debug Console.
+            - CBA is a framework which adds a range of features Arma in itself does not supply. This mod is a dependency for many other mods and it also adds some additional functionality within Antistasi, for example the ability to modify garage settings and Jeroens Extended Debug Console.
 
          *  - `ACE <https://steamcommunity.com/workshop/filedetails/?id=463939057>`_
-            -  | ACE is a mod that adds a log of in depths modular systems to Arma like for example a medical system, ballistics and more.
+            -  | ACE is a mod that adds a lot of in depth modular systems to Arma like for example a medical system, ballistics and more.
                | Keep in mind that some mods like RHS need their respective `ACE Compatibility Mods <https://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410>`_ loaded so they work properly. Adjust your modlist accordingly.
 
          *  - `TFAR (outdated) <https://steamcommunity.com/sharedfiles/filedetails/?id=620019431>`_
@@ -208,10 +208,10 @@ Supported Modsets
             - TFAR BETA is the successor of TFAR, adapting the functionality to newer BI functions, fixing bugs and adding new settings and options.
 
          *  - `ACRE2 <https://steamcommunity.com/sharedfiles/filedetails/?id=751965892>`_
-            - ACRE2, like TFAR / TFAR BETA is a mod which combines Arma 3 with TeamSpeak. It is highly customizable, has additional features like taking the terrain of a map into account for the quality of the radio transmission and more. It is more in depths, requires more time to learn, but adds a nice level of realism. For CDLC maps it requires `ACRE2 Compatibility Mods <https://steamcommunity.com/profiles/76561198323575101/myworkshopfiles/?appid=107410>`_.
+            - ACRE2, like TFAR / TFAR BETA is a mod which combines Arma 3 with TeamSpeak. It is highly customizable, has additional features like taking the terrain of a map into account for the quality of the radio transmission and more. It is more in depth, requires more time to learn, but adds a nice level of realism. For CDLC maps it requires `ACRE2 Compatibility Mods <https://steamcommunity.com/profiles/76561198323575101/myworkshopfiles/?appid=107410>`_.
 
          *  - `KAT - Advanced Medical REWRITE <https://steamcommunity.com/workshop/filedetails/?id=2020940806>`_
-            - KAT - Advanced Medical REWRITE is a mod which adds a very in depths medical system, covering different not only the breathing apperatus and the cardiovascular system but also adds surgery and more to the game.
+            - KAT - Advanced Medical REWRITE is a mod which adds a very in depth medical system, covering different not only the breathing apperatus and the cardiovascular system but also adds surgery and more to the game.
 
    .. dropdown:: Additional Vehicle Mods
       :class-title: header-3-light
@@ -231,6 +231,7 @@ Supported Modsets
       There are quite some mods which are NOT compatible with Antistasi.
       Following you find a exemplary list of mods which are either completely breaking Antistasi and hence are blacklisted or ones that are known to have a negative impact and should not be loaded to have the best experience.
       AI affecting mods are bad in general as Antistasi includes its own AI system. So any mod interfering with it has the potential to break things.
+      Another general category of forbidden mods is anything that automatically transfers groups to headless clients, as that conflicts with Antistasi's headless client system.
       When any of the mods below is loaded, we can't guarantee that Antistasi is working properly and won't be helping you to make it work.
       You have been warned.
 
@@ -240,6 +241,8 @@ Supported Modsets
       - `MCC Sandbox 4 <https://steamcommunity.com/sharedfiles/filedetails/?id=338988835>`_
       - `ASR AI3 <https://steamcommunity.com/workshop/filedetails/?id=642457233>`_
       - `Project injury Reaction (PiR) <https://steamcommunity.com/workshop/filedetails/?id=1665585720>`_
+      - `Zulu Headless Client (ZHC) <https://steamcommunity.com/sharedfiles/filedetails/?id=2450921295>`_
+      - `Werthles' Headless Module <https://steamcommunity.com/sharedfiles/filedetails/?id=510031102>`_
 
 How to set up a game
 ====================
