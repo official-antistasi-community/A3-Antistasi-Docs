@@ -397,3 +397,18 @@ div.footer {
 .table-additional-mods tr:last-child td, .table-additional-mods tr:last-child {
     border-bottom: none !important;
 }
+
+.header-3-danger {
+    background-color: rgba(247, 67, 67, 0.75) !important;
+    font-weight: bold;
+    border-radius: 0.5rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.sd-card-3-danger {
+    background-color: #505050 !important;
+    border-radius: 0.5rem !important;
+    box-shadow: none !important;
+    box-shadow: 0.1rem 0.1rem 3px 1px #f74343 !important;
+}

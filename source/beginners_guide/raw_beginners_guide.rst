@@ -225,10 +225,10 @@ Supported Modsets
       - `TCGM_BikeBackpack <https://steamcommunity.com/sharedfiles/filedetails/?id=2096950604>`_
 
    .. dropdown:: Forbidden Mods
-      :class-title: header-3-light
-      :class-container: sd-card-3
+      :class-title: header-3-danger
+      :class-container: sd-card-3-danger
 
-      There are quite some mods which are NOT compatible with Antistasi.
+      There are quite some mods which are **NOT** compatible with Antistasi.
       Following you find a exemplary list of mods which are either completely breaking Antistasi and hence are blacklisted or ones that are known to have a negative impact and should not be loaded to have the best experience.
       AI affecting mods are bad in general as Antistasi includes its own AI system. So any mod interfering with it has the potential to break things.
       Another general category of forbidden mods is anything that automatically transfers groups to headless clients, as that conflicts with Antistasi's headless client system.
