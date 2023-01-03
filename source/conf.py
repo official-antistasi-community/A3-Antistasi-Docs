@@ -101,7 +101,7 @@ html_last_updated_fmt = "%Y/%B/%d"
 html_permalinks_icon = ""
 html_show_sourcelink = False
 html_show_sphinx = False
-
+html_copy_source = False
 html_sidebars = {
     '**': [
         'globaltoc.html',
