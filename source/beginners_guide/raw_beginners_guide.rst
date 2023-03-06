@@ -297,7 +297,7 @@ How to set up a game
       - If you want to set the server up to automatically load the Antistasi mission after a restart, that can be done using the mission cycle in the server.cfg like in the following example.
 
       .. rst-class:: code-block-3
-      .. code-block::
+      .. code-block:: cpp
 
          // MISSIONS CYCLE (see below)
          class Missions {
@@ -312,7 +312,7 @@ How to set up a game
             };
          };
 
-      :code:`Antistasi_mapname.mapname` oneeds to be replaced with the appropriate mapname based on which map you want to play.
+      :code:`Antistasi_mapname.mapname` needs to be replaced with the appropriate mapname based on which map you want to play.
       Here the available ones:
 
       .. rst-class:: table-2
@@ -378,7 +378,6 @@ Your parameters
    ^^^^^^^^^^^^^^^
 
    -  To customize your game, click the parameters option on the top right of the role selection screen.
-   -  You can only edit parameters on a mission that has not started.
    -  Your mission’s parameters will save.
 
 Setup UI
