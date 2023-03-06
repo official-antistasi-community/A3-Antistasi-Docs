@@ -20,7 +20,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/design-tabs.js"></script>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="../_static/js/line-breaker.js"></script>
     <script src="../_static/js/link-new-tab.js"></script>
@@ -80,7 +80,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#what-is-antistasi">What is Antistasi?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#supported-modsets">Supported Modsets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-set-up-a-game">How to set up a game</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#your-parameters">Your parameters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#setup-ui">Setup UI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#game-modes">Game modes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#map-markers">Map Markers</a></li>
@@ -420,49 +419,139 @@ You have been warned.</p>
 <p class="sd-card-text">How to set up a game</p>
 </div>
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-How to set up a game</div>
-<ul class="simple">
-<li><p class="sd-card-text">To set up a game go to server browser -&gt; host new session</p></li>
-<li><p class="sd-card-text">This mission is MP only.</p></li>
-<li><p class="sd-card-text">Set for LAN if you’d like to play alone. Set to internet if you’d
-like to play with friends.</p></li>
-<li><p class="sd-card-text">Select UPNP if playing with friends.</p></li>
-<li><p class="sd-card-text">You must port forward your router if you want to host a client
-(multiplayer) server. <a class="reference external" href="https://youtu.be/jzP1FGu82nw">Here</a> is a
-link on how.</p></li>
-<li><p class="sd-card-text">If you downloaded <a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1832638103">the
-scenario</a>
-you should see “Antistasi community version” in the “set up a game”
-menu. Simply click to start the mission.</p></li>
-<li><p class="sd-card-text">Now select a role from the selection menu. And start</p></li>
-<li><p class="sd-card-text">Combat lifesavers are the only players capable of transfusing blood
-(ace only) and are the only role capable of healing downed players of
-fatal wounds.</p></li>
-<li><p class="sd-card-text">Engineers are the only players capable of repairing vehicles.</p></li>
-<li><p class="sd-card-text">The commander role has access to engineer and combat lifesaver
-abilities.</p></li>
-<li><p class="sd-card-text">All other roles like grenadier, automatic rifleman, and others are
-placeholder roles. You do not spawn with different equipment based
-off your role. You do however gain slight differences in your
-characters statistics. A marksman may have less visibility, for
-example.</p></li>
-</ul>
-</div>
-</div>
-</section>
-<section id="your-parameters">
-<h2>Your parameters<a class="headerlink" href="#your-parameters" title="Permalink to this headline"></a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">Your parameters</p>
+<p class="sd-card-text">Depending on how you want to play Antistasi, there are mainly two options for setting it up:</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 code-paragraph docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">Single Player / Locally Hosted</p>
 </div>
 <div class="sd-card-body docutils">
 <ul class="simple">
-<li><p class="sd-card-text">To customize your game, click the parameters option on the top right of the role selection screen.</p></li>
-<li><p class="sd-card-text">You can only edit parameters on a mission that has not started.</p></li>
-<li><p class="sd-card-text">Your mission’s parameters will save.</p></li>
+<li><p class="sd-card-text">Subscribe to the <a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125">Antistasi Mod</a></p></li>
+<li><p class="sd-card-text">Load the Antistasi Mod in the Arma 3 Launcher</p></li>
+<li><p class="sd-card-text">Start Arma 3</p></li>
+<li><p class="sd-card-text">Go to Server Browser –&gt; Host new Session</p></li>
+<li><p class="sd-card-text">Select a compatible map and then select the mission called <code class="code docutils literal notranslate"><span class="pre">Antistasi</span> <span class="pre">Community</span> <span class="pre">[Version</span> <span class="pre">number]</span></code> in white text.</p></li>
+<li><p class="sd-card-text">If you play on your own, make sure you pick the <code class="code docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Commander</span></code> slot as this one has the medic as well as the engineer perk.</p></li>
 </ul>
+<p class="sd-card-text">Also please keep in mind the following two things:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Only one Antistasi mod should be loaded at a time.</p></li>
+<li><p class="sd-card-text">All clients must load the same Antistasi mod as the host.</p></li>
+</ul>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 code-paragraph docutils">
+<div class="sd-card-header header-3-light docutils">
+<p class="sd-card-text">(Dedicated) Server</p>
+</div>
+<div class="sd-card-body docutils">
+<ul class="simple">
+<li><dl class="simple">
+<dt>Install the Antistasi Mod on your server. How you go about this is depending on your server setup. Some servers have the ability to directly subscribe to a Steam Workshop Item. In this case subscribe to the <a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125">Antistasi Mod</a> via your server. In case your server does not have this functionality, you likely have to upload the files manually to the server. You find the most up to date files <a class="reference external" href="github.com/official-antistasi-community/A3-Antistasi/releases/latest">here</a> . Download the rar, unpack it and upload the content via FTP to your server.</dt><dd><ul>
+<li><p class="sd-card-text">You can also upload the client workshop mod from your PC. The latest github release is identical.</p></li>
+<li><p class="sd-card-text">When using FTP, make sure binary rather than text or auto transfer mode is selected.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Make sure you load the Antistasi Mod. This is usually done via commandline. How exactly again is depending on your server setup. Please consult the documentation available for your service or contact their support, if applicable.</dt><dd><ul>
+<li><p class="sd-card-text">Only one Antistasi mod should be loaded at a time.</p></li>
+<li><p class="sd-card-text">The mod should be loaded as a general mod (-mod), not as a server mod (-servermod). Different servers have different names for these.</p></li>
+<li><p class="sd-card-text">Clients must load the same Antistasi mod as the server.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>When you now start the server, you should be able to manually select the missions called <code class="code docutils literal notranslate"><span class="pre">Antistasi</span> <span class="pre">Community</span> <span class="pre">[Version</span> <span class="pre">number]</span></code>, load it and play.</dt><dd><ul>
+<li><p class="sd-card-text">The vast majority of server providers seem to have an empty mission cycle by default, which means you just get a blank loading screen on connection rather than the selection UI.</p></li>
+<li><p class="sd-card-text">To get to the mission selection UI in this case, you must log in as admin and then use the server command <code class="code docutils literal notranslate"><span class="pre">#missions</span></code>.</p></li>
+<li><p class="sd-card-text">To log in as admin, use the server command <code class="code docutils literal notranslate"><span class="pre">#login</span> <span class="pre">adminpassword</span></code>. The admin password is in your server config file.</p></li>
+<li><p class="sd-card-text">Server commands (such as #login or #missions) are entered in the text chat box. The default text chat key is the slash (/) key.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="sd-card-text">Once the mission has been started, log in as admin to see the setup UI. Voted admins do not count.</p></li>
+<li><p class="sd-card-text">If you want to set the server up to automatically load the Antistasi mission after a restart, that can be done using the mission cycle in the server.cfg like in the following example.</p></li>
+</ul>
+<div class="code-block-3 highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// MISSIONS CYCLE (see below)</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Missions</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="k">class</span><span class="w"> </span><span class="nc">Mission1</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">template</span><span class="w"> </span><span class="o">=</span><span class="s">&quot;Antistasi_mapname.mapname&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">      </span><span class="n">difficulty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Regular&quot;</span><span class="p">;</span><span class="w"> </span><span class="c1">//can be Recruit, Regular, Veteran or Custom. Custom needs setting up though.</span>
+<span class="w">      </span><span class="k">class</span><span class="w"> </span><span class="nc">Params</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">         </span><span class="n">autoLoadLastGame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span><span class="w"> </span><span class="c1">//Automatically starts the mission 60 seconds after the first player connected to the server and no admin is logged in. {&quot;No automatic load&quot;,&quot;1min&quot;,&quot;2min&quot;,&quot;3min&quot;,&quot;5min&quot;,&quot;10min&quot;}</span>
+<span class="w">         </span><span class="n">LogLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">//Sets the log level during the setup. {&quot;Error&quot;, &quot;Info&quot;, &quot;Debug&quot;, &quot;Verbose&quot;}</span>
+<span class="w">         </span><span class="n">A3A_logDebugConsole</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">//Sets the Log debug console use during setup. {&quot;None&quot;, &quot;All non-dev&quot;, &quot;All&quot;}</span>
+<span class="w">      </span><span class="p">};</span><span class="w"></span>
+<span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</div>
+<p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_mapname.mapname</span></code> needs to be replaced with the appropriate mapname based on which map you want to play.
+Here the available ones:</p>
+<table class="table-2 docutils align-default">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Map</p></th>
+<th class="head"><p class="sd-card-text">Missionname</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text">Altis</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Altis.Altis</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Anizay</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_tem_anizay.tem_anizay</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Cam Lao Nam</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_cam_lao_nam.cam_lao_nam</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Chernarus Autumn</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_chernarus.chernarus</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Chernarus Summer</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_chernarus_summer.chernarus_summer</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Chernarus Winter</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_chernarus_winter.chernarus_winter</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Khe Sanh</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_vn_khe_sanh.vn_khe_sanh</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Kunduz</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Kunduz.Kunduz</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Livonia</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Enoch.Enoch</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Malden</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Malden.Malden</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Sahrani</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_sara.sara</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Takistan</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Takistan.takistan</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Tanoa</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Tanoa.Tanoa</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text">Tembelan Island</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_Tembelan.Tembelan</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text">Virolahti</p></td>
+<td><p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">Antistasi_vt7.vt7</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -1818,6 +1907,6 @@ it. Good luck commander!</p></li>
         <li class="nav-item nav-item-this"><a href="">Beginners Guide for Antistasi v3.0</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/January/03</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/March/06</div>
   </body>
 </html>
