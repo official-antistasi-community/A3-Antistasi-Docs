@@ -368,19 +368,6 @@ How to set up a game
          *  - Virolahti
             - :code:`Antistasi_vt7.vt7`
 
-Your parameters
-===============
-
-.. card::
-   :class-header: header-2
-
-   Your parameters
-   ^^^^^^^^^^^^^^^
-
-   -  To customize your game, click the parameters option on the top right of the role selection screen.
-   -  You can only edit parameters on a mission that has not started.
-   -  Your mission’s parameters will save.
-
 Setup UI
 ===============
 
