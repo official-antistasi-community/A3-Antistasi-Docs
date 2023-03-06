@@ -293,7 +293,7 @@ How to set up a game
          - To get to the mission selection UI in this case, you must log in as admin and then use the server command :code:`#missions`.
          - To log in as admin, use the server command :code:`#login adminpassword`. The admin password is in your server config file.
          - Server commands (such as #login or #missions) are entered in the text chat box. The default text chat key is the slash (/) key.
-         - Once the mission has been started, log in as admin to see the setup UI. Voted admins do not count.
+      - Once the mission has been started, log in as admin to see the setup UI. Voted admins do not count.
       - If you want to set the server up to automatically load the Antistasi mission after a restart, that can be done using the mission cycle in the server.cfg like in the following example.
 
       .. rst-class:: code-block-3
