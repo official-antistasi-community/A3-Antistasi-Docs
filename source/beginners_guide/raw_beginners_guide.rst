@@ -247,46 +247,126 @@ Supported Modsets
 How to set up a game
 ====================
 
-.. card:: How to set up a game
+.. card::
    :class-header: header-2
 
    How to set up a game
    ^^^^^^^^^^^^^^^^^^^^
 
-   -  To set up a game go to server browser -> host new session
+   Depending on how you want to play Antistasi, there are mainly two options for setting it up:
 
-   -  This mission is MP only.
+   .. card::
+      :class-header: header-3-light
+      :class-card: sd-card-3 code-paragraph
 
-   -  Set for LAN if you’d like to play alone. Set to internet if you’d
-      like to play with friends.
+      Single Player / Locally Hosted
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   -  Select UPNP if playing with friends.
+      - Subscribe to the `Antistasi Mod <https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125>`_
+      - Load the Antistasi Mod in the Arma 3 Launcher
+      - Start Arma 3
+      - Go to Server Browser --> Host new Session
+      - Select a compatible map and then select the mission called :code:`Antistasi Community [Version number]` in white text.
+      - If you play on your own, make sure you pick the :code:`Default Commander` slot as this one has the medic as well as the engineer perk.
 
-   -  You must port forward your router if you want to host a client
-      (multiplayer) server. `Here <https://youtu.be/jzP1FGu82nw>`__ is a
-      link on how.
+      Also please keep in mind the following two things:
 
-   -  If you downloaded `the
-      scenario <https://steamcommunity.com/sharedfiles/filedetails/?id=1832638103>`__
-      you should see “Antistasi community version” in the “set up a game”
-      menu. Simply click to start the mission.
+      - Only one Antistasi mod should be loaded at a time.
+      - All clients must load the same Antistasi mod as the host.
 
-   -  Now select a role from the selection menu. And start
+   .. card::
+      :class-header: header-3-light
+      :class-card: sd-card-3 code-paragraph
 
-   -  Combat lifesavers are the only players capable of transfusing blood
-      (ace only) and are the only role capable of healing downed players of
-      fatal wounds.
+      (Dedicated) Server
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   -  Engineers are the only players capable of repairing vehicles.
+      - Install the Antistasi Mod on your server. How you go about this is depending on your server setup. Some servers have the ability to directly subscribe to a Steam Workshop Item. In this case subscribe to the `Antistasi Mod <https://steamcommunity.com/sharedfiles/filedetails/?id=2867537125>`_ via your server. In case your server does not have this functionality, you likely have to upload the files manually to the server. You find the most up to date files `here <github.com/official-antistasi-community/A3-Antistasi/releases/latest>`_ . Download the rar, unpack it and upload the content via FTP to your server.
+         - You can also upload the client workshop mod from your PC. The latest github release is identical.
+         - When using FTP, make sure binary rather than text or auto transfer mode is selected.
+      - Make sure you load the Antistasi Mod. This is usually done via commandline. How exactly again is depending on your server setup. Please consult the documentation available for your service or contact their support, if applicable.
+         - Only one Antistasi mod should be loaded at a time.
+         - The mod should be loaded as a general mod (-mod), not as a server mod (-servermod). Different servers have different names for these.
+         - Clients must load the same Antistasi mod as the server.
+      - When you now start the server, you should be able to manually select the missions called :code:`Antistasi Community [Version number]`, load it and play.
+         - The vast majority of server providers seem to have an empty mission cycle by default, which means you just get a blank loading screen on connection rather than the selection UI.
+         - To get to the mission selection UI in this case, you must log in as admin and then use the server command :code:`#missions`.
+         - To log in as admin, use the server command :code:`#login adminpassword`. The admin password is in your server config file.
+         - Server commands (such as #login or #missions) are entered in the text chat box. The default text chat key is the slash (/) key.
+         - Once the mission has been started, log in as admin to see the setup UI. Voted admins do not count.
+      - If you want to set the server up to automatically load the Antistasi mission after a restart, that can be done using the mission cycle in the server.cfg like in the following example.
 
-   -  The commander role has access to engineer and combat lifesaver
-      abilities.
+      .. rst-class:: code-block-3
+      .. code-block::
 
-   -  All other roles like grenadier, automatic rifleman, and others are
-      placeholder roles. You do not spawn with different equipment based
-      off your role. You do however gain slight differences in your
-      characters statistics. A marksman may have less visibility, for
-      example.
+         // MISSIONS CYCLE (see below)
+         class Missions {
+            class Mission1 {
+               template ="Antistasi_mapname.mapname";
+               difficulty = "Regular"; //can be Recruit, Regular, Veteran or Custom. Custom needs setting up though.
+               class Params {
+                  autoLoadLastGame = 60; //Automatically starts the mission 60 seconds after the first player connected to the server and no admin is logged in. {"No automatic load","1min","2min","3min","5min","10min"}
+                  LogLevel = 2; //Sets the log level during the setup. {"Error", "Info", "Debug", "Verbose"}
+                  A3A_logDebugConsole = 1; //Sets the Log debug console use during setup. {"None", "All non-dev", "All"}
+               };
+            };
+         };
+
+      :code:`Antistasi_mapname.mapname` oneeds to be replaced with the appropriate mapname based on which map you want to play.
+      Here the available ones:
+
+      .. rst-class:: table-2
+
+      .. flat-table::
+         :header-rows: 1
+
+         *  - Map
+            - Missionname
+
+         *  - Altis
+            - :code:`Antistasi_Altis.Altis`
+
+         *  - Anizay
+            - :code:`Antistasi_tem_anizay.tem_anizay`
+
+         *  - Cam Lao Nam
+            - :code:`Antistasi_cam_lao_nam.cam_lao_nam`
+
+         *  - Chernarus Autumn
+            - :code:`Antistasi_chernarus.chernarus`
+
+         *  - Chernarus Summer
+            - :code:`Antistasi_chernarus_summer.chernarus_summer`
+
+         *  - Chernarus Winter
+            - :code:`Antistasi_chernarus_winter.chernarus_winter`
+
+         *  - Khe Sanh
+            - :code:`Antistasi_vn_khe_sanh.vn_khe_sanh`
+
+         *  - Kunduz
+            - :code:`Antistasi_Kunduz.Kunduz`
+
+         *  - Livonia
+            - :code:`Antistasi_Enoch.Enoch`
+
+         *  - Malden
+            - :code:`Antistasi_Malden.Malden`
+
+         *  - Sahrani
+            - :code:`Antistasi_sara.sara`
+
+         *  - Takistan
+            - :code:`Antistasi_Takistan.takistan`
+
+         *  - Tanoa
+            - :code:`Antistasi_Tanoa.Tanoa`
+
+         *  - Tembelan Island
+            - :code:`Antistasi_Tembelan.Tembelan`
+
+         *  - Virolahti
+            - :code:`Antistasi_vt7.vt7`
 
 Your parameters
 ===============
