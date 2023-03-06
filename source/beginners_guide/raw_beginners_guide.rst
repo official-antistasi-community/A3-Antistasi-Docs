@@ -378,6 +378,7 @@ Your parameters
    ^^^^^^^^^^^^^^^
 
    -  To customize your game, click the parameters option on the top right of the role selection screen.
+   -  You can only edit parameters on a mission that has not started.
    -  Your mission’s parameters will save.
 
 Setup UI
