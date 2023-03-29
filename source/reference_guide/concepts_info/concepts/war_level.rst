@@ -129,7 +129,7 @@ War Level’s Impact
    :class-card: sd-mt-3
    :class-header: header-2-light
 
-   Calculating War Level
+   War Level’s Impact
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    War Level has a wide ranging impact on the scenario. The enemy’s attacks and responses to you will
