@@ -141,9 +141,9 @@ War Level’s Impact
       :class-container: sd-card-3
 
       - Enemy factions get more resources to spend on their attacks and QRFs
-      - with increasing war level the enemy choice of vehicles is getting more towards heavy deadlier weaponry like tanks, attack choppers, etc.
+      - With higher war tier, enemies will use more high-quality vehicles such as tanks, APCs and attack helis
       - Composition of enemy forces will become harder in things like convoy missions
-      - Garrisons and patrols are larger and their weaponry becomes deadlier
+      - At higher war tiers, garrisons are less likely to consist of militia troops and spawn more patrols
       - The number of civilians that you will see in cities will decrease with War Level
       - Enemy AI have slightly higher skill
       - In Reb vs Gov vs Inv, attacks are more likely to be launched against you rather than the other enemy faction
