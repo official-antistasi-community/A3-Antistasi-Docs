@@ -140,8 +140,8 @@ War Level’s Impact
       :class-title: header-3-light
       :class-container: sd-card-3
 
-      - Enemy factions get more resources to spend on their attacks and QRFs (i.e. QRFs and attacks will increasingly be
-        composed of deadlier and deadlier weaponry like tanks, attack choppers, etc.)
+      - Enemy factions get more resources to spend on their attacks and QRFs
+      - with increasing war level the enemy choice of vehicles is getting more towards heavy deadlier weaponry like tanks, attack choppers, etc.
       - Composition of enemy forces will become harder in things like convoy missions
       - Garrisons and patrols are larger and their weaponry becomes deadlier
       - The number of civilians that you will see in cities will decrease with War Level
