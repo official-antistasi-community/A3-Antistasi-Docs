@@ -162,4 +162,4 @@ War Level’s Impact
       - The number of vehicles you can garage is limited by War Level
       - You cannot capture airports before War Level 3
       - Chance of intercepting enemy comms increases as War Level increases
-      - Distance to roadblocks before your undercover is blown increases with War Level
+      - The chance of being detected at a roadblock or non-airport garrison increases with war level.
