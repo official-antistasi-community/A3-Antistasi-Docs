@@ -412,3 +412,8 @@ div.footer {
     box-shadow: none !important;
     box-shadow: 0.1rem 0.1rem 3px 1px #f74343 !important;
 }
+
+section div.admonition, section div.admonition::after {
+    clear: none;
+}
+
