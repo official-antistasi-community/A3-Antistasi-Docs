@@ -243,6 +243,8 @@ Supported Modsets
       - `Project injury Reaction (PiR) <https://steamcommunity.com/workshop/filedetails/?id=1665585720>`_
       - `Zulu Headless Client (ZHC) <https://steamcommunity.com/sharedfiles/filedetails/?id=2450921295>`_
       - `Werthles' Headless Module <https://steamcommunity.com/sharedfiles/filedetails/?id=510031102>`_
+      - `Advanced Rappelling <https://steamcommunity.com/workshop/filedetails/?id=713709341>`_
+      - `Advanced Urban Rappelling <https://steamcommunity.com/sharedfiles/filedetails/?id=730310357>`_
 
 How to set up a game
 ====================
