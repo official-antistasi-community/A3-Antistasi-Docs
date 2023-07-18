@@ -337,6 +337,20 @@ Advanced Commands
             if (_x isEqualType "") then { _x call A3A_fnc_unlockEquipment };
          } foreach (A3A_faction_reb get "initialRebelEquipment");
 
+      .. card::
+         :class-card: sd-card-3
+         :class-header: header-3
+
+         Repair building
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+         Run as local. Repairs building you are looking at.
+
+         .. rst-class:: code-block-3
+         .. code-block:: guess
+
+            [cursorObject] remoteExec ["A3A_fnc_repairRuinedBuilding", 2];
+
 Other Useful Commands
 =======================
 
