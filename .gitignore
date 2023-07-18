@@ -235,5 +235,3 @@ created
 *.env
 /source/dev_guide/changelog.rst
 
-/copy_files_to_Webserver.sh
-/build_on_linux_remote.sh
