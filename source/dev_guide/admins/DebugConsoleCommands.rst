@@ -341,10 +341,10 @@ Advanced Commands
          :class-card: sd-card-3
          :class-header: header-3
 
-         Repair building
+         Repair building other than radio-towers
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-         Run as local. Repairs building you are looking at.
+         Run as local. Repairs building you are looking at. Do not use for radio towers!
 
          .. rst-class:: code-block-3
          .. code-block:: guess
