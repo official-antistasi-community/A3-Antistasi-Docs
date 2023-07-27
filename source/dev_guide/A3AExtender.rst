@@ -104,7 +104,7 @@ Event-System
 
    .. rst-class:: code-paragraph-2
 
-   A record of the events and their arguments can be found in the config under :code:`A3A >> Events` where the class name is the event name and the sub class params contains a list of the arguments in order of argument index, each element of this list contains a :code:`discription`, a list of valid :code:`types` (array, string, number, `…`) and a flag for if it is :code:`optional` (not guarented to be passed along). In addition to this class of arguments is a flag for the execution location of the event (:code:`isLocal`, 1 = local, 0 = global)
+   A record of the events and their arguments can be found in the config under :code:`A3A >> Events` where the class name is the event name and the sub class params contains a list of the arguments in order of argument index, each element of this list contains a :code:`description`, a list of valid :code:`types` (array, string, number, `…`) and a flag for if it is :code:`optional` (not guarented to be passed along). In addition to this class of arguments is a flag for the execution location of the event (:code:`isLocal`, 1 = local, 0 = global)
 
    .. dropdown:: Subscribe to an Event
       :class-container: sd-card-3

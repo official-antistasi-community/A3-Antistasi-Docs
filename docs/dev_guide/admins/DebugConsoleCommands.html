@@ -20,8 +20,6 @@
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/design-tabs.js"></script>
-    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
-    <script>mermaid.initialize({startOnLoad:true});</script>
     <script src="../../_static/js/line-breaker.js"></script>
     <script src="../../_static/js/link-new-tab.js"></script>
     <link rel="shortcut icon" href="../../_static/antistasi_main_favicon.png"/>
@@ -439,6 +437,17 @@ cursorTarget setVariable [&quot;eligible&quot;,true,true];
 <span class="p">}</span> <span class="n">foreach</span> <span class="p">(</span><span class="n">A3A_faction_reb</span> <span class="n">get</span> <span class="s2">&quot;initialRebelEquipment&quot;</span><span class="p">);</span>
 </pre></div>
 </div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
+<div class="sd-card-header header-3 docutils">
+<p class="sd-card-text">Repair building other than radio-towers</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Run as local. Repairs building you are looking at. Do not use for radio towers!</p>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">[</span><span class="n">cursorObject</span><span class="o">]</span><span class="w"> </span><span class="n">remoteExec</span><span class="w"> </span><span class="o">[</span><span class="n">&quot;A3A_fnc_repairRuinedBuilding&quot;, 2</span><span class="o">]</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -541,6 +550,6 @@ player setVariable [&quot;incapacitated&quot;,false,true];
         <li class="nav-item nav-item-this"><a href="">Debug Console Commands for Players and Admins</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/May/09</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/July/18</div>
   </body>
 </html>
