@@ -38,6 +38,7 @@ Official Antistasi Community Edition Wiki
    /beginners_guide/beginners_guide_index
    /reference_guide/reference_guide_index
    /dev_guide/dev_guide_index
+   /tactics_guide/tactical_guide_index.rst
 
 
 
