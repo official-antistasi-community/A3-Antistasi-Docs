@@ -61,7 +61,7 @@ Supported Modsets
 
    .. dropdown:: Factions
       :class-title: header-3-light
-      :class-container: sd-card-3
+      :class-container: sd-card-3 target-substitude
 
       Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
 
@@ -88,6 +88,11 @@ Supported Modsets
 
       - BW (Bundeswehr)
       - NVA (National People's Army)
+
+      Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded):
+
+      - US
+      - WEH (German Wehrmacht)
 
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
 
@@ -151,7 +156,7 @@ Supported Modsets
 
    .. dropdown:: Maps
       :class-title: header-3-light
-      :class-container: sd-card-3
+      :class-container: sd-card-3 target-substitude
 
       Available Maps with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
 
@@ -164,6 +169,10 @@ Supported Modsets
 
       - Cam Lao Nam
       - Khe Sanh
+
+      Available maps with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_:
+
+      - Normandy
 
       Available maps with `CUP Terrains <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
 
@@ -182,7 +191,7 @@ Supported Modsets
 
    .. dropdown:: Additional Mods
       :class-title: header-3-light
-      :class-container: sd-card-3
+      :class-container: sd-card-3 target-substitude
 
       Antistasi has built in compatibility for the following mods. If loaded (and if applicable) the needed items of the mods will either be available in the arsenal, can be found on AI or in lootboxes. This of course also is depending on which item it is.
       In addition there are parameters which might influence that spawning behaviour so make sure you check them out.
@@ -215,7 +224,7 @@ Supported Modsets
 
    .. dropdown:: Additional Vehicle Mods
       :class-title: header-3-light
-      :class-container: sd-card-3
+      :class-container: sd-card-3 target-substitude
 
       Antistasi has compatibility with the following mods which add to the available civilian vehicle pool if loaded properly and enabled in the Startup GUI.
 
@@ -226,7 +235,7 @@ Supported Modsets
 
    .. dropdown:: Forbidden Mods
       :class-title: header-3-danger
-      :class-container: sd-card-3-danger
+      :class-container: sd-card-3-danger target-substitude
 
       There are quite some mods which are **NOT** compatible with Antistasi.
       Following you find a exemplary list of mods which are either completely breaking Antistasi and hence are blacklisted or ones that are known to have a negative impact and should not be loaded to have the best experience.
@@ -343,6 +352,9 @@ How to set up a game
          *  - Chernarus Winter
             - :code:`Antistasi_chernarus_winter.chernarus_winter`
 
+         *  - Chernarus 2020
+            - :code:`Antistasi_cup_chernarus_A3.cup_chernarus_A3`
+
          *  - Khe Sanh
             - :code:`Antistasi_vn_khe_sanh.vn_khe_sanh`
 
@@ -357,6 +369,9 @@ How to set up a game
 
          *  - Sahrani
             - :code:`Antistasi_sara.sara`
+
+         *  - Normandy
+            - :code:`Antistasi_SPE_Normandy.SPE_Normandy`
 
          *  - Takistan
             - :code:`Antistasi_Takistan.takistan`
