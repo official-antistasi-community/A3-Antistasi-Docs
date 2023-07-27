@@ -92,7 +92,7 @@ Supported Modsets
       Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded):
 
       - US
-      - WEH
+      - WEH (German Wehrmacht)
 
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
 
