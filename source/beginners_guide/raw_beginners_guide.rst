@@ -174,13 +174,17 @@ Supported Modsets
 
       - Normandy
 
-      Available maps with `CUP Terrains <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
+      Available maps with `CUP Terrains - Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
 
       - Chernarus Autumn
       - Chernarus Summer
       - Chernarus Winter
       - Sahrani
       - Takistan
+
+      Available maps with `CUP Terrains - Maps 2.0 <https://steamcommunity.com/sharedfiles/filedetails/?id=1981964169>`_:
+
+      - Chernarus 2020
 
       Single maps with their own required mods:
 
