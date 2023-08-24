@@ -65,94 +65,121 @@ Supported Modsets
 
       Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
 
-      - A3 AAF
-      - A3 CSAT Arid
-      - A3 CSAT Temperate
-      - A3 LDF
-      - A3 NATO Arid
-      - A3 NATO Temperate
-      - A3 NATO Tropical
+      - Rebel - A3 FIA
+      - Rebel - A3 SDK
+      - AI - A3 AAF
+      - AI - A3 CSAT Arid
+      - AI - A3 CSAT Temperate
+      - AI - A3 LDF
+      - AI - A3 NATO Arid
+      - AI - A3 NATO Temperate
+      - AI - A3 NATO Tropical
 
       Added Factions with Arma 3 DLCs:
 
-      - Vanilla A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
-      - Vanilla A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
-      - Vanilla A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - AI - A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
 
       Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_:
 
-      - VN MACV
-      - VN PAVN
+      - Rebel - VN POF
+      - AI - VN MACV
+      - AI - VN PAVN
 
       Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
 
-      - BW (Bundeswehr)
-      - NVA (National People's Army)
+      - Rebel - GM FIA
+      - AI - GM Bundeswehr Arctic
+      - AI - GM Bundeswehr Temperate
+      - AI - GM Nationale Volksarmee Arctic (National People's Army)
+      - AI - GM Nationale Volksarmee Temperate (National People's Army)
 
       Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded):
 
-      - US
-      - WEH (German Wehrmacht)
+      - Rebel - SPE_IFA FFF
+      - AI - SPE_IFA US
+      - AI - SPE_IFA WEH (German Wehrmacht)
 
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
 
-      - RHS AFRF Arid
-      - RHS AFRF Temperate
-      - RHS CDF
-      - RHS US Army Arid
-      - RHS US Army Temperate
-      - RHS USMC Arid
-      - RHS USMC Temperate
+      - Rebel - RHS NAPA
+      - AI - RHS AFRF Arid
+      - AI - RHS AFRF Temperate
+      - AI - RHS CDF
+      - AI - RHS ChDKZ
+      - AI - RHS SAF
+      - AI - RHS US Army Arid
+      - AI - RHS US Army Temperate
+      - AI - RHS USMC Arid
+      - AI - RHS USMC Temperate
 
       Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ :
 
-      - 3CB AAF
-      - 3CB ADA
-      - 3CB ANA
-      - 3CB Cold War US
-      - 3CB Cold War USSR
-      - 3CB HIDF
-      - 3CB KRG
-      - 3CB LDF
-      - 3CB MDF
-      - 3CB TKA East
-      - 3CB TKA Mix
-      - 3CB TKA West
+      - Rebel - 3CB CCM
+      - Rebel - 3CB FIA
+      - Rebel - 3CB ION
+      - Rebel - 3CB TKM
+      - AI - 3CB AAF
+      - AI - 3CB ADA
+      - AI - 3CB ANA
+      - AI - 3CB Cold War US
+      - AI - 3CB Cold War USSR
+      - AI - 3CB HIDF
+      - AI - 3CB ION Arctic
+      - AI - 3CB ION Arid
+      - AI - 3CB ION Temperate
+      - AI - 3CB KRG
+      - AI - 3CB LDF
+      - AI - 3CB MDF
+      - AI - 3CB TKA East
+      - AI - 3CB TKA Mix
+      - AI - 3CB TKA West
 
       Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_:
 
-      - 3CB BAF Arctic
-      - 3CB BAF Arid
-      - 3CB BAF Temperate
-      - 3CB BAF Tropical
+      - AI - 3CB BAF Arctic
+      - AI - 3CB BAF Arid
+      - AI - 3CB BAF Temperate
+      - AI - 3CB BAF Tropical
 
       Added Factions with `CUP <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_:
 
-      - CUP ACR Arid
-      - CUP ACR Temperate
-      - CUP AFRF Arctic
-      - CUP AFRF Arid
-      - CUP AFRF Temperate
-      - CUP BAF Arid
-      - CUP BAF Temperate
-      - CUP CDF Arctic
-      - CUP CDF Temperate
-      - CUP ION Arctic
-      - CUP ION Arid
-      - CUP RACS Arid
-      - CUP RACS Tropical
-      - CUP SLA
-      - CUP TKA
-      - CUP US Army Arid
-      - CUP US Army Temperate
-      - CUP USMC Arid
-      - CUP USMC Temperate
+      - Rebel - CUP NAPA
+      - Rebel - CUP TKM
+      - AI - CUP ACR Arid
+      - AI - CUP ACR Temperate
+      - AI - CUP AFRF Arctic
+      - AI - CUP AFRF Arid
+      - AI - CUP AFRF Temperate
+      - AI - CUP BAF Arid
+      - AI - CUP BAF Temperate
+      - AI - CUP BW Arid
+      - AI - CUP BW Temperate
+      - AI - CUP CDF Arctic
+      - AI - CUP CDF Temperate
+      - AI - CUP HIL
+      - AI - CUP ION Arctic
+      - AI - CUP ION Arid
+      - AI - CUP RACS Arid
+      - AI - CUP RACS Tropical
+      - AI - CUP SLA
+      - AI - CUP TKA
+      - AI - CUP US Army Arid
+      - AI - CUP US Army Temperate
+      - AI - CUP USMC Arid
+      - AI - CUP USMC Temperate
 
+      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_:
+
+      - AI - BWA3 BW Arid
+      - AI - BWA3 BW Temperate
 
       Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_:
 
-      - Unsung PAVN
-      - Unsung US
+      - Rebel - Unsung VC
+      - AI - Unsung PAVN
+      - AI - Unsung US
 
    .. dropdown:: Maps
       :class-title: header-3-light
