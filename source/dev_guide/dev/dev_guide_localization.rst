@@ -3,7 +3,7 @@
 .. _dev_localization_guide:
 
 ==================================
-Localization and Translation in Antistasi via Tolgee
+Translation/Localization of Antistasi via Tolgee
 ==================================
 
 
