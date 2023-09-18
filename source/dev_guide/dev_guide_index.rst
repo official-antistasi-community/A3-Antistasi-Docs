@@ -41,6 +41,12 @@ General
 
       /dev_guide/ace_file.rst
 
+   .. toctree::
+      :maxdepth: 1
+      :glob:
+
+      /dev_guide/dev/dev_guide_localization.rst
+
 Development
 ========================
 
