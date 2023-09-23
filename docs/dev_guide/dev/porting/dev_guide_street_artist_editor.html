@@ -1,28 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="../../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Street Artist Editor &#8212; Antistasi Guide  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=aefb6c79" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css?v=db2bce01" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script src="../../../_static/js/line-breaker.js"></script>
-    <script src="../../../_static/js/link-new-tab.js"></script>
-    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css?v=06b996ba" />
+    <script src="../../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/js/line-breaker.js?v=60c4d80a"></script>
+    <script src="../../../_static/js/link-new-tab.js?v=7ec8cb70"></script>
+    <link rel="icon" href="../../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="How to Extend Antistasi?" href="../../A3AExtender.html" />
@@ -97,6 +95,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_localization.html">Translation-Localization of Antistasi via Tolgee</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#deprecated">Deprecated</a></li>
@@ -146,7 +145,7 @@
           <div class="body" role="main">
             
   <section class="hidden" id="street-artist-editor">
-<span id="dev-street-artist-editor-guide"></span><h1>Street Artist Editor<a class="headerlink" href="#street-artist-editor" title="Permalink to this headline"></a></h1>
+<span id="dev-street-artist-editor-guide"></span><h1>Street Artist Editor<a class="headerlink" href="#street-artist-editor" title="Link to this heading"></a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Please note that this part is still heavily work in progress.
@@ -161,7 +160,7 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </div>
 <section id="important-guidelines">
-<h2>Important Guidelines<a class="headerlink" href="#important-guidelines" title="Permalink to this headline"></a></h2>
+<h2>Important Guidelines<a class="headerlink" href="#important-guidelines" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Important Guidelines</p>
@@ -183,7 +182,7 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </section>
 <section id="automated-actions">
-<h2>Automated Actions<a class="headerlink" href="#automated-actions" title="Permalink to this headline"></a></h2>
+<h2>Automated Actions<a class="headerlink" href="#automated-actions" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Automated Actions</p>
@@ -212,7 +211,7 @@ There is no way to bypass these systems.</p>
 </div>
 </section>
 <section id="gifs">
-<h2>GIFs<a class="headerlink" href="#gifs" title="Permalink to this headline"></a></h2>
+<h2>GIFs<a class="headerlink" href="#gifs" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">GIFs</p>
@@ -221,37 +220,37 @@ There is no way to bypass these systems.</p>
 <figure class="align-default" id="id1">
 <img alt="../../../_images/StreetArtistSetRoadType.gif" src="../../../_images/StreetArtistSetRoadType.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Set Road Types</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Set Road Types</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id2">
 <img alt="../../../_images/StreetArtistConnectionAndCreationBasics.gif" src="../../../_images/StreetArtistConnectionAndCreationBasics.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Connection &amp; Creation Basics</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Connection &amp; Creation Basics</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id3">
 <img alt="../../../_images/StreetArtistCreateIsland.gif" src="../../../_images/StreetArtistCreateIsland.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Create Island</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Create Island</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id4">
 <img alt="../../../_images/StreetArtistDeletionBrush.gif" src="../../../_images/StreetArtistDeletionBrush.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Deletion brush</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Deletion brush</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id5">
 <img alt="../../../_images/StreetArtistReRoute.gif" src="../../../_images/StreetArtistReRoute.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Re Route Roads</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Re Route Roads</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id6">
 <img alt="../../../_images/StreetArtistChangeColor.gif" src="../../../_images/StreetArtistChangeColor.gif" />
 <figcaption>
-<p><span class="caption-text">Street Artist- Change Colour Division Mode</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Street Artist- Change Colour Division Mode</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 </div>
@@ -285,6 +284,6 @@ There is no way to bypass these systems.</p>
         <li class="nav-item nav-item-this"><a href="">Street Artist Editor</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/August/26</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/September/23</div>
   </body>
 </html>

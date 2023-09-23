@@ -1,28 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>How to Extend Antistasi? &#8212; Antistasi Guide  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/groundwork.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=aefb6c79" />
+    <link rel="stylesheet" type="text/css" href="../_static/groundwork.css?v=db2bce01" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/sphinx-toolbox.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/tiles.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/design-tabs.js"></script>
-    <script src="../_static/js/line-breaker.js"></script>
-    <script src="../_static/js/link-new-tab.js"></script>
-    <link rel="shortcut icon" href="../_static/antistasi_main_favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/tiles.css?v=06b996ba" />
+    <script src="../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/js/line-breaker.js?v=60c4d80a"></script>
+    <script src="../_static/js/link-new-tab.js?v=7ec8cb70"></script>
+    <link rel="icon" href="../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Technical Standards for Core Code Contributions" href="dev/dev_guide_technical_standards_for_core_contrib.html" />
@@ -91,6 +89,7 @@
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev/dev_guide_localization.html">Translation-Localization of Antistasi via Tolgee</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="dev_guide_index.html#deprecated">Deprecated</a></li>
@@ -140,7 +139,7 @@
           <div class="body" role="main">
             
   <section class="hidden" id="how-to-extend-antistasi">
-<span id="a3a-extender-guide"></span><h1>How to Extend Antistasi?<a class="headerlink" href="#how-to-extend-antistasi" title="Permalink to this headline"></a></h1>
+<span id="a3a-extender-guide"></span><h1>How to Extend Antistasi?<a class="headerlink" href="#how-to-extend-antistasi" title="Link to this heading"></a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">With the convertion to a mod Antistasi has added a lot of support for 3rd party mods to add to or alter its behaviour, this includes <strong>adding</strong> and <strong>overwriting</strong> <strong>Templates</strong> and <strong>Maps</strong>
@@ -150,7 +149,7 @@ in the provided example on <a class="reference external" href="https://github.co
 </div>
 </div>
 <section id="important-things-to-modify">
-<h2>Important things to modify<a class="headerlink" href="#important-things-to-modify" title="Permalink to this headline"></a></h2>
+<h2>Important things to modify<a class="headerlink" href="#important-things-to-modify" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header header-2-light docutils">
 <p class="sd-card-text">Important things to modify</p>
@@ -160,12 +159,12 @@ in the provided example on <a class="reference external" href="https://github.co
 <li><p class="sd-card-text">Under addons/core/Includes you need to adapt <code class="code docutils literal notranslate"><span class="pre">script_mod.hpp</span></code> to have a unique <code class="code docutils literal notranslate"><span class="pre">PREFIX</span></code> and <code class="code docutils literal notranslate"><span class="pre">MODFOLDER</span></code>.</p></li>
 <li><p class="sd-card-text">Under all addons <strong>EXCEPT</strong> core you need to update <code class="code docutils literal notranslate"><span class="pre">script_component.hpp</span></code> to have updateded path to match the <code class="code docutils literal notranslate"><span class="pre">MODFOLDER</span></code> define in <code class="code docutils literal notranslate"><span class="pre">script_mod.hpp</span></code>.</p></li>
 </ul>
-<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>#include &quot;\x\<span class="cp">${</span><span class="n">MODFOLDER</span><span class="cp">}</span>\addons\core\Includes\script_mod.hpp&quot;
+<div class="code-block-2 highlight-guess notranslate"><div class="highlight"><pre><span></span>#include<span class="w"> </span>&quot;\x\<span class="cp">${</span><span class="n">MODFOLDER</span><span class="cp">}</span>\addons\core\Includes\script_mod.hpp&quot;
 </pre></div>
 </div>
 <ul class="code-paragraph">
 <li><div class="line-block">
-<div class="line">Next you need to update all <code class="code docutils literal notranslate"><span class="pre">$PBOPREFIX$</span></code> with the new path <code class="code docutils literal notranslate"><span class="pre">x\${MODFOLDER}\addons\${COMPONENT}</span></code>.</div>
+<div class="line">Next you need to update all <code class="code docutils literal notranslate"><span class="pre">$PBOPREFIX$</span></code> with the new path <code class="code docutils literal notranslate"><span class="pre">x${MODFOLDER}addons${COMPONENT}</span></code>.</div>
 <div class="line">All ${Something} should be replaced with their corresponding elements.</div>
 </div>
 </li>
@@ -178,7 +177,7 @@ Example<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">If MODFOLDER is <code class="code docutils literal notranslate"><span class="pre">A3AE</span></code> you would replace all ${MODFOLDER} with A3AE.</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;\x\A3AE\addons\core\Includes\script_mod.hpp&quot;</span><span class="cp"></span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;\x\A3AE\addons\core\Includes\script_mod.hpp&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -186,7 +185,7 @@ Example<div class="sd-summary-down docutils">
 </div>
 </section>
 <section id="example-additions">
-<h2>Example additions<a class="headerlink" href="#example-additions" title="Permalink to this headline"></a></h2>
+<h2>Example additions<a class="headerlink" href="#example-additions" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header header-2-light docutils">
 <p class="sd-card-text">Example additions</p>
@@ -223,7 +222,7 @@ Example<div class="sd-summary-down docutils">
 </div>
 </section>
 <section id="event-system">
-<h2>Event-System<a class="headerlink" href="#event-system" title="Permalink to this headline"></a></h2>
+<h2>Event-System<a class="headerlink" href="#event-system" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header header-2-light docutils">
 <p class="sd-card-text">Mod integrated event system</p>
@@ -239,29 +238,29 @@ Subscribe to an Event<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">To subscribe to an event you use the <code class="code docutils literal notranslate"><span class="pre">A3A_Events_fnc_addEventListener</span></code>.</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
-<span class="cm">Description:</span>
-<span class="cm">    Add a listener to an event, allowing you to trigger functions when that event occurs</span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">/**</span>
+<span class="n">Description</span><span class="p">:</span>
+<span class="w">    </span><span class="n">Add</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">listener</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">event</span><span class="p">,</span><span class="w"> </span><span class="n">allowing</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">trigger</span><span class="w"> </span><span class="n">functions</span><span class="w"> </span><span class="n">when</span><span class="w"> </span><span class="n">that</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">occurs</span>
 
-<span class="cm">Arguments:</span>
-<span class="cm">0. &lt;String&gt; Event identifier, as registered in configFile &gt;&gt; A3A &gt;&gt; Events</span>
-<span class="cm">1. &lt;String&gt; Unique identifier of listener</span>
-<span class="cm">2. &lt;String|Code&gt; Code block or name of function to excecute on event occurance</span>
+<span class="n">Arguments</span><span class="p">:</span>
+<span class="mf">0.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Event</span><span class="w"> </span><span class="n">identifier</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">registered</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">configFile</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">A3A</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">Events</span>
+<span class="mf">1.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Unique</span><span class="w"> </span><span class="n">identifier</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">listener</span>
+<span class="mf">2.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">|</span><span class="n">Code</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Code</span><span class="w"> </span><span class="n">block</span><span class="w"> </span><span class="nb">or</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">excecute</span><span class="w"> </span><span class="n">on</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">occurance</span>
 
-<span class="cm">Return Value:</span>
-<span class="cm">&lt;Array&lt;Event, ID&gt;&gt; data needed to remove listener</span>
+<span class="n">Return</span><span class="w"> </span><span class="n">Value</span><span class="p">:</span>
+<span class="o">&lt;</span><span class="n">Array</span><span class="o">&lt;</span><span class="n">Event</span><span class="p">,</span><span class="w"> </span><span class="n">ID</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="n">needed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">listener</span>
 
-<span class="cm">Scope: Any</span>
-<span class="cm">Environment: unscheduled</span>
-<span class="cm">Public: Yes</span>
-<span class="cm">Dependencies:</span>
+<span class="n">Scope</span><span class="p">:</span><span class="w"> </span><span class="n">Any</span>
+<span class="n">Environment</span><span class="p">:</span><span class="w"> </span><span class="n">unscheduled</span>
+<span class="n">Public</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span>
+<span class="n">Dependencies</span><span class="p">:</span>
 
-<span class="cm">Example:</span>
-<span class="cm">*/</span><span class="w"></span>
+<span class="n">Example</span><span class="p">:</span>
+<span class="o">*/</span>
 
-<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;someFuncName&quot;</span><span class="p">]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
-<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">systemChat</span><span class="w"> </span><span class="s">&quot;Example event listener triggered!&quot;</span><span class="p">}]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
-<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">someFunc</span><span class="p">]</span><span class="w"> </span><span class="n">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span><span class="w"></span>
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;someFuncName&quot;</span><span class="p">]</span><span class="w"> </span><span class="nb">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span>
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="n">systemChat</span><span class="w"> </span><span class="s">&quot;Example event listener triggered!&quot;</span><span class="p">}]</span><span class="w"> </span><span class="nb">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span>
+<span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">someFunc</span><span class="p">]</span><span class="w"> </span><span class="nb">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_addEventListener</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -273,24 +272,24 @@ Unsubscribe an Event<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">To remove an event listener use the <code class="code docutils literal notranslate"><span class="pre">A3A_Events_fnc_removeEventListener</span></code> function.</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c">/**</span>
-<span class="c">Description:</span>
-<span class="c">    Removes a event listener</span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">/**</span>
+<span class="n">Description</span><span class="p">:</span>
+<span class="w">    </span><span class="n">Removes</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">listener</span>
 
-<span class="c">Arguments:</span>
-<span class="c">0. &lt;String&gt; Event the listener is subscribed to</span>
-<span class="c">1. &lt;String&gt; The event listeners unique identifier</span>
+<span class="n">Arguments</span><span class="p">:</span>
+<span class="mf">0.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Event</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">listener</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">subscribed</span><span class="w"> </span><span class="n">to</span>
+<span class="mf">1.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">The</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">listeners</span><span class="w"> </span><span class="nb">unique</span><span class="w"> </span><span class="n">identifier</span>
 
-<span class="c">Return Value:</span>
-<span class="c">&lt;Nil|Array&gt; Nil if failed, deleted event listener otherwise</span>
+<span class="n">Return</span><span class="w"> </span><span class="n">Value</span><span class="p">:</span>
+<span class="o">&lt;</span><span class="n">Nil</span><span class="o">|</span><span class="n">Array</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Nil</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">failed</span><span class="p">,</span><span class="w"> </span><span class="n">deleted</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">listener</span><span class="w"> </span><span class="k">otherwise</span>
 
-<span class="c">Scope: Any</span>
-<span class="c">Environment: unscheduled</span>
-<span class="c">Public: Yes</span>
-<span class="c">Dependencies:</span>
-<span class="c">*/</span><span class="w"></span>
+<span class="n">Scope</span><span class="p">:</span><span class="w"> </span><span class="n">Any</span>
+<span class="n">Environment</span><span class="p">:</span><span class="w"> </span><span class="n">unscheduled</span>
+<span class="n">Public</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span>
+<span class="n">Dependencies</span><span class="p">:</span>
+<span class="o">*/</span>
 
-<span class="nt">Example</span><span class="o">:</span><span class="w"> </span><span class="cp">[</span><span class="s2">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;A3A_Events_example&quot;</span><span class="cp">]</span><span class="w"> </span><span class="nt">call</span><span class="w"> </span><span class="nt">A3A_Events_fnc_removeEventListener</span><span class="o">;</span><span class="w"></span>
+<span class="n">Example</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;A3A_Events_example&quot;</span><span class="p">]</span><span class="w"> </span><span class="nb">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_removeEventListener</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -302,22 +301,22 @@ Unsubscribe all Events<div class="sd-summary-down docutils">
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">To remove all event listener of a type use the <code class="code docutils literal notranslate"><span class="pre">A3A_events_fnc_removeAllEventListeners</span></code> function.</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c">/**</span>
-<span class="c">Description:</span>
-<span class="c">    Removes all event listeners subscribed to a particular event</span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">/**</span>
+<span class="n">Description</span><span class="p">:</span>
+<span class="w">    </span><span class="n">Removes</span><span class="w"> </span><span class="n">all</span><span class="w"> </span><span class="n">event</span><span class="w"> </span><span class="n">listeners</span><span class="w"> </span><span class="n">subscribed</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">particular</span><span class="w"> </span><span class="n">event</span>
 
-<span class="c">Arguments:</span>
-<span class="c">0. &lt;String&gt; Event to remove listeners from</span>
+<span class="n">Arguments</span><span class="p">:</span>
+<span class="mf">0.</span><span class="w"> </span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Event</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">remove</span><span class="w"> </span><span class="n">listeners</span><span class="w"> </span><span class="n">from</span>
 
-<span class="c">Return Value: &lt;Nil|Array&gt; Nil if failed, the removed listeners otherwise</span>
+<span class="n">Return</span><span class="w"> </span><span class="n">Value</span><span class="p">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">Nil</span><span class="o">|</span><span class="n">Array</span><span class="o">&gt;</span><span class="w"> </span><span class="n">Nil</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="n">failed</span><span class="p">,</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">removed</span><span class="w"> </span><span class="n">listeners</span><span class="w"> </span><span class="k">otherwise</span>
 
-<span class="c">Scope: Any</span>
-<span class="c">Environment: unscheduled</span>
-<span class="c">Public: Yes</span>
-<span class="c">Dependencies:</span>
-<span class="c">*/</span><span class="w"></span>
+<span class="n">Scope</span><span class="p">:</span><span class="w"> </span><span class="n">Any</span>
+<span class="n">Environment</span><span class="p">:</span><span class="w"> </span><span class="n">unscheduled</span>
+<span class="n">Public</span><span class="p">:</span><span class="w"> </span><span class="n">Yes</span>
+<span class="n">Dependencies</span><span class="p">:</span>
+<span class="o">*/</span>
 
-<span class="nt">Example</span><span class="o">:</span><span class="w"> </span><span class="cp">[</span><span class="s2">&quot;AIVehInit&quot;</span><span class="cp">]</span><span class="w"> </span><span class="nt">call</span><span class="w"> </span><span class="nt">A3A_Events_fnc_removeAllEventListeners</span><span class="o">;</span><span class="w"></span>
+<span class="n">Example</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;AIVehInit&quot;</span><span class="p">]</span><span class="w"> </span><span class="nb">call</span><span class="w"> </span><span class="n">A3A_Events_fnc_removeAllEventListeners</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -325,14 +324,14 @@ Unsubscribe all Events<div class="sd-summary-down docutils">
 </div>
 </section>
 <section id="building-the-mod">
-<h2>Building the mod<a class="headerlink" href="#building-the-mod" title="Permalink to this headline"></a></h2>
+<h2>Building the mod<a class="headerlink" href="#building-the-mod" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-header header-2-light docutils">
 <p class="sd-card-text">Building the mod</p>
 </div>
 <div class="sd-card-body docutils">
 <div class="code-paragraph line-block">
-<div class="line">To build the mod you first need to navigate to <code class="code docutils literal notranslate"><span class="pre">Tools\Builder</span></code> and edit <code class="code docutils literal notranslate"><span class="pre">buildAddons.ps1</span></code>.</div>
+<div class="line">To build the mod you first need to navigate to <code class="code docutils literal notranslate"><span class="pre">ToolsBuilder</span></code> and edit <code class="code docutils literal notranslate"><span class="pre">buildAddons.ps1</span></code>.</div>
 <div class="line">On line 6 replace <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;A3AE&quot;</span></code> with <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;${your</span> <span class="pre">addons</span> <span class="pre">main</span> <span class="pre">folder</span> <span class="pre">name}&quot;</span></code>, so if you name your extension A3A-AltisRemade then the line would be <code class="code docutils literal notranslate"><span class="pre">$addonName</span> <span class="pre">=</span> <span class="pre">&quot;A3A-AltisRemade&quot;</span></code>, save the file and close it.</div>
 <div class="line">Now all you need to do is run the script and it will build the mod for you (note: it will not sign it for you, this needs to be done manually before publishing with <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3</span> <span class="pre">Tools</span></code> -&gt; <code class="code docutils literal notranslate"><span class="pre">DSUtils</span></code> &amp; <code class="code docutils literal notranslate"><span class="pre">Publisher</span></code>).</div>
 </div>
@@ -366,6 +365,6 @@ Unsubscribe all Events<div class="sd-summary-down docutils">
         <li class="nav-item nav-item-this"><a href="">How to Extend Antistasi?</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/August/26</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/September/23</div>
   </body>
 </html>

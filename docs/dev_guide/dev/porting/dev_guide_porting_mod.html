@@ -1,28 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="../../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Antistasi Porting Mods &#8212; Antistasi Guide  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=aefb6c79" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css?v=db2bce01" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script src="../../../_static/js/line-breaker.js"></script>
-    <script src="../../../_static/js/link-new-tab.js"></script>
-    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css?v=06b996ba" />
+    <script src="../../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/js/line-breaker.js?v=60c4d80a"></script>
+    <script src="../../../_static/js/link-new-tab.js?v=7ec8cb70"></script>
+    <link rel="icon" href="../../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Street Artist Generation" href="dev_guide_street_artist_generation.html" />
@@ -95,6 +93,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_localization.html">Translation-Localization of Antistasi via Tolgee</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#deprecated">Deprecated</a></li>
@@ -144,7 +143,7 @@
           <div class="body" role="main">
             
   <section class="hidden" id="antistasi-porting-mods">
-<span id="dev-porting-guide-mods"></span><h1>Antistasi Porting Mods<a class="headerlink" href="#antistasi-porting-mods" title="Permalink to this headline"></a></h1>
+<span id="dev-porting-guide-mods"></span><h1>Antistasi Porting Mods<a class="headerlink" href="#antistasi-porting-mods" title="Link to this heading"></a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Please note that this part is still heavily work in progress.
@@ -152,7 +151,7 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </div>
 <section id="logistic-system">
-<h2>Logistic System<a class="headerlink" href="#logistic-system" title="Permalink to this headline"></a></h2>
+<h2>Logistic System<a class="headerlink" href="#logistic-system" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 code-paragraph docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Logistic System</p>
@@ -197,25 +196,25 @@ The File Structure<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><strong>Config.cpp</strong>
 This is a boiler plate example of the most basic config.cpp for node definitions that we recomend.</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;script_component.hpp&quot;</span><span class="cp"></span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;script_component.hpp&quot;</span>
 
-<span class="n">class</span><span class="w"> </span><span class="n">CfgPatches</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">class</span><span class="w"> </span><span class="n">ADDON</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">COMPONENT_NAME</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">units</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
-<span class="w">        </span><span class="n">weapons</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
-<span class="w">        </span><span class="n">requiredVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">REQUIRED_VERSION</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">requiredAddons</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
-<span class="w">        </span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AUTHOR</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">authors</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">AUTHORS</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
-<span class="w">        </span><span class="n">authorUrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
-<span class="w">        </span><span class="n">VERSION_CONFIG</span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="n">class</span><span class="w"> </span><span class="n">CfgPatches</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">class</span><span class="w"> </span><span class="n">ADDON</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">COMPONENT_NAME</span><span class="p">;</span>
+<span class="w">        </span><span class="n">units</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="n">weapons</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="n">requiredVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">REQUIRED_VERSION</span><span class="p">;</span>
+<span class="w">        </span><span class="n">requiredAddons</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="n">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AUTHOR</span><span class="p">;</span>
+<span class="w">        </span><span class="n">authors</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">AUTHORS</span><span class="w"> </span><span class="p">};</span>
+<span class="w">        </span><span class="n">authorUrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="n">VERSION_CONFIG</span><span class="p">;</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">};</span>
 
-<span class="n">class</span><span class="w"> </span><span class="n">A3A</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;CfgLogistics.hpp&quot;</span><span class="cp"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="n">class</span><span class="w"> </span><span class="n">A3A</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;CfgLogistics.hpp&quot;</span>
+<span class="p">};</span>
 </pre></div>
 </div>
 <p class="sd-card-text"><strong>CfgLogistics.hpp</strong>
@@ -224,17 +223,17 @@ This is the main file to gather all the logistics data in a orderly fasion.</p>
 <span class="cp">#undef TRIPLES(var1,var2,var3)</span>
 <span class="cp">#define TRIPLES(var1,var2,var3) A3A_Logistics##_##var2##_##var3</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Nodes</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Nodes</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Nodes_Base</span><span class="p">;</span><span class="w"> </span><span class="c1">//import base class</span>
-<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Nodes\yourModFile.hpp&quot;</span><span class="c1"> //hpp file for your mods vehicle nodes</span><span class="cp"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Nodes\yourModFile.hpp&quot;</span><span class="c1"> //hpp file for your mods vehicle nodes</span>
+<span class="p">};</span>
 
-<span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Cargo</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
+<span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Cargo</span>
+<span class="p">{</span>
 <span class="w">    </span><span class="k">class</span><span class="w"> </span><span class="nc">A3A_Logistics_Cargo_Base</span><span class="w"> </span><span class="c1">//import base class;</span>
-<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Cargo\yourModFile.hpp&quot;</span><span class="c1"> //hpp file for your mods cargo definitions</span><span class="cp"></span>
-<span class="p">};</span><span class="w"></span>
+<span class="w">    </span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Cargo\yourModFile.hpp&quot;</span><span class="c1"> //hpp file for your mods cargo definitions</span>
+<span class="p">};</span>
 
 <span class="c1">//re-define the triples macro (this is only for external mods)</span>
 <span class="cp">#undef TRIPLES(var1,var2,var3)</span>
@@ -308,12 +307,12 @@ Getting the node data<div class="sd-summary-down docutils">
 <li><p class="sd-card-text">start the game with the newly added “logistics_vehicleHardpoints” entry</p></li>
 <li><p class="sd-card-text">load the vehicle full of size 1 cargo (Example: “Box_IND_Wps_F”)</p></li>
 </ol>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="n">spawns</span><span class="w"> </span><span class="n">crate</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">adds</span><span class="w"> </span><span class="k">load</span><span class="w"> </span><span class="k">action</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">it</span><span class="w"></span>
-<span class="n">private</span><span class="w"> </span><span class="n">_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Box_IND_Wps_F&quot;</span><span class="w"> </span><span class="n">createVehicle</span><span class="w"> </span><span class="n">getPos</span><span class="w"> </span><span class="n">player</span><span class="p">;</span><span class="w"></span>
-<span class="o">[</span><span class="n">_object</span><span class="o">]</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="n">A3A_logistics_fnc_addLoadAction</span><span class="p">;</span><span class="w"></span>
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="o">//</span><span class="n">spawns</span><span class="w"> </span><span class="n">crate</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">adds</span><span class="w"> </span><span class="k">load</span><span class="w"> </span><span class="k">action</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="n">it</span>
+<span class="n">private</span><span class="w"> </span><span class="n">_object</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Box_IND_Wps_F&quot;</span><span class="w"> </span><span class="n">createVehicle</span><span class="w"> </span><span class="n">getPos</span><span class="w"> </span><span class="n">player</span><span class="p">;</span>
+<span class="o">[</span><span class="n">_object</span><span class="o">]</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="n">A3A_logistics_fnc_addLoadAction</span><span class="p">;</span>
 </pre></div>
 </div>
-<ol class="code-paragraph arabic simple">
+<ol class="arabic simple code-paragraph">
 <li><p class="sd-card-text">while looking at the vehicle run this command in debug console. <code class="code docutils literal notranslate"><span class="pre">vic</span> <span class="pre">=</span> <span class="pre">cursorObject;</span></code></p></li>
 <li><p class="sd-card-text">then run this command <code class="code docutils literal notranslate"><span class="pre">moveOut</span> <span class="pre">player;</span> <span class="pre">player</span> <span class="pre">moveInCargo</span> <span class="pre">[vic,</span> <span class="pre">0]</span></code></p></li>
 </ol>
@@ -325,42 +324,42 @@ Getting the node data<div class="sd-summary-down docutils">
 <img alt="../../../_images/CommandlineLogisticNodes-4.jfif" src="../../../_images/CommandlineLogisticNodes-4.jfif" />
 </figure>
 <p class="sd-card-text">Example from vanilla logistics nodes:</p>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>//Offroad node definitions before adding the blocked seats
-class A3_soft_f_Offroad_01_Offroad_01_unarmed_F : TRIPLES(ADDON,Nodes,Base)
-{
-    class Nodes
-    {
-        class Node1
-        {
-            offset[] = {-0.05,-1.3,-0.683};
-            seats[] = {};
-        };
-        class Node2
-        {
-            offset[] = {-0.05,-2.3,-0.683};
-            seats[] = {};
-        };
-    };
-};
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">//Offroad node definitions before adding the blocked seats</span>
+<span class="n">class</span><span class="w"> </span><span class="n">A3_soft_f_Offroad_01_Offroad_01_unarmed_F</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">TRIPLES</span><span class="p">(</span><span class="n">ADDON</span><span class="p">,</span><span class="n">Nodes</span><span class="p">,</span><span class="n">Base</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">class</span><span class="w"> </span><span class="n">Nodes</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">class</span><span class="w"> </span><span class="n">Node1</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">offset</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span><span class="o">-</span><span class="mf">1.3</span><span class="p">,</span><span class="o">-</span><span class="mf">0.683</span><span class="p">};</span>
+<span class="w">            </span><span class="n">seats</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">class</span><span class="w"> </span><span class="n">Node2</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">offset</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span><span class="o">-</span><span class="mf">2.3</span><span class="p">,</span><span class="o">-</span><span class="mf">0.683</span><span class="p">};</span>
+<span class="w">            </span><span class="n">seats</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{};</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">};</span>
 </pre></div>
 </div>
-<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span>//Offroad node definition with the blocked seats added
-class A3_soft_f_Offroad_01_Offroad_01_unarmed_F : TRIPLES(ADDON,Nodes,Base)
-{
-    class Nodes
-    {
-        class Node1
-        {
-            offset[] = {-0.05,-1.3,-0.683};
-            seats[] = {3,4};
-        };
-        class Node2
-        {
-            offset[] = {-0.05,-2.3,-0.683};
-            seats[] = {1,2};
-        };
-    };
-};
+<div class="code-block-3 highlight-guess notranslate"><div class="highlight"><pre><span></span><span class="c1">//Offroad node definition with the blocked seats added</span>
+<span class="n">class</span><span class="w"> </span><span class="n">A3_soft_f_Offroad_01_Offroad_01_unarmed_F</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">TRIPLES</span><span class="p">(</span><span class="n">ADDON</span><span class="p">,</span><span class="n">Nodes</span><span class="p">,</span><span class="n">Base</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">class</span><span class="w"> </span><span class="n">Nodes</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">class</span><span class="w"> </span><span class="n">Node1</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">offset</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span><span class="o">-</span><span class="mf">1.3</span><span class="p">,</span><span class="o">-</span><span class="mf">0.683</span><span class="p">};</span>
+<span class="w">            </span><span class="n">seats</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">};</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">        </span><span class="n">class</span><span class="w"> </span><span class="n">Node2</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">offset</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span><span class="o">-</span><span class="mf">2.3</span><span class="p">,</span><span class="o">-</span><span class="mf">0.683</span><span class="p">};</span>
+<span class="w">            </span><span class="n">seats</span><span class="p">[]</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">};</span>
+<span class="w">        </span><span class="p">};</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">};</span>
 </pre></div>
 </div>
 <p class="sd-card-text">Here we fill in the seat number into the empty array in the nodes.</p>
@@ -540,6 +539,6 @@ assign the vehicle and cargo to global variables using <code class="code docutil
         <li class="nav-item nav-item-this"><a href="">Antistasi Porting Mods</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/August/26</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/September/23</div>
   </body>
 </html>

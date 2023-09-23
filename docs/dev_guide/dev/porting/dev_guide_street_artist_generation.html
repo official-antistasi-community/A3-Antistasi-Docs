@@ -1,28 +1,26 @@
-
 <!DOCTYPE html>
 
-<html>
+<html lang="en" data-content_root="../../../">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Street Artist Generation &#8212; Antistasi Guide  documentation</title>
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=aefb6c79" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/groundwork.css?v=db2bce01" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/sphinx-toolbox.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css" />
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script src="../../../_static/js/line-breaker.js"></script>
-    <script src="../../../_static/js/link-new-tab.js"></script>
-    <link rel="shortcut icon" href="../../../_static/antistasi_main_favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/tiles.css?v=06b996ba" />
+    <script src="../../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../../_static/js/line-breaker.js?v=60c4d80a"></script>
+    <script src="../../../_static/js/link-new-tab.js?v=7ec8cb70"></script>
+    <link rel="icon" href="../../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Street Artist Editor" href="dev_guide_street_artist_editor.html" />
@@ -98,6 +96,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide_localization.html">Translation-Localization of Antistasi via Tolgee</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide_index.html#deprecated">Deprecated</a></li>
@@ -147,7 +146,7 @@
           <div class="body" role="main">
             
   <section class="hidden" id="street-artist-generation">
-<span id="dev-street-artist-generation-guide"></span><h1>Street Artist Generation<a class="headerlink" href="#street-artist-generation" title="Permalink to this headline"></a></h1>
+<span id="dev-street-artist-generation-guide"></span><h1>Street Artist Generation<a class="headerlink" href="#street-artist-generation" title="Link to this heading"></a></h1>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text">Please note that this part is still heavily work in progress.
@@ -155,13 +154,13 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </div>
 <section id="quick-start-guide">
-<h2>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Permalink to this headline"></a></h2>
+<h2>Quick Start Guide<a class="headerlink" href="#quick-start-guide" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Quick Start Guide</p>
 </div>
 <div class="sd-card-body docutils">
-<ol class="code-paragraph arabic simple">
+<ol class="arabic simple code-paragraph">
 <li><p class="sd-card-text">Run Arma 3.</p></li>
 <li><p class="sd-card-text">Make an empty mp-mission on any map (community or official) with just one player.</p></li>
 <li><p class="sd-card-text">Save and close the editor.</p></li>
@@ -184,7 +183,7 @@ For more dev related information please go to our <a class="reference external" 
 </div>
 </section>
 <section id="generate-navgriddb-open-the-street-artist-editor">
-<h2>Generate navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#generate-navgriddb-open-the-street-artist-editor" title="Permalink to this headline"></a></h2>
+<h2>Generate navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#generate-navgriddb-open-the-street-artist-editor" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Generate navGridDB &amp; open the Street Artist Editor</p>
@@ -208,14 +207,14 @@ However, you may need to tweak some arguments depending on the simplification le
 </div>
 </section>
 <section id="import-navgriddb-open-the-street-artist-editor">
-<h2>Import navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#import-navgriddb-open-the-street-artist-editor" title="Permalink to this headline"></a></h2>
+<h2>Import navGridDB &amp; open the Street Artist Editor<a class="headerlink" href="#import-navgriddb-open-the-street-artist-editor" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Import navGridDB &amp; open the Street Artist Editor</p>
 </div>
 <div class="sd-card-body docutils">
 <p class="sd-card-text">If you have already generated a navGridDB before loading the world and you do not want to regenerate it again: you can use the import function to load it into Arma 3 for viewing or editing.</p>
-<ol class="code-paragraph-2 arabic simple">
+<ol class="arabic simple code-paragraph-2">
 <li><p class="sd-card-text">Local exec <code class="code docutils literal notranslate"><span class="pre">[]</span> <span class="pre">spawn</span> <span class="pre">A3A_fnc_NGSA_main</span></code> in the debug console.</p></li>
 <li><p class="sd-card-text">Press <code class="code docutils literal notranslate"><span class="pre">Continue</span></code> to close debug console. (If you press <code class="code docutils literal notranslate"><span class="pre">Esc</span></code>, you will close the import dialogue!)</p></li>
 <li><p class="sd-card-text">Switch to real-life and open the navGridDB file and Copy everything.</p></li>
@@ -225,7 +224,7 @@ However, you may need to tweak some arguments depending on the simplification le
 </div>
 </section>
 <section id="further-reading">
-<h2>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<h2>Further Reading<a class="headerlink" href="#further-reading" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
 <p class="sd-card-text">Further Reading</p>
@@ -270,6 +269,6 @@ However, you may need to tweak some arguments depending on the simplification le
         <li class="nav-item nav-item-this"><a href="">Street Artist Generation</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/August/26</div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/September/23</div>
   </body>
 </html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Translation-Localization of Antistasi via Tolgee &#8212; Antistasi Guide  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=aefb6c79" />
+    <link rel="stylesheet" type="text/css" href="../../_static/groundwork.css?v=db2bce01" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/sphinx-toolbox.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/tiles.css?v=06b996ba" />
+    <script src="../../_static/documentation_options.js?v=7f41d439"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/js/line-breaker.js?v=60c4d80a"></script>
+    <script src="../../_static/js/link-new-tab.js?v=7ec8cb70"></script>
+    <link rel="icon" href="../../_static/antistasi_main_favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to build Antistasi (Mission)" href="dev_guide_build_mission.html" />
+    <link rel="prev" title="Debug Console Commands for Devs" href="dev_guide_console_commands.html" />
+        
+            <link
+                rel="apple-touch-icon"
+                href="../../_static/"""
+            />
+        
+    <link
+        media="only screen and (max-device-width: 480px)"
+        href="../../_static/small_groundwork.css"
+        type="text/css"
+        rel="stylesheet"
+    />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=0.9, maximum-scale=0.9"
+    />
+    <!-- Place this tag in your head or just before your close body tag. -->
+    
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" accesskey="U">Dev Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Translation-Localization of Antistasi via Tolgee</a></li> 
+      </ul>
+    </div>
+
+    <div class="document">
+        
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/antistasi_main_logo.png" alt="Logo"/>
+            </a></p>
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../beginners_guide/raw_beginners_guide.html">Beginners Guide for Antistasi v3.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference_guide/reference_guide_index.html">Detailed Reference Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../dev_guide_index.html">Dev Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FunctionsAndFolders.html">Addon Functions &amp; Folders Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_console_commands.html">Debug Console Commands for Devs</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Translation-Localization of Antistasi via Tolgee</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-tolgee-and-how-can-i-help-translating-antistasi">What is Tolgee and how can I help translating Antistasi?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-work-with-tolgee">How to work with Tolgee?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#automation-updates">Automation / Updates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#localization-within-the-antistasi-code">Localization within the Antistasi Code</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#deprecated">Deprecated</a></li>
+</ul>
+</li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <!--<h3>Search</h3>-->
+    <form class="search" action="../../search.html" method="get">
+      <div id="search_input"><input type="text" name="q" placeholder="Search"/></div>
+      <!--<div id="search_go"><input type="submit" value="Go" /></div>-->
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+    <div>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <div class="contribute">
+            <h3>GitHub</h3>
+            <a class="github-button" href="https://github.com/official-antistasi-community/A3-Antistasi"
+               data-icon="octicon-star"
+               data-style="mega"
+               data-count-href="/official-antistasi-community/A3-Antistasi/stargazers"
+               data-count-api="/repos/official-antistasi-community/A3-Antistasi#stargazers_count"
+               data-count-aria-label="# stargazers on GitHub"
+               aria-label="Star official-antistasi-community/A3-Antistasi on GitHub">Star</a>
+            <br>
+            <a class="github-button" href="https://github.com/official-antistasi-community"
+               data-style="mega"
+               aria-label="Follow @official-antistasi-community on GitHub">Follow @official-antistasi-community</a>
+            <br>
+        </div>
+    </div>
+    <div>
+        <span id="sponsor-btn">
+        </span>
+        <script src="_static/js/sponsor-btn.js"></script>
+    </div>
+
+        </div>
+      </div>
+        
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section class="hidden" id="translation-localization-of-antistasi-via-tolgee">
+<span id="dev-localization-guide"></span><h1>Translation-Localization of Antistasi via Tolgee<a class="headerlink" href="#translation-localization-of-antistasi-via-tolgee" title="Link to this heading"></a></h1>
+<section id="what-is-tolgee-and-how-can-i-help-translating-antistasi">
+<h2>What is Tolgee and how can I help translating Antistasi?<a class="headerlink" href="#what-is-tolgee-and-how-can-i-help-translating-antistasi" title="Link to this heading"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">What is Tolgee and how can I help translating Antistasi?</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Tolgee is an open-source localization platform which we have decided to use as the tool-to-go for the localization of Antistasi. As it can be seen below, it provides a web-interface which can simply be used by people to translate stringtables into different languages. It provides the option to have multiple sub-projects with independent stringtables, allows to add basically an unlimited amount of people and has the option to give those people different access to the projects and sub-projects.
+Utilizing this system, we now finally have a platform we can use to have the community help with the translation of Antistasi in hopefully all languages which are supported by Arma 3 so that more people can enjoy it in their native language.</p>
+<p class="sd-card-text">The languages supported by Arma 3 and which we aim to cover are the following ones besides English:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Czech</p></li>
+<li><p class="sd-card-text">French</p></li>
+<li><p class="sd-card-text">German</p></li>
+<li><p class="sd-card-text">Italian</p></li>
+<li><p class="sd-card-text">Japanese</p></li>
+<li><p class="sd-card-text">Korean</p></li>
+<li><p class="sd-card-text">Polish</p></li>
+<li><p class="sd-card-text">Portuguese</p></li>
+<li><p class="sd-card-text">Russian</p></li>
+<li><p class="sd-card-text">Simplified Chinese</p></li>
+<li><p class="sd-card-text">Spanish</p></li>
+<li><p class="sd-card-text">Turkish</p></li>
+</ul>
+<p class="sd-card-text">Due to the technical limitations of Arma 3 we unfortunately can’t and won’t translate to any other languages.</p>
+<p class="sd-card-text">If you want to translate Antistasi in one of the languages mentioned above, the way to get on board and to help is to join our <a class="reference external" href="https://discord.com/invite/TYDwCRKnKX">Discord Server</a> and to contact Bob Murphy <code class="code docutils literal notranslate"><span class="pre">bob_murphy</span></code> by either sending him a DM or by poking him in one of the public channels and stating that you’d like to help with the translation. He will check in with you and onboard you.</p>
+<p class="sd-card-text">To be able to help with the translation, all you need is to be able to properly read and write in one of those languages and to have a valid email address. The email address is only necessary for creating a user account for the Tolgee interface, nothing else.</p>
+</div>
+</div>
+</section>
+<section id="how-to-work-with-tolgee">
+<h2>How to work with Tolgee?<a class="headerlink" href="#how-to-work-with-tolgee" title="Link to this heading"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">How to work with Tolgee?</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">As visible below, the first time you see after gaining access to your Tolgee account and after the permissions are set properly are all the different projects for the different addons/pbos within Antistasi.
+The defree of completion in this overview is the overall view of all languages for this project as well as the amount of keys within it and the available languages.</p>
+<figure class="align-center">
+<a class="tolgee-image reference internal image-reference" href="../../_images/tolgee-1.png"><img alt="../../_images/tolgee-1.png" class="tolgee-image" src="../../_images/tolgee-1.png" style="width: 500px;" /></a>
+</figure>
+<p class="sd-card-text">When you select one of those projects, you then get into the project-view where you see the completion regarding the different languages within this project.
+You also see the last changes submitted to this project and some more info on the top.
+Grey in the progress bar means not translated, yellow means translated and green means confirmed.
+The goal is to, in the most optimal case, get every key for every language translated by one person and then reviewed by another one to not have any typos or errors in translation.
+As there are currently not so many translators, it’s acceptable to translate and review the keys by yourself.</p>
+<figure class="align-center">
+<a class="tolgee-image reference internal image-reference" href="../../_images/tolgee-2.png"><img alt="../../_images/tolgee-2.png" class="tolgee-image" src="../../_images/tolgee-2.png" style="width: 500px;" /></a>
+</figure>
+<p class="sd-card-text">For adding translations or for reviewing already existing ones, you click on the language you want to work on.
+One of the most useful thing in Tolgee are the shortcuts. You can literally translate and review hundreds of keys without the need to use the mouse but you can keep your hands on your keyboard the whole time.
+When in the <code class="docutils literal notranslate"><span class="pre">Translations</span></code> view you see the available shortcuts in the bottom right corner.
+You can:</p>
+<ul class="simple">
+<li><p class="sd-card-text">switch between the strings using the arrow keys</p></li>
+<li><p class="sd-card-text">select a string by pressing <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
+<li><p class="sd-card-text">abort working on a string by pressing <kbd class="kbd docutils literal notranslate">Esc</kbd></p></li>
+<li><p class="sd-card-text">switch between the <code class="docutils literal notranslate"><span class="pre">Translated</span></code> and the <code class="docutils literal notranslate"><span class="pre">Reviewed</span></code> status of a key by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">E</kbd></kbd></p></li>
+<li><p class="sd-card-text">when having the edit window open, save your edits and jump to the next edit window by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Enter</kbd></kbd></p></li>
+<li><p class="sd-card-text">when having the edit window open, copy in the Original/English text by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Ins</kbd></kbd></p></li>
+</ul>
+<figure class="align-center">
+<a class="tolgee-image reference internal image-reference" href="../../_images/tolgee-3.png"><img alt="../../_images/tolgee-3.png" class="tolgee-image" src="../../_images/tolgee-3.png" style="width: 500px;" /></a>
+</figure>
+<p class="sd-card-text">The only time you have to use the mouse is when you have either the ability to select a translation from the Translation Memory or the Machine Translation.</p>
+<ul class="simple">
+<li><dl class="field-list simple">
+<dt class="field-odd">Translation Memory<span class="colon">:</span></dt>
+<dd class="field-odd"><p class="sd-card-text">The translation memory checks all available stringtables for (somewhat) matching translations which already exist. This can be the case when different stringtables contain the same keys like for example ones for things like “Yes”, “No”, “Garrisons”, “Battle Options” or such.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="field-list simple">
+<dt class="field-odd">Machine Translation<span class="colon">:</span></dt>
+<dd class="field-odd"><p class="sd-card-text">Tolgee can be hooked up with different translation services via API. Nevertheless, as those cost money and we don’t see that using our limited funds would add sufficient value, we don’t use those.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="automation-updates">
+<h2>Automation / Updates<a class="headerlink" href="#automation-updates" title="Link to this heading"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Automation / Updates</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">The exchange of information between GitHub as well as Tolgee is automated via a GitHub action which utilizes some magical scripts by Giddi which interact with Tolgee directly via the API, check for differences, sort the keys, containers etc alphabetically and submit a PR to the <code class="code docutils literal notranslate"><span class="pre">unstable</span></code> branch containing the appropriate changes.</div>
+<div class="line">This GitHub Action only is to be activated by Dev Team Leads and based on the <code class="code docutils literal notranslate"><span class="pre">unstable</span></code> branch.</div>
+</div>
+</div>
+</div>
+</section>
+<section id="localization-within-the-antistasi-code">
+<h2>Localization within the Antistasi Code<a class="headerlink" href="#localization-within-the-antistasi-code" title="Link to this heading"></a></h2>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
+<div class="sd-card-header header-2 docutils">
+<p class="sd-card-text">Localization within the Antistasi Code</p>
+</div>
+<div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">Localization of strings within the Antistasi code is done via the Stringtable.xml which exists within each addon/pbo of the project.</div>
+<div class="line">When setting up a new string it’s important to only set the <code class="code docutils literal notranslate"><span class="pre">&lt;Original&gt;</span></code> language within the stringtable.</div>
+<div class="line">The only other time when the stringtable should be manually changed via the code is either when the key is being changed, there is a change of the English original string or the whole key gets deleted.</div>
+<div class="line">Do NOT ever touch any language entry within the xml which is not <code class="code docutils literal notranslate"><span class="pre">&lt;Original&gt;</span></code>. Every translation is only to be handled via Tolgee.</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="dev_guide_build_mission.html" title="How to build Antistasi (Mission)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dev_guide_console_commands.html" title="Debug Console Commands for Devs"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">Antistasi Guide  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dev_guide_index.html" >Dev Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Translation-Localization of Antistasi via Tolgee</a></li> 
+      </ul>
+    </div>
+    <div class="footer">&copy; Copyright 2023, Official Antistasi Community. Last updated 2023/September/23</div>
+  </body>
+</html>
