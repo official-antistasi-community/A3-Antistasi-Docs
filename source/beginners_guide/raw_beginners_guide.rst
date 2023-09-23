@@ -44,13 +44,13 @@ What is Antistasi?
    will start with very little land. The rebels are, well, rebels! As such
    they will start with no land at all.
 
-Supported Modsets
-=======================
+Supported Modsets & Maps
+=============================
 
 .. card::
    :class-header: header-2
 
-   Supported Modset
+   Supported Modsets & Maps
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    | Antistasi is compatible with different modsets as well as maps and of course there are different playable and AI Factions available with each modset.
