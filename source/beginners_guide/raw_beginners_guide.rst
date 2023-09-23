@@ -45,7 +45,7 @@ What is Antistasi?
    they will start with no land at all.
 
 Supported Modsets & Maps
-=======================
+=============================
 
 .. card::
    :class-header: header-2
