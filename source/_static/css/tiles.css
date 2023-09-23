@@ -473,3 +473,13 @@ kbd {
     filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.493));
     margin: 0.3rem;
 }
+
+
+a:visited {
+    color: #daae00;
+}
+
+
+a:visited:hover {
+    color: #a76400;
+}
