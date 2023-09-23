@@ -97,7 +97,7 @@ Standardised Variable Types
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
       .. rst-class:: code-block-3
-      .. code-block:: guess
+      .. code-block::
 
          <ARRAY> banList
          <BOOL> easyMode
