@@ -1621,7 +1621,7 @@ Support System
 
    -  Carpet Bomber (Unfair Param)
 
-   -  SAM Site (Unfair Param
+   -  SAM Site (Unfair Param)
 
    -  Orbital Strike (Futuristic Param)
 
@@ -1771,6 +1771,35 @@ Walkthrough
          The way to win Antistasi is persistence. Keep trying until you win.
          Whittle down the enemy. Sometimes it’s a slog, but I know you can do
          it. Good luck commander!
+
+Translation of Antistasi - How can I help?
+============
+
+.. card::
+   :class-header: header-2
+
+   Translation of Antistasi - How can I help?
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Our goal is it to translate Antistasi into all languages which are supported by Arma which are the following:
+
+   * Czech
+   * French
+   * German
+   * Italian
+   * Japanese
+   * Korean
+   * Polish
+   * Portuguese
+   * Russian
+   * Simplified Chinese
+   * Spanish
+   * Turkish
+
+   If you want to help to translate Antistasi in one of the languages mentioned above, the way to get on board and to help is to join our `Discord Server <https://discord.com/invite/TYDwCRKnKX>`_ and to contact Bob Murphy :code:`bob_murphy` by either sending him a DM or by poking him in one of the public channels and stating that you'd like to help with the translation. He will check in with you and onboard you.
+
+   For more detailed information on the translation of Antistasi, check out the `Translation-Localization of Antistasi via Tolgee <https://official-antistasi-community.github.io/A3-Antistasi-Docs/dev_guide/dev/dev_guide_localization.html>`_ entry in the Dev Guide.
+
 
 Contributors
 ============
