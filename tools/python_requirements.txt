@@ -1,4 +1,4 @@
-antistasi_sqf_tools==0.5.12
+antistasi_sqf_tools==0.6.0
 myst-parser
 sphinxcontrib-mermaid
 groundwork-sphinx-theme
@@ -7,5 +7,5 @@ sphinx-toolbox
 sphinx-copybutton
 sphinx-issues
 sphinx-design
-yarl
+yarl>=1.9
 linuxdoc

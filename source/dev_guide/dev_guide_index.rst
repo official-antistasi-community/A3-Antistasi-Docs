@@ -41,6 +41,9 @@ General
 
       /dev_guide/ace_file.rst
 
+
+
+
 Development
 ========================
 
@@ -62,6 +65,9 @@ Development
       /dev_guide/dev/dev_guide_technical_standards_for_core_contrib.rst
       /dev_guide/dev/FunctionsAndFolders.rst
       /dev_guide/dev/dev_guide_console_commands.rst
+      /dev_guide/dev/dev_guide_localization.rst
+
+
 
 Deprecated
 ========================
