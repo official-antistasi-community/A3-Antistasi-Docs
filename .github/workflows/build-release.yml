@@ -5,17 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.11"
+          cache: 'pip'
 
       - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v3
-        with:
-          path: "tools/python_requirements.txt"
+        run: pip install -r tools/python_requirements.txt
+
 
       - name: actual building
         run: antistasi-sqf-tools docs build -b release
