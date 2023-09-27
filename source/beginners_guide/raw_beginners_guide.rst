@@ -1773,7 +1773,7 @@ Walkthrough
          it. Good luck commander!
 
 Translation of Antistasi - How can I help?
-============
+=============================================
 
 .. card::
    :class-header: header-2
