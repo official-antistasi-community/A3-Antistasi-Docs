@@ -1776,6 +1776,7 @@ Translation of Antistasi - How can I help?
 =============================================
 
 .. card::
+   :class-card: sd-card-2 sd-mt-3
    :class-header: header-2
 
    Translation of Antistasi - How can I help?
