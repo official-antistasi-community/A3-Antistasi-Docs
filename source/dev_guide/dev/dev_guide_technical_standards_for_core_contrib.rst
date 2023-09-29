@@ -297,6 +297,17 @@ Languages and Localisation
       :class-card: sd-card-3
       :class-header: header-3-light
 
+      Contributing to Localisation
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+      see :ref:`dev_guide/dev/dev_guide_localization:translation-localization of antistasi via tolgee`
+
+
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3-light
+
       For this example I will use the Version number of Antistasi, as this changes frequently and requires manual adjustment each release.
 
       .. code-block:: xml
