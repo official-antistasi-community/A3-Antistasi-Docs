@@ -292,6 +292,7 @@ Languages and Localisation
 
       A technical overview of Localisation can be `found here <https://community.bistudio.com/wiki/Stringtable.xml>`_.
 
+
    .. card::
       :class-card: sd-card-3
       :class-header: header-3-light
@@ -299,20 +300,9 @@ Languages and Localisation
       Contributing to Localisation
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      .. rst-class:: code-paragraph
+      see :ref:`dev_guide/dev/dev_guide_localization:translation-localization of antistasi via tolgee`
 
-      If you want to assist with translations that Dialog buttons, mission text or in game text uses, you will need to make changes to the :code:`Stringtable.xml` file which is found in the main PBO file.
 
-      Making changes to this file can be done with simple text editors, such as notepad however it is advised you use a dedicated tool such as those suggested on the WIKI.
-
-      - `StringForge <https://github.com/ajvorobiev/StringForge/releases>`_
-      - `Tabler <https://github.com/bux/tabler/releases>`_
-      - `SQDev <https://forums.bohemia.net/forums/topic/202181-sqdev-sqf-developing-in-eclipse/>`_
-      - `de_stringtabler <https://github.com/dedmen/de_stringtabler/releases>`_
-
-      .. rst-class:: code-paragraph
-
-      Once you have your tool of choice and have opened the :code:`Stringtable.xml` you will then need to find or create the "Key" to provide your translation.
 
    .. card::
       :class-card: sd-card-3

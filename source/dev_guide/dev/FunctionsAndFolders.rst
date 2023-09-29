@@ -42,11 +42,11 @@ Addons
    Top level view of Addons structure
 
    - `core <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/core>`_ Core functionality of Antisasti
-   - `Events <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Events>`_ Antistasi's Event system
-   - `Garage <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Garage>`_ Antistasi's New Garage system
-   - `GUI <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/JeroenArsenal>`_ Antistasi's New GUIs
-   - `JeroenArsenal <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/JeroenArsenal>`_ Antistasi's Limited Arsenal
-   - `Logistics <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/Logistics>`_ Antistasi's nodes base logtistic system for vehicles
+   - `Events <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/events>`_ Antistasi's Event system
+   - `Garage <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/garage>`_ Antistasi's New Garage system
+   - `GUI <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/gui>`_ Antistasi's New GUIs
+   - `JeroenArsenal <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/jeroen_arsenal>`_ Antistasi's Limited Arsenal
+   - `Logistics <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/logistics>`_ Antistasi's nodes base logtistic system for vehicles
    - `maps <https://github.com/official-antistasi-community/A3-Antistasi/tree/master/A3A/addons/maps>`_ Location for Antistasi's missions for specific terrain
 
 Init

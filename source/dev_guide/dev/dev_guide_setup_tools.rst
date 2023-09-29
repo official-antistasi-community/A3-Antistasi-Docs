@@ -172,6 +172,15 @@ Code Editor Extensions
       Notepad++
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+      .. role:: strike-grey
+         :class: strike-grey
+
+
+      .. role:: warn-colored
+         :class: warn-colored
+
+
       .. rst-class:: target-substitude table-2-b
 
       .. flat-table::
@@ -180,5 +189,5 @@ Code Editor Extensions
          -  * Name
             * Description
 
-         -  * `Notepad++ SQF Syntax Highlighting and Auto Completion <https://github.com/Barrow/npp-sqf>`_
-            * If you don't have an IDE and no clue how to work with one, this is basically the minimum requirement to work with it.
+         -  * :warn-colored:`NO LONGER AVAILABLE` :strike-grey:`Notepad++ SQF Syntax Highlighting and Auto Completion https://github.com/Barrow/npp-sqf`
+            * :strike-grey:`If you don't have an IDE and no clue how to work with one, this is basically the minimum requirement to work with it.`
