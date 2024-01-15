@@ -6,7 +6,6 @@ Official Antistasi Community Edition Wiki
 
 .. image:: /_images/antistasi_main_image.png
    :width: 500px
-   :scale: 50 %
    :align: center
 
 .. card::
