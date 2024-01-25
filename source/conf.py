@@ -58,7 +58,8 @@ extensions = ["myst_parser",
               'sphinx.ext.autosectionlabel',
               'sphinx_issues',
               "sphinx_toolbox.shields",
-              'linuxdoc.rstFlatTable']
+              'linuxdoc.rstFlatTable',
+              "antistasi_sqf_tools.doc_creating.sphinx_extensions"]
 
 
 templates_path = ['_templates', str(get_groundworks_paths()["templates"])]
@@ -90,6 +91,9 @@ autosectionlabel_prefix_document = True
 # endregion[Extension_Settings]
 
 # region [HTML_Output_Settings]
+
+
+external_links_settings = {"clear_link_steam_file": True}
 
 
 html_theme = 'groundwork'

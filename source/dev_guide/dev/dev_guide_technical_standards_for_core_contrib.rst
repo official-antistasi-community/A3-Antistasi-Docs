@@ -73,7 +73,7 @@ Standardised Header
    - Remove unused fields.
    - :code:`Public: Yes` means this function is not tied to a complex system but can be freely called by other code/debug console.
    - It is not necessary to specify exact :ref:`code/array structure <dev_code_contribution_standardVariables>` (just :code:`<CODE>` or :code:`<ARRAY>`). However, a specific structure makes it clear what is expected/returned.
-   - It is not normal to have 10 arguments. The majority of humans can only `subitise <https://www.dictionary.com/browse/subitize>`_ ~5 items, use that as a guide.
+   - It is not normal to have 10 arguments. The majority of humans can only `subitize <https://www.dictionary.com/browse/subitize>`_ ~5 items, use that as a guide.
 
 .. _dev_code_contribution_standardVariables:
 

@@ -87,7 +87,7 @@ Supported Modsets & Maps
       - AI - VN MACV
       - AI - VN PAVN
 
-      Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
+      Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the :steam:`2902920186` to be loaded):
 
       - Rebel - GM FIA
       - AI - GM Bundeswehr Arctic
@@ -95,13 +95,13 @@ Supported Modsets & Maps
       - AI - GM Nationale Volksarmee Arctic (National People's Army)
       - AI - GM Nationale Volksarmee Temperate (National People's Army)
 
-      Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded):
+      Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the :steam:`3010629545` to be loaded):
 
       - Rebel - SPE_IFA FFF
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
-      Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
+      Added Factions with :steam:`2498438772`:
 
       - Rebel - RHS NAPA
       - AI - RHS AFRF Arid
@@ -114,7 +114,7 @@ Supported Modsets & Maps
       - AI - RHS USMC Arid
       - AI - RHS USMC Temperate
 
-      Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ :
+      Added Factions with :steam:`2498466977`:
 
       - Rebel - 3CB CCM
       - Rebel - 3CB FIA
@@ -136,14 +136,14 @@ Supported Modsets & Maps
       - AI - 3CB TKA Mix
       - AI - 3CB TKA West
 
-      Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_:
+      Added Factions with :steam:`2498453852`:
 
       - AI - 3CB BAF Arctic
       - AI - 3CB BAF Arid
       - AI - 3CB BAF Temperate
       - AI - 3CB BAF Tropical
 
-      Added Factions with `CUP <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_:
+      Added Factions with :steam:`2902920186`:
 
       - Rebel - CUP NAPA
       - Rebel - CUP TKM
@@ -170,12 +170,12 @@ Supported Modsets & Maps
       - AI - CUP USMC Arid
       - AI - CUP USMC Temperate
 
-      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_:
+      Avaliable Factions with :steam:`1200127537`:
 
       - AI - BWA3 BW Arid
       - AI - BWA3 BW Temperate
 
-      Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_:
+      Avaliable Factions with :steam:`943001311`:
 
       - Rebel - Unsung VC
       - AI - Unsung PAVN
@@ -201,7 +201,7 @@ Supported Modsets & Maps
 
       - Normandy
 
-      Available maps with `CUP Terrains - Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
+      Available maps with :steam:`583544987`:
 
       - Chernarus Autumn
       - Chernarus Summer
@@ -209,16 +209,16 @@ Supported Modsets & Maps
       - Sahrani
       - Takistan
 
-      Available maps with `CUP Terrains - Maps 2.0 <https://steamcommunity.com/sharedfiles/filedetails/?id=1981964169>`_:
+      Available maps with :steam:`1981964169`:
 
       - Chernarus 2020
 
       Single maps with their own required mods:
 
-      - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
-      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
-      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
-      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
+      - :steam:`1537973181`
+      - :steam:`1188303655`
+      - :steam:`1252091296`
+      - :steam:`1926513010`
 
    .. dropdown:: Additional Mods
       :class-title: header-3-light
@@ -233,24 +233,24 @@ Supported Modsets & Maps
          :header-rows: 0
          :widths: 20 80
 
-         *  - `CBA <https://steamcommunity.com/workshop/filedetails/?id=450814997>`_
+         *  - :steam:`450814997`
             - CBA is a framework which adds a range of features Arma in itself does not supply. This mod is a dependency for many other mods and it also adds some additional functionality within Antistasi, for example the ability to modify garage settings and Jeroens Extended Debug Console.
 
-         *  - `ACE <https://steamcommunity.com/workshop/filedetails/?id=463939057>`_
+         *  - :steam:`463939057`
             -  | ACE is a mod that adds a lot of in depth modular systems to Arma like for example a medical system, ballistics and more.
                | Keep in mind that some mods like RHS need their respective `ACE Compatibility Mods <https://steamcommunity.com/id/acemod/myworkshopfiles/?appid=107410>`_ loaded so they work properly. Adjust your modlist accordingly.
 
-         *  - `TFAR (outdated) <https://steamcommunity.com/sharedfiles/filedetails/?id=620019431>`_
+         *  - :steam:`620019431`
             -  | TFAR is a mod which implements a more realistic radio communication by combining Arma 3 and TeamSpeak. It implements SR and LR radios for infantry and vehicles.
                | This version is outdated and superseded by TFAR BETA.
 
-         *  - `TFAR BETA <https://steamcommunity.com/sharedfiles/filedetails/?id=894678801>`_
+         *  - :steam:`894678801`
             - TFAR BETA is the successor of TFAR, adapting the functionality to newer BI functions, fixing bugs and adding new settings and options.
 
-         *  - `ACRE2 <https://steamcommunity.com/sharedfiles/filedetails/?id=751965892>`_
+         *  - :steam:`751965892`
             - ACRE2, like TFAR / TFAR BETA is a mod which combines Arma 3 with TeamSpeak. It is highly customizable, has additional features like taking the terrain of a map into account for the quality of the radio transmission and more. It is more in depth, requires more time to learn, but adds a nice level of realism. For CDLC maps it requires `ACRE2 Compatibility Mods <https://steamcommunity.com/profiles/76561198323575101/myworkshopfiles/?appid=107410>`_.
 
-         *  - `KAT - Advanced Medical REWRITE <https://steamcommunity.com/workshop/filedetails/?id=2020940806>`_
+         *  - :steam:`2020940806`
             - KAT - Advanced Medical REWRITE is a mod which adds a very in depth medical system, covering different not only the breathing apperatus and the cardiovascular system but also adds surgery and more to the game.
 
    .. dropdown:: Additional Vehicle Mods
@@ -259,10 +259,10 @@ Supported Modsets & Maps
 
       Antistasi has compatibility with the following mods which add to the available civilian vehicle pool if loaded properly and enabled in the Startup GUI.
 
-      - `D3S Cars pack <https://steamcommunity.com/workshop/filedetails/?id=1639607571>`_
-      - `Ivory Car Pack [Official] <https://steamcommunity.com/sharedfiles/filedetails/?id=1888644057>`_
-      - `RDS Civilian Pack <https://steamcommunity.com/workshop/filedetails/?id=612930542>`_
-      - `TCGM_BikeBackpack <https://steamcommunity.com/sharedfiles/filedetails/?id=2096950604>`_
+      - :steam:`1639607571`
+      - :steam:`1888644057`
+      - :steam:`612930542`
+      - :steam:`2096950604`
 
    .. dropdown:: Forbidden Mods
       :class-title: header-3-danger
