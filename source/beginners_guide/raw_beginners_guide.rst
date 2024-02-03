@@ -53,10 +53,11 @@ Supported Modsets & Maps
    Supported Modsets & Maps
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   | Antistasi is compatible with different modsets as well as maps and of course there are different playable and AI Factions available with each modset.
-   | In the past the selection of the Factions was hard coded into the mission, which prevented the player to have any direct option to change who to play against.
-   | With the release of Antistasi 3.0.0 we have integrated all maps as well as a new Antistasi Setup GUI which at the start of a campaign gives you the option to select from all available Factions to change your enemies and more to your likings.
-   | Whilst modsets and maps can be combined as you wish, we suggest to only load the mods for the Factions you want to play with and not simply load all mods that are compatible.
+   Antistasi is compatible with different modsets as well as maps and of course there are different playable and AI Factions available with each modset.
+   In the past the selection of the Factions was hard coded into the mission, which prevented the player to have any direct option to change who to play against.
+   With the release of Antistasi 3.0.0 we have integrated all maps as well as a new Antistasi Setup GUI which at the start of a campaign gives you the option to select from all available Factions to change your enemies and more to your liking.
+
+   Whilst modsets and maps can be combined as you wish, we suggest to only load the mods for the Factions you want to play with and not simply load all mods that are compatible.
 
 
    .. dropdown:: Factions
@@ -263,6 +264,40 @@ Supported Modsets & Maps
       - `Ivory Car Pack [Official] <https://steamcommunity.com/sharedfiles/filedetails/?id=1888644057>`_
       - `RDS Civilian Pack <https://steamcommunity.com/workshop/filedetails/?id=612930542>`_
       - `TCGM_BikeBackpack <https://steamcommunity.com/sharedfiles/filedetails/?id=2096950604>`_
+
+   .. dropdown:: Prepared Modsets
+      :class-title: header-3-light
+      :class-container: sd-card-3
+
+      You can download the following modsets which we prepared:
+
+      .. rst-class:: table-additional-mods
+
+      .. flat-table::
+         :header-rows: 0
+         :widths: 20 80
+
+         *  - 3CB BAF
+            - :download:`Modset 3DB BAF </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`
+
+         *  - BW Mod
+            - :download:`Modset BWMod </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`
+
+         *  - CUP
+            - :download:`Modset CUP </_data/templates_launcher/Arma_3_Preset_Antistasi_CUP.html>`
+
+         *  - GM CUP
+            - :download:`Modset GM CUP </_data/templates_launcher/Arma_3_Preset_Antistasi_GM_CUP.html>`
+
+         *  - RHS 3CBFactions
+            - :download:`Modset RHS 3CBFactions </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`
+
+         *  - SPE IFA
+            - :download:`Modset SPE IFA </_data/templates_launcher/Arma_3_Preset_Antistasi_SPE_IFA.html>`
+
+         *  - Unsung
+            - :download:`Modset Unsung </_data/templates_launcher/Arma_3_Preset_Antistasi_Unsung.html>`
+
 
    .. dropdown:: Forbidden Mods
       :class-title: header-3-danger
