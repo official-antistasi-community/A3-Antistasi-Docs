@@ -59,10 +59,13 @@ Supported Modsets & Maps
 
    Whilst modsets and maps can be combined as you wish, we suggest to only load the mods for the Factions you want to play with and not simply load all mods that are compatible.
 
+   .. rst-class:: nocode
 
-   .. dropdown:: Factions
+   .. dropdown:: Factions and Modsets
       :class-title: header-3-light
-      :class-container: sd-card-3 target-substitude
+      :class-container: sd-card-3 target-substitude nocode
+
+      .. rst-class:: nocode
 
       Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
 
@@ -88,7 +91,7 @@ Supported Modsets & Maps
       - AI - VN MACV
       - AI - VN PAVN
 
-      Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
+      Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded) [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_GM_CUP.html>`]:
 
       - Rebel - GM FIA
       - AI - GM Bundeswehr Arctic
@@ -96,7 +99,7 @@ Supported Modsets & Maps
       - AI - GM Nationale Volksarmee Arctic (National People's Army)
       - AI - GM Nationale Volksarmee Temperate (National People's Army)
 
-      Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded):
+      Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded) [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SPE_IFA.html>`]:
 
       - Rebel - SPE_IFA FFF
       - AI - SPE_IFA US
@@ -115,7 +118,7 @@ Supported Modsets & Maps
       - AI - RHS USMC Arid
       - AI - RHS USMC Temperate
 
-      Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ :
+      Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`]:
 
       - Rebel - 3CB CCM
       - Rebel - 3CB FIA
@@ -137,14 +140,14 @@ Supported Modsets & Maps
       - AI - 3CB TKA Mix
       - AI - 3CB TKA West
 
-      Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_:
+      Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`]:
 
       - AI - 3CB BAF Arctic
       - AI - 3CB BAF Arid
       - AI - 3CB BAF Temperate
       - AI - 3CB BAF Tropical
 
-      Added Factions with `CUP <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_:
+      Added Factions with `CUP <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_CUP.html>`]:
 
       - Rebel - CUP NAPA
       - Rebel - CUP TKM
@@ -171,12 +174,12 @@ Supported Modsets & Maps
       - AI - CUP USMC Arid
       - AI - CUP USMC Temperate
 
-      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_:
+      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`]:
 
       - AI - BWA3 BW Arid
       - AI - BWA3 BW Temperate
 
-      Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_:
+      Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Unsung.html>`]:
 
       - Rebel - Unsung VC
       - AI - Unsung PAVN
@@ -264,40 +267,6 @@ Supported Modsets & Maps
       - `Ivory Car Pack [Official] <https://steamcommunity.com/sharedfiles/filedetails/?id=1888644057>`_
       - `RDS Civilian Pack <https://steamcommunity.com/workshop/filedetails/?id=612930542>`_
       - `TCGM_BikeBackpack <https://steamcommunity.com/sharedfiles/filedetails/?id=2096950604>`_
-
-   .. dropdown:: Prepared Modsets
-      :class-title: header-3-light
-      :class-container: sd-card-3
-
-      You can download the following modsets which we prepared:
-
-      .. rst-class:: table-additional-mods
-
-      .. flat-table::
-         :header-rows: 0
-         :widths: 20 80
-
-         *  - 3CB BAF
-            - :download:`Modset 3DB BAF </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`
-
-         *  - BW Mod
-            - :download:`Modset BWMod </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`
-
-         *  - CUP
-            - :download:`Modset CUP </_data/templates_launcher/Arma_3_Preset_Antistasi_CUP.html>`
-
-         *  - GM CUP
-            - :download:`Modset GM CUP </_data/templates_launcher/Arma_3_Preset_Antistasi_GM_CUP.html>`
-
-         *  - RHS 3CBFactions
-            - :download:`Modset RHS 3CBFactions </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`
-
-         *  - SPE IFA
-            - :download:`Modset SPE IFA </_data/templates_launcher/Arma_3_Preset_Antistasi_SPE_IFA.html>`
-
-         *  - Unsung
-            - :download:`Modset Unsung </_data/templates_launcher/Arma_3_Preset_Antistasi_Unsung.html>`
-
 
    .. dropdown:: Forbidden Mods
       :class-title: header-3-danger
