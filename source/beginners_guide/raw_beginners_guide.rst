@@ -174,7 +174,7 @@ Supported Modsets & Maps
       - AI - CUP USMC Arid
       - AI - CUP USMC Temperate
 
-      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`]:
+      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_BWMod.html>`]:
 
       - AI - BWA3 BW Arid
       - AI - BWA3 BW Temperate
