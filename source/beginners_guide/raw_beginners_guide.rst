@@ -67,7 +67,7 @@ Supported Modsets & Maps
 
       .. rst-class:: nocode
 
-      Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_:
+      Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
       - Rebel - A3 FIA
       - Rebel - A3 SDK
@@ -79,13 +79,13 @@ Supported Modsets & Maps
       - AI - A3 NATO Temperate
       - AI - A3 NATO Tropical
 
-      Added Factions with Arma 3 DLCs:
+      Added Factions with Arma 3 DLCs [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
       - AI - A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
 
-      Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_:
+      Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SOG.html>`]:
 
       - Rebel - VN POF
       - AI - VN MACV
@@ -105,7 +105,7 @@ Supported Modsets & Maps
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
-      Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ :
+      Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS.html>`]:
 
       - Rebel - RHS NAPA
       - AI - RHS AFRF Arid
