@@ -105,6 +105,15 @@ Supported Modsets & Maps
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
+      Added Factions with the `Western Sahara CDLC <https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistas_WS.html>`]:
+
+      - Rebel - Tura
+      - AI - ION Services
+      - AI - SFIA (Sefrawi Freedom and Independence Army)
+      - AI - ADF (Arganian Defence Force)
+      - AI - CSAT (North African version)
+      - AI - NATO (Desert camo)
+
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS.html>`]:
 
       - Rebel - RHS NAPA
