@@ -205,6 +205,11 @@ Supported Modsets & Maps
       - Livonia (requires the `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - Tanoa (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
 
+      Available maps with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_:
+
+      - Weferlingen
+      - Weferlingen Winter
+
       Available maps with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_:
 
       - Cam Lao Nam
@@ -232,6 +237,8 @@ Supported Modsets & Maps
       - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
       - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
       - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
+      - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
+      - `Kujari <https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027>`_
 
    .. dropdown:: Additional Mods
       :class-title: header-3-light
