@@ -95,12 +95,29 @@ With VS code Arma Dev Extension
          "serverDirs": [],
          "serverUse32bit": false,
          "clientDirs": [ //should list all addons the mod provides
-              "A3A/addons/core",
-              "A3A/addons/Garage",
-              "A3A/addons/JeroenArsenal",
-              "A3A/addons/maps"
-              ],
-         "clientMods": [],
+      		"A3A/addons/config_fixes",
+      		"A3A/addons/core",
+      		"A3A/addons/Events",
+      		"A3A/addons/Garage",
+      		"A3A/addons/gear",
+      		"A3A/addons/GUI",
+      		"A3A/addons/jeroen_arsenal",
+      		"A3A/addons/Logistics",
+      		"A3A/addons/maps",
+      		"A3A/addons/patcom"
+           ],
+         "clientMods": [
+            // Example:
+      		// "!Workshop/@CBA_A3",
+      		// "!Workshop/@ace",
+      		// "!Workshop/@User Input Menus",
+      		// "!Workshop/@Extended Function Viewer",
+      		// "!Workshop/@Debug Console",
+      		// "!Workshop/@Zeus Enhanced",
+      		// "!Workshop/@Zeus Enhanced - ACE3 Compatibility",
+      		// "!Workshop/@Enhanced Movement",
+      		// "!Workshop/@DUI - Squad Radar"
+         ],
          "ftpConnection": {},
          "steamPath": "H:\\SteamLibrary" //arma 3 install steam library, arma 3 tools should be in the same folder
       }
