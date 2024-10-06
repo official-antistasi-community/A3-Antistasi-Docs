@@ -75,6 +75,64 @@ Standardised Header
    - It is not necessary to specify exact :ref:`code/array structure <dev_code_contribution_standardVariables>` (just :code:`<CODE>` or :code:`<ARRAY>`). However, a specific structure makes it clear what is expected/returned.
    - It is not normal to have 10 arguments. The majority of humans can only `subitise <https://www.dictionary.com/browse/subitize>`_ ~5 items, use that as a guide.
 
+.. _dev_code_contribution_standard_config:
+
+Standardised Header
+============================================================
+
+.. card::
+   :class-card: sd-card-2
+   :class-header: header-2-light
+
+   Standardised Config Classes
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block::
+
+      /*
+      Maintainer: John Doe
+          Showing example of how to patch the baseWeapon attribute of a class.
+          Showing example of how a3a classes should be written.
+
+      class CfgWeapons 
+      {
+         class arifle_AK12_GL_base_F;
+         class arifle_AK12_GL_lush_F : arifle_AK12_GL_base_F
+         {
+            baseWeapon = "arifle_AK12_GL_lush_F";
+         };
+      };
+      class CfgVehicles 
+      {
+         //Grandparent
+         class rhs_t72ba_tv;
+
+         //Parent and child class
+         class rhsgref_ins_t72ba : rhs_t72ba_tv {class EventHandlers; };
+
+         // a3a_{modset}_{identifying information}
+         class a3a_rhs_chdkz_72a : rhsgref_ins_t72ba
+         {
+            //Inherits the eventhandler from the rhsgref_ins_t72ba.
+            class EventHandlers : EventHandlers
+            {
+               //Clears the eventhandler that adds a flag to the tank
+               class rhs_flag_init{};
+            };
+            //it is also possible to retexture vehicles in here usinh hidden selections.
+            //hiddenSelectionsTextures[] = {};
+         };
+      };
+      */
+
+   .. rst-class:: code-paragraph
+
+   - Custom classname convention
+   - Classes should be lower_case and use snake_case for multiple words.
+   - After the a3a namespace there should be the namespace for the addon that was used.
+   - example: a3a_rhs_chdkz_72a, a3a_g_fedora_camo_02.
+
 .. _dev_code_contribution_standardVariables:
 
 Standardised Variable Types
