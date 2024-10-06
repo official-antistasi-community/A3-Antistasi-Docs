@@ -77,7 +77,7 @@ Standardised Header
 
 .. _dev_code_contribution_standard_config:
 
-Standardised Header
+Standardised Config Classes
 ============================================================
 
 .. card::
