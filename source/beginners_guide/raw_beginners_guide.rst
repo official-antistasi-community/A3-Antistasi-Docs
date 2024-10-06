@@ -105,6 +105,15 @@ Supported Modsets & Maps
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
+      Added Factions with the `Western Sahara CDLC <https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistas_WS.html>`]:
+
+      - Rebel - Tura
+      - AI - ION Services
+      - AI - SFIA (Sefrawi Freedom and Independence Army)
+      - AI - ADF (Arganian Defence Force)
+      - AI - CSAT (North African version)
+      - AI - NATO (Desert camo)
+
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS.html>`]:
 
       - Rebel - RHS NAPA
@@ -400,6 +409,9 @@ How to set up a game
          *  - Khe Sanh
             - :code:`Antistasi_vn_khe_sanh.vn_khe_sanh`
 
+         *  - Kujari
+            - :code:`Antistasi_tem_kujari.tem_kujari`
+
          *  - Kunduz
             - :code:`Antistasi_Kunduz.Kunduz`
 
@@ -408,6 +420,9 @@ How to set up a game
 
          *  - Malden
             - :code:`Antistasi_Malden.Malden`
+
+         *  - Pulau
+            - :code:`Antistasi_pulau.pulau`
 
          *  - Sahrani
             - :code:`Antistasi_sara.sara`
@@ -424,8 +439,17 @@ How to set up a game
          *  - Tembelan Island
             - :code:`Antistasi_Tembelan.Tembelan`
 
+         *  - UMB Colombia
+            - :code:`Antistasi_UMB_Colombia.UMB_Colombia`
+
          *  - Virolahti
             - :code:`Antistasi_vt7.vt7`
+
+         *  - Weferlingen Summer
+            - :code:`Antistasi_gm_weferlingen_summer.gm_weferlingen_summer`
+
+         *  - Weferlingen Winter
+            - :code:`Antistasi_gm_weferlingen_winter.gm_weferlingen_winter`
 
 Setup UI
 ===============
