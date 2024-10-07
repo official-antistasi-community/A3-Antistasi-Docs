@@ -89,6 +89,7 @@ Standardised Config Classes
 
    .. rst-class:: code-block-2
    .. code-block::
+      
       //Example - config.hpp //{modset - filename}
 
       /*
