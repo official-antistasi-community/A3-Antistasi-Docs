@@ -233,6 +233,7 @@ Supported Modsets & Maps
       Available maps with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_:
 
       - Normandy
+      - Mortain
 
       Available maps with `CUP Terrains - Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
 
@@ -444,6 +445,9 @@ How to set up a game
 
          *  - Normandy
             - :code:`Antistasi_SPE_Normandy.SPE_Normandy`
+
+         *  - Mortain
+            - :code:`Antistasi_SPE_Mortain.SPE_Mortain`
 
          *  - Takistan
             - :code:`Antistasi_Takistan.takistan`
