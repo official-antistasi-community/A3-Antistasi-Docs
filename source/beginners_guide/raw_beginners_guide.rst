@@ -70,20 +70,24 @@ Supported Modsets & Maps
       Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
       - Rebel - A3 FIA
-      - Rebel - A3 SDK
       - AI - A3 AAF
       - AI - A3 CSAT Arid
       - AI - A3 CSAT Temperate
-      - AI - A3 LDF
       - AI - A3 NATO Arid
       - AI - A3 NATO Temperate
       - AI - A3 NATO Tropical
 
       Added Factions with Arma 3 DLCs [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
+      - Rebel - A3 SDK (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - Rebel - A3 LFF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - AI - A3 LDF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 UK/NATO Arid (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 UK/NATO Tropical (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 ION (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_ and `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
 
       Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SOG.html>`]:
 
