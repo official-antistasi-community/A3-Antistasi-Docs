@@ -123,6 +123,8 @@ Supported Modsets & Maps
       - Rebel - RHS NAPA
       - AI - RHS AFRF Arid
       - AI - RHS AFRF Temperate
+      - AI - RHS VDV Arid
+      - AI - RHS VDV Temperate
       - AI - RHS CDF
       - AI - RHS ChDKZ
       - AI - RHS SAF
@@ -130,18 +132,26 @@ Supported Modsets & Maps
       - AI - RHS US Army Temperate
       - AI - RHS USMC Arid
       - AI - RHS USMC Temperate
+      - AI - RHS HIDF
+      - AI - RHS TLA
 
       Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`]:
 
       - Rebel - 3CB CCM
       - Rebel - 3CB FIA
       - Rebel - 3CB ION
+      - Rebel - 3CB LSM
       - Rebel - 3CB TKM
       - AI - 3CB AAF
+      - AI - 3CB AAF Arid
       - AI - 3CB ADA
       - AI - 3CB ANA
       - AI - 3CB Cold War US
       - AI - 3CB Cold War USSR
+      - AI - 3CB CSAT BEAR
+      - AI - 3CB CSAT VIPER
+      - AI - 3CB CSAT SCIMITAR
+      - AI - 3CB CSAT GRYPHON
       - AI - 3CB HIDF
       - AI - 3CB ION Arctic
       - AI - 3CB ION Arid
@@ -168,6 +178,7 @@ Supported Modsets & Maps
       - AI - CUP ACR Temperate
       - AI - CUP AFRF Arctic
       - AI - CUP AFRF Arid
+      - AI - CUP AFRF Desert
       - AI - CUP AFRF Temperate
       - AI - CUP BAF Arid
       - AI - CUP BAF Temperate
