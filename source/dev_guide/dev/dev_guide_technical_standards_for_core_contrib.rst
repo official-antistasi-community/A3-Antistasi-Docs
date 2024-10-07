@@ -89,11 +89,32 @@ Standardised Config Classes
 
    .. rst-class:: code-block-2
    .. code-block::
+      //Example - config.hpp //{modset - filename}
 
       /*
       Maintainer: John Doe
           Showing example of how to patch the baseWeapon attribute of a class.
           Showing example of how a3a classes should be written.
+      */
+
+      class CfgPatches 
+      {
+         //Use a relevant patchname, A3 is used for vanilla config fixes.
+         //For example "AirLoadout_Vanilla" is used for the vanilla aircraft loadouts.
+         class PATCHNAME(A3) 
+         {
+            name = COMPONENT_NAME;
+            units[] = {};
+            weapons[] = {};
+            requiredVersion = REQUIRED_VERSION;
+            requiredAddons[] = {"A3_Data_F_AoW_Loadorder"};    //In most cases any patch from the required mod(s) is sufficent - though be careful when overwriting classes.
+            skipWhenMissingDependencies = 1;    //For most A3A uses we want to skip configs that don't have all their requiredAddons.
+            author = AUTHOR;
+            authors[] = { AUTHORS };
+            authorUrl = "";
+            VERSION_CONFIG;
+         };
+      };
 
       class CfgWeapons 
       {
@@ -103,6 +124,7 @@ Standardised Config Classes
             baseWeapon = "arifle_AK12_GL_lush_F";
          };
       };
+
       class CfgVehicles 
       {
          //Grandparent
@@ -111,7 +133,7 @@ Standardised Config Classes
          //Parent and child class
          class rhsgref_ins_t72ba : rhs_t72ba_tv {class EventHandlers; };
 
-         // a3a_{modset}_{identifying information}
+         // a3a_{modset}_{identifier}
          class a3a_rhs_chdkz_72a : rhsgref_ins_t72ba
          {
             //Inherits the eventhandler from the rhsgref_ins_t72ba.
@@ -120,18 +142,18 @@ Standardised Config Classes
                //Clears the eventhandler that adds a flag to the tank
                class rhs_flag_init{};
             };
-            //it is also possible to retexture vehicles in here usinh hidden selections.
+            //it is also possible to retexture vehicles in here using hidden selections. See githuh for `examples <https://github.com/official-antistasi-community/A3-Antistasi/tree/unstable/A3A/addons/config_fixes>`_.
             //hiddenSelectionsTextures[] = {};
          };
       };
-      */
 
    .. rst-class:: code-paragraph
 
    - Custom classname convention
    - Classes should be lower_case and use snake_case for multiple words.
    - After the a3a namespace there should be the namespace for the addon that was used.
-   - example: a3a_rhs_chdkz_72a, a3a_g_fedora_camo_02.
+   - Example: a3a_rhs_chdkz_72a, a3a_g_fedora_camo_02.
+   - Clean up unneeded comments.
 
 .. _dev_code_contribution_standardVariables:
 
