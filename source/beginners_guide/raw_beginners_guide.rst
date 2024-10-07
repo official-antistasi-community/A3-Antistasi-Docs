@@ -250,11 +250,12 @@ Supported Modsets & Maps
       Single maps with their own required mods:
 
       - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
-      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
-      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
-      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
       - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
       - `Kujari <https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027>`_
+      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
+      - `Pulau <https://steamcommunity.com/workshop/filedetails/?id=1423583812>`_
+      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
+      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
 
    .. dropdown:: Additional Mods
       :class-title: header-3-light
