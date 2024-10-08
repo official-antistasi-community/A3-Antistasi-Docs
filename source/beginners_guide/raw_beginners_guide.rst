@@ -242,8 +242,8 @@ Supported Modsets & Maps
 
       Available maps with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_:
 
-      - Normandy
       - Mortain
+      - Normandy
 
       Available maps with `CUP Terrains - Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
 
@@ -260,11 +260,11 @@ Supported Modsets & Maps
       Single maps with their own required mods:
 
       - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
-      - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
       - `Kujari <https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027>`_
       - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
       - `Pulau <https://steamcommunity.com/workshop/filedetails/?id=1423583812>`_
       - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
+      - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
       - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
 
    .. dropdown:: Additional Mods
@@ -454,11 +454,11 @@ How to set up a game
          *  - Sahrani
             - :code:`Antistasi_sara.sara`
 
-         *  - Normandy
-            - :code:`Antistasi_SPE_Normandy.SPE_Normandy`
-
          *  - Mortain
             - :code:`Antistasi_SPE_Mortain.SPE_Mortain`
+
+         *  - Normandy
+            - :code:`Antistasi_SPE_Normandy.SPE_Normandy`
 
          *  - Takistan
             - :code:`Antistasi_Takistan.takistan`
