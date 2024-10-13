@@ -83,11 +83,11 @@ Supported Modsets & Maps
       - Rebel - A3 LFF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - AI - A3 ION (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_ and `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 LDF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 UK/NATO Arid (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 UK/NATO Tropical (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
-      - AI - A3 ION (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_ and `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
 
       Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SOG.html>`]:
 
@@ -113,11 +113,11 @@ Supported Modsets & Maps
 
       - Rebel - AK
       - Rebel - FFI
-      - AI - WEHRMACHT
       - AI - ALLIES
       - AI - SOVIET ARMY
       - AI - US ARMY
       - AI - UK ARMY
+      - AI - WEHRMACHT
 
       Added Factions with the `Western Sahara CDLC <https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistas_WS.html>`]:
 
@@ -133,17 +133,17 @@ Supported Modsets & Maps
       - Rebel - RHS NAPA
       - AI - RHS AFRF Arid
       - AI - RHS AFRF Temperate
-      - AI - RHS VDV Arid
-      - AI - RHS VDV Temperate
       - AI - RHS CDF
       - AI - RHS ChDKZ
+      - AI - RHS HIDF
+      - AI - RHS TLA
       - AI - RHS SAF
       - AI - RHS US Army Arid
       - AI - RHS US Army Temperate
       - AI - RHS USMC Arid
       - AI - RHS USMC Temperate
-      - AI - RHS HIDF
-      - AI - RHS TLA
+      - AI - RHS VDV Arid
+      - AI - RHS VDV Temperate
 
       Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`]:
 
@@ -159,9 +159,9 @@ Supported Modsets & Maps
       - AI - 3CB Cold War US
       - AI - 3CB Cold War USSR
       - AI - 3CB CSAT BEAR
-      - AI - 3CB CSAT VIPER
-      - AI - 3CB CSAT SCIMITAR
       - AI - 3CB CSAT GRYPHON
+      - AI - 3CB CSAT SCIMITAR
+      - AI - 3CB CSAT VIPER
       - AI - 3CB HIDF
       - AI - 3CB ION Arctic
       - AI - 3CB ION Arid
