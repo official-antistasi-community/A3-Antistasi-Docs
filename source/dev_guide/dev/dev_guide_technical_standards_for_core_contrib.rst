@@ -89,7 +89,7 @@ Standardised Config Classes
 
    .. rst-class:: code-block-2
    .. code-block::
-      
+
       //Example - config.hpp //{modset - filename}
 
       /*
@@ -98,11 +98,11 @@ Standardised Config Classes
           Showing example of how a3a classes should be written.
       */
 
-      class CfgPatches 
+      class CfgPatches
       {
          //Use a relevant patchname, A3 is used for vanilla config fixes.
          //For example "AirLoadout_Vanilla" is used for the vanilla aircraft loadouts.
-         class PATCHNAME(A3) 
+         class PATCHNAME(A3)
          {
             name = COMPONENT_NAME;
             units[] = {};
@@ -117,7 +117,7 @@ Standardised Config Classes
          };
       };
 
-      class CfgWeapons 
+      class CfgWeapons
       {
          class arifle_AK12_GL_base_F;
          class arifle_AK12_GL_lush_F : arifle_AK12_GL_base_F
@@ -126,7 +126,7 @@ Standardised Config Classes
          };
       };
 
-      class CfgVehicles 
+      class CfgVehicles
       {
          //Grandparent
          class rhs_t72ba_tv;
@@ -150,11 +150,11 @@ Standardised Config Classes
 
    .. rst-class:: code-paragraph
 
-   - Custom classname convention
-   - Classes should be lower_case and use snake_case for multiple words.
-   - After the a3a namespace there should be the namespace for the addon that was used.
-   - Example: a3a_rhs_chdkz_72a, a3a_g_fedora_camo_02.
    - Clean up unneeded comments.
+   - Custom classname convention:
+      - Classes should be lower_case and use snake_case for multiple words.
+      - After the a3a namespace there should be the namespace for the addon that was used.
+      - Example: a3a_rhs_chdkz_72a, a3a_g_fedora_camo_02.
 
 .. _dev_code_contribution_standardVariables:
 
