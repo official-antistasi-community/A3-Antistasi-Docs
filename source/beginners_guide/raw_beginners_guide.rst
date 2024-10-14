@@ -70,20 +70,24 @@ Supported Modsets & Maps
       Available Factions with `Vanilla Arma 3 <https://store.steampowered.com/app/107410/Arma_3/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
       - Rebel - A3 FIA
-      - Rebel - A3 SDK
       - AI - A3 AAF
       - AI - A3 CSAT Arid
       - AI - A3 CSAT Temperate
-      - AI - A3 LDF
       - AI - A3 NATO Arid
       - AI - A3 NATO Temperate
       - AI - A3 NATO Tropical
 
       Added Factions with Arma 3 DLCs [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Vanilla.html>`]:
 
+      - Rebel - A3 SDK (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - Rebel - A3 LFF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 CSAT Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
       - AI - A3 CSAT Enoch (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - AI - A3 ION (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_ and `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
+      - AI - A3 LDF (requires `Contact DLC <https://store.steampowered.com/app/1021790/Arma_3_Contact/>`_)
       - AI - A3 NATO Apex (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 UK/NATO Arid (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
+      - AI - A3 UK/NATO Tropical (requires `APEX DLC <https://store.steampowered.com/app/395180/Arma_3_Apex/>`_)
 
       Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SOG.html>`]:
 
@@ -105,6 +109,16 @@ Supported Modsets & Maps
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
+      Avaliable Factions with `IFA3 AIO <https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3.html>`, :download:`Extended Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3_Extended.html>`]:
+
+      - Rebel - AK
+      - Rebel - FFI
+      - AI - ALLIES
+      - AI - SOVIET ARMY
+      - AI - US ARMY
+      - AI - UK ARMY
+      - AI - WEHRMACHT
+
       Added Factions with the `Western Sahara CDLC <https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistas_WS.html>`]:
 
       - Rebel - Tura
@@ -121,23 +135,33 @@ Supported Modsets & Maps
       - AI - RHS AFRF Temperate
       - AI - RHS CDF
       - AI - RHS ChDKZ
+      - AI - RHS HIDF
+      - AI - RHS TLA
       - AI - RHS SAF
       - AI - RHS US Army Arid
       - AI - RHS US Army Temperate
       - AI - RHS USMC Arid
       - AI - RHS USMC Temperate
+      - AI - RHS VDV Arid
+      - AI - RHS VDV Temperate
 
       Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`]:
 
       - Rebel - 3CB CCM
       - Rebel - 3CB FIA
       - Rebel - 3CB ION
+      - Rebel - 3CB LSM
       - Rebel - 3CB TKM
       - AI - 3CB AAF
+      - AI - 3CB AAF Arid
       - AI - 3CB ADA
       - AI - 3CB ANA
       - AI - 3CB Cold War US
       - AI - 3CB Cold War USSR
+      - AI - 3CB CSAT BEAR
+      - AI - 3CB CSAT GRYPHON
+      - AI - 3CB CSAT SCIMITAR
+      - AI - 3CB CSAT VIPER
       - AI - 3CB HIDF
       - AI - 3CB ION Arctic
       - AI - 3CB ION Arid
@@ -164,6 +188,7 @@ Supported Modsets & Maps
       - AI - CUP ACR Temperate
       - AI - CUP AFRF Arctic
       - AI - CUP AFRF Arid
+      - AI - CUP AFRF Desert
       - AI - CUP AFRF Temperate
       - AI - CUP BAF Arid
       - AI - CUP BAF Temperate
@@ -217,6 +242,7 @@ Supported Modsets & Maps
 
       Available maps with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_:
 
+      - Mortain
       - Normandy
 
       Available maps with `CUP Terrains - Maps <https://steamcommunity.com/sharedfiles/filedetails/?id=583544987>`_:
@@ -234,11 +260,12 @@ Supported Modsets & Maps
       Single maps with their own required mods:
 
       - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
-      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
-      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
-      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
-      - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
       - `Kujari <https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027>`_
+      - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
+      - `Pulau <https://steamcommunity.com/workshop/filedetails/?id=1423583812>`_
+      - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
+      - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
+      - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
 
    .. dropdown:: Additional Mods
       :class-title: header-3-light
@@ -426,6 +453,9 @@ How to set up a game
 
          *  - Sahrani
             - :code:`Antistasi_sara.sara`
+
+         *  - Mortain
+            - :code:`Antistasi_SPE_Mortain.SPE_Mortain`
 
          *  - Normandy
             - :code:`Antistasi_SPE_Normandy.SPE_Normandy`
