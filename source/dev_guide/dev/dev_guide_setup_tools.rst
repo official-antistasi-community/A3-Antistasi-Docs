@@ -28,11 +28,11 @@ Arma 3 Developer Mods
 
    Arma 3 Developer Mods
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   
+
    | These are some mods that you are recommended to use to make testing easier.
    | It is recommended to make this into a saved modlist along with your local build of the mod so you can always load the right modset.
-   .. rst-class:: target-substitude linkname-steam table-mission-info
 
+   .. rst-class:: target-substitude linkname-steam table-mission-info
    .. flat-table::
       :header-rows: 1
 
@@ -65,7 +65,7 @@ Code Editor Extensions
       Visual Studio Code
       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-      You can download Visual Studio Code for free on their `Website <https://code.visualstudio.com/download>`_. 
+      You can download Visual Studio Code for free on their `Website <https://code.visualstudio.com/download>`_.
       The following extensions are extremely useful for editing Antistasi and are almost required.
 
       .. rst-class:: target-substitude table-2-b
@@ -84,7 +84,7 @@ Code Editor Extensions
 
          *  - `Arma 3 - Open Last RPT <https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt>`_
             - Quickly open your last RPT to check for errors with Ctrl + Alt + R
-            
+
          *  - `Arma SQF Language <https://marketplace.visualstudio.com/items?itemName=blackfisch.sqf-language>`_
             - Comprehensive command support for SQF
 

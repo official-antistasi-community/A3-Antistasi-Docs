@@ -38,8 +38,8 @@ With AntistasiBuilder
       - AntistasiBuilder can be found in the main installation folder, where the :code:`A3A` and :code:`Tools` folders are located.
       - To set the program up the first time, run the executable once. This will generate a config file called :code:`AntistasiBuilder.cfg` in the same folder.
       - Open that config file and add the path to the Arma 3 Tools directory under :code:`-a3ToolsDir="PATH"`.
-       For example: :code:`-a3ToolsDir="H:/SteamLibrary/steamapps/common/Arma 3 Tools"`
-       Make sure that the path is in quotes.
+        For example: :code:`-a3ToolsDir="H:/SteamLibrary/steamapps/common/Arma 3 Tools"`
+        Make sure that the path is in quotes.
       - Save the config file and close it.
 
    .. card::
@@ -54,7 +54,7 @@ With AntistasiBuilder
       :class-card: sd-card-2 sd-mt-3 sd-card-important
 
       :code:`AntistasiBuilder.exe` has a bug in which file paths with spaces in them will break the program.
-      If this happens, you will see an error relating to an invalid number of parameters. Try moving your Antistasi folder to a path without spaces. 
+      If this happens, you will see an error relating to an invalid number of parameters. Try moving your Antistasi folder to a path without spaces.
       If your username has spaces and you can't move it higher, you can try one of the following methods.
 
 With PowerShell
