@@ -10,7 +10,7 @@ Version 3.9.0
    18th May 2024
 
 .. admonition:: Major
-   
+
    * :issue:`3454` AI will now send boats for naval support during major attacks
    * :issue:`3483` Added maps Napf and Napf Winter
    * :issue:`3489` Added map Regero
@@ -79,9 +79,6 @@ Version 3.9.0
 .. admonition:: Localization
 
    * [No PRs] - Unfortunately no updates due to pipeline issues.
-
-.. admonition:: Tools
-
 
 .. admonition:: Refactor
 
@@ -162,9 +159,6 @@ Version 3.8.0
 .. admonition:: Tools
 
    * :issue:`3401` Added Seat drawing dev function
-
-.. admonition:: Refactor
-
 
 .. warning::
 
@@ -486,7 +480,7 @@ Version 3.5.0
 
    * [Added] - Complete port for Weferlingen Summer - requires `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_
    * [Added] - Complete port for Weferlingen Winter - requires `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_
-   * In the summer and in the winter, resistance fighters armed with their R-700 bolt-action rifles trudge through the fields towards ill-prepared Bundeswehr and NVA roadblocks. In an occupied post-WW2 Germany, the citizens are ready to take up arms for freedom, no matter which time of the year. 
+   * In the summer and in the winter, resistance fighters armed with their R-700 bolt-action rifles trudge through the fields towards ill-prepared Bundeswehr and NVA roadblocks. In an occupied post-WW2 Germany, the citizens are ready to take up arms for freedom, no matter which time of the year.
 
    .. rubric:: :issue:`3073` UMB Colombia Map Port
 
@@ -511,10 +505,10 @@ Version 3.5.0
 
 .. admonition:: Minor
 
-   * :issue:`3137` Added vehicle discount functionality based on war level for maps without seaports. 
-   * :issue:`3134` Added hint on old build button in Y menu to help older players find the new construction system. 
-   * :issue:`3131` Added debug functions to test-spawn units and vehicles from templates checking. 
-   * :issue:`3115` Rebel and enemy airstrikes will now be shown in the log. 
+   * :issue:`3137` Added vehicle discount functionality based on war level for maps without seaports.
+   * :issue:`3134` Added hint on old build button in Y menu to help older players find the new construction system.
+   * :issue:`3131` Added debug functions to test-spawn units and vehicles from templates checking.
+   * :issue:`3115` Rebel and enemy airstrikes will now be shown in the log.
    * :issue:`3110` Aircraft can now be accessed from any garage, but cannot be removed unless the player is at an airbase.
    * :issue:`3102` Seaports will only cut 5% of vehicle price each (changed from 10% each) and now cap at 6 maximum, for a total of a max 30% discount on vehicles.
    * :issue:`3102` Garage will now delete blacklisted vehicles, so hopefully no more empty "Vehicle" entities.
@@ -974,7 +968,7 @@ Version 3.2.0
    * :issue:`2643` Fixed vehicle arsenal dupe
    * :issue:`2625` Fixed createVehicleCrew preventing to fill cargo turrets with units
    * :issue:`2574` Fixed exploit where undercover was not removed when approaching downed heli
- 
+
 .. warning::
 
    * Please note that this changelog may contain both spelling/grammatical errors and/or factual errors. Should any factual errors exist, we apologise but with the sheer number of changes made per version it can be easy to lose or mistake a change when writing up the changelog.
@@ -1014,7 +1008,7 @@ Version 3.1.0
    * :issue:`2591` Fixed typo in CUP templates
    * :issue:`2592` Fixed exploit where every unit could be set captive using ace hotkeys
    * :issue:`2594` & :issue:`2628` Fixed intel desks floating after building destruction
-   * :issue:`2597` Fixed count attached objects each frame. 
+   * :issue:`2597` Fixed count attached objects each frame.
    * :issue:`2603` Fixed markers loading on incorrect side
    * :issue:`2608` Force disabled acex_headless as it conflicts with internal HC scripts
    * :issue:`2610` Fixed save detection
@@ -1024,12 +1018,12 @@ Version 3.1.0
    * :issue:`2649` Fixed typos in RHS USAF templates
    * :issue:`2623` Fixed setIdentity not working as expected
    * :issue:`2637` Fixed BuyVehicle GUI crashing on false vehicle entries
- 
+
 .. admonition:: Refactor
 
    * :issue:`2548` UPSMON refactor - moved files so a separate addon, execvm's removed, loading time decreased
    * :issue:`2597` Lazy evaluation for LTC
-   * :issue:`2604` Full refactor of playerMarkers so it works as intended 
+   * :issue:`2604` Full refactor of playerMarkers so it works as intended
    * :issue:`2640` Improved setup process feedback hints
 
 .. warning::
