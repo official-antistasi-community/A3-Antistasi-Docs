@@ -7,30 +7,13 @@ How to build Antistasi
 ==================================
 
 .. card::
-   :class-card: sd-card-2 sd-mt-3 sd-card-important
-
-   Please note that this part is still heavily work in progress.
-   For more dev related information please go to our `Antistasi-Wiki-for-Devs <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs>`_.
-
-.. card::
    :class-card: sd-card-2 sd-mt-3
 
    | Antistasi, of course, can't simply be run as a loose collection of files slapped together in a folder - it needs to be built first.
    | There are a few different ways listed here for how to do that, ordered by preference: try the first method, then the second and so on if they dont work.
    | At the end of this documentation is a guide on how to load your files as a mod into the game.
    | The guide below is only for Version 2.6.0 and onwards. If you want to build an older version, look :ref:`here <dev_how_build_mission_guide>`.
-
-Common setup
-=============================
-
-.. card::
-   :class-card: sd-card-2 sd-mt-3
-   :class-header: header-2
-
-   Common setup
-   ^^^^^^^^^^^^^^^^^^
-
-   Install Arma 3 Tools in the same steam library that Arma 3 is installed.
+   | If none of the methods on this page work on your computer or you want to optimize your workflow further, see the advanced build methods :ref:`here <dev_how_build_advanced_guide>`.
 
 With AntistasiBuilder
 ================================
@@ -55,8 +38,8 @@ With AntistasiBuilder
       - AntistasiBuilder can be found in the main installation folder, where the :code:`A3A` and :code:`Tools` folders are located.
       - To set the program up the first time, run the executable once. This will generate a config file called :code:`AntistasiBuilder.cfg` in the same folder.
       - Open that config file and add the path to the Arma 3 Tools directory under :code:`-a3ToolsDir="PATH"`.
-        | For example: :code:`-a3ToolsDir="H:/SteamLibrary/steamapps/common/Arma 3 Tools"`
-        | Make sure that the path is in quotes.
+       For example: :code:`-a3ToolsDir="H:/SteamLibrary/steamapps/common/Arma 3 Tools"`
+       Make sure that the path is in quotes.
       - Save the config file and close it.
 
    .. card::
@@ -91,52 +74,6 @@ With PowerShell
    - This will build the mod and put it in the same :code:`/build/A3A` folder
    - If this is your first time interacting with PowerShell scripts, you might need to setup the execution policy on your computer. Open a PowerShell window as an administrator and run :code:`Set-ExecutionPolicy -ExecutionPolicy Unrestricted` to allow foreign scripts to run.
 
-
-
-With batch scripting
-===================================
-
-.. card::
-   :class-card: sd-card-2 sd-mt-3
-   :class-header: header-2
-
-   With batch scripting
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-paragraph
-
-   - This method allows you to "somewhat" easily sign your mod with a private key if you want to run your mod on a dedicated server with signature verification.
-   - To use the following batch script, copy it into a text file and rename the extension to .bat
-   - Make sure to change all of the marked paths to the relevant absolute paths.
-   - You can remove the portions about filepatching, private key signing, and public key signing if those parts are not needed.
-
-   .. rst-class:: code-block-3
-   .. code-block:: bat
-
-      @echo off
-      setlocal
-
-      rem *******Edit these three to match local config*********
-      set builderpath="C:\Program Files (x86)\Steam\steamapps\common\Arma 3 Tools\AddonBuilder\AddonBuilder.exe"
-      set armapath="G:\SteamLibrary\steamapps\common\Arma 3"
-      set keypath="C:\Projects\BISkeys\Antistasi__NAME__.biprivatekey"
-
-      set sourcedir="%CD%\A3A\addons"
-      set builddir="%CD%\build\@A3A\addons"
-      set extraparams=-packonly -sign=%keypath%
-
-      del /Q %builddir%\*.*
-      for /F %%x in ('dir /A:D /B /D %sourcedir%') do (
-         %builderpath% %sourcedir%\%%x %builddir% %extraparams% -prefix=x\A3A\addons\%%x
-      )
-
-      rem *******Create links to mod and file patching data*******
-      rmdir %armapath%\@A3ALocal
-      mklink /J %armapath%\@A3ALocal "%CD%\build\@A3A"
-      rmdir %armapath%\x\A3A
-      mklink /J %armapath%\x\A3A "%CD%\A3A"
-
-      endlocal
 
 With Arma 3 Tools
 ===================================

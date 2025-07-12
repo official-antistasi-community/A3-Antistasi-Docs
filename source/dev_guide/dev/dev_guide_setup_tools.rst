@@ -28,6 +28,7 @@ Arma 3 Developer Mods
 
    Arma 3 Developer Mods
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   
    | These are some mods that you are recommended to use to make testing easier.
    | It is recommended to make this into a saved modlist along with your local build of the mod so you can always load the right modset.
    .. rst-class:: target-substitude linkname-steam table-mission-info
@@ -145,30 +146,3 @@ Code Editor Extensions
 
          -  * `atom-bracket-highlight package <https://atom.io/packages/atom-bracket-highlight>`_
             * Animates bracket highlighting
-
-   .. card::
-      :class-card: sd-card-3
-      :class-header: header-3
-
-      Notepad++
-      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-      .. role:: strike-grey
-         :class: strike-grey
-
-
-      .. role:: warn-colored
-         :class: warn-colored
-
-
-      .. rst-class:: target-substitude table-2-b
-
-      .. flat-table::
-         :header-rows: 1
-
-         -  * Name
-            * Description
-
-         -  * :warn-colored:`NO LONGER AVAILABLE` :strike-grey:`Notepad++ SQF Syntax Highlighting and Auto Completion https://github.com/Barrow/npp-sqf`
-            * :strike-grey:`If you don't have an IDE and no clue how to work with one, this is basically the minimum requirement to work with it.`
