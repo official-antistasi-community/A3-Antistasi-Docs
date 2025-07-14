@@ -136,3 +136,64 @@ With batch scripting
       mklink /J %armapath%\x\A3A "%CD%\A3A"
 
       endlocal
+
+With Arma 3 Tools
+===================================
+
+.. card::
+   :class-card: sd-card-2 sd-mt-3
+   :class-header: header-2
+
+   With Arma 3 Tools
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Note that this guide exists almost solely for reference; building the mod this way is extremely inefficient and should be automated with one of the previous methods.
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3
+
+      Packing
+      ^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - Open :code:`Addon Builder` from :code:`Arma 3 Tools`
+      - Click options
+         - Add to :code:`List of files to copy directly` these file extensions; :code:`*.p3d;*.paa;*.hpp;*.sqf`
+         - Click the three dots next to :code:`Path to project folder` and navigate to the repository's A3A folder
+         - Add the prefix in the format :code:`x/A3A/{folder to build}`
+         - Optionally add a path to a :code:`.biprivatekey` for signing, this allows you to leave key verification on for dedicated server testing
+      - Back in the main window, add a source directory, this will be in turn each addon folder in :code:`repository -> A3A -> addons -> {folder to build}`
+      - Add a destination folder, this would be for example: :code:`repository -> build -> @A3A -> addons`
+      - Ensure for testing that it doesn't binarize the files
+      - Now, simply press build and repeat for each folder in the :code:`A3A -> addons`
+
+   .. card::
+      :class-card: sd-card-3
+      :class-header: header-3
+
+      Running
+      ^^^^^^^^
+
+      .. rst-class:: code-paragraph
+
+      - Copy the folder in your build directory to your arma 3 directory (or symbolic link it, recommended)
+      - In the arma 3 launcher, under the :code:`Mods` tab, click :code:`... More` -> :code:`Add watched folder...` -> :code:`Add 'Arma 3' folder`. This will automatically add local mods in your arma directory to your mods list for easy loading.
+
+Live editing
+===================================
+
+.. card::
+   :class-card: sd-card-2 sd-mt-3
+   :class-header: header-2
+
+   Live editing
+   ^^^^^^^^^^^^^^
+
+   .. rst-class:: code-paragraph
+
+   - Live editing is where you use an option known as "filepatching" to make changes in-game without having to restart the entire game. It is not essential for building, but can help optimize your workflow.
+   - For live editing you need to create this folder structure in your arma 3 directory; :code:`x/A3A/addons`, and then create symbolic links from each folder in your repository :code:`A3A/addons` folder to the one in your arma directory.
+   - Next you need to go in your ArmA 3 launchers :code:`Parameters` tab and under :code:`All Parameters`, in the :code:`Advanced` section, tick the parameter :code:`Enable File-Patching`, then under the section :code:`Author`, tick the parameter :code:`Debug Mode`. I recommend favoriting these two for ease of use later on.
+   - Now when you start with the build loaded under the :code:`Mods` tab, it will start in Dev mode and allow for recompilation of functions on the go either by reloading the mission or by calling the function :code:`A3A_fnc_prepFunctions`.
