@@ -23,7 +23,7 @@
     <link rel="icon" href="../../_static/antistasi_main_favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Antistasi Porting Instructions" href="dev_guide_porting.html" />
+    <link rel="next" title="Advanced build methods" href="dev_guide_how_to_build_advanced.html" />
     <link rel="prev" title="Dev Tools Starter Setup" href="dev_guide_setup_tools.html" />
         
             <link
@@ -51,7 +51,7 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="dev_guide_porting.html" title="Antistasi Porting Instructions"
+          <a href="dev_guide_how_to_build_advanced.html" title="Advanced build methods"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="dev_guide_setup_tools.html" title="Dev Tools Starter Setup"
@@ -78,12 +78,12 @@
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_setup_tools.html">Dev Tools Starter Setup</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">How to build Antistasi</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#common-setup">Common setup</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#with-antistasibuilder">With AntistasiBuilder</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#with-vs-code-arma-dev-extension">With VS code Arma Dev Extension</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#with-arma-3-tools">With Arma 3 Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#with-powershell">With PowerShell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adding-build-files-to-main-mod">Adding build files to main mod</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build_advanced.html">Advanced build methods</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
@@ -140,32 +140,17 @@
             
   <section class="hidden" id="how-to-build-antistasi">
 <span id="dev-how-build-guide"></span><h1>How to build Antistasi<a class="headerlink" href="#how-to-build-antistasi" title="Link to this heading"></a></h1>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Please note that this part is still heavily work in progress.
-For more dev related information please go to our <a class="reference external" href="https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs">Antistasi-Wiki-for-Devs</a>.</p>
-</div>
-</div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-body docutils">
 <div class="line-block">
-<div class="line">Antistasi of course can’t simply be run as a loose collection of files slapped together in a folder - it needs to be build first.</div>
-<div class="line">There are different ways how that can be accomplished. Be it from within VS Code, with the Arma 3 Tools or our own AntistasiBuilder.</div>
-<div class="line">The guide below is only for Version 2.6.0 and onwards. If you want to build older version look <a class="reference internal" href="dev_guide_build_mission.html#dev-how-build-mission-guide"><span class="std std-ref">here</span></a>.</div>
+<div class="line">Antistasi, of course, can’t simply be run as a loose collection of files slapped together in a folder - it needs to be built first.</div>
+<div class="line">There are a few different ways listed here for how to do that, ordered by preference: try the first method, then the second and so on if they dont work.</div>
+<div class="line">At the end of this documentation is a guide on how to load your files as a mod into the game.</div>
+<div class="line">The guide below is only for Version 2.6.0 and onwards. If you want to build an older version, look <a class="reference internal" href="dev_guide_build_mission.html#dev-how-build-mission-guide"><span class="std std-ref">here</span></a>.</div>
+<div class="line">If none of the methods on this page work on your computer or you want to optimize your workflow further, see the advanced build methods <a class="reference internal" href="dev_guide_how_to_build_advanced.html#dev-how-build-advanced-guide"><span class="std std-ref">here</span></a>.</div>
 </div>
 </div>
 </div>
-<section id="common-setup">
-<h2>Common setup<a class="headerlink" href="#common-setup" title="Link to this heading"></a></h2>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
-<div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">Common setup</p>
-</div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Install Arma 3 Tools in the same steam library that Arma 3 is installed.</p>
-</div>
-</div>
-</section>
 <section id="with-antistasibuilder">
 <h2>With AntistasiBuilder<a class="headerlink" href="#with-antistasibuilder" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
@@ -175,15 +160,17 @@ For more dev related information please go to our <a class="reference external" 
 <div class="sd-card-body docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
 <div class="sd-card-header header-3 docutils">
-<p class="sd-card-text">First time</p>
+<p class="sd-card-text">First time setup</p>
 </div>
 <div class="sd-card-body docutils">
 <ul class="code-paragraph simple">
-<li><p class="sd-card-text">AntistasiBuilder can be found under <code class="code docutils literal notranslate"><span class="pre">Tools/Builder/</span></code></p></li>
-<li><p class="sd-card-text">run the program once, this will generate a config file called <code class="code docutils literal notranslate"><span class="pre">AntistasiBuilder.cfg</span></code></p></li>
-<li><p class="sd-card-text">open the config file and add the path to the arma 3 tools direcotry under <code class="code docutils literal notranslate"><span class="pre">-a3ToolsDir=&quot;PATH&quot;</span></code>.
-For example: <code class="code docutils literal notranslate"><span class="pre">-a3ToolsDir=&quot;H:SteamLibrarysteamappscommonArma</span> <span class="pre">3</span> <span class="pre">Tools&quot;</span></code></p></li>
-<li><p class="sd-card-text">save the config file, close it.</p></li>
+<li><p class="sd-card-text">The <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3</span> <span class="pre">Tools</span></code> program needs to be installed for this. It can be found on Steam under the Tools section of your games.</p></li>
+<li><p class="sd-card-text">AntistasiBuilder can be found in the main installation folder, where the <code class="code docutils literal notranslate"><span class="pre">A3A</span></code> and <code class="code docutils literal notranslate"><span class="pre">Tools</span></code> folders are located.</p></li>
+<li><p class="sd-card-text">To set the program up the first time, run the executable once. This will generate a config file called <code class="code docutils literal notranslate"><span class="pre">AntistasiBuilder.cfg</span></code> in the same folder.</p></li>
+<li><p class="sd-card-text">Open that config file and add the path to the Arma 3 Tools directory under <code class="code docutils literal notranslate"><span class="pre">-a3ToolsDir=&quot;PATH&quot;</span></code>.
+For example: <code class="code docutils literal notranslate"><span class="pre">-a3ToolsDir=&quot;H:/SteamLibrary/steamapps/common/Arma</span> <span class="pre">3</span> <span class="pre">Tools&quot;</span></code>
+Make sure that the path is in quotes.</p></li>
+<li><p class="sd-card-text">Save the config file and close it.</p></li>
 </ul>
 </div>
 </div>
@@ -192,138 +179,49 @@ For example: <code class="code docutils literal notranslate"><span class="pre">-
 <p class="sd-card-text">Building the mod</p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">To build the mod run antistasiBuilder. The mod will have been built under the build folder in the repository root.</p>
+<p class="sd-card-text">To build the mod, run the AntistasiBuilder.exe file. It should generate the build files to the <code class="code docutils literal notranslate"><span class="pre">/build/A3A</span></code> folder.</p>
+</div>
+</div>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 sd-card-important docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><code class="code docutils literal notranslate"><span class="pre">AntistasiBuilder.exe</span></code> has a bug in which file paths with spaces in them will break the program.
+If this happens, you will see an error relating to an invalid number of parameters. Try moving your Antistasi folder to a path without spaces.
+If your username has spaces and you can’t move it higher, you can try one of the following methods.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="with-vs-code-arma-dev-extension">
-<h2>With VS code Arma Dev Extension<a class="headerlink" href="#with-vs-code-arma-dev-extension" title="Link to this heading"></a></h2>
+<section id="with-powershell">
+<h2>With PowerShell<a class="headerlink" href="#with-powershell" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">With VS code Arma Dev Extension</p>
+<p class="sd-card-text">With PowerShell</p>
 </div>
 <div class="sd-card-body docutils">
 <ul class="code-paragraph simple">
-<li><p class="sd-card-text">Install extension from <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev">marketplace</a></p></li>
-<li><p class="sd-card-text">configure the extension from the Antistasi workspace by opening the command pallet <code class="code docutils literal notranslate"><span class="pre">Ctrl</span></code>/ <code class="code docutils literal notranslate"><span class="pre">⌘</span></code> + <code class="code docutils literal notranslate"><span class="pre">Shift</span></code> + <code class="code docutils literal notranslate"><span class="pre">P</span></code> and running the <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3:</span> <span class="pre">configure</span></code> command</p></li>
-<li><p class="sd-card-text">fill in the configuration <code class="code docutils literal notranslate"><span class="pre">.json</span></code> file something like this</p></li>
-</ul>
-<div class="code-block-3 highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">   </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A3 Antistasi&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A3A&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;author&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Official Antistasi dev team&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://antistasi.de/&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2.5.4&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;buildPath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;build&quot;</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;privateKey&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">//add the path to a private bikey for signing when building</span>
-<span class="w">   </span><span class="nt">&quot;serverDirs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
-<span class="w">   </span><span class="nt">&quot;serverUse32bit&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">   </span><span class="nt">&quot;clientDirs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="c1">//should list all addons the mod provides</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/config_fixes&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/core&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/Events&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/Garage&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/gear&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/GUI&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/jeroen_arsenal&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/Logistics&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/maps&quot;</span><span class="p">,</span>
-<span class="w">          </span><span class="s2">&quot;A3A/addons/patcom&quot;</span>
-<span class="w">     </span><span class="p">],</span>
-<span class="w">   </span><span class="nt">&quot;clientMods&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">      </span><span class="c1">// Example:</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@CBA_A3&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@ace&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@User Input Menus&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@Extended Function Viewer&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@Debug Console&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@Zeus Enhanced&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@Zeus Enhanced - ACE3 Compatibility&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@Enhanced Movement&quot;,</span>
-<span class="w">          </span><span class="c1">// &quot;!Workshop/@DUI - Squad Radar&quot;</span>
-<span class="w">   </span><span class="p">],</span>
-<span class="w">   </span><span class="nt">&quot;ftpConnection&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
-<span class="w">   </span><span class="nt">&quot;steamPath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;H:\\SteamLibrary&quot;</span><span class="w"> </span><span class="c1">//arma 3 install steam library, arma 3 tools should be in the same folder</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<ul class="code-paragraph simple">
-<li><p class="sd-card-text">Run the command <code class="code docutils literal notranslate"><span class="pre">Extensions:</span> <span class="pre">Open</span> <span class="pre">Extension</span> <span class="pre">Folder</span></code> and navigate to <code class="code docutils literal notranslate"><span class="pre">ole1986.arma-dev-0.0.20</span> <span class="pre">-&gt;</span> <span class="pre">out</span> <span class="pre">-&gt;</span> <span class="pre">helpers</span> <span class="pre">-&gt;</span> <span class="pre">runArma.js</span> <span class="pre">-&gt;</span> <span class="pre">ln</span> <span class="pre">54</span></code> and add <code class="code docutils literal notranslate"><span class="pre">-debug</span></code> to the list</p></li>
-</ul>
-<div class="code-block-3 highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">let</span><span class="w"> </span><span class="nx">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
-<span class="w">       </span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;-exe&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;arma3_x64.exe&#39;</span><span class="p">,</span>
-<span class="w">       </span><span class="s1">&#39;-mod=&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">clientMods</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;;&#39;</span><span class="p">),</span>
-<span class="w">       </span><span class="s1">&#39;-nosplash&#39;</span><span class="p">,</span>
-<span class="w">       </span><span class="s1">&#39;-world empty&#39;</span><span class="p">,</span>
-<span class="w">       </span><span class="s1">&#39;-skipIntro&#39;</span><span class="p">,</span>
-<span class="w">       </span><span class="s1">&#39;-debug&#39;</span>
-<span class="w">   </span><span class="p">];</span>
-</pre></div>
-</div>
-<ul class="code-paragraph simple">
-<li><p class="sd-card-text">now run the <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3:</span> <span class="pre">Build</span></code> command, this will output into your build folder with packed addons (and signed if you have a key designated)</p></li>
-<li><p class="sd-card-text">run the <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3:</span> <span class="pre">Toggle</span> <span class="pre">code</span> <span class="pre">live</span></code> command this will create symlinked folders in your arma directory for filepatching, allowing “live editing” of code, by editing the source files (dosnt include anything processed by the config.cpp)</p></li>
-<li><p class="sd-card-text">run the <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3:</span> <span class="pre">Run</span> <span class="pre">client</span></code> or <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3:</span> <span class="pre">Run</span> <span class="pre">client</span> <span class="pre">(with</span> <span class="pre">logging)</span></code> command arma should start with everything ready for you, (the logging alternate will open the rpt thats created on arma launch)</p></li>
+<li><p class="sd-card-text">Navigate to your main Antistasi folder, then <code class="code docutils literal notranslate"><span class="pre">/Tools/Builder</span></code></p></li>
+<li><p class="sd-card-text">Right click on the <code class="code docutils literal notranslate"><span class="pre">buildAddons.ps1</span></code> and select “Run with Powershell”</p></li>
+<li><p class="sd-card-text">This will build the mod and put it in the same <code class="code docutils literal notranslate"><span class="pre">/build/A3A</span></code> folder</p></li>
+<li><p class="sd-card-text">If this is your first time interacting with PowerShell scripts, you might need to setup the execution policy on your computer. Open a PowerShell window as an administrator and run <code class="code docutils literal notranslate"><span class="pre">Set-ExecutionPolicy</span> <span class="pre">-ExecutionPolicy</span> <span class="pre">Unrestricted</span></code> to allow foreign scripts to run.</p></li>
 </ul>
 </div>
 </div>
 </section>
-<section id="with-arma-3-tools">
-<h2>With Arma 3 Tools<a class="headerlink" href="#with-arma-3-tools" title="Link to this heading"></a></h2>
+<section id="adding-build-files-to-main-mod">
+<h2>Adding build files to main mod<a class="headerlink" href="#adding-build-files-to-main-mod" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">With Arma 3 Tools</p>
-</div>
-<div class="sd-card-body docutils">
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
-<div class="sd-card-header header-3 docutils">
-<p class="sd-card-text">Packing</p>
+<p class="sd-card-text">Adding build files to main mod</p>
 </div>
 <div class="sd-card-body docutils">
 <ul class="code-paragraph simple">
-<li><p class="sd-card-text">open <code class="code docutils literal notranslate"><span class="pre">Addon</span> <span class="pre">Builder</span></code> from <code class="code docutils literal notranslate"><span class="pre">Arma</span> <span class="pre">3</span> <span class="pre">Tools</span></code></p></li>
-<li><dl class="simple">
-<dt>click options</dt><dd><ul>
-<li><p class="sd-card-text">add to <code class="code docutils literal notranslate"><span class="pre">List</span> <span class="pre">of</span> <span class="pre">files</span> <span class="pre">to</span> <span class="pre">copy</span> <span class="pre">directly</span></code> this line <code class="code docutils literal notranslate"><span class="pre">*.p3d;*.paa;*.hpp;*.sqf</span></code></p></li>
-<li><p class="sd-card-text">click the tree dots next to <code class="code docutils literal notranslate"><span class="pre">Path</span> <span class="pre">to</span> <span class="pre">project</span> <span class="pre">folder</span></code> and navigate to the repository’s A3A folder</p></li>
-<li><p class="sd-card-text">add the prefix in the format <code class="code docutils literal notranslate"><span class="pre">xA3A{folder</span> <span class="pre">to</span> <span class="pre">build}</span></code></p></li>
-<li><p class="sd-card-text">optionally add a path to a <code class="code docutils literal notranslate"><span class="pre">.biprivatekey</span></code> for signing, this allows you to leave key verification on for dedicated server testing</p></li>
+<li><p class="sd-card-text">With most methods, your build files will be in <code class="code docutils literal notranslate"><span class="pre">/build/A3A</span></code>. The PBOs will then be in <code class="code docutils literal notranslate"><span class="pre">/addons</span></code>.</p></li>
+<li><p class="sd-card-text">In your Arma 3 Launcher, go to the “Mods” page and click on the “Local Mod” button at the top.</p></li>
+<li><p class="sd-card-text">Open the <code class="code docutils literal notranslate"><span class="pre">/build/A3A</span></code> folder, where you can see the <code class="code docutils literal notranslate"><span class="pre">addons</span></code> folder.</p></li>
+<li><p class="sd-card-text">This will add a mod to your launcher, which you can then load as a mod. Do not load this mod with the normal Antistasi mod.</p></li>
+<li><p class="sd-card-text">It is recommended to use this mod for testing alongside the mods in the <a class="reference internal" href="dev_guide_setup_tools.html#dev-setup-tools-guide"><span class="std std-ref">Dev Tools Setup page</span></a>.</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><p class="sd-card-text">back in the main window, add a source directory, this will be in turn each addon folder in <code class="code docutils literal notranslate"><span class="pre">repository</span> <span class="pre">-&gt;</span> <span class="pre">A3A</span> <span class="pre">-&gt;</span> <span class="pre">addons</span> <span class="pre">-&gt;</span> <span class="pre">{folder</span> <span class="pre">to</span> <span class="pre">build}</span></code></p></li>
-<li><p class="sd-card-text">add a destination folder, this would be for example: <code class="code docutils literal notranslate"><span class="pre">repository</span> <span class="pre">-&gt;</span> <span class="pre">build</span> <span class="pre">-&gt;</span> <span class="pre">&#64;A3A</span> <span class="pre">-&gt;</span> <span class="pre">addons</span></code></p></li>
-<li><p class="sd-card-text">ensure for testing that it dosnt binarize the files</p></li>
-<li><p class="sd-card-text">now to simply press build and repeat for each folder in the <code class="code docutils literal notranslate"><span class="pre">A3A</span> <span class="pre">-&gt;</span> <span class="pre">addons</span></code></p></li>
-</ul>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
-<div class="sd-card-header header-3 docutils">
-<p class="sd-card-text">Running</p>
-</div>
-<div class="sd-card-body docutils">
-<ul class="code-paragraph simple">
-<li><p class="sd-card-text">copy the folder in your build directory to your arma 3 directory (or symbolic link it, recommended)</p></li>
-<li><p class="sd-card-text">in the arma 3 launcher, under the <code class="code docutils literal notranslate"><span class="pre">Mods</span></code> tab, click <code class="code docutils literal notranslate"><span class="pre">...</span> <span class="pre">More</span></code> -&gt; <code class="code docutils literal notranslate"><span class="pre">Add</span> <span class="pre">watched</span> <span class="pre">folder...</span></code> -&gt; <code class="code docutils literal notranslate"><span class="pre">Add</span> <span class="pre">'Arma</span> <span class="pre">3'</span> <span class="pre">folder</span></code>. This will automatically add local mods in your arma directory to your mods list for easy loading.</p></li>
-</ul>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
-<div class="sd-card-header header-3 docutils">
-<p class="sd-card-text">Live editing</p>
-</div>
-<div class="sd-card-body docutils">
-<ul class="code-paragraph simple">
-<li><p class="sd-card-text">For live editing you need to create this folder structure in your arma 3 directory <code class="code docutils literal notranslate"><span class="pre">xA3Aaddons</span></code>, and the create symbolic links from each folder in your repositorys <code class="code docutils literal notranslate"><span class="pre">A3Aaddons</span></code> folder to the one in your arma directory.</p></li>
-<li><p class="sd-card-text">Next you need to go in your ArmA 3 launchers <code class="code docutils literal notranslate"><span class="pre">Parameters</span></code> tab and under <code class="code docutils literal notranslate"><span class="pre">All</span> <span class="pre">Parameters</span></code> section <code class="code docutils literal notranslate"><span class="pre">Advanced</span></code> tick of the parameter <code class="code docutils literal notranslate"><span class="pre">Enable</span> <span class="pre">File-Pathcing</span></code>, then under the section <code class="code docutils literal notranslate"><span class="pre">Author</span></code> tick of the parameter <code class="code docutils literal notranslate"><span class="pre">Debug</span> <span class="pre">Mode</span></code>. I recommend favoriting these two for ease of use later on.</p></li>
-<li><p class="sd-card-text">Now when you start with the build loaded under the <code class="code docutils literal notranslate"><span class="pre">Mods</span></code> tab, it will start in Dev mode and allow for recompilation of functions on the go either by reloading the missing or by calling the function <code class="code docutils literal notranslate"><span class="pre">A3A_fnc_prepFunctions</span></code>.</p></li>
-</ul>
-</div>
-</div>
 </div>
 </div>
 </section>
@@ -344,7 +242,7 @@ For example: <code class="code docutils literal notranslate"><span class="pre">-
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="dev_guide_porting.html" title="Antistasi Porting Instructions"
+          <a href="dev_guide_how_to_build_advanced.html" title="Advanced build methods"
              >next</a> |</li>
         <li class="right" >
           <a href="dev_guide_setup_tools.html" title="Dev Tools Starter Setup"
@@ -354,6 +252,6 @@ For example: <code class="code docutils literal notranslate"><span class="pre">-
         <li class="nav-item nav-item-this"><a href="">How to build Antistasi</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2025, Official Antistasi Community. Last updated 2025/July/12</div>
+    <div class="footer">&copy; Copyright 2025, Official Antistasi Community. Last updated 2025/July/14</div>
   </body>
 </html>

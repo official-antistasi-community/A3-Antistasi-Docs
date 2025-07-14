@@ -77,11 +77,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide_index.html#general">General</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="../dev_guide_index.html#development">Development</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Dev Tools Starter Setup</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#arma-3-dev-extensions">Arma 3 Dev Extensions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arma-3-developer-mods">Arma 3 Developer Mods</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#code-editor-extensions">Code Editor Extensions</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build.html">How to build Antistasi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide_how_to_build_advanced.html">Advanced build methods</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_porting.html">Antistasi Porting Instructions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../A3AExtender.html">How to Extend Antistasi?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide_technical_standards_for_core_contrib.html">Technical Standards for Core Code Contributions</a></li>
@@ -147,20 +148,23 @@ For more dev related information please go to our <a class="reference external" 
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 sd-mt-3 docutils">
 <div class="sd-card-body docutils">
 <div class="line-block">
-<div class="line">For you to be able to properly work with Antistasi and especially SQF, we have collected tools, IDE extensions and such so you can set up your system before starting to work on anything.</div>
-<div class="line">We recommend using VS Code but lowest minimal standard you should use it Notepad++ with SQF Syntax Highlighting.</div>
-<div class="line">Setting up dev tools and extensions or add-ons can be a pain. Here is a summery of links and copy-paste solutions.</div>
-<div class="line">If you have any questions please get in contact with a member of the Dev-Team</div>
+<div class="line">For you to be able to properly work with Antistasi and especially SQF, we have collected tools, IDE extensions and such so you can set up your system to make your development experience easier.</div>
+<div class="line">It is highly recommended to use VSCode so you can make use of the many Arma-related extensions there, but any text editor will technically work.</div>
+<div class="line">If you have any questions, feel free to reach out on our Discord.</div>
 </div>
 </div>
 </div>
-<section id="arma-3-dev-extensions">
-<h2>Arma 3 Dev Extensions<a class="headerlink" href="#arma-3-dev-extensions" title="Link to this heading"></a></h2>
+<section id="arma-3-developer-mods">
+<h2>Arma 3 Developer Mods<a class="headerlink" href="#arma-3-developer-mods" title="Link to this heading"></a></h2>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-2 docutils">
 <div class="sd-card-header header-2 docutils">
-<p class="sd-card-text">Arma 3 Dev Extensions</p>
+<p class="sd-card-text">Arma 3 Developer Mods</p>
 </div>
 <div class="sd-card-body docutils">
+<div class="line-block">
+<div class="line">These are some mods that you are recommended to use to make testing easier.</div>
+<div class="line">It is recommended to make this into a saved modlist along with your local build of the mod so you can always load the right modset.</div>
+</div>
 <table class="target-substitude linkname-steam table-mission-info docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
@@ -168,43 +172,14 @@ For more dev related information please go to our <a class="reference external" 
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="sd-card-text">3den Enhanced</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=623475643">3den Enhanced on Steam</a></p></td>
+<tr class="row-even"><td><p class="sd-card-text">Advanced Developer Tools</p></td>
+<td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3499977893">Advanced Developer Tools on Steam</a></p></td>
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text">CBA_A3</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=450814997">CBA_A3 on Steam</a></p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text">Enhanced Movement</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=333310405">Enhanced Movement on Steam</a></p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">Extended Function Viewer</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1678581937">Extended Function Viewer on Steam</a></p></td>
-</tr>
 <tr class="row-even"><td><p class="sd-card-text">Zeus Enhanced</p></td>
 <td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1779063631">Zeus Enhanced on Steam</a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 sd-mt-3 sd-card-important docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">Do not use the following to join servers with Battleye enabled!</p>
-</div>
-</div>
-<table class="target-substitude linkname-steam table-mission-info docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
-<th class="head"><p class="sd-card-text">Steam URL</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p class="sd-card-text">Intercept Minimal Dev</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="http://steamcommunity.com/sharedfiles/filedetails/?id=1645973522">Intercept Minimal Dev on Steam</a></p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text">Arma Debug Engine</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1585582292">Arma Debug Engine on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text">Arma Script Profiler</p></td>
-<td><p class="sd-card-text"><a class="reference external" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1652506957">Arma Script Profiler on Steam</a> (could have issues, check out steam workshop description and comment)</p></td>
 </tr>
 </tbody>
 </table>
@@ -223,7 +198,8 @@ For more dev related information please go to our <a class="reference external" 
 <p class="sd-card-text">Visual Studio Code</p>
 </div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">You can download Visual Studio Code for free on their <a class="reference external" href="https://code.visualstudio.com/download">Website</a>. The following extensions are recommended.</p>
+<p class="sd-card-text">You can download Visual Studio Code for free on their <a class="reference external" href="https://code.visualstudio.com/download">Website</a>.
+The following extensions are extremely useful for editing Antistasi and are almost required.</p>
 <table class="target-substitude table-2-b docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
@@ -231,43 +207,56 @@ For more dev related information please go to our <a class="reference external" 
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Armitxes.sqf">SQF Language</a></p></td>
-<td><p class="sd-card-text">Provides language for SQF extensions and highlighting.</p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=Giddi.antistasi-development">Antistasi Development</a></p></td>
+<td><p class="sd-card-text">Utilities specifically built for Antistasi development</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ole1986.arma-dev">Arma Dev</a></p></td>
-<td><p class="sd-card-text">Makes it easier to develop and test mods.</p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki">SQF Wiki</a></p></td>
+<td><p class="sd-card-text">Hover over command, see explanation</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=EelisLynne.sqf-wiki">SQF Wiki</a></p></td>
-<td><p class="sd-card-text">Hover over command, see explanation.</p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt">Arma 3 - Open Last RPT</a></p></td>
+<td><p class="sd-card-text">Quickly open your last RPT to check for errors with Ctrl + Alt + R</p></td>
 </tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></p></td>
-<td><p class="sd-card-text">Supercharge the Git capabilities built into Visual Studio Code</p></td>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=blackfisch.sqf-language">Arma SQF Language</a></p></td>
+<td><p class="sd-card-text">Comprehensive command support for SQF</p></td>
 </tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></p></td>
-<td><p class="sd-card-text">Real-time collaborative development from the comfort of your favorite tools.</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=doi.fileheadercomment">File Header Comment</a></p></td>
-<td><p class="sd-card-text">Insert File Header Comment such as date, time</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=skacekachna.sqflint">SQFLint</a></p></td>
-<td><p class="sd-card-text">Under lines some errors, quite a few false positives, so take it with a pinch of salt. Do not wait for it to finish Indexing (it will throw some false errors).</p></td>
-</tr>
-<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bux578.vscode-openlastrpt">Arma 3 - Open Last RPT</a></p></td>
-<td><p class="sd-card-text">Ctrl+Shift+P -&gt; Open Last -&gt; [enter]: will open the last RPT.</p></td>
-</tr>
-<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=wk-j.save-and-run">Save and Run</a></p></td>
-<td><p class="sd-card-text">Requires some config, see bellow.</p></td>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=blackfisch.sqf-language">SQF Language</a></p></td>
+<td><p class="sd-card-text">Adds command and structure highlighting</p></td>
 </tr>
 </tbody>
 </table>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4 docutils">
-<div class="sd-card-header header-4-light docutils">
-<p class="sd-card-text">Save and Run</p>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<div class="sd-card-body docutils">
-<p class="sd-card-text code-paragraph-direct target-substitude">Allows running a specified script or program when a keybind is pressed, or a specific filetype is saved. The extension does provide documentation, but here is an example that I use with this repository. Edit the WORKSPACE settings. It’s already in .gitIgnore <code class="code docutils literal notranslate"><span class="pre">...A3-Antistasi.vscodesettings.json</span></code>. You can Download an <a class="reference external" href="https://gist.github.com/CalebSerafin/d91c15bfbbf913d13c56e9494abc05ab">Example</a></p>
+<div class="line-block">
+<div class="line">These next extensions can streamline smaller aspects of Antistasi development, but are not at all required.</div>
 </div>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
+<table class="target-substitude table-2-b docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
+<th class="head"><p class="sd-card-text">Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare">Live Share</a></p></td>
+<td><p class="sd-card-text">Can help other people debug your code if needed</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">GitLens</a></p></td>
+<td><p class="sd-card-text">Extends on the existing VSCode Git support</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github">GitHub Pull Requests</a></p></td>
+<td><p class="sd-card-text">Allows the viewing of pull requests from within VSCode</p></td>
+</tr>
+<tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff">Partial Diff</a></p></td>
+<td><p class="sd-card-text">Useful to find differences between files in a pinch</p></td>
+</tr>
+<tr class="row-even"><td><p class="sd-card-text"><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml">XML</a></p></td>
+<td><p class="sd-card-text">Useful for editing stringtable files</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
@@ -277,7 +266,7 @@ For more dev related information please go to our <a class="reference external" 
 <div class="sd-card-body docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-4-important sd-mt-3 docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Atom is no longer supported by antistasi dev team. However it is still possible to use Atom as an editor for arma. The plugins down below where recommended back then.</p>
+<p class="sd-card-text">Atom is no longer supported by Antistasi Dev team. However, it is still possible to use Atom as an editor for Arma. The plugins down below were recommended back then.</p>
 </div>
 </div>
 <table class="target-substitude table-2-b docutils align-default">
@@ -292,25 +281,6 @@ For more dev related information please go to our <a class="reference external" 
 </tr>
 <tr class="row-odd"><td><p class="sd-card-text"><a class="reference external" href="https://atom.io/packages/atom-bracket-highlight">atom-bracket-highlight package</a></p></td>
 <td><p class="sd-card-text">Animates bracket highlighting</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-3 docutils">
-<div class="sd-card-header header-3 docutils">
-<p class="sd-card-text">Notepad++</p>
-</div>
-<div class="sd-card-body docutils">
-<table class="target-substitude table-2-b docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p class="sd-card-text">Name</p></th>
-<th class="head"><p class="sd-card-text">Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p class="sd-card-text"><span class="warn-colored">NO LONGER AVAILABLE</span> <span class="strike-grey">Notepad++ SQF Syntax Highlighting and Auto Completion https://github.com/Barrow/npp-sqf</span></p></td>
-<td><p class="sd-card-text"><span class="strike-grey">If you don’t have an IDE and no clue how to work with one, this is basically the minimum requirement to work with it.</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -346,6 +316,6 @@ For more dev related information please go to our <a class="reference external" 
         <li class="nav-item nav-item-this"><a href="">Dev Tools Starter Setup</a></li> 
       </ul>
     </div>
-    <div class="footer">&copy; Copyright 2025, Official Antistasi Community. Last updated 2025/July/12</div>
+    <div class="footer">&copy; Copyright 2025, Official Antistasi Community. Last updated 2025/July/14</div>
   </body>
 </html>
