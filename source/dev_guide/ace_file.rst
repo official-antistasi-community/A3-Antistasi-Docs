@@ -79,6 +79,9 @@ ACE Map
       ace_markers_timestampEnabled                                                =     true
       ace_markers_timestampFormat                                                 =     "HH:MM"
       ace_markers_timestampHourFormat                                             =     24
+      force ace_markers_timestampTimezone                                         =     0
+      ace_markers_TimestampUTCMinutesOffset                                       =     0
+      force ace_markers_timestampUTCOffset                                        =     0
 
 ACE Fire
 ==========
@@ -96,7 +99,7 @@ ACE Fire
       force ace_fire_dropWeapon                                                   =     1
       force ace_fire_enabled                                                      =     true
       force ace_fire_enableFlare                                                  =     false
-      ace_fire_enableScreams                                                      =     true
+      ace_fire_enableScreams                                                      =     false
 
 ACE Zeus
 ==========
@@ -133,16 +136,21 @@ ACE Common
    .. code-block:: toml
 
       force force ace_common_allowFadeMusic                                       =     true
+      force ace_common_checkExtensions                                            =     false
       force force ace_common_checkPBOsAction                                      =     0
       force force ace_common_checkPBOsCheckAll                                    =     false
       force force ace_common_checkPBOsWhitelist                                   =     "[]"
+      force ace_common_deployedSwayFactor                                         =     1
       ace_common_displayTextColor                                                 =     [0,0,0,0.1]
       ace_common_displayTextFontColor                                             =     [1,1,1,1]
+      force ace_common_enableSway                                                 =     true
       ace_common_epilepsyFriendlyMode                                             =     false
+      force ace_common_magneticDeclination                                        =     false
       ace_common_progressBarInfo                                                  =     2
+      force ace_common_restedSwayFactor                                           =     1
       ace_common_settingFeedbackIcons                                             =     1
       ace_common_settingProgressBarLocation                                       =     0
-      force force ace_noradio_enabled                                             =     true
+      force ace_common_swayFactor                                                 =     1
 
 ACE Pylons
 ============
@@ -183,9 +191,10 @@ ACE Scopes
       force force ace_scopes_defaultZeroRange                                     =     100
       force force ace_scopes_enabled                                              =     true
       force force ace_scopes_forceUseOfAdjustmentTurrets                          =     true
+      ace_scopes_inScopeAdjustment                                                =     false
       force force ace_scopes_overwriteZeroRange                                   =     true
       force force ace_scopes_simplifiedZeroing                                    =     false
-      force force ace_scopes_useLegacyUI                                          =     false
+      ace_scopes_useLegacyUI                                                      =     false
       force force ace_scopes_zeroReferenceBarometricPressure                      =     1013.25
       force force ace_scopes_zeroReferenceHumidity                                =     0
       force force ace_scopes_zeroReferenceTemperature                             =     15
@@ -210,8 +219,6 @@ ACE Volume
       acex_volume_remindIfLowered                                                 =     false
       acex_volume_showNotification                                                =     true
 
-
-
 ACE Arsenal
 =============
 
@@ -228,10 +235,16 @@ ACE Arsenal
       force ace_arsenal_allowDefaultLoadouts                                      =     false
       force ace_arsenal_allowSharedLoadouts                                       =     true
       ace_arsenal_camInverted                                                     =     false
+      ace_arsenal_defaultToFavorites                                              =     false
       force ace_arsenal_enableIdentityTabs                                        =     true
-      ace_arsenal_enableModIcons                                                  =     true
+      ace_arsenal_enableModIcons                                                  =     1
       ace_arsenal_EnableRPTLog                                                    =     true
+      ace_arsenal_favoritesColor                                                  =     [0.9,0.875,0.6]
       ace_arsenal_fontHeight                                                      =     5.5
+      ace_arsenal_loadoutsSaveFace                                                =     true
+      ace_arsenal_loadoutsSaveInsignia                                            =     true
+      ace_arsenal_loadoutsSaveVoice                                               =     true
+      ace_arsenal_showUnavailableItems                                            =     0
 
 ACE Fortify
 =============
