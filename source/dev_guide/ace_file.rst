@@ -25,6 +25,8 @@ FILE: :download:`ace_settings.txt </_data/ace_settings.txt>`
    - :ref:`dev_guide_mod_settings_grad`
    - :ref:`TFAR beta <dev_guide_mod_settings_tfar_beta>`
    - :ref:`dev_guide_mod_settings_vet_unflipping`
+   - :ref:`dev_guide_mod_settings_a3ti`
+   - :ref:`dev_guide_mod_settings_backpack_on_chest`
    - :ref:`dev_guide_mod_settings_zeus_enhanced`
 
 .. _dev_guide_mod_settings_antistasi:
@@ -43,9 +45,12 @@ Antistasi mod settings
    .. code-block:: toml
 
       HR_GRG_dLock                                                                =     false
-      force HR_GRG_PoolBase                                                       =     10
-      force HR_GRG_PoolIncr                                                       =     2
+      force HR_GRG_LockLimit_Guest                                                =     2
+      force force HR_GRG_LockLimit_Member                                         =     2
+      force HR_GRG_PoolBase                                                       =     20
+      force HR_GRG_PoolIncr                                                       =     7.60804
       force HR_GRG_Pylons_Enabled                                                 =     true
+      HR_GRG_renderPlacementRays                                                  =     false
       force HR_GRG_ServiceDisabled_Rearm                                          =     false
       force HR_GRG_ServiceDisabled_Refuel                                         =     false
       force HR_GRG_ServiceDisabled_Repair                                         =     false
@@ -1748,11 +1753,13 @@ CBA - Community Base Addons
    .. code-block:: toml
 
       cba_diagnostic_ConsoleIndentType                                            =     -1
+      force cba_diagnostic_watchInfoRefreshRate                                   =     0.2
       cba_disposable_dropUsedLauncher                                             =     2
       force cba_disposable_replaceDisposableLauncher                              =     true
       cba_events_repetitionMode                                                   =     1
       force cba_network_loadoutValidation                                         =     0
       cba_optics_usePipOptics                                                     =     true
+      cba_quicktime_qteShorten                                                    =     false
       cba_ui_notifyLifetime                                                       =     4
       cba_ui_StorePasswords                                                       =     1
 
@@ -1821,9 +1828,12 @@ DUI - Squad Radar - Radar
       diwako_dui_namelist_width                                                   =     215
       diwako_dui_radar_ace_finger                                                 =     true
       force diwako_dui_radar_ace_medic                                            =     true
+      diwako_dui_radar_always_show_unit_numbers                                   =     false
       diwako_dui_radar_compassRangeCrew                                           =     500
+      force diwako_dui_radar_compassRangeLimit                                    =    50
       diwako_dui_radar_dir_padding                                                =     25
       diwako_dui_radar_dir_shadow                                                 =     2
+      diwako_dui_radar_enable_seat_icons                                          =     2
       diwako_dui_radar_group_by_vehicle                                           =     false
       diwako_dui_radar_icon_opacity                                               =     1
       diwako_dui_radar_icon_opacity_no_player                                     =     true
@@ -1904,10 +1914,41 @@ DUI - Squad Radar - Indicators
       diwako_dui_indicators_range                                                 =     20
       diwako_dui_indicators_range_crew                                            =     300
       diwako_dui_indicators_range_scale                                           =     false
+      force diwako_dui_indicators_rangeLimit                                      =     100
       diwako_dui_indicators_show                                                  =     true
       diwako_dui_indicators_size                                                  =     1
       diwako_dui_indicators_style                                                 =     "standard"
       diwako_dui_indicators_useACENametagsRange                                   =     true
+
+DUI - Squad Radar - Line Compass
+==================================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   DUI - Squad Radar - Line Compass
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      diwako_dui_linecompass_ACEFingeringColor                                    =     [1,0.66,0,1]
+      force diwako_dui_linecompass_AllowNumericDrawBearing                        =     true
+      diwako_dui_linecompass_CompassAvailableShown                                =     true
+      diwako_dui_linecompass_compassRange                                         =     35
+      force diwako_dui_linecompass_compassRangeLimit                              =     50
+      diwako_dui_linecompass_CustomWaypointColor                                  =     [0,0,0.87,1]
+      diwako_dui_linecompass_DefaultIconColor                                     =     [0.5,0.87,0.5,1]
+      diwako_dui_linecompass_DrawBearing                                          =     2
+      diwako_dui_linecompass_Enabled                                              =     true
+      diwako_dui_linecompass_enableOcclusion                                      =     false
+      diwako_dui_linecompass_IconOutline                                          =     0
+      diwako_dui_linecompass_occlusionFadeSpeed                                   =     3.5
+      diwako_dui_linecompass_showSpeaking                                         =     true
+      diwako_dui_linecompass_SwapOrder                                            =     false
+      diwako_dui_linecompass_WaypointColor                                        =     [0,0,0.87,1]
+
 
 .. _dev_guide_mod_settings_grad:
 
@@ -1933,6 +1974,7 @@ GRAD Trenches
       force force grad_trenches_functions_allowLongEnvelope                       =     true
       force force grad_trenches_functions_allowShortEnvelope                      =     true
       force force grad_trenches_functions_allowSmallEnvelope                      =     true
+      force grad_trenches_functions_allowTextureLock                              =     true
       force force grad_trenches_functions_allowTrenchDecay                        =     true
       force force grad_trenches_functions_allowVehicleEnvelope                    =     true
       force grad_trenches_functions_bigEnvelopeDamageMultiplier                   =     2
@@ -1948,6 +1990,7 @@ GRAD Trenches
       force grad_trenches_functions_hitDecayMultiplier                            =     1
       force force grad_trenches_functions_LongEnvelopeDigTime                     =     100
       force grad_trenches_functions_LongEnvelopeRemovalTime                       =     50
+      force grad_trenches_functions_playersInAreaRadius                           =     0
       force grad_trenches_functions_shortEnvelopeDamageMultiplier                 =     2
       force force grad_trenches_functions_shortEnvelopeDigTime                    =     30
       force grad_trenches_functions_shortEnvelopeRemovalTime                      =     15
@@ -1955,10 +1998,12 @@ GRAD Trenches
       force force grad_trenches_functions_smallEnvelopeDigTime                    =     40
       force grad_trenches_functions_smallEnvelopeRemovalTime                      =     20
       force force grad_trenches_functions_stopBuildingAtFatigueMax                =     true
+      force grad_trenches_functions_textureLockDistance                           =     5
       force force grad_trenches_functions_timeoutToDecay                          =     3600
       force grad_trenches_functions_vehicleEnvelopeDamageMultiplier               =     1
       force force grad_trenches_functions_vehicleEnvelopeDigTime                  =     180
       force grad_trenches_functions_vehicleEnvelopeRemovalTime                    =     90
+      force grad_trenches_functions_vehicleTrenchBuildSpeed                       =     5
 
 .. _dev_guide_mod_settings_tfar_beta:
 
@@ -1983,6 +2028,9 @@ TFAR - Global settings
       force force TFAR_disableAutoMute                                            =     false
       force force TFAR_enableIntercom                                             =     true
       force force TFAR_experimentalVehicleIsolation                               =     false
+      force TFAR_externalIntercomEnable                                           =     0
+      force TFAR_externalIntercomMaxRange_Phone                                   =     5
+      force TFAR_externalIntercomMaxRange_Wireless                                =     15
       force force TFAR_fullDuplex                                                 =     true
       force force TFAR_giveLongRangeRadioToGroupLeaders                           =     false
       force force TFAR_giveMicroDagrToSoldier                                     =     false
@@ -2015,11 +2063,12 @@ TFAR - Global settings
       force force TFAR_setting_DefaultRadio_Rifleman_East                         =     ""
       force force TFAR_setting_DefaultRadio_Rifleman_Independent                  =     "TFAR_anprc148jem"
       force force TFAR_setting_DefaultRadio_Rifleman_West                         =     ""
+      force TFAR_setting_externalIntercomWirelessHeadgear                         =     "H_HelmetCrew_I,UK3CB_H_Crew_Helmet,UK3CB_H_Pilot_Helmet,rhs_tsh4_ess_bala,rhs_tsh4_ess,rhs_tsh4,UK3CB_BAF_H_CrewHelmet_B,UK3CB_BAF_H_PilotHelmetHeli_A,rhs_tsh4_bala,rhs_gssh18,rhs_zsh7a_mike_alt,rhs_zsh7a_mike,rhs_zsh7a_mike_green,rhs_zsh7a_mike_green_alt,rhsusf_cvc_green_helmet,rhsusf_cvc_green_alt_helmet,rhsusf_cvc_helmet,rhsusf_cvc_alt_helmet,rhsgref_hat_M1951,rhsusf_cvc_green_ess,rhsusf_hgu56p_visor_black,rhsusf_hgu56p_mask_black_skull,rhsusf_hgu56p_visor_mask_Empire_black,rhsusf_cvc_ess,UK3CB_KRG_I_H_hgu56p_tan_stripe,rhsusf_hgu56p_green,rhsusf_hgu56p_visor_green,rhsusf_hgu56p_visor,rhsusf_hgu56p,UK3CB_H_Crew_Cap,BWA3_CrewmanKSK_Tropen_Headset,BWA3_TopOwl_nvg,BWA3_Knighthelm,BWA3_CrewmanKSK_Fleck_Headset,CUP_H_CZ_Helmet05,H_PilotHelmetHeli_B,CUP_H_SLA_TankerHelmet,CUP_H_RUS_ZSH_Shield_Down,H_Tank_black_F,CUP_H_BAF_DDPM_Mk6_CREW_PRR,CUP_H_BAF_DPM_Mk6_CREW_PRR,CUP_H_Ger_Beret_TankCommander_Blk,CUP_H_SPH4_grey,CUP_H_CVC,CUP_H_RUS_TSH_4_Brown,CUP_H_USMC_Crew_Helmet,CUP_H_SPH4_green,H_HeadSet_black_F,H_PilotHelmetFighter_B,CUP_H_CVCH_des,CUP_H_TK_TankerHelmet,gm_ge_headgear_headset_crew_oli,gm_ge_headgear_crewhat_80_blk,gm_ge_headgear_sph4_oli,gm_pl_army_headgear_wz63_oli,gm_gc_headgear_zsh3_wht,H_LIB_US_Helmet_Tank,H_LIB_US_Helmet_Pilot,H_LIB_SOV_TankHelmet,H_LIB_SOV_PilotHelmet,H_LIB_UK_Beret_Tankist,H_LIB_UK_Beret_Headset,H_LIB_GER_TankPrivateCap,H_LIB_GER_TankPrivateCap2,H_LIB_GER_LW_PilotHelmet,rhs_6b48,rhsusf_hgu56p_visor_mask_green,rhssaf_helmet_m97_olive_nocamo,rhsusf_hgu56p_black,rhsusf_hgu56p_mask_black,rhsusf_hgu56p_visor_mask_black,H_SPE_US_Helmet_Tank_polar,H_SPE_US_Helmet_Tank_polar_tapes,H_SPE_US_Helmet_Pilot,H_SPE_GER_TankPrivateCap3,H_SPE_GER_TankPrivateCap,H_SPE_GER_TankPrivateCap2,H_SPE_GER_LW_PilotHelmet,UNS_NVA_CH,UNS_NVA_CHB,UNS_NVA_CHG,UNS_NVA_CHBG,UNS_NVA_PL,UNS_NVA_PLC,UNS_TC_1,UNS_TC_2,UNS_JP_Helmet_352TFS,UNS_JP_Helmet_366TFW,UNS_JP_Helmet_389TFS,UNS_HP_Helmet_R33,UNS_HP_Helmet_R8,UNS_HP_Helmet_USA,H_PilotHelmetHeli_I,H_CrewHelmetHeli_I,H_HelmetCrew_O,H_CrewHelmetHeli_O,H_PilotHelmetHeli_O,H_Tank_eaf_F,H_HelmetCrew_I_E,H_CrewHelmetHeli_I_E,H_PilotHelmetHeli_I_E,H_HelmetCrew_B,H_CrewHelmetHeli_B,H_Cap_headphones,vn_b_helmet_t56_02_02,vn_b_helmet_t56_02_01,vn_b_helmet_svh4_02_06,vn_b_helmet_svh4_02_03,vn_b_helmet_svh4_02_04,vn_o_helmet_tsh3_01,vn_o_helmet_tsh3_02,vn_o_helmet_zsh3_02,vn_o_helmet_zsh3_01,lxWS_H_HelmetCrew_I,lxWS_H_Bandanna_blk_hs,H_Cap_headphones_ion_lxws,lxWS_H_Tank_tan_F"
       force TFAR_spectatorCanHearEnemyUnits                                       =     true
       force TFAR_spectatorCanHearFriendlies                                       =     true
       force force TFAR_takingRadio                                                =     2
-      force TFAR_Teamspeak_Channel_Name                                           =     ""
-      force TFAR_Teamspeak_Channel_Password                                       =     ""
+      force force TFAR_Teamspeak_Channel_Name                                     =     "TaskForceRadio"
+      force force TFAR_Teamspeak_Channel_Password                                 =     "123"
       force force tfar_terrain_interception_coefficient                           =     7
       force force TFAR_voiceCone                                                  =     true
 
@@ -2049,6 +2098,7 @@ TFAR - Clientside settings
       TFAR_ShowDiaryRecord                                                        =     true
       TFAR_showTransmittingHint                                                   =     true
       TFAR_ShowVolumeHUD                                                          =     false
+      TFAR_splendidCamEars                                                        =     false
       TFAR_tangentReleaseDelay                                                    =     0
       TFAR_VolumeHudTransparency                                                  =     0
       TFAR_volumeModifier_forceSpeech                                             =     false
@@ -2075,6 +2125,49 @@ VET_Unflipping
       force vet_unflipping_unit_mass_limit                                        =     3000
       force vet_unflipping_vehicle_mass_limit                                     =     100000
 
+.. _dev_guide_mod_settings_a3ti:
+
+A3 Thermal Improvements
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   A3 Thermal Improvements
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force A3TI_ACE_JAVELIN                                                      =     false
+      force A3TI_ALLOW_TANK_DRIVER                                                =     false
+      force A3TI_ALLOW_VANILLA_TI                                                 =     true
+      force A3TI_ENABLE_ZEUS                                                      =     true
+      force A3TI_HD_VISION_FIGHTER                                                =     false
+      force A3TI_HD_VISION_LANDVEH                                                =     true
+      force A3TI_HD_VISION_SHIP                                                   =     false
+      force A3TI_HD_VISION_UAV                                                    =     true
+      force A3TI_REMOVE_FILMGRAIN_RHS                                             =     true
+
+.. _dev_guide_mod_settings_backpack_on_chest:
+
+Backpack On Chest
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   Backpack On Chest
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force bocr_main_disabled                                                    =     false
+      force bocr_main_walk                                                        =     true
+
 .. _dev_guide_mod_settings_zeus_enhanced:
 
 Zeus Enhanced
@@ -2090,6 +2183,8 @@ Zeus Enhanced
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force force zen_area_markers_editableMarkers                                =     1
+      zen_building_markers_enabled                                                =     false
       zen_camera_adaptiveSpeed                                                    =     true
       zen_camera_defaultSpeedCoef                                                 =     1
       zen_camera_fastSpeedCoef                                                    =     1
@@ -2104,6 +2199,7 @@ Zeus Enhanced
       zen_context_menu_enabled                                                    =     2
       zen_context_menu_overrideWaypoints                                          =     false
       zen_editor_addGroupIcons                                                    =     false
+      zen_editor_addModIcons                                                      =     false
       zen_editor_declutterEmptyTree                                               =     true
       zen_editor_disableLiveSearch                                                =     false
       zen_editor_moveDisplayToEdge                                                =     true
@@ -2114,7 +2210,8 @@ Zeus Enhanced
       zen_editor_unitRadioMessages                                                =     0
       zen_placement_enabled                                                       =     true
       zen_remote_control_cameraExitPosition                                       =     2
-      zen_visibility_enabled                                                      =     true
+      zen_visibility_enabled                                                      =     0
+      zen_visibility_maxDistance                                                  =     5000
       zen_vision_enableBlackHot                                                   =     false
       zen_vision_enableBlackHotGreenCold                                          =     false
       zen_vision_enableBlackHotRedCold                                            =     false
@@ -2124,6 +2221,68 @@ Zeus Enhanced
       zen_vision_enableRedHotCold                                                 =     false
       zen_vision_enableWhiteHot                                                   =     true
       zen_vision_enableWhiteHotRedCold                                            =     false
+
+Zeus Enhanced - Attributes
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   Zeus Enhanced - Attributes
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      zen_attributes_enableAbilities                                              =     true
+      zen_attributes_enableAmmo                                                   =     true
+      zen_attributes_enableAmmoCargo                                              =     true
+      zen_attributes_enableArsenal                                                =     true
+      zen_attributes_enableBuildingMarker                                         =     true
+      zen_attributes_enableDamage                                                 =     true
+      zen_attributes_enableEngine                                                 =     true
+      zen_attributes_enableExecute                                                =     true
+      zen_attributes_enableFuel                                                   =     true
+      zen_attributes_enableFuelCargo                                              =     true
+      zen_attributes_enableGarage                                                 =     true
+      zen_attributes_enableGroupBehaviour                                         =     true
+      zen_attributes_enableGroupCombatMode                                        =     true
+      zen_attributes_enableGroupExecute                                           =     true
+      zen_attributes_enableGroupFormation                                         =     true
+      zen_attributes_enableGroupID                                                =     true
+      zen_attributes_enableGroupSide                                              =     true
+      zen_attributes_enableGroupSkill                                             =     true
+      zen_attributes_enableGroupSpeed                                             =     true
+      zen_attributes_enableGroupStance                                            =     true
+      zen_attributes_enableHealth                                                 =     true
+      zen_attributes_enableInventory                                              =     true
+      zen_attributes_enableLights                                                 =     true
+      zen_attributes_enableMarkerAlpha                                            =     true
+      zen_attributes_enableMarkerColor                                            =     true
+      zen_attributes_enableMarkerText                                             =     true
+      zen_attributes_enableName                                                   =     true
+      zen_attributes_enablePlateNumber                                            =     true
+      zen_attributes_enableRank                                                   =     true
+      zen_attributes_enableRepairCargo                                            =     true
+      zen_attributes_enableRespawnPosition                                        =     true
+      zen_attributes_enableRespawnVehicle                                         =     true
+      zen_attributes_enableSensors                                                =     true
+      zen_attributes_enableSkill                                                  =     true
+      zen_attributes_enableSkills                                                 =     true
+      zen_attributes_enableStance                                                 =     true
+      zen_attributes_enableStates                                                 =     true
+      zen_attributes_enableTraits                                                 =     true
+      zen_attributes_enableVehicleLock                                            =     true
+      zen_attributes_enableWaypointBehaviour                                      =     true
+      zen_attributes_enableWaypointCombatMode                                     =     true
+      zen_attributes_enableWaypointFormation                                      =     true
+      zen_attributes_enableWaypointLoiterAltitude                                 =     true
+      zen_attributes_enableWaypointLoiterDirection                                =     true
+      zen_attributes_enableWaypointLoiterRadius                                   =     true
+      zen_attributes_enableWaypointSpeed                                          =     true
+      zen_attributes_enableWaypointTimeout                                        =     true
+      zen_attributes_enableWaypointType                                           =     true
 
 Zeus Enhanced - Faction Filter
 ================================
