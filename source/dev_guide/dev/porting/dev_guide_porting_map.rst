@@ -157,7 +157,7 @@ Setting up the mission.sqm
    .. rst-class:: code-paragraph target-substitude linkname-here
 
    | To start the work on the map itself it is easiest to use something that already contains all the necessary markers, modules and assets rather than starting new. For this purpose, I have created a custom composition which is available `here-3 <https://drive.google.com/drive/folders/1haydzz1IHlt77Q924yv1P_tD_-vooE2j?usp=sharing>`_.
-   | Download the rar, go to your :code:``C:\Users\[Username]\Documents\Arma 3 - Other Profiles\[playername]\compositions`` folder or wherever your profile is saved and unpack it.
+   | Download the rar, go to your :code:`C:\Users\[Username]\Documents\Arma 3 - Other Profiles\[playername]\compositions` folder or wherever your profile is saved and unpack it.
    | After you have done that, the custom composition is available in the Arma 3 Editor and can be placed.
    | Once the custom composition is placed within an empty mission, you have the following content:
 

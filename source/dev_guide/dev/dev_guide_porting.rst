@@ -27,6 +27,7 @@ Antistasi Porting Instructions
       /dev_guide/dev/porting/dev_guide_porting_mod.rst
       /dev_guide/dev/porting/dev_guide_street_artist_generation.rst
       /dev_guide/dev/porting/dev_guide_street_artist_editor.rst
+      /dev_guide/dev/porting/dev_guide_police_station.rst
 
    .. toctree::
       :hidden:

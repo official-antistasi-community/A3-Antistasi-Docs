@@ -317,15 +317,31 @@ div.footer {
     border-radius: 0.5rem !important;
 }
 
-.code-paragraph .sd-card-text,
 .code-paragraph .line,
+.code-paragraph .sd-card-text,
 .code-paragraph-direct,
 .code-paragraph li {
-    line-height: 2rem !important;
+    line-height: 1.4rem !important;
+}
+
+.code-paragraph .line .code,
+.code-paragraph .sd-card-text .code,
+.code-paragraph-direct .code,
+.code-paragraph li .code
+{
+    padding: 0.1rem 0.3rem !important;
 }
 
 .code-paragraph-2 {
-    line-height: 2rem !important;
+    line-height: 1.4rem !important;
+}
+
+.code-paragraph-2 code,
+.code-paragraph-2 .line code,
+.code-paragraph-2 .sd-card-text code,
+.code-paragraph-2 li code
+{
+    padding: 0.1rem 0.3rem !important;
 }
 
 .code-block-3 pre {

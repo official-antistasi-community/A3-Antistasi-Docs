@@ -27,9 +27,9 @@ Quick Start Guide
    #. Run Arma 3.
    #. Make an empty mp-mission on any map (community or official) with just one player.
    #. Save and close the editor.
-   #. Locate the folder :code:``A3-Antistasi\Tools\StreetArtist\``.
+   #. Locate the folder :code:`A3-Antistasi\\Tools\\StreetArtist\\`.
    #. Copy Everything in this folder (includes: :code:`/Collections/`, :code:`/functions/`, :code:`/description.ext`, :code:`/functions.hpp` and :code:`/NG_importGUI.hpp`)
-   #. Paste into the folder of the mp mission you created. Usually in :code:``C:\Users\User\Documents\Arma 3 - Other Profiles\YOUR_ARMA_NAME\mpmissions\MISSION_NAME.MAP\``
+   #. Paste into the folder of the mp mission you created. Usually in :code:`C:\\Users\\User\\Documents\\Arma 3 - Other Profiles\\YOUR_ARMA_NAME\\mpmissions\\MISSION_NAME.MAP\\`
    #. Start host LAN multiplayer.
    #. Run and join the mission.
    #. Press :code:`Esc` on your keyboard to open debug console.
@@ -99,6 +99,8 @@ Further Reading
 
    Further Reading
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-paragraph-2
 
    | See `Street Artist Editor <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Street-Artist-Editor>`_ for A3-Antistasi navGrid Guidelines (and GIFs!).
    | You can find further satisfying and accurate documentation on all sorts of things by looking into the headers of files in :code:`./functions/StreetArtist/`.
