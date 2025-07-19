@@ -25,6 +25,8 @@ FILE: :download:`ace_settings.txt </_data/ace_settings.txt>`
    - :ref:`dev_guide_mod_settings_grad`
    - :ref:`TFAR beta <dev_guide_mod_settings_tfar_beta>`
    - :ref:`dev_guide_mod_settings_vet_unflipping`
+   - :ref:`dev_guide_mod_settings_a3ti`
+   - :ref:`dev_guide_mod_settings_backpack_on_chest`
    - :ref:`dev_guide_mod_settings_zeus_enhanced`
 
 .. _dev_guide_mod_settings_antistasi:
@@ -43,9 +45,12 @@ Antistasi mod settings
    .. code-block:: toml
 
       HR_GRG_dLock                                                                =     false
-      force HR_GRG_PoolBase                                                       =     10
-      force HR_GRG_PoolIncr                                                       =     2
+      force HR_GRG_LockLimit_Guest                                                =     2
+      force force HR_GRG_LockLimit_Member                                         =     2
+      force HR_GRG_PoolBase                                                       =     20
+      force HR_GRG_PoolIncr                                                       =     7.60804
       force HR_GRG_Pylons_Enabled                                                 =     true
+      HR_GRG_renderPlacementRays                                                  =     false
       force HR_GRG_ServiceDisabled_Rearm                                          =     false
       force HR_GRG_ServiceDisabled_Refuel                                         =     false
       force HR_GRG_ServiceDisabled_Repair                                         =     false
@@ -79,6 +84,9 @@ ACE Map
       ace_markers_timestampEnabled                                                =     true
       ace_markers_timestampFormat                                                 =     "HH:MM"
       ace_markers_timestampHourFormat                                             =     24
+      force ace_markers_timestampTimezone                                         =     0
+      ace_markers_TimestampUTCMinutesOffset                                       =     0
+      force ace_markers_timestampUTCOffset                                        =     0
 
 ACE Fire
 ==========
@@ -96,7 +104,7 @@ ACE Fire
       force ace_fire_dropWeapon                                                   =     1
       force ace_fire_enabled                                                      =     true
       force ace_fire_enableFlare                                                  =     false
-      ace_fire_enableScreams                                                      =     true
+      ace_fire_enableScreams                                                      =     false
 
 ACE Zeus
 ==========
@@ -133,16 +141,21 @@ ACE Common
    .. code-block:: toml
 
       force force ace_common_allowFadeMusic                                       =     true
+      force ace_common_checkExtensions                                            =     false
       force force ace_common_checkPBOsAction                                      =     0
       force force ace_common_checkPBOsCheckAll                                    =     false
       force force ace_common_checkPBOsWhitelist                                   =     "[]"
+      force ace_common_deployedSwayFactor                                         =     1
       ace_common_displayTextColor                                                 =     [0,0,0,0.1]
       ace_common_displayTextFontColor                                             =     [1,1,1,1]
+      force ace_common_enableSway                                                 =     true
       ace_common_epilepsyFriendlyMode                                             =     false
+      force ace_common_magneticDeclination                                        =     false
       ace_common_progressBarInfo                                                  =     2
+      force ace_common_restedSwayFactor                                           =     1
       ace_common_settingFeedbackIcons                                             =     1
       ace_common_settingProgressBarLocation                                       =     0
-      force force ace_noradio_enabled                                             =     true
+      force ace_common_swayFactor                                                 =     1
 
 ACE Pylons
 ============
@@ -183,9 +196,10 @@ ACE Scopes
       force force ace_scopes_defaultZeroRange                                     =     100
       force force ace_scopes_enabled                                              =     true
       force force ace_scopes_forceUseOfAdjustmentTurrets                          =     true
+      ace_scopes_inScopeAdjustment                                                =     false
       force force ace_scopes_overwriteZeroRange                                   =     true
       force force ace_scopes_simplifiedZeroing                                    =     false
-      force force ace_scopes_useLegacyUI                                          =     false
+      ace_scopes_useLegacyUI                                                      =     false
       force force ace_scopes_zeroReferenceBarometricPressure                      =     1013.25
       force force ace_scopes_zeroReferenceHumidity                                =     0
       force force ace_scopes_zeroReferenceTemperature                             =     15
@@ -210,8 +224,6 @@ ACE Volume
       acex_volume_remindIfLowered                                                 =     false
       acex_volume_showNotification                                                =     true
 
-
-
 ACE Arsenal
 =============
 
@@ -228,10 +240,16 @@ ACE Arsenal
       force ace_arsenal_allowDefaultLoadouts                                      =     false
       force ace_arsenal_allowSharedLoadouts                                       =     true
       ace_arsenal_camInverted                                                     =     false
+      ace_arsenal_defaultToFavorites                                              =     false
       force ace_arsenal_enableIdentityTabs                                        =     true
-      ace_arsenal_enableModIcons                                                  =     true
+      ace_arsenal_enableModIcons                                                  =     1
       ace_arsenal_EnableRPTLog                                                    =     true
+      ace_arsenal_favoritesColor                                                  =     [0.9,0.875,0.6]
       ace_arsenal_fontHeight                                                      =     5.5
+      ace_arsenal_loadoutsSaveFace                                                =     true
+      ace_arsenal_loadoutsSaveInsignia                                            =     true
+      ace_arsenal_loadoutsSaveVoice                                               =     true
+      ace_arsenal_showUnavailableItems                                            =     0
 
 ACE Fortify
 =============
@@ -251,8 +269,6 @@ ACE Fortify
       force ace_fortify_timeMin                                                   =     1.5
       acex_fortify_settingHint                                                    =     2
 
-
-
 ACE Goggles
 =============
 
@@ -266,6 +282,7 @@ ACE Goggles
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      ace_goggles_drawOverlay                                                     =     true
       ace_goggles_effects                                                         =     2
       force force ace_goggles_showClearGlasses                                    =     false
       force force ace_goggles_showInThirdPerson                                   =     false
@@ -283,11 +300,13 @@ ACE Hearing
    .. rst-class:: code-block-2
    .. code-block:: toml
 
-      force force ace_hearing_autoAddEarplugsToUnits                              =     false
+      force force ace_hearing_autoAddEarplugsToUnits                              =     1
       ace_hearing_disableEarRinging                                               =     true
       force force ace_hearing_earplugsVolume                                      =     0.5
       force force ace_hearing_enableCombatDeafness                                =     true
       force force ace_hearing_enabledForZeusUnits                                 =     false
+      ace_hearing_enableNoiseDucking                                              =     true
+      force ace_hearing_explosionDeafnessCoefficient                              =     0.15
       force force ace_hearing_unconsciousnessVolume                               =     0.4
 
 ACE Medical
@@ -304,20 +323,53 @@ ACE Medical
    .. code-block:: toml
 
       force force ace_medical_ai_enabledFor                                       =     2
+      force ace_medical_ai_requireItems                                           =     0
       force force ace_medical_AIDamageThreshold                                   =     0.1
+      force ace_medical_alternateArmorPenetration                                 =     false
       force force ace_medical_bleedingCoefficient                                 =     0.3
       force force ace_medical_blood_bloodLifetime                                 =     300
       force force ace_medical_blood_enabledFor                                    =     2
       force force ace_medical_blood_maxBloodObjects                               =     500
       force ace_medical_deathChance                                               =     1
+      force ace_medical_dropWeaponUnconsciousChance                               =     0
       force ace_medical_enableVehicleCrashes                                      =     true
       force force ace_medical_fatalDamageSource                                   =     2
+      force ace_medical_fractureChance                                            =     0.1
+      force force ace_medical_fractures                                           =     2
+      force force ace_medical_ivFlowRate                                          =     1.5
+      force ace_medical_limbDamageThreshold                                       =     5
+      force force ace_medical_limping                                             =     1
+      force force ace_medical_painCoefficient                                     =     0.4
+      force ace_medical_painUnconsciousChance                                     =     0.1
+      force ace_medical_painUnconsciousThreshold                                  =     0.5
+      force force ace_medical_playerDamageThreshold                               =     1.6
+      force force ace_medical_spontaneousWakeUpChance                             =     0.7
+      force force ace_medical_spontaneousWakeUpEpinephrineBoost                   =     2.45
+      force force ace_medical_statemachine_AIUnconsciousness                      =     true
+      force ace_medical_statemachine_cardiacArrestBleedoutEnabled                 =     true
+      force force ace_medical_statemachine_cardiacArrestTime                      =     900
+      force force ace_medical_statemachine_fatalInjuriesAI                        =     0
+      force force ace_medical_statemachine_fatalInjuriesPlayer                    =     2
+      force ace_medical_useLimbDamage                                             =     0
+      force force ace_medical_vitals_simulateSpO2                                 =     false
+
+ACE Medical Interface
+==========================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Medical Interface
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
       ace_medical_feedback_bloodVolumeEffectType                                  =     0
       ace_medical_feedback_enableHUDIndicators                                    =     true
       ace_medical_feedback_painEffectType                                         =     2
-      force ace_medical_fractureChance                                            =     0.1
-      force force ace_medical_fractures                                           =     2
-      ace_medical_gui_bloodLossColor_0                                            =     [1,1,1,1]
+      ace_medical_gui_bloodLossColor_0                                            =     [0,0,0,1]
       ace_medical_gui_bloodLossColor_1                                            =     [1,0.95,0.64,1]
       ace_medical_gui_bloodLossColor_2                                            =     [1,0.87,0.46,1]
       ace_medical_gui_bloodLossColor_3                                            =     [1,0.8,0.33,1]
@@ -327,7 +379,8 @@ ACE Medical
       ace_medical_gui_bloodLossColor_7                                            =     [1,0.43,0.02,1]
       ace_medical_gui_bloodLossColor_8                                            =     [1,0.3,0,1]
       ace_medical_gui_bloodLossColor_9                                            =     [1,0,0,1]
-      ace_medical_gui_damageColor_0                                               =     [1,1,1,1]
+      ace_medical_gui_bodyPartOutlineColor                                        =     [1,1,1,1]
+      ace_medical_gui_damageColor_0                                               =     [0,0,0,1]
       ace_medical_gui_damageColor_1                                               =     [0.75,0.95,1,1]
       ace_medical_gui_damageColor_2                                               =     [0.62,0.86,1,1]
       ace_medical_gui_damageColor_3                                               =     [0.54,0.77,1,1]
@@ -343,52 +396,78 @@ ACE Medical
       ace_medical_gui_interactionMenuShowTriage                                   =     1
       force force ace_medical_gui_maxDistance                                     =     4
       force force ace_medical_gui_openAfterTreatment                              =     true
-      force force ace_medical_ivFlowRate                                          =     1.5
-      force force ace_medical_limping                                             =     0
-      force force ace_medical_painCoefficient                                     =     0.4
-      force ace_medical_painUnconsciousChance                                     =     0.1
-      force force ace_medical_playerDamageThreshold                               =     1.6
-      force force ace_medical_spontaneousWakeUpChance                             =     0.7
-      force force ace_medical_spontaneousWakeUpEpinephrineBoost                   =     2.45
-      force force ace_medical_statemachine_AIUnconsciousness                      =     true
-      force ace_medical_statemachine_cardiacArrestBleedoutEnabled                 =     true
-      force force ace_medical_statemachine_cardiacArrestTime                      =     900
-      force force ace_medical_statemachine_fatalInjuriesAI                        =     0
-      force force ace_medical_statemachine_fatalInjuriesPlayer                    =     2
+      ace_medical_gui_peekMedicalInfoReleaseDelay                                 =     1
+      ace_medical_gui_peekMedicalOnHit                                            =     false
+      ace_medical_gui_peekMedicalOnHitDuration                                    =     1
+      force ace_medical_gui_showBleeding                                          =     2
+      force ace_medical_gui_showBloodlossEntry                                    =     true
+      force ace_medical_gui_showDamageEntry                                       =     false
+      ace_medical_gui_tourniquetWarning                                           =     false
+
+ACE Medical Treatment
+==========================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Medical Treatment
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
       force force ace_medical_treatment_advancedBandages                          =     2
       force force ace_medical_treatment_advancedDiagnose                          =     2
       force force ace_medical_treatment_advancedMedication                        =     true
       force ace_medical_treatment_allowBodyBagUnconscious                         =     false
+      force ace_medical_treatment_allowGraveDigging                               =     0
       force force ace_medical_treatment_allowLitterCreation                       =     true
       force force ace_medical_treatment_allowSelfIV                               =     1
       force ace_medical_treatment_allowSelfPAK                                    =     0
       force force ace_medical_treatment_allowSelfStitch                           =     0
       force force ace_medical_treatment_allowSharedEquipment                      =     0
+      force ace_medical_treatment_bandageEffectiveness                            =     1
+      force ace_medical_treatment_bandageRollover                                 =     true
       force ace_medical_treatment_clearTrauma                                     =     1
       force force ace_medical_treatment_consumePAK                                =     1
       force force ace_medical_treatment_consumeSurgicalKit                        =     0
       force force ace_medical_treatment_convertItems                              =     0
       force ace_medical_treatment_cprSuccessChanceMax                             =     0.65
       force ace_medical_treatment_cprSuccessChanceMin                             =     0.4
+      force ace_medical_treatment_graveDiggingMarker                              =     false
       force force ace_medical_treatment_holsterRequired                           =     0
       force force ace_medical_treatment_litterCleanupDelay                        =     150
+      force ace_medical_treatment_locationAdenosine                               =     0
       force force ace_medical_treatment_locationEpinephrine                       =     0
       force ace_medical_treatment_locationIV                                      =     0
+      force ace_medical_treatment_locationMorphine                                =     0
       force force ace_medical_treatment_locationPAK                               =     0
       force force ace_medical_treatment_locationsBoostTraining                    =     true
+      force ace_medical_treatment_locationSplint                                  =     0
       force force ace_medical_treatment_locationSurgicalKit                       =     0
       force force ace_medical_treatment_maxLitterObjects                          =     50
+      force ace_medical_treatment_medicAdenosine                                  =     0
       force force ace_medical_treatment_medicEpinephrine                          =     0
       force ace_medical_treatment_medicIV                                         =     1
+      force ace_medical_treatment_medicMorphine                                   =     0
       force force ace_medical_treatment_medicPAK                                  =     1
+      force ace_medical_treatment_medicSplint                                     =     0
       force force ace_medical_treatment_medicSurgicalKit                          =     1
+      force ace_medical_treatment_numericalPulse                                  =     1
       force force ace_medical_treatment_timeCoefficientPAK                        =     1
       force ace_medical_treatment_treatmentTimeAutoinjector                       =     5
       force ace_medical_treatment_treatmentTimeBodyBag                            =     15
+      ace_medical_treatment_treatmentTimeCoeffZeus                                =     1
       force ace_medical_treatment_treatmentTimeCPR                                =     15
+      force ace_medical_treatment_treatmentTimeGrave                              =     30
       force ace_medical_treatment_treatmentTimeIV                                 =     12
       force ace_medical_treatment_treatmentTimeSplint                             =     7
       force ace_medical_treatment_treatmentTimeTourniquet                         =     7
+      force ace_medical_treatment_treatmentTimeTrainedAutoinjector                =     5
+      force ace_medical_treatment_treatmentTimeTrainedIV                          =     12
+      force ace_medical_treatment_treatmentTimeTrainedSplint                      =     7
+      force ace_medical_treatment_treatmentTimeTrainedTourniquet                  =     7
       force ace_medical_treatment_woundReopenChance                               =     1
       force ace_medical_treatment_woundStitchTime                                 =     5
 
@@ -437,9 +516,9 @@ ACE Weapons
    .. code-block:: toml
 
       force force ace_common_persistentLaserEnabled                               =     true
-      force force ace_laserpointer_enabled                                        =     true
       force force ace_reload_displayText                                          =     true
       ace_reload_showCheckAmmoSelf                                                =     true
+      ace_reloadlaunchers_displayStatusText                                       =     true
       force force ace_weaponselect_displayText                                    =     true
 
 ACE Weather
@@ -492,11 +571,15 @@ ACE Cook off
    .. code-block:: toml
 
       force force ace_cookoff_ammoCookoffDuration                                 =     0.5
-      force force ace_cookoff_enable                                              =     2
+      force ace_cookoff_cookoffDuration                                           =     1
+      force ace_cookoff_cookoffEnableProjectiles                                  =     true
+      force ace_cookoff_cookoffEnableSound                                        =     true
+      force ace_cookoff_destroyVehicleAfterCookoff                                =     true
       force force ace_cookoff_enableAmmobox                                       =     true
       force force ace_cookoff_enableAmmoCookoff                                   =     true
       force ace_cookoff_enableFire                                                =     true
       force force ace_cookoff_probabilityCoef                                     =     1
+      force ace_cookoff_removeAmmoDuringCookoff                                   =     true
 
 ACE Dragging
 ==============
@@ -511,9 +594,10 @@ ACE Dragging
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force ace_dragging_allowRunWithLightweight                                  =     true
       ace_dragging_dragAndFire                                                    =     true
-
-
+      force ace_dragging_skipContainerWeight                                      =     false
+      force ace_dragging_weightCoefficient                                        =     1
 
 ACE G-Forces
 ==============
@@ -582,6 +666,8 @@ ACE Pointing
       ace_finger_indicatorColor                                                   =     [1,0.503034,0,1]
       force force ace_finger_indicatorForSelf                                     =     true
       force force ace_finger_maxRange                                             =     5.01867
+      force ace_finger_proximityScaling                                           =     false
+      force ace_finger_sizeCoef                                                   =     1
 
 ACE Trenches
 ==============
@@ -614,9 +700,28 @@ ACE Vehicles
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force ace_novehicleclanlogo_enabled                                         =     false
       ace_vehicles_hideEjectAction                                                =     true
       force ace_vehicles_keepEngineRunning                                        =     false
       ace_vehicles_speedLimiterStep                                               =     5
+      force ace_viewports_enabled                                                 =     true
+
+ACE Vehicle Lock
+====================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Vehicle Lock
+   ^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force force ace_vehiclelock_defaultLockpickStrength                         =     10
+      force force ace_vehiclelock_lockVehicleInventory                            =     false
+      force force ace_vehiclelock_vehicleStartingLockState                        =     -1
 
 ACE Artillery
 ===============
@@ -651,30 +756,25 @@ ACE Logistics
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+
+      ace_cargo_carryAfterUnload                                                  =     true
+      ace_cargo_checkSizeInteraction                                              =     false
       force force ace_cargo_enable                                                =     true
+      force ace_cargo_enableDeploy                                                =     true
       ace_cargo_enableRename                                                      =     true
       force force ace_cargo_loadTimeCoefficient                                   =     3.46515
       ace_cargo_openAfterUnload                                                   =     0
       force force ace_cargo_paradropTimeCoefficent                                =     2.5
       force force ace_rearm_distance                                              =     20
+      force ace_rearm_enabled                                                     =     true
       force force ace_rearm_level                                                 =     1
       force force ace_rearm_supply                                                =     0
+      force ace_refuel_cargoRate                                                  =     10
+      force ace_refuel_enabled                                                    =     true
       force force ace_refuel_hoseLength                                           =     12
+      force ace_refuel_progressDuration                                           =     2
       force force ace_refuel_rate                                                 =     1
-      force force ace_repair_addSpareParts                                        =     true
-      force force ace_repair_autoShutOffEngineWhenStartingRepair                  =     true
-      force force ace_repair_consumeItem_toolKit                                  =     0
-      force force ace_repair_displayTextOnRepair                                  =     true
-      force force ace_repair_engineerSetting_fullRepair                           =     1
-      force force ace_repair_engineerSetting_repair                               =     1
-      force force ace_repair_engineerSetting_wheel                                =     0
-      force force ace_repair_fullRepairLocation                                   =     3
-      force force ace_repair_fullRepairRequiredItems                              =     ["ace_repair_anyToolKit"]
-      force ace_repair_locationsBoostTraining                                     =     false
-      force force ace_repair_miscRepairRequiredItems                              =     ["ace_repair_anyToolKit"]
-      force force ace_repair_repairDamageThreshold                                =     0.6
-      force force ace_repair_repairDamageThreshold_engineer                       =     0.4
-      force force ace_repair_wheelRepairRequiredItems                             =     []
+      force ace_towing_addRopeToVehicleInventory                                  =     true
 
 ACE Map Tools
 ===============
@@ -690,6 +790,7 @@ ACE Map Tools
    .. code-block:: toml
 
       ace_maptools_drawStraightLines                                              =     true
+      ace_maptools_plottingBoardAllowChannelDrawing                               =     1
       ace_maptools_rotateModifierKey                                              =     1
 
 ACE Name Tags
@@ -774,11 +875,49 @@ ACE Interaction
    .. code-block:: toml
 
       force force ace_interaction_disableNegativeRating                           =     false
+      force ace_interaction_enableAnimActions                                     =     true
       force ace_interaction_enableGroupRenaming                                   =     true
       force force ace_interaction_enableMagazinePassing                           =     true
       force force ace_interaction_enableTeamManagement                            =     true
+      ace_interaction_enableThrowablePassing                                      =     true
       ace_interaction_enableWeaponAttachments                                     =     true
+      force ace_interaction_interactWithEnemyCrew                                 =     0
       force ace_interaction_interactWithTerrainObjects                            =     false
+      force ace_interaction_remoteTeamManagement                                  =     true
+
+ACE Interaction Menu
+=========================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Interaction Menu
+   ^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      ace_gestures_showOnInteractionMenu                                          =     2
+      ace_interact_menu_actionOnKeyRelease                                        =     true
+      ace_interact_menu_addBuildingActions                                        =     false
+      ace_interact_menu_alwaysUseCursorInteraction                                =     true
+      ace_interact_menu_alwaysUseCursorSelfInteraction                            =     true
+      ace_interact_menu_colorShadowMax                                            =     [0,0,0,1]
+      ace_interact_menu_colorShadowMin                                            =     [0,0,0,0.25]
+      ace_interact_menu_colorTextMax                                              =     [1,1,1,1]
+      ace_interact_menu_colorTextMin                                              =     [1,1,1,0.25]
+      ace_interact_menu_consolidateSingleChild                                    =     false
+      ace_interact_menu_cursorKeepCentered                                        =     false
+      ace_interact_menu_cursorKeepCenteredSelfInteraction                         =     false
+      force force ace_interact_menu_menuAnimationSpeed                            =     0
+      ace_interact_menu_menuBackground                                            =     0
+      ace_interact_menu_menuBackgroundSelf                                        =     0
+      ace_interact_menu_selectorColor                                             =     [1,0,0]
+      ace_interact_menu_shadowSetting                                             =     2
+      ace_interact_menu_textSize                                                  =     2
+      ace_interact_menu_useListMenu                                               =     true
+      ace_interact_menu_useListMenuSelf                                           =     true
 
 ACE Nightvision
 =================
@@ -894,23 +1033,6 @@ ACE Switch Units
       force ace_switchunits_switchToIndependent                                   =     false
       force ace_switchunits_switchToWest                                          =     false
 
-ACE Vehicle Lock
-==================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   ACE Vehicle Lock
-   ^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      force force ace_vehiclelock_defaultLockpickStrength                         =     10
-      force force ace_vehiclelock_lockVehicleInventory                            =     false
-      force force ace_vehiclelock_vehicleStartingLockState                        =     -1
-
 ACE Field Rations
 ===================
 
@@ -924,12 +1046,14 @@ ACE Field Rations
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force ace_field_rations_zeusUpdates                                         =     false
       force acex_field_rations_affectAdvancedFatigue                              =     true
       force acex_field_rations_enabled                                            =     false
       acex_field_rations_hudShowLevel                                             =     0
       acex_field_rations_hudTransparency                                          =     -1
       acex_field_rations_hudType                                                  =     0
       force acex_field_rations_hungerSatiated                                     =     1
+      force acex_field_rations_nearDepletedConsequence                            =     1
       force acex_field_rations_terrainObjectActions                               =     true
       force acex_field_rations_thirstQuenched                                     =     1
       force acex_field_rations_timeWithoutFood                                    =     2
@@ -949,15 +1073,24 @@ ACE Uncategorized
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force ace_fastroping_autoAddFRIES                                           =     false
       force force ace_fastroping_requireRopeItems                                 =     false
+      ace_flags_enableCarrying                                                    =     true
+      ace_flags_enablePlacing                                                     =     true
       force ace_gunbag_swapGunbagEnabled                                          =     true
       force force ace_hitreactions_minDamageToTrigger                             =     0.122781
+      force ace_hitreactions_weaponDropChanceArmHitAI                             =     0
+      force ace_hitreactions_weaponDropChanceArmHitPlayer                         =     0
       ace_inventory_inventoryDisplaySize                                          =     1
       force force ace_laser_dispersionCount                                       =     2
+      force ace_laser_showLaserOnMap                                              =     1
+      force ace_marker_flags_placeAnywhere                                        =     false
       force force ace_microdagr_mapDataAvailable                                  =     2
       force force ace_microdagr_waypointPrecision                                 =     3
+      force force ace_noradio_enabled                                             =     true
       ace_optionsmenu_showNewsOnMainMenu                                          =     false
-      force force ace_overpressure_distanceCoefficient                            =     1
+      force ace_overpressure_backblastDistanceCoefficient                         =     1
+      force ace_overpressure_overpressureDistanceCoefficient                      =     1
       force ace_parachute_failureChance                                           =     0
       force force ace_parachute_hideAltimeter                                     =     true
       ace_tagging_quickTag                                                        =     0
@@ -992,6 +1125,7 @@ ACE User Interface
       force force ace_ui_gunnerWeaponName                                         =     true
       force force ace_ui_gunnerWeaponNameBackground                               =     true
       force force ace_ui_gunnerZeroing                                            =     true
+      ace_ui_hideDefaultActionIcon                                                =     false
       force force ace_ui_magCount                                                 =     true
       force force ace_ui_soldierVehicleWeaponInfo                                 =     true
       force force ace_ui_staminaBar                                               =     true
@@ -1025,6 +1159,7 @@ ACE Magazine Repack
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      ace_magazinerepack_repackAnimation                                          =     true
       ace_magazinerepack_repackLoadedMagazines                                    =     true
       force force ace_magazinerepack_timePerAmmo                                  =     1.5
       force force ace_magazinerepack_timePerBeltLink                              =     8
@@ -1066,42 +1201,7 @@ ACE Advanced Fatigue
       force ace_advanced_fatigue_loadFactor                                       =     1
       force ace_advanced_fatigue_performanceFactor                                =     1
       force ace_advanced_fatigue_recoveryFactor                                   =     3
-      force ace_advanced_fatigue_swayFactor                                       =     1
       force ace_advanced_fatigue_terrainGradientFactor                            =     1
-
-ACE Interaction Menu
-======================
-
-.. card::
-   :class-header: header-2-light
-   :class-card: sd-card-2
-
-   ACE Interaction Menu
-   ^^^^^^^^^^^^^^^^^^^^
-
-   .. rst-class:: code-block-2
-   .. code-block:: toml
-
-      ace_gestures_showOnInteractionMenu                                          =     2
-      ace_interact_menu_actionOnKeyRelease                                        =     true
-      ace_interact_menu_addBuildingActions                                        =     false
-      ace_interact_menu_alwaysUseCursorInteraction                                =     true
-      ace_interact_menu_alwaysUseCursorSelfInteraction                            =     true
-      ace_interact_menu_colorShadowMax                                            =     [0,0,0,1]
-      ace_interact_menu_colorShadowMin                                            =     [0,0,0,0.25]
-      ace_interact_menu_colorTextMax                                              =     [1,1,1,1]
-      ace_interact_menu_colorTextMin                                              =     [1,1,1,0.25]
-      ace_interact_menu_consolidateSingleChild                                    =     false
-      ace_interact_menu_cursorKeepCentered                                        =     false
-      ace_interact_menu_cursorKeepCenteredSelfInteraction                         =     false
-      force force ace_interact_menu_menuAnimationSpeed                            =     0
-      ace_interact_menu_menuBackground                                            =     0
-      ace_interact_menu_menuBackgroundSelf                                        =     0
-      ace_interact_menu_selectorColor                                             =     [1,0,0]
-      ace_interact_menu_shadowSetting                                             =     2
-      ace_interact_menu_textSize                                                  =     2
-      ace_interact_menu_useListMenu                                               =     true
-      ace_interact_menu_useListMenuSelf                                           =     true
 
 ACE View Restriction
 ======================
@@ -1139,6 +1239,7 @@ ACE Advanced Throwing
       force force ace_advanced_throwing_enabled                                   =     true
       force force ace_advanced_throwing_enablePickUp                              =     true
       force force ace_advanced_throwing_enablePickUpAttached                      =     true
+      ace_advanced_throwing_enableTempWindInfo                                    =     true
       force force ace_advanced_throwing_showMouseControls                         =     true
       force force ace_advanced_throwing_showThrowArc                              =     true
 
@@ -1179,6 +1280,7 @@ ACE Crew Served Weapons
       force force ace_csw_defaultAssemblyMode                                     =     false
       force force ace_csw_dragAfterDeploy                                         =     false
       force force ace_csw_handleExtraMagazines                                    =     false
+      force ace_csw_handleExtraMagazinesType                                      =     0
       force force ace_csw_progressBarTimeCoefficent                               =     1
 
 ACE View Distance Limiter
@@ -1216,7 +1318,6 @@ ACE Advanced Vehicle Damage
 
       force ace_vehicle_damage_enableCarDamage                                    =     false
       force ace_vehicle_damage_enabled                                            =     false
-      force ace_vehicle_damage_removeAmmoDuringCookoff                            =     true
 
 ACE Fragmentation Simulation
 ==============================
@@ -1226,16 +1327,101 @@ ACE Fragmentation Simulation
    :class-card: sd-card-2
 
    ACE Fragmentation Simulation
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. rst-class:: code-block-2
    .. code-block:: toml
 
       force force ace_frag_enabled                                                =     false
-      force force ace_frag_maxTrack                                               =     0
-      force force ace_frag_maxTrackPerFrame                                       =     0
       force force ace_frag_reflectionsEnabled                                     =     false
       force force ace_frag_spallEnabled                                           =     false
+      force ace_frag_spallIntensity                                               =     1
+
+ACE Advanced Missile Guidance
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Advanced Missile Guidance
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force ace_missileguidance_chaffEffectivenessCoef                            =     1
+      force ace_missileguidance_flareAngleCoef                                    =     1
+      force ace_missileguidance_flareEffectivenessCoef                            =     1
+
+ACE AI
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE AI
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force ace_ai_assignNVG                                                      =     false
+
+ACE Kill Tracker
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Kill Tracker
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force ace_killtracker_showCrewKills                                         =     true
+      force ace_killtracker_showMedicalWounds                                     =     2
+      force ace_killtracker_trackAI                                               =     true
+
+ACE Repair
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   ACE Repair
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force force ace_repair_addSpareParts                                        =     true
+      force force ace_repair_autoShutOffEngineWhenStartingRepair                  =     true
+      force force ace_repair_consumeItem_toolKit                                  =     0
+      force force ace_repair_displayTextOnRepair                                  =     true
+      force ace_repair_enabled                                                    =     true
+      force force ace_repair_engineerSetting_fullRepair                           =     1
+      force force ace_repair_engineerSetting_repair                               =     1
+      force force ace_repair_engineerSetting_wheel                                =     0
+      force force ace_repair_fullRepairLocation                                   =     3
+      force force ace_repair_fullRepairRequiredItems                              =     ["ace_repair_anyToolKit"]
+      force ace_repair_locationsBoostTraining                                     =     false
+      force force ace_repair_miscRepairRequiredItems                              =     ["ace_repair_anyToolKit"]
+      force ace_repair_miscRepairTime                                             =     15
+      force ace_repair_patchWheelEnabled                                          =     0
+      force ace_repair_patchWheelLocation                                         =     ["ground","vehicle"]
+      force ace_repair_patchWheelMaximumRepair                                    =     0.3
+      force ace_repair_patchWheelRequiredItems                                    =     ["ace_repair_anyToolKit"]
+      force ace_repair_patchWheelTime                                             =     5
+      force force ace_repair_repairDamageThreshold                                =     0.6
+      force force ace_repair_repairDamageThreshold_engineer                       =     0.4
+      force ace_repair_timeCoefficientFullRepair                                  =     0.1
+      force ace_repair_wheelChangeTime                                            =     10
+      force force ace_repair_wheelRepairRequiredItems                             =     []
 
 ACE Interaction Menu (Self) - More
 ====================================
@@ -1263,8 +1449,11 @@ ACE Interaction Menu (Self) - More
       ace_interact_menu_more__ACE_MapGpsShow                                      =     false
       ace_interact_menu_more__ACE_MapTools                                        =     false
       ace_interact_menu_more__ACE_Medical                                         =     false
+      ace_interact_menu_more__ace_medical_ai_heal                                 =     false
       ace_interact_menu_more__ACE_Medical_Menu                                    =     false
       ace_interact_menu_more__ACE_MoveRallypoint                                  =     false
+      ace_interact_menu_more__ACE_PlottingBoard                                   =     false
+      ace_interact_menu_more__ACE_PlottingBoardHide                               =     false
       ace_interact_menu_more__ACE_RepackMagazines                                 =     false
       ace_interact_menu_more__ace_sandbag_place                                   =     false
       ace_interact_menu_more__ACE_StartSurrenderingSelf                           =     false
@@ -1275,6 +1464,7 @@ ACE Interaction Menu (Self) - More
       ace_interact_menu_more__ace_zeus_create                                     =     false
       ace_interact_menu_more__ace_zeus_delete                                     =     false
       ace_interact_menu_more__acex_sitting_Stand                                  =     false
+      ace_interact_menu_more__SwitchToCamera                                      =     false
       ace_interact_menu_more__TFAR_Radio                                          =     false
       ace_interact_menu_more__UPSL_aime_change_ammo_ammo_class                    =     false
       ace_interact_menu_more__UPSL_aime_inventory_assemble_action                 =     false
@@ -1304,53 +1494,34 @@ ACE Interaction Menu (Self) - Move to Root
       ace_interact_menu_moveToRoot__ACE_Equipment__ACE_CheckDogtags               =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ACE_Chemlights                 =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_dagr_menu                  =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_dagr_menu__ace_dagr_toggle =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_flags                      =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_goggles_wipeGlasses        =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions             =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_status =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponOff =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponSwap =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponTo =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_huntir_open                =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_interaction_weaponAttachments =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open           =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_hide =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_show =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_marker_flags               =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure        =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_close =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_show =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_activate =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_connectHeadphones =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_deactivate =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_disconnectHeadphones =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_mk6mortar_rangetable       =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperature =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperatureSpareBarrels =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CoolWeaponWithItem =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_SwapBarrel     =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_UnJam          =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ACE_PutInEarplugs              =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ACE_PutOnEHP                   =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open             =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_makeCopy =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_openCopy =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_reload_checkAmmo           =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ACE_RemoveEarplugs             =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ACE_RemoveEHP                  =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_scopes_adjustZero          =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_scopes_resetZero           =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_spottingscope_place        =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ACE_TacticalLadders            =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches                   =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeBig =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeSmall =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeGiant =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeLongNameEmplacment =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeShort =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeVehicle =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_ui_checkWeaponZeroing      =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__bocr_main_cutLoweringLine      =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__bocr_main_lower                =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__bocr_main_onBack               =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__bocr_main_onChest              =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__bocr_main_swap                 =     false
       ace_interact_menu_moveToRoot__ACE_Equipment__ace_tripod_place               =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_gps_action =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_term_action =     false
-      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_uav_action =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_reload_checkAmmo           =     false
       ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Cellphone                 =     false
       ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Place                     =     false
       ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Advance            =     false
@@ -1367,8 +1538,7 @@ ACE Interaction Menu (Self) - Move to Root
       ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Stop               =     false
       ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Up                 =     false
       ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Warning            =     false
-      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlignCompass        =     false
-      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlignNorth          =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign               =     false
       ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsHide                =     false
       ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsShowNormal          =     false
       ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsShowSmall           =     false
@@ -1379,14 +1549,63 @@ ACE Interaction Menu (Self) - Move to Root
       ace_interact_menu_moveToRoot__ACE_Medical__ACE_LegRight                     =     false
       ace_interact_menu_moveToRoot__ACE_Medical__ACE_Torso                        =     false
       ace_interact_menu_moveToRoot__ACE_Medical__ACE_Torso__TriageCard            =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardWipe  =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_BecomeLeader          =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamBlue          =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamGreen         =     false
+      ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamMain          =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamRed           =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamYellow        =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveGroup            =     false
-      ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveTeam             =     false
+      ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_remoteTeamManagement  =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_RenameGroup           =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_flags__ace_flags_furlFlag  =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_dagr_menu__ace_dagr_toggle =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperature =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperatureSpareBarrels =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CoolWeaponWithItem =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardRulerHide =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardRulerShow =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_status =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponOff =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponSwap =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponTo =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_interaction_weaponAttachments =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_hide =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_show =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_close =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_show =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_activate =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_connectHeadphones =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_deactivate =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_disconnectHeadphones =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_gps_action =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_makeCopy =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_openCopy =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeBig =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeSmall =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeGiant =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeLongNameEmplacment =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeShort =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeVehicle =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_term_action =     false
+      ace_interact_menu_moveToRoot__ACE_Equipment__UPSL_aime_uav_terminal_uav_action =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignCompass =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignNorth =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoard =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoardAcrylic =     false
+      ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoardRuler =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic__ACE_PlottingBoardAlignAcrylicMaptool =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic__ACE_PlottingBoardAlignAcrylicUp =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard__ACE_PlottingBoardAlignBoardMaptool =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard__ACE_PlottingBoardAlignBoardUp =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler__ACE_PlottingBoardAlignRulerMaptool =     false
+      ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler__ACE_PlottingBoardAlignRulerUp =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__diwako_dui_buddy_buddy_action_team_remove =     false
       ace_interact_menu_moveToRoot__ACE_TeamManagement__UPSL_aime_group_drop_leader_action =     false
       ace_interact_menu_moveToRoot__UPSL_aime_vehicle_seats_change_action__UPSL_aime_vehicle_seats_turnout_action =     false
@@ -1534,11 +1753,13 @@ CBA - Community Base Addons
    .. code-block:: toml
 
       cba_diagnostic_ConsoleIndentType                                            =     -1
+      force cba_diagnostic_watchInfoRefreshRate                                   =     0.2
       cba_disposable_dropUsedLauncher                                             =     2
       force cba_disposable_replaceDisposableLauncher                              =     true
       cba_events_repetitionMode                                                   =     1
       force cba_network_loadoutValidation                                         =     0
       cba_optics_usePipOptics                                                     =     true
+      cba_quicktime_qteShorten                                                    =     false
       cba_ui_notifyLifetime                                                       =     4
       cba_ui_StorePasswords                                                       =     1
 
@@ -1607,9 +1828,12 @@ DUI - Squad Radar - Radar
       diwako_dui_namelist_width                                                   =     215
       diwako_dui_radar_ace_finger                                                 =     true
       force diwako_dui_radar_ace_medic                                            =     true
+      diwako_dui_radar_always_show_unit_numbers                                   =     false
       diwako_dui_radar_compassRangeCrew                                           =     500
+      force diwako_dui_radar_compassRangeLimit                                    =    50
       diwako_dui_radar_dir_padding                                                =     25
       diwako_dui_radar_dir_shadow                                                 =     2
+      diwako_dui_radar_enable_seat_icons                                          =     2
       diwako_dui_radar_group_by_vehicle                                           =     false
       diwako_dui_radar_icon_opacity                                               =     1
       diwako_dui_radar_icon_opacity_no_player                                     =     true
@@ -1690,10 +1914,41 @@ DUI - Squad Radar - Indicators
       diwako_dui_indicators_range                                                 =     20
       diwako_dui_indicators_range_crew                                            =     300
       diwako_dui_indicators_range_scale                                           =     false
+      force diwako_dui_indicators_rangeLimit                                      =     100
       diwako_dui_indicators_show                                                  =     true
       diwako_dui_indicators_size                                                  =     1
       diwako_dui_indicators_style                                                 =     "standard"
       diwako_dui_indicators_useACENametagsRange                                   =     true
+
+DUI - Squad Radar - Line Compass
+==================================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   DUI - Squad Radar - Line Compass
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      diwako_dui_linecompass_ACEFingeringColor                                    =     [1,0.66,0,1]
+      force diwako_dui_linecompass_AllowNumericDrawBearing                        =     true
+      diwako_dui_linecompass_CompassAvailableShown                                =     true
+      diwako_dui_linecompass_compassRange                                         =     35
+      force diwako_dui_linecompass_compassRangeLimit                              =     50
+      diwako_dui_linecompass_CustomWaypointColor                                  =     [0,0,0.87,1]
+      diwako_dui_linecompass_DefaultIconColor                                     =     [0.5,0.87,0.5,1]
+      diwako_dui_linecompass_DrawBearing                                          =     2
+      diwako_dui_linecompass_Enabled                                              =     true
+      diwako_dui_linecompass_enableOcclusion                                      =     false
+      diwako_dui_linecompass_IconOutline                                          =     0
+      diwako_dui_linecompass_occlusionFadeSpeed                                   =     3.5
+      diwako_dui_linecompass_showSpeaking                                         =     true
+      diwako_dui_linecompass_SwapOrder                                            =     false
+      diwako_dui_linecompass_WaypointColor                                        =     [0,0,0.87,1]
+
 
 .. _dev_guide_mod_settings_grad:
 
@@ -1719,6 +1974,7 @@ GRAD Trenches
       force force grad_trenches_functions_allowLongEnvelope                       =     true
       force force grad_trenches_functions_allowShortEnvelope                      =     true
       force force grad_trenches_functions_allowSmallEnvelope                      =     true
+      force grad_trenches_functions_allowTextureLock                              =     true
       force force grad_trenches_functions_allowTrenchDecay                        =     true
       force force grad_trenches_functions_allowVehicleEnvelope                    =     true
       force grad_trenches_functions_bigEnvelopeDamageMultiplier                   =     2
@@ -1734,6 +1990,7 @@ GRAD Trenches
       force grad_trenches_functions_hitDecayMultiplier                            =     1
       force force grad_trenches_functions_LongEnvelopeDigTime                     =     100
       force grad_trenches_functions_LongEnvelopeRemovalTime                       =     50
+      force grad_trenches_functions_playersInAreaRadius                           =     0
       force grad_trenches_functions_shortEnvelopeDamageMultiplier                 =     2
       force force grad_trenches_functions_shortEnvelopeDigTime                    =     30
       force grad_trenches_functions_shortEnvelopeRemovalTime                      =     15
@@ -1741,10 +1998,12 @@ GRAD Trenches
       force force grad_trenches_functions_smallEnvelopeDigTime                    =     40
       force grad_trenches_functions_smallEnvelopeRemovalTime                      =     20
       force force grad_trenches_functions_stopBuildingAtFatigueMax                =     true
+      force grad_trenches_functions_textureLockDistance                           =     5
       force force grad_trenches_functions_timeoutToDecay                          =     3600
       force grad_trenches_functions_vehicleEnvelopeDamageMultiplier               =     1
       force force grad_trenches_functions_vehicleEnvelopeDigTime                  =     180
       force grad_trenches_functions_vehicleEnvelopeRemovalTime                    =     90
+      force grad_trenches_functions_vehicleTrenchBuildSpeed                       =     5
 
 .. _dev_guide_mod_settings_tfar_beta:
 
@@ -1769,6 +2028,9 @@ TFAR - Global settings
       force force TFAR_disableAutoMute                                            =     false
       force force TFAR_enableIntercom                                             =     true
       force force TFAR_experimentalVehicleIsolation                               =     false
+      force TFAR_externalIntercomEnable                                           =     0
+      force TFAR_externalIntercomMaxRange_Phone                                   =     5
+      force TFAR_externalIntercomMaxRange_Wireless                                =     15
       force force TFAR_fullDuplex                                                 =     true
       force force TFAR_giveLongRangeRadioToGroupLeaders                           =     false
       force force TFAR_giveMicroDagrToSoldier                                     =     false
@@ -1801,11 +2063,12 @@ TFAR - Global settings
       force force TFAR_setting_DefaultRadio_Rifleman_East                         =     ""
       force force TFAR_setting_DefaultRadio_Rifleman_Independent                  =     "TFAR_anprc148jem"
       force force TFAR_setting_DefaultRadio_Rifleman_West                         =     ""
+      force TFAR_setting_externalIntercomWirelessHeadgear                         =     "H_HelmetCrew_I,UK3CB_H_Crew_Helmet,UK3CB_H_Pilot_Helmet,rhs_tsh4_ess_bala,rhs_tsh4_ess,rhs_tsh4,UK3CB_BAF_H_CrewHelmet_B,UK3CB_BAF_H_PilotHelmetHeli_A,rhs_tsh4_bala,rhs_gssh18,rhs_zsh7a_mike_alt,rhs_zsh7a_mike,rhs_zsh7a_mike_green,rhs_zsh7a_mike_green_alt,rhsusf_cvc_green_helmet,rhsusf_cvc_green_alt_helmet,rhsusf_cvc_helmet,rhsusf_cvc_alt_helmet,rhsgref_hat_M1951,rhsusf_cvc_green_ess,rhsusf_hgu56p_visor_black,rhsusf_hgu56p_mask_black_skull,rhsusf_hgu56p_visor_mask_Empire_black,rhsusf_cvc_ess,UK3CB_KRG_I_H_hgu56p_tan_stripe,rhsusf_hgu56p_green,rhsusf_hgu56p_visor_green,rhsusf_hgu56p_visor,rhsusf_hgu56p,UK3CB_H_Crew_Cap,BWA3_CrewmanKSK_Tropen_Headset,BWA3_TopOwl_nvg,BWA3_Knighthelm,BWA3_CrewmanKSK_Fleck_Headset,CUP_H_CZ_Helmet05,H_PilotHelmetHeli_B,CUP_H_SLA_TankerHelmet,CUP_H_RUS_ZSH_Shield_Down,H_Tank_black_F,CUP_H_BAF_DDPM_Mk6_CREW_PRR,CUP_H_BAF_DPM_Mk6_CREW_PRR,CUP_H_Ger_Beret_TankCommander_Blk,CUP_H_SPH4_grey,CUP_H_CVC,CUP_H_RUS_TSH_4_Brown,CUP_H_USMC_Crew_Helmet,CUP_H_SPH4_green,H_HeadSet_black_F,H_PilotHelmetFighter_B,CUP_H_CVCH_des,CUP_H_TK_TankerHelmet,gm_ge_headgear_headset_crew_oli,gm_ge_headgear_crewhat_80_blk,gm_ge_headgear_sph4_oli,gm_pl_army_headgear_wz63_oli,gm_gc_headgear_zsh3_wht,H_LIB_US_Helmet_Tank,H_LIB_US_Helmet_Pilot,H_LIB_SOV_TankHelmet,H_LIB_SOV_PilotHelmet,H_LIB_UK_Beret_Tankist,H_LIB_UK_Beret_Headset,H_LIB_GER_TankPrivateCap,H_LIB_GER_TankPrivateCap2,H_LIB_GER_LW_PilotHelmet,rhs_6b48,rhsusf_hgu56p_visor_mask_green,rhssaf_helmet_m97_olive_nocamo,rhsusf_hgu56p_black,rhsusf_hgu56p_mask_black,rhsusf_hgu56p_visor_mask_black,H_SPE_US_Helmet_Tank_polar,H_SPE_US_Helmet_Tank_polar_tapes,H_SPE_US_Helmet_Pilot,H_SPE_GER_TankPrivateCap3,H_SPE_GER_TankPrivateCap,H_SPE_GER_TankPrivateCap2,H_SPE_GER_LW_PilotHelmet,UNS_NVA_CH,UNS_NVA_CHB,UNS_NVA_CHG,UNS_NVA_CHBG,UNS_NVA_PL,UNS_NVA_PLC,UNS_TC_1,UNS_TC_2,UNS_JP_Helmet_352TFS,UNS_JP_Helmet_366TFW,UNS_JP_Helmet_389TFS,UNS_HP_Helmet_R33,UNS_HP_Helmet_R8,UNS_HP_Helmet_USA,H_PilotHelmetHeli_I,H_CrewHelmetHeli_I,H_HelmetCrew_O,H_CrewHelmetHeli_O,H_PilotHelmetHeli_O,H_Tank_eaf_F,H_HelmetCrew_I_E,H_CrewHelmetHeli_I_E,H_PilotHelmetHeli_I_E,H_HelmetCrew_B,H_CrewHelmetHeli_B,H_Cap_headphones,vn_b_helmet_t56_02_02,vn_b_helmet_t56_02_01,vn_b_helmet_svh4_02_06,vn_b_helmet_svh4_02_03,vn_b_helmet_svh4_02_04,vn_o_helmet_tsh3_01,vn_o_helmet_tsh3_02,vn_o_helmet_zsh3_02,vn_o_helmet_zsh3_01,lxWS_H_HelmetCrew_I,lxWS_H_Bandanna_blk_hs,H_Cap_headphones_ion_lxws,lxWS_H_Tank_tan_F"
       force TFAR_spectatorCanHearEnemyUnits                                       =     true
       force TFAR_spectatorCanHearFriendlies                                       =     true
       force force TFAR_takingRadio                                                =     2
-      force TFAR_Teamspeak_Channel_Name                                           =     ""
-      force TFAR_Teamspeak_Channel_Password                                       =     ""
+      force force TFAR_Teamspeak_Channel_Name                                     =     "TaskForceRadio"
+      force force TFAR_Teamspeak_Channel_Password                                 =     "123"
       force force tfar_terrain_interception_coefficient                           =     7
       force force TFAR_voiceCone                                                  =     true
 
@@ -1835,6 +2098,7 @@ TFAR - Clientside settings
       TFAR_ShowDiaryRecord                                                        =     true
       TFAR_showTransmittingHint                                                   =     true
       TFAR_ShowVolumeHUD                                                          =     false
+      TFAR_splendidCamEars                                                        =     false
       TFAR_tangentReleaseDelay                                                    =     0
       TFAR_VolumeHudTransparency                                                  =     0
       TFAR_volumeModifier_forceSpeech                                             =     false
@@ -1861,6 +2125,49 @@ VET_Unflipping
       force vet_unflipping_unit_mass_limit                                        =     3000
       force vet_unflipping_vehicle_mass_limit                                     =     100000
 
+.. _dev_guide_mod_settings_a3ti:
+
+A3 Thermal Improvements
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   A3 Thermal Improvements
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force A3TI_ACE_JAVELIN                                                      =     false
+      force A3TI_ALLOW_TANK_DRIVER                                                =     false
+      force A3TI_ALLOW_VANILLA_TI                                                 =     true
+      force A3TI_ENABLE_ZEUS                                                      =     true
+      force A3TI_HD_VISION_FIGHTER                                                =     false
+      force A3TI_HD_VISION_LANDVEH                                                =     true
+      force A3TI_HD_VISION_SHIP                                                   =     false
+      force A3TI_HD_VISION_UAV                                                    =     true
+      force A3TI_REMOVE_FILMGRAIN_RHS                                             =     true
+
+.. _dev_guide_mod_settings_backpack_on_chest:
+
+Backpack On Chest
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   Backpack On Chest
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      force bocr_main_disabled                                                    =     false
+      force bocr_main_walk                                                        =     true
+
 .. _dev_guide_mod_settings_zeus_enhanced:
 
 Zeus Enhanced
@@ -1876,6 +2183,8 @@ Zeus Enhanced
    .. rst-class:: code-block-2
    .. code-block:: toml
 
+      force force zen_area_markers_editableMarkers                                =     1
+      zen_building_markers_enabled                                                =     false
       zen_camera_adaptiveSpeed                                                    =     true
       zen_camera_defaultSpeedCoef                                                 =     1
       zen_camera_fastSpeedCoef                                                    =     1
@@ -1890,6 +2199,7 @@ Zeus Enhanced
       zen_context_menu_enabled                                                    =     2
       zen_context_menu_overrideWaypoints                                          =     false
       zen_editor_addGroupIcons                                                    =     false
+      zen_editor_addModIcons                                                      =     false
       zen_editor_declutterEmptyTree                                               =     true
       zen_editor_disableLiveSearch                                                =     false
       zen_editor_moveDisplayToEdge                                                =     true
@@ -1900,7 +2210,8 @@ Zeus Enhanced
       zen_editor_unitRadioMessages                                                =     0
       zen_placement_enabled                                                       =     true
       zen_remote_control_cameraExitPosition                                       =     2
-      zen_visibility_enabled                                                      =     true
+      zen_visibility_enabled                                                      =     0
+      zen_visibility_maxDistance                                                  =     5000
       zen_vision_enableBlackHot                                                   =     false
       zen_vision_enableBlackHotGreenCold                                          =     false
       zen_vision_enableBlackHotRedCold                                            =     false
@@ -1910,6 +2221,68 @@ Zeus Enhanced
       zen_vision_enableRedHotCold                                                 =     false
       zen_vision_enableWhiteHot                                                   =     true
       zen_vision_enableWhiteHotRedCold                                            =     false
+
+Zeus Enhanced - Attributes
+==============================
+
+.. card::
+   :class-header: header-2-light
+   :class-card: sd-card-2
+
+   Zeus Enhanced - Attributes
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   .. rst-class:: code-block-2
+   .. code-block:: toml
+
+      zen_attributes_enableAbilities                                              =     true
+      zen_attributes_enableAmmo                                                   =     true
+      zen_attributes_enableAmmoCargo                                              =     true
+      zen_attributes_enableArsenal                                                =     true
+      zen_attributes_enableBuildingMarker                                         =     true
+      zen_attributes_enableDamage                                                 =     true
+      zen_attributes_enableEngine                                                 =     true
+      zen_attributes_enableExecute                                                =     true
+      zen_attributes_enableFuel                                                   =     true
+      zen_attributes_enableFuelCargo                                              =     true
+      zen_attributes_enableGarage                                                 =     true
+      zen_attributes_enableGroupBehaviour                                         =     true
+      zen_attributes_enableGroupCombatMode                                        =     true
+      zen_attributes_enableGroupExecute                                           =     true
+      zen_attributes_enableGroupFormation                                         =     true
+      zen_attributes_enableGroupID                                                =     true
+      zen_attributes_enableGroupSide                                              =     true
+      zen_attributes_enableGroupSkill                                             =     true
+      zen_attributes_enableGroupSpeed                                             =     true
+      zen_attributes_enableGroupStance                                            =     true
+      zen_attributes_enableHealth                                                 =     true
+      zen_attributes_enableInventory                                              =     true
+      zen_attributes_enableLights                                                 =     true
+      zen_attributes_enableMarkerAlpha                                            =     true
+      zen_attributes_enableMarkerColor                                            =     true
+      zen_attributes_enableMarkerText                                             =     true
+      zen_attributes_enableName                                                   =     true
+      zen_attributes_enablePlateNumber                                            =     true
+      zen_attributes_enableRank                                                   =     true
+      zen_attributes_enableRepairCargo                                            =     true
+      zen_attributes_enableRespawnPosition                                        =     true
+      zen_attributes_enableRespawnVehicle                                         =     true
+      zen_attributes_enableSensors                                                =     true
+      zen_attributes_enableSkill                                                  =     true
+      zen_attributes_enableSkills                                                 =     true
+      zen_attributes_enableStance                                                 =     true
+      zen_attributes_enableStates                                                 =     true
+      zen_attributes_enableTraits                                                 =     true
+      zen_attributes_enableVehicleLock                                            =     true
+      zen_attributes_enableWaypointBehaviour                                      =     true
+      zen_attributes_enableWaypointCombatMode                                     =     true
+      zen_attributes_enableWaypointFormation                                      =     true
+      zen_attributes_enableWaypointLoiterAltitude                                 =     true
+      zen_attributes_enableWaypointLoiterDirection                                =     true
+      zen_attributes_enableWaypointLoiterRadius                                   =     true
+      zen_attributes_enableWaypointSpeed                                          =     true
+      zen_attributes_enableWaypointTimeout                                        =     true
+      zen_attributes_enableWaypointType                                           =     true
 
 Zeus Enhanced - Faction Filter
 ================================
