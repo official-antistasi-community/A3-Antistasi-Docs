@@ -3,7 +3,7 @@
 .. _dev_guide_police_station:
 
 ============================================
-Antistasi Police Station Documentation
+Police Stations
 ============================================
 
 Selection of Police Stations
@@ -52,6 +52,16 @@ Furnishing
    - :code:`Land_Document_01_F`: Can be used instead of the office table as a direct intel position on other furniture. However, check that the furniture supports the document.
      None of the CUP tables seem to. Note that definition order doesn't matter, as the intel is placed afterwards.
    - :code:`Box_NATO_Wps_F`: Replaced with faction-defined surrender crate.
+
+Building the data
+=======================
+
+.. card::
+   :class-card: sd-card-2 sd-mt-3
+   :class-header: header-2
+
+   Building the data
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    Once the objects are placed, place a player unit, start the mission, look at the house and run the following code to get the relative object positions:
 
