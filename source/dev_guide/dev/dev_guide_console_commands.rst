@@ -9,12 +9,6 @@ Debug Console Commands for Devs
 .. card::
    :class-card: sd-card-2 sd-mt-3 sd-card-important
 
-   Please note that this part is still heavily work in progress.
-   For more dev related information please go to our `Antistasi-Wiki-for-Devs <https://github.com/official-antistasi-community/A3-Antistasi/wiki/Antistasi-Wiki-for-Devs>`_.
-
-.. card::
-   :class-card: sd-card-2 sd-mt-3 sd-card-important
-
    Following is an unsorted collection of debug console commands that usually are not or should not be used by admins and players on live servers.
 
 Nearest Marker
