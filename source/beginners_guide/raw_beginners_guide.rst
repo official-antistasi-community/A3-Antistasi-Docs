@@ -1294,6 +1294,9 @@ Loadouts
 
       -  I put ammo in my vehicle to offset the weight.
 
+Undercover and how to use it
+================================
+
 .. card::
    :class-header: header-2
 
