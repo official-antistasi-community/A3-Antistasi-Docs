@@ -92,32 +92,55 @@ Supported Modsets & Maps
       Added Factions with the `S.O.G. Prairie Fire CDLC <https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SOG.html>`]:
 
       - Rebel - VN POF
+      - AI - VN ANZAC
       - AI - VN MACV
       - AI - VN PAVN
+      - AI - VN USMC
 
       Added Factions with the `Global Mobilisation CDLC <https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded) [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_GM_CUP.html>`]:
 
       - Rebel - GM FIA
       - AI - GM Bundeswehr Arctic
+      - AI - GM Bundeswehr Desert
       - AI - GM Bundeswehr Temperate
       - AI - GM Nationale Volksarmee Arctic (National People's Army)
+      - AI - GM Nationale Volksarmee Desert (National People's Army)
       - AI - GM Nationale Volksarmee Temperate (National People's Army)
 
       Added Factions with the `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ (also requires the `IFA mod and dependencies <https://steamcommunity.com/sharedfiles/filedetails/?id=3010629545>`_ to be loaded) [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_SPE_IFA.html>`]:
 
-      - Rebel - SPE_IFA FFF
+      - Rebel - SPE_IFA FFF (French Resistance)
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
-      Avaliable Factions with `IFA3 AIO <https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3.html>`, :download:`Extended Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3_Extended.html>`]:
+      Added Factions with Spearhead CDLC + SPEX:
 
-      - Rebel - AK
-      - Rebel - FFI
-      - AI - ALLIES
-      - AI - SOVIET ARMY
-      - AI - US ARMY
-      - AI - UK ARMY
-      - AI - WEHRMACHT
+      - Rebel - SPEX FFF
+      - AI - SPEX US
+      - AI - SPEX Commonwealth
+      - AI - SPEX Commonwealth Tropical
+      - AI - SPEX Wehrmacht
+      - AI - SPEX Wehrmacht DAK
+
+      Added Factions with Spearhead CDLC + SPEX + SEP:
+
+      - Rebel - SEP AK (Polish Resistance)
+      - Rebel - SEP FRAS (Free Republic of Altis and Stratis)
+      - AI - SEP US Winter
+      - AI - SEP Altis Colonial Armed Forces
+      - AI - SEP Horizon Island Colonial Army
+      - AI - SEP Wehrmacht Central
+      - AI - SEP Wehrmacht Central Winter
+
+      Added Factions with the `CSLA CDLC <https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/>`_:
+
+      - Rebel - CSLA NAPA
+      - AI - CSLA US Army Temperate
+      - AI - CSLA US Army Arid
+      - AI - CSLA CSLA Temperate
+      - AI - CSLA CSLA Arid
+      - AI - CSLA AFMC Temperate
+      - AI - CSLA FIA
 
       Added Factions with the `Western Sahara CDLC <https://store.steampowered.com/app/1681170/Arma_3_Creator_DLC_Western_Sahara/>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistas_WS.html>`]:
 
@@ -128,9 +151,27 @@ Supported Modsets & Maps
       - AI - CSAT (North African version)
       - AI - NATO (Desert camo)
 
+      Added Factions with the `Expeditionary Forces CDLC <https://store.steampowered.com/app/2647830/Arma_3_Creator_DLC_Expeditionary_Forces/>`_:
+
+      - AI - EF MJTF Arid
+      - AI - EF MJTF Temperate
+
+      Added Factions with Aegis:
+
+      - Rebel - Aegis FIA
+      - Rebel - Aegis SDK (requires APEX DLC)
+      - AI - Aegis AAF
+      - AI - Aegis China (requires APEX DLC)
+      - AI - Aegis Iran
+      - AI - Aegis Russia (requires Contact DLC)
+      - AI - Aegis US Arid, Temperate and Tropical
+      - AI - Aegis BAF Arid, Temperate and Tropical (requires Contact DLC)
+      - AI - Aegis LDF (requires Contact DLC)
+
       Added Factions with `RHS <https://steamcommunity.com/sharedfiles/filedetails/?id=2498438772>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS.html>`]:
 
       - Rebel - RHS NAPA
+      - Rebel - RHS SDK
       - AI - RHS AFRF Arid
       - AI - RHS AFRF Temperate
       - AI - RHS CDF
@@ -145,6 +186,13 @@ Supported Modsets & Maps
       - AI - RHS VDV Arid
       - AI - RHS VDV Temperate
 
+      Added Factions with Swedish Forces Pack:
+
+      - AI - SFP Early SDF
+      - AI - SFP Early SDF Arctic
+      - AI - SFP Modern SDF
+      - AI - SFP Modern SDF Arctic
+
       Added Factions with `3CB Factions <https://steamcommunity.com/sharedfiles/filedetails/?id=2498466977>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_RHS_3CBFaction.html>`]:
 
       - Rebel - 3CB CCM
@@ -152,16 +200,21 @@ Supported Modsets & Maps
       - Rebel - 3CB ION
       - Rebel - 3CB LSM
       - Rebel - 3CB TKM
+      - Rebel - 3CB TFIA
       - AI - 3CB AAF
       - AI - 3CB AAF Arid
       - AI - 3CB ADA
       - AI - 3CB ANA
+      - AI - 3CB Cold War PLM
+      - AI - 3CB Cold War TLA
+      - AI - 3CB Cold War TNM
       - AI - 3CB Cold War US
       - AI - 3CB Cold War USSR
       - AI - 3CB CSAT BEAR
       - AI - 3CB CSAT GRYPHON
       - AI - 3CB CSAT SCIMITAR
       - AI - 3CB CSAT VIPER
+      - AI - 3CB GAF
       - AI - 3CB HIDF
       - AI - 3CB ION Arctic
       - AI - 3CB ION Arid
@@ -172,6 +225,7 @@ Supported Modsets & Maps
       - AI - 3CB TKA East
       - AI - 3CB TKA Mix
       - AI - 3CB TKA West
+      - AI - 3CB USMC Temperate
 
       Added Factions with `3CB BAF <https://steamcommunity.com/sharedfiles/filedetails/?id=2498453852>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_3CBBAF.html>`]:
 
@@ -208,16 +262,65 @@ Supported Modsets & Maps
       - AI - CUP USMC Arid
       - AI - CUP USMC Temperate
 
-      Avaliable Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_BWMod.html>`]:
+      Added Factions with `BWMod <https://steamcommunity.com/sharedfiles/filedetails/?id=1200127537>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_BWMod.html>`]:
 
       - AI - BWA3 BW Arid
       - AI - BWA3 BW Temperate
 
-      Avaliable Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Unsung.html>`]:
+      Added Factions with `Unsung <https://steamcommunity.com/sharedfiles/filedetails/?id=943001311>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_Unsung.html>`]:
 
       - Rebel - Unsung VC
       - AI - Unsung PAVN
       - AI - Unsung US
+
+      Added Factions with `IFA3 AIO <https://steamcommunity.com/sharedfiles/filedetails/?id=2648308937>`_ [:download:`Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3.html>`, :download:`Extended Modset </_data/templates_launcher/Arma_3_Preset_Antistasi_IFA3_Extended.html>`]:
+
+      - Rebel - IFA AK (Polish Resistance)
+      - Rebel - IFA FFI (French Resistance)
+      - AI - IFA Allies
+      - AI - IFA Soviet Army
+      - AI - IFA US Army
+      - AI - IFA US Marines
+      - AI - IFA UK Army
+      - AI - IFA Wehrmacht
+
+      Added Factions with East Asia War:
+
+      - Rebel - EAW local independence movement
+      - AI - EAW Imperial Japanese Army
+      - AI - EAW National Revolutionary Army
+      - AI - EAW People's Liberation Army
+
+      Added Factions with Cold War Rearmed:
+
+      - Rebel - CWR FIA
+      - AI - CWR US Temperate
+      - AI - CWR USSR Temperate
+
+      Added Factions with CWR Brits:
+
+      - AI - CWR BAF Temperate
+
+      Added Factions with CRO:
+
+      - AI - CRO Croatian Army
+
+      Added Factions with AMF:
+
+      - AI - AMF French Army
+
+      Added Factions with TMT:
+
+      - AI - TMT Turkish Army
+
+      Added Factions with PRACS:
+
+      - AI - PRACS RACS Arid
+      - AI - PRACS RACS Temperate
+      - AI - PRACS SLA Arid
+      - AI - PRACS SLA Temperate
+      - AI - PRACS SLA Guards Arid
+      - AI - PRACS SLA Guards Temperate
 
    .. dropdown:: Maps
       :class-title: header-3-light
@@ -260,9 +363,14 @@ Supported Modsets & Maps
       Single maps with their own required mods:
 
       - `Anizay <https://steamcommunity.com/sharedfiles/filedetails/?id=1537973181>`_
+      - `Isla Duala <https://steamcommunity.com/sharedfiles/filedetails/?id=714149065>`_
       - `Kujari <https://steamcommunity.com/sharedfiles/filedetails/?id=1726494027>`_
       - `Kunduz <https://steamcommunity.com/sharedfiles/filedetails/?id=1188303655>`_
+      - `Mehland <https://steamcommunity.com/sharedfiles/filedetails/?id=3317364155>`_
+      - `Napf and Napf Winter <https://steamcommunity.com/sharedfiles/filedetails/?id=1425442364>`_
       - `Pulau <https://steamcommunity.com/workshop/filedetails/?id=1423583812>`_
+      - `Regero <https://steamcommunity.com/sharedfiles/filedetails/?id=2278254320>`_
+      - `Stubbhult <https://steamcommunity.com/sharedfiles/filedetails/?id=3353189981>`_
       - `Tembelan Island <https://steamcommunity.com/sharedfiles/filedetails/?id=1252091296>`_
       - `UMB Columbia <https://steamcommunity.com/sharedfiles/filedetails/?id=2266710560>`_
       - `Virolahti <https://steamcommunity.com/sharedfiles/filedetails/?id=1926513010>`_
