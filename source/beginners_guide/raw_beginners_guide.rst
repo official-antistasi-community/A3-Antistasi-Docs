@@ -113,7 +113,7 @@ Supported Modsets & Maps
       - AI - SPE_IFA US
       - AI - SPE_IFA WEH (German Wehrmacht)
 
-      Added Factions with Spearhead CDLC + SPEX:
+      Added Factions with `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ + `SPEX <https://steamcommunity.com/sharedfiles/filedetails/?id=3117898674>`_:
 
       - Rebel - SPEX FFF
       - AI - SPEX US
@@ -122,7 +122,7 @@ Supported Modsets & Maps
       - AI - SPEX Wehrmacht
       - AI - SPEX Wehrmacht DAK
 
-      Added Factions with Spearhead CDLC + SPEX + SEP:
+      Added Factions with `Spearhead 1944 CDLC <https://store.steampowered.com/app/1175380/Arma_3_Creator_DLC_Spearhead_1944/>`_ + `SPEX <https://steamcommunity.com/sharedfiles/filedetails/?id=3117898674>`_ + `SEP <https://steamcommunity.com/sharedfiles/filedetails/?id=3478069926>`_:
 
       - Rebel - SEP AK (Polish Resistance)
       - Rebel - SEP FRAS (Free Republic of Altis and Stratis)
@@ -132,7 +132,7 @@ Supported Modsets & Maps
       - AI - SEP Wehrmacht Central
       - AI - SEP Wehrmacht Central Winter
 
-      Added Factions with the `CSLA CDLC <https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/>`_:
+      Added Factions with the `CSLA CDLC <https://store.steampowered.com/app/1294440/Arma_3_Creator_DLC_CSLA_Iron_Curtain/>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
 
       - Rebel - CSLA NAPA
       - AI - CSLA US Army Temperate
@@ -156,7 +156,7 @@ Supported Modsets & Maps
       - AI - EF MJTF Arid
       - AI - EF MJTF Temperate
 
-      Added Factions with Aegis:
+      Added Factions with `Aegis <https://steamcommunity.com/sharedfiles/filedetails/?id=949252631>`_:
 
       - Rebel - Aegis FIA
       - Rebel - Aegis SDK (requires APEX DLC)
@@ -186,7 +186,7 @@ Supported Modsets & Maps
       - AI - RHS VDV Arid
       - AI - RHS VDV Temperate
 
-      Added Factions with Swedish Forces Pack:
+      Added Factions with `Swedish Forces Pack <https://steamcommunity.com/sharedfiles/filedetails/?id=826911897>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
 
       - AI - SFP Early SDF
       - AI - SFP Early SDF Arctic
@@ -284,39 +284,42 @@ Supported Modsets & Maps
       - AI - IFA UK Army
       - AI - IFA Wehrmacht
 
-      Added Factions with East Asia War:
+      Added Factions with `East Asia War <https://steamcommunity.com/sharedfiles/filedetails/?id=2691430448>`_:
 
       - Rebel - EAW local independence movement
       - AI - EAW Imperial Japanese Army
       - AI - EAW National Revolutionary Army
       - AI - EAW People's Liberation Army
 
-      Added Factions with Cold War Rearmed:
+      Added Factions with `Cold War Rearmed III <https://steamcommunity.com/sharedfiles/filedetails/?id=2316343124>`_:
 
       - Rebel - CWR FIA
       - AI - CWR US Temperate
       - AI - CWR USSR Temperate
 
-      Added Factions with CWR Brits:
+      Added Factions with `CWR III Brits <https://steamcommunity.com/sharedfiles/filedetails/?id=2521566285>`_:
 
       - AI - CWR BAF Temperate
 
-      Added Factions with CRO:
+      Added Factions with `CROMIL <https://steamcommunity.com/sharedfiles/filedetails/?id=2674729900>`_:
 
       - AI - CRO Croatian Army
 
-      Added Factions with AMF:
+      Added Factions with `AMF <https://steamcommunity.com/sharedfiles/filedetails/?id=1781990846>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
 
       - AI - AMF French Army
 
-      Added Factions with TMT:
+      Added Factions with `TMT <https://steamcommunity.com/sharedfiles/filedetails/?id=740727824>`_ (also requires the `CUP mods <https://steamcommunity.com/sharedfiles/filedetails/?id=2902920186>`_ to be loaded):
 
       - AI - TMT Turkish Army
 
-      Added Factions with PRACS:
+      Added Factions with `PRACS <https://steamcommunity.com/sharedfiles/filedetails/?id=2955627408>`_:
 
       - AI - PRACS RACS Arid
       - AI - PRACS RACS Temperate
+
+      Added Factions with `PRACS SLA <https://steamcommunity.com/sharedfiles/filedetails/?id=2955691343>`_:
+
       - AI - PRACS SLA Arid
       - AI - PRACS SLA Temperate
       - AI - PRACS SLA Guards Arid
