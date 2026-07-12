@@ -544,6 +544,9 @@ How to set up a game
          *  - Chernarus 2020
             - :code:`Antistasi_cup_chernarus_A3.cup_chernarus_A3`
 
+         *  - Isla Duala
+            - :code:`Antistasi_isladuala3.isladuala3`
+
          *  - Khe Sanh
             - :code:`Antistasi_vn_khe_sanh.vn_khe_sanh`
 
@@ -559,11 +562,26 @@ How to set up a game
          *  - Malden
             - :code:`Antistasi_Malden.Malden`
 
+         *  - Mehland
+            - :code:`Antistasi_mehland.mehland`
+
+         *  - Napf
+            - :code:`Antistasi_Napf.Napf`
+
+         *  - Napf Winter
+            - :code:`Antistasi_NapfWinter.NapfWinter`
+
          *  - Pulau
             - :code:`Antistasi_pulau.pulau`
 
+         *  - Regero
+            - :code:`Antistasi_regero.regero`
+
          *  - Sahrani
             - :code:`Antistasi_sara.sara`
+
+         *  - Stubbhult
+            - :code:`Antistasi_stubbhult.stubbhult`
 
          *  - Mortain
             - :code:`Antistasi_SPE_Mortain.SPE_Mortain`
