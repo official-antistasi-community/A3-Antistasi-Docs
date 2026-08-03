@@ -576,21 +576,25 @@ Towns
    Towns
    ^^^^^
 
-   Main Article: :ref:`concept_gainingandlosingcitysupport`
+   -  Towns are the core of the rebellion’s support. Taking towns gives you a lump sum of HR,
+      plus a steady income of HR and money to bolster your army.
 
-   -  Towns are where you will find the people and their vehicles to
-      “\ *tactically acquire.”*
-
-   -  Taking these towns gives you a small amount of money in the form of
-      taxes and a steady income of HR to bolster your army.
-
-   -  Towns are unique because they are not conquered through military
-      means.
-
-   -  **The only way to conquer towns is to conquer the hearts and minds of
+   -  Towns are unique because they are not conquered purely through military
+      means. **The only way to conquer towns is to conquer the hearts and minds of
       the people. This is done through the town support system.**
 
-   -  The town will be guarded by police when the AI factions control it.
+   -  Towns will be guarded by police when the enemy factions control them, and reinforced over time if they’re killed.
+      As the war tier increases, the police will be gradually replaced by militia.
+
+   -  Larger towns usually have a police station with additional guards and a nearby police vehicle.
+      Police stations also contain a small crate of captured equipment and an intel document on a desk.
+      These items will respawn eventually if stolen.
+
+   -  Towns will generate minor town missions over time when players are nearby, with larger towns generating missions at a higher rate.
+      Completing these will increase town support and give some additional rewards. There is no penalty for ignoring these missions.
+
+   -  Towns contain parked civilian vehicles, which can be taken for rebel use for a small support penalty.
+      Parked vehicles will be gradually replaced over time.
 
    .. card::
       :class-header: header-3
@@ -599,18 +603,23 @@ Towns
       Town support system
       ^^^^^^^^^^^^^^^^^^^
 
-      -  The town support system is a simple system. **Having more people
-         supporting your side than the occupiers, the town will flip to your
-         side and start handing over their men and taxes to fight for
-         freedom.**
+      Main Article: :ref:`concept_gainingandlosingcitysupport`
 
-      -  You can see each town’s support status by going to the map in HQ -
-         selecting map info – and clicking on any town to see the population
-         of the town and the percentage of people that support you or the
-         enemy.
+      -  Rebel support in a town can be increased by killing enemies in or near the town, completing Supplies missions,
+         completing minor town missions or destroying the police station. Stealing civilian vehicles from the town will have a small penalty.
 
-      -  **The town flips to the rebel’s side if more people support you than
-         the enemy inside the town.**
+      -  Destroying or ideally capturing the nearest radio tower will increase any positive effect of other actions on rebel support.
+         Destroying the police station will further increase the effect.
+
+      -  **When rebels have more than 80% support in a town, the town will either join the rebellion immediately (for smaller towns,
+         especially if the enemy faction is short on resources) or trigger a “Battle for XXX” town uprising mission.**
+
+      -  When this mission begins, the occupying faction will send a substantial force to suppress dissent. When you engage this force
+         or talk to the town leader, local rebel units will emerge from buildings to fight the occupiers. If enough enemies are killed
+         before the local rebels are defeated, the town will join the rebellion.
+
+      -  You can see each town’s population, support status and radio tower status by going to the map board in HQ –
+         selecting map info – and clicking on any town.
 
 Info Bar
 ========
