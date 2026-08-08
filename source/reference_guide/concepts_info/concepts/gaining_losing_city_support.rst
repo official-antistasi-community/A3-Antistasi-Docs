@@ -10,7 +10,7 @@ General Notes
 =================================
 
 .. card::
-   :class-card: sd-mt-3
+   :class-card: sd-mt-3 code-paragraph
    :class-header: header-2-light
 
    General Notes
