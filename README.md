@@ -1,37 +1,75 @@
-# Antistasi Guide
+# Tools
 
-see [Tools Readme](https://github.com/Giddius/Antistasi_Guide/tree/master/tools)
+## Python
 
-To build the documentation that is in `source`, just run the `make.bat` from the commandline with:
+### Requirements
 
-```sh
+- at least Python `3.9` has to be installed. Preferably Python `3.10`
+  - installer for Python 3.10 [Windows 64bit](https://www.python.org/ftp/python/3.10.4/python-3.10.4-amd64.exe)
+  - other installers at [python.org](https://www.python.org/downloads/)
 
-    make html
+- ⚠️**Python has to be on your `Path`, this can be set in the installer via checkbox**⚠️
 
-```
+### Workspace Setup (*Venv*)
 
-## General Style-Guide
+- run `setup_python_venv.ps1` inside this Folder (`tools/setup_python_venv.ps1`)
+  - this will create a Python-Venv with the name `.venv` inside the root folder
+  - it will also install all `dependencies` and `dev-dependencies` (formatter, linter,...) into this virtual-environment(`Venv`)
 
-### File-names
+----
 
-try to make file names adhere to these rules:
+### Building locally
 
-- use snake_case (e.g. `this_is_snake_case`;  `this-is-not-snake-case`, `this is also not snake case`, `absolutelyNotSnakeCase`, `IdOnTkNoWwHaTtHiSeVeNiS`)
-- only use lower case letters
-- no spaces
-- no periods (`.`) except for the file-extension of course (`something.png` is allowed, `something.other_thing.png` is not)
-- no weird unicode chars or chars that are disallowed on windows (`:`, `*`, `?`, `"`, `<`,`>`,`|`,`#`,`%`,`&`,`{`,`}`,`$`,`!`,`@`,`+`,`=`)
+#### Via Vscode-tasks
 
-## Repo Setup
+- a task named `Generate LOCAL HTML` is already definded via vscode-workspace-tasks (`.vscode/tasks.json`)
 
-Create a virtual environment for Python called venv and then install these libraries:
+  > This will take the `source` folder as input and build the docs as `HTML` inside the folder `created/html`
 
-```pip install sphinx==4.5.0 sphinxcontrib-images==0.9.4 sphinxcontrib-mermaid==0.7.1 myst-parser==0.17.2 groundwork-sphinx-theme==1.1.1 sphinx-copybutton==0.5.0 sphinxcontrib-fulltoc==1.2.0 antistasi_sqf_tools sphinx-design```
+#### Via Command-Line
 
-then copy the ini file to the root folder of the repo folder
+- make sure that the venv is activated
 
-afterwards you can do
+- use the command `antistasi-sqf-tools docs build -b html`
 
-```antistasi-sqf-tools docs build -b html```
+  >   This will take the `source` folder as input and build the docs as `HTML` inside the folder `created/html`
 
-to build it locally, it will create it in the directory set in the config (default is created/<builder_name>, just add created to the gitignore)
+----
+
+----
+
+## Extensions Usage
+
+[see extensions_readme.md](/tools/extensions_readme.md)
+
+----
+
+----
+
+## Useful links
+
+- [reStructuredText](https://docutils.sourceforge.io/rst.html)
+
+  - [Syntax](https://docutils.sourceforge.io/docs/ref/rst/restructuredtext.html)
+
+<br>
+
+- [Sphinx](https://www.sphinx-doc.org/en/master/)
+
+  - Themes
+
+    - [Built-in themes](https://www.sphinx-doc.org/en/master/usage/theming.html#builtin-themes)
+
+    - [Third-Party theme gallery](https://sphinx-themes.org/)
+
+  - Extensions
+
+    - [Built-in extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html)
+
+    - [Third-Party extensions project](https://github.com/sphinx-contrib/)
+
+    - [Awesome Sphinx](https://github.com/yoloseem/awesome-sphinxdoc)
+
+  - Helper
+
+    - [CheatSheet](https://thomas-cokelaer.info/tutorials/sphinx/rest_syntax.html)
